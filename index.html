@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<script src="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
+	<link rel="stylesheet" href="torontotechweek.css">
+</head>
+
+<body>
+	<div id="map"></div>
+	<script>
+
+		var map = new maplibregl.Map({
+			container: 'map',
+			style: 'torontotechweek.json',
+			center: [-79.393658, 43.654489], //toronto
+			//center: [ -80.5449, 43.4706 ], //waterloo
+			pixelRatio: 1,
+			zoom: 16,
+			maxZoom: 20,
+			bearing: 0,
+			pitch: 40,
+			hash: true
+		});
+
+		map.on('load', () => {
+
+			map.addSource('toronto_buildings', {
+				type: 'vector',
+				tiles: ['toronto_buildings/{z}/{x}/{y}.pbf']
+			});
+
+			// Building layer
+			map.addLayer(
+				{
+					'id': 'buildings',
+					'source': 'toronto_buildings',
+					'source-layer': 'toronto_buildings',
+					'type': 'fill-extrusion',
+					'paint': {
+						'fill-extrusion-color': 'hsl(0, 0%, 100%)',
+						'fill-extrusion-height': [
+							'case',
+							['!=', ['get', 'max_height'], null], ['get', 'max_height'],
+							['!=', ['get', 'avg_height'], null], ['get', 'avg_height'],
+							10
+						],
+						'fill-extrusion-base': 0,
+						"fill-extrusion-opacity": [
+							"interpolate",
+							["exponential", 0.5],
+							["zoom"],
+							15, 0, 16, 0.5
+						]
+					}
+				}
+			);
+
+			map.setLight({
+				'anchor': 'viewport',
+				'color': 'hsl(0, 0%, 100%)',
+				'intensity': 0.5,
+				'position': [1.15, 210, 40]
+			});
+
+		});
+
+	</script>
+</body>
+
+</html>
