@@ -9,8 +9,12 @@
 </head>
 
 <body>
+
 	<div id="map"></div>
+
 	<script>
+
+		zoomThreshold = 14
 
 		var map = new maplibregl.Map({
 			container: 'map',
@@ -27,12 +31,13 @@
 
 		map.on('load', () => {
 
-			map.addSource('https://torontotechweek.github.io/data/toronto_buildings', {
+			// Add building source
+			map.addSource('toronto_buildings', {
 				type: 'vector',
-				tiles: ['toronto_buildings/{z}/{x}/{y}.pbf']
+				tiles: ['https://torontotechweek.github.io/data/toronto_buildings/{z}/{x}/{y}.pbf']
 			});
 
-			// Building layer
+			// Add building extrusions
 			map.addLayer(
 				{
 					'id': 'buildings',
@@ -57,6 +62,74 @@
 					}
 				}
 			);
+
+			// Add event source
+			map.addSource('events', {
+				'type': 'geojson',
+				'data': 'data/ttw2025.geojson',
+				'cluster': true,
+				'clusterRadius': 20,
+				'clusterMinPoints': 3,
+				'clusterMaxZoom': zoomThreshold - 1
+			});
+
+			// Add cluster circles
+			map.addLayer({
+				id: 'clusters',
+				type: 'circle',
+				source: 'events',
+				filter: ['has', 'point_count'],
+				paint: {
+					'circle-color': [
+						'step',
+						['get', 'point_count'],
+						'hsl(270, 29%, 90%)',
+						10, 'hsl(270, 29%, 80%)',
+						25, 'hsl(270, 29%, 70%)'
+					],
+					'circle-radius': [
+						'step',
+						['get', 'point_count'],
+						15,
+						10, 20,
+						25, 25
+					],
+					'circle-stroke-width': 1,
+					'circle-stroke-color': 'hsl(0, 0%, 30%)',
+				},
+				'maxzoom': zoomThreshold
+			});
+
+			// Add cluster count
+			map.addLayer({
+				id: 'cluster-count',
+				type: 'symbol',
+				source: 'events',
+				filter: ['has', 'point_count'],
+				layout: {
+					'text-field': '{point_count_abbreviated}',
+					'text-font': ['notosans-regular'],
+					'text-size': 12
+				},
+				paint: {
+					'text-color': 'hsl(0, 0%, 0%)'
+				},
+				'maxzoom': zoomThreshold
+			});
+
+			// Add event points
+			map.addLayer({
+				id: 'points',
+				type: 'circle',
+				source: 'events',
+				filter: ['!', ['has', 'point_count']],
+				paint: {
+					'circle-radius': 5,
+					'circle-color': 'hsl(0, 0%, 0%)',
+					'circle-stroke-width': 1.5,
+					'circle-stroke-color': 'hsl(0, 0%, 100%)'
+				}
+			});
 
 			map.setLight({
 				'anchor': 'viewport',
