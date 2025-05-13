@@ -48,7 +48,10 @@
 				]
 			},
 			center: [-79.385015, 43.64507],
-			zoom: 16,
+			zoom: 15,
+			minZoom: 11,
+			maxZoom: 18,
+			//maxBounds: [ [-79.56729275921924, 43.56518035854518],[-79.27118684581397, 43.728046474967954] ],
 			bearing: 0,
 			pitch: 0,
 			pixelRatio: 1,
@@ -61,6 +64,41 @@
 			map.addSource('toronto_buildings', {
 				type: 'vector',
 				tiles: ['https://torontotechweek.github.io/data/toronto_buildings/{z}/{x}/{y}.pbf']
+			});
+
+			// Add neighborhood source
+			map.addSource('toronto_neighborhoods', {
+				type: 'vector',
+				tiles: ['http://localhost:8000/data/toronto_neighborhoods/{z}/{x}/{y}.pbf']
+			});
+
+			// Add neighborhood centroids
+			map.addSource('toronto_neighborhoods_centroids', {
+				type: 'vector',
+				tiles: ['http://localhost:8000/data/toronto_neighborhoods_centroids/{z}/{x}/{y}.pbf']
+			});
+
+			// Add event source
+			map.addSource('events', {
+				'type': 'geojson',
+				'data': 'data/ttw2025_with_buildings.geojson',
+				'cluster': true,
+				'clusterRadius': 20,
+				'clusterMinPoints': 3,
+				'clusterMaxZoom': zoomThreshold - 1
+			});
+
+			// Add neighborhood outlines
+			map.addLayer({
+				'id': 'neighborhoods-outlines',
+				'source': 'toronto_neighborhoods',
+				'source-layer': 'toronto_neighborhoods',
+				'type': 'line',
+				'paint': {
+					'line-color': 'hsl(20, 50%, 70%)',
+					'line-width': [ 'interpolate', ['exponential', 1.1], ['zoom'], 10, 1, 18, 3 ],
+					'line-opacity': 0.8
+				}
 			});
 
 			// Add buildings
@@ -91,12 +129,6 @@
 				}
 			);
 
-			// Add neighborhood source
-			map.addSource('toronto_neighborhoods', {
-				type: 'vector',
-				tiles: ['http://localhost:8000/data/toronto_neighborhoods/{z}/{x}/{y}.pbf']
-			});
-
 			// Add neighborhood fill
 			map.addLayer(
 				{
@@ -111,25 +143,7 @@
 				}
 			);
 
-			// Add neighborhood outlines
-			map.addLayer({
-				'id': 'neighborhoods-outlines',
-				'source': 'toronto_neighborhoods',
-				'source-layer': 'toronto_neighborhoods',
-				'type': 'line',
-				'paint': {
-					'line-color': 'hsl(20, 50%, 70%)',
-					'line-width': 3,
-					'line-opacity': 0.8
-				}
-			});
-
-			// Add neighborhood centroid source
-			map.addSource('toronto_neighborhoods_centroids', {
-				type: 'vector',
-				tiles: ['http://localhost:8000/data/toronto_neighborhoods_centroids/{z}/{x}/{y}.pbf']
-			});
-
+			// Add neighborhood labels
 			map.addLayer({
 				id: 'neighborhoods-labels',
 				type: 'symbol',
@@ -137,31 +151,34 @@
 				'source-layer': 'toronto_neighborhoods_centroids',
 				layout: {
 					'text-field': ['get', 'area_name'],
-					'text-size': 16,
+					'text-size': [ 'interpolate', ['exponential', 1.1], ['zoom'], 10, 1, 18, 50 ],
 					'text-font': ['inter-medium'],
-					'text-max-width': 10,
-					'text-line-height': 1.2,
+					'text-max-width': 5,
+					'text-line-height': 1,
 					'text-allow-overlap': true,
 					'text-ignore-placement': true,
+					//'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
 					'text-rotation-alignment': 'viewport',
 					'text-pitch-alignment': 'map'  
 				},
 				paint: {
-					'text-color': 'hsl(0, 0%, 0%)',
-					'text-opacity': 0.5,
-					'text-halo-color': 'hsl(0, 0%, 100%)',
-					'text-halo-width': 1.5
+					'text-color': 'hsl(20, 50%, 70%)',
+					'text-opacity': 0.8,
 				}
 			});
 
-			// Add event source
-			map.addSource('events', {
-				'type': 'geojson',
-				'data': 'data/ttw2025_with_buildings.geojson',
-				'cluster': true,
-				'clusterRadius': 20,
-				'clusterMinPoints': 3,
-				'clusterMaxZoom': zoomThreshold - 1
+			// Add event points
+			map.addLayer({
+				id: 'points',
+				type: 'circle',
+				source: 'events',
+				filter: ['!', ['has', 'point_count']],
+				paint: {
+					'circle-radius': 5,
+					'circle-color': 'hsl(0, 0%, 0%)',
+					'circle-stroke-width': 1.5,
+					'circle-stroke-color': 'hsl(0, 0%, 100%)'
+				}
 			});
 
 			// Add cluster circles
@@ -174,8 +191,8 @@
 					'circle-color': [
 						'step',
 						['get', 'point_count'],
-						'hsl(0, 0%, 20%)',
-						10, 'hsl(0, 0%, 10%)',
+						'hsl(0, 0%, 0%)',
+						10, 'hsl(0, 0%, 0%)',
 						25, 'hsl(0, 0%, 0%)'
 					],
 					'circle-radius': [
@@ -208,27 +225,12 @@
 				'maxzoom': zoomThreshold
 			});
 
-			// Add event points
-			map.addLayer({
-				id: 'points',
-				type: 'circle',
-				source: 'events',
-				filter: ['!', ['has', 'point_count']],
-				paint: {
-					'circle-radius': 5,
-					'circle-color': 'hsl(0, 0%, 0%)',
-					'circle-stroke-width': 1.5,
-					'circle-stroke-color': 'hsl(0, 0%, 100%)'
-				}
-			});
-
 			map.setLight({
 				'anchor': 'viewport',
 				'color': 'hsl(0, 0%, 100%)',
 				'intensity': 0.5,
 				'position': [1.15, 210, 40]
 			});
-
 		});
 
 	</script>
