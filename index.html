@@ -159,7 +159,6 @@
 						id: 'neighborhoods-labels',
 						type: 'symbol',
 						source: 'toronto_neighborhoods_centroids',
-						'source-layer': 'toronto_neighborhoods_centroids',
 						layout: {
 							'text-field': ['get', 'area_name'],
 							'text-size': ['interpolate', ['exponential', 1.1], ['zoom'], 10, 1, 18, 50],
@@ -305,12 +304,12 @@
 
 			// Categories
 			const categories = [
-				{ date: '2025-06-22', day: 'Sunday' },
-				{ date: '2025-06-23', day: 'Monday' },
-				{ date: '2025-06-24', day: 'Tuesday' },
-				{ date: '2025-06-25', day: 'Wednesday' },
-				{ date: '2025-06-26', day: 'Thursday' },
-				{ date: '2025-06-27', day: 'Friday' },
+				{ date: '2025-06-22', day: 'Sun' },
+				{ date: '2025-06-23', day: 'Mon' },
+				{ date: '2025-06-24', day: 'Tue' },
+				{ date: '2025-06-25', day: 'Wed' },
+				{ date: '2025-06-26', day: 'Thu' },
+				{ date: '2025-06-27', day: 'Fri' },
 			];
 
 			categories.forEach(({ date, day }) => {
@@ -319,7 +318,7 @@
 				categoryElement.dataset.category = date;
 
 				// Create text span
-				const textSpan = document.createElement('span');
+				const textSpan = document.createElement('h1');
 				textSpan.textContent = day;
 
 				// Append elements
