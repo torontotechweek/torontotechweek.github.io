@@ -20,6 +20,7 @@
 
 		const locationFile = 'data/ttw2025_with_buildings.geojson'
 		const zoomThreshold = 14
+		const imgSource = 'img'
 		let currentActiveCategory = 'all';
 		let locationData;
 
@@ -44,11 +45,10 @@
 						source: 'osm',
 						paint: {
 							'raster-hue-rotate': 0,
-							'raster-contrast': 0.2,
+							'raster-contrast': 0.6,
 							'raster-saturation': -1,
-							'raster-brightness-min': 0.5,
-							'raster-brightness-max': 1,
-							'raster-opacity': 1
+							'raster-brightness-min': 0,
+							'raster-brightness-max': 0.7
 						}
 					}
 				]
@@ -64,218 +64,163 @@
 			hash: true
 		});
 
-		map.on('load', () => {
+		map.on('load', async () => {
 
-			fetch(locationFile)
-				.then(res => res.json())
-				.then(data => {
-					locationData = data;
+			// Load points data
+			const pointsResponse = await fetch(locationFile);
+			const pointsData = await pointsResponse.json();
+			locationData = pointsData;
 
-					// Add building source
-					map.addSource('toronto_buildings', {
-						type: 'vector',
-						tiles: ['https://torontotechweek.github.io/data/toronto_buildings/{z}/{x}/{y}.pbf']
-					});
+			// Add building source
+			map.addSource('toronto_buildings', {
+				type: 'vector',
+				tiles: ['https://torontotechweek.github.io/data/toronto_buildings/{z}/{x}/{y}.pbf']
+			});
 
-					// Add neighborhood source
-					map.addSource('toronto_neighborhoods', {
-						type: 'vector',
-						tiles: ['https://torontotechweek.github.io/data/toronto_neighborhoods/{z}/{x}/{y}.pbf']
-					});
+			// Add neighborhood source
+			map.addSource('toronto_neighborhoods', {
+				type: 'vector',
+				tiles: ['https://torontotechweek.github.io/data/toronto_neighborhoods/{z}/{x}/{y}.pbf']
+			});
 
-					// Add neighborhood centroids
-					map.addSource('toronto_neighborhoods_centroids', {
-						'type': 'geojson',
-						'data': 'data/toronto_neighborhoods_centroids.geojson'
-					});
+			// Add neighborhood centroids
+			map.addSource('toronto_neighborhoods_centroids', {
+				'type': 'geojson',
+				'data': 'data/toronto_neighborhoods_centroids.geojson'
+			});
 
-					// Add event source
-					map.addSource('events', {
-						'type': 'geojson',
-						'data': locationData,
-						'cluster': true,
-						'clusterRadius': 20,
-						'clusterMinPoints': 3,
-						'clusterMaxZoom': zoomThreshold - 1
-					});
+			// Add event source
+			map.addSource('events', {
+				'type': 'geojson',
+				'data': pointsData,
+				'cluster': true,
+				'clusterRadius': 10,
+				'clusterMinPoints': 2,
+				'clusterMaxZoom': 18
+			});
 
-					// Add neighborhood outlines
-					map.addLayer({
-						'id': 'neighborhoods-outlines',
-						'source': 'toronto_neighborhoods',
-						'source-layer': 'toronto_neighborhoods',
-						'type': 'line',
-						'paint': {
-							'line-color': 'hsl(20, 50%, 70%)',
-							'line-width': ['interpolate', ['exponential', 1.1], ['zoom'], 10, 1, 18, 3],
-							'line-opacity': 0.8
-						}
-					});
+			// Add neighborhood outlines
+			map.addLayer({
+				'id': 'neighborhoods-outlines',
+				'source': 'toronto_neighborhoods',
+				'source-layer': 'toronto_neighborhoods',
+				'type': 'line',
+				'paint': {
+					'line-color': 'hsl(20, 50%, 70%)',
+					'line-width': ['interpolate', ['linear'], ['zoom'], 10, 1, 18, 3],
+					'line-opacity': 0.8
+				}
+			});
 
-					// Add buildings
-					map.addLayer(
-						{
-							'id': 'buildings',
-							'source': 'toronto_buildings',
-							'source-layer': 'toronto_buildings',
-							'type': 'fill-extrusion',
-							'paint': {
-								'fill-extrusion-color': 'hsl(0, 0%, 100%)',
-								'fill-extrusion-height': [
-									'interpolate',
-									['linear'],
-									['zoom'],
-									15, 0,
-									16, [
-										'case',
-										['!=', ['get', 'max_height'], null], ['get', 'max_height'],
-										['!=', ['get', 'avg_height'], null], ['get', 'avg_height'],
-										10
-									]
-								],
-								'fill-extrusion-base': 0,
-								'fill-extrusion-opacity': 0.5
-							},
-							'minzoom': 15
-						}
-					);
+			// Add buildings
+			map.addLayer(
+				{
+					'id': 'buildings',
+					'source': 'toronto_buildings',
+					'source-layer': 'toronto_buildings',
+					'type': 'fill-extrusion',
+					'paint': {
+						'fill-extrusion-color': 'hsl(0, 0%, 100%)',
+						'fill-extrusion-height': [
+							'case',
+							['!=', ['get', 'max_height'], null], ['get', 'max_height'],
+							['!=', ['get', 'avg_height'], null], ['get', 'avg_height'],
+							10
+						],
+						'fill-extrusion-base': 0,
+						'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, 0.5, 17, 0.5, 18, 0],
+					},
+					'minzoom': 15
+				}
+			);
 
-					// Add neighborhood fill
-					map.addLayer(
-						{
-							'id': 'neighborhoods',
-							'source': 'toronto_neighborhoods',
-							'source-layer': 'toronto_neighborhoods',
-							'type': 'fill',
-							'paint': {
-								'fill-color': 'hsl(20, 50%, 70%)',
-								'fill-opacity': 0
-							}
-						}
-					);
+			// Add neighborhood labels
+			map.addLayer({
+				id: 'neighborhoods-labels',
+				type: 'symbol',
+				source: 'toronto_neighborhoods_centroids',
+				layout: {
+					'text-field': ['get', 'area_name'],
+					'text-size': ['interpolate', ['exponential', 1.1], ['zoom'], 10, 1, 18, 50],
+					'text-font': ['inter-medium'],
+					'text-max-width': 5,
+					'text-line-height': 1,
+					'text-allow-overlap': true,
+					'text-ignore-placement': true,
+					//'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+					'text-rotation-alignment': 'viewport',
+					'text-pitch-alignment': 'map'
+				},
+				paint: {
+					'text-color': 'hsl(20, 50%, 70%)',
+					'text-opacity': 0.8,
+				}
+			});
 
-					// Add neighborhood labels
-					map.addLayer({
-						id: 'neighborhoods-labels',
-						type: 'symbol',
-						source: 'toronto_neighborhoods_centroids',
-						layout: {
-							'text-field': ['get', 'area_name'],
-							'text-size': ['interpolate', ['exponential', 1.1], ['zoom'], 10, 1, 18, 50],
-							'text-font': ['inter-medium'],
-							'text-max-width': 5,
-							'text-line-height': 1,
-							'text-allow-overlap': true,
-							'text-ignore-placement': true,
-							//'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
-							'text-rotation-alignment': 'viewport',
-							'text-pitch-alignment': 'map'
-						},
-						paint: {
-							'text-color': 'hsl(20, 50%, 70%)',
-							'text-opacity': 0.8,
-						}
-					});
+			// Temp points layer
+			map.addLayer({
+                id: 'temp-location',
+                type: 'circle',
+                source: 'events',
+                filter: ['!', ['has', 'point_count']],
+                paint: {
+                    'circle-radius': 0,
+                    'circle-opacity': 0
+                }
+            });
 
-					// Add event points
-					map.addLayer({
-						id: 'points',
-						type: 'circle',
-						source: 'events',
-						filter: ['!', ['has', 'point_count']],
-						paint: {
-							'circle-radius': 5,
-							'circle-color': 'hsl(0, 0%, 0%)',
-							'circle-stroke-width': 1.5,
-							'circle-stroke-color': 'hsl(0, 0%, 100%)'
-						}
-					});
+			// Temp cluster layer
+            map.addLayer({
+                id: 'temp-clusters',
+                type: 'circle',
+                source: 'events',
+                filter: ['has', 'point_count'],
+                paint: {
+                    'circle-radius': 0,
+                    'circle-opacity': 0
+                }
+            });
 
-					// Add cluster circles
-					map.addLayer({
-						id: 'clusters',
-						type: 'circle',
-						source: 'events',
-						filter: ['has', 'point_count'],
-						paint: {
-							'circle-color': [
-								'step',
-								['get', 'point_count'],
-								'hsl(0, 0%, 0%)',
-								10, 'hsl(0, 0%, 0%)',
-								25, 'hsl(0, 0%, 0%)'
-							],
-							'circle-radius': [
-								'step',
-								['get', 'point_count'],
-								15,
-								10, 20,
-								25, 25
-							],
-							'circle-stroke-width': 1.5,
-							'circle-stroke-color': 'hsl(0, 0%, 100%)',
-						},
-						'maxzoom': zoomThreshold
-					});
+			map.setLight({
+				'anchor': 'viewport',
+				'color': 'hsl(0, 0%, 100%)',
+				'intensity': 0.5,
+				'position': [1.15, 210, 40]
+			});
 
-					// Add cluster count
-					map.addLayer({
-						id: 'cluster-count',
-						type: 'symbol',
-						source: 'events',
-						filter: ['has', 'point_count'],
-						layout: {
-							'text-field': '{point_count_abbreviated}',
-							'text-font': ['inter-medium'],
-							'text-size': 12
-						},
-						paint: {
-							'text-color': 'hsl(0, 0%, 100%)'
-						},
-						'maxzoom': zoomThreshold
-					});
+			// Handle clicks on category filter
+			document.addEventListener('click', (e) => {
+				const categoryFeatureElement = e.target.closest('.category-feature');
+				if (!categoryFeatureElement) return;
 
-					map.setLight({
-						'anchor': 'viewport',
-						'color': 'hsl(0, 0%, 100%)',
-						'intensity': 0.5,
-						'position': [1.15, 210, 40]
-					});
+				const category = categoryFeatureElement.dataset.category;
+				if (!category) return;
 
-                    // Handle clicks on category filter
-                    document.addEventListener('click', (e) => {
-                        const categoryFeatureElement = e.target.closest('.category-feature');
-                        if (!categoryFeatureElement) return;
+				// Close any open popup when clicking a category
+				if (window.featurePopup) {
+					window.featurePopup.remove();
+					window.featurePopup = null;
+				}
 
-                        const category = categoryFeatureElement.dataset.category;
-                        if (!category) return;
-
-                        // Close any open popup when clicking a category
-                        if (window.featurePopup) {
-                            window.featurePopup.remove();
-                            window.featurePopup = null;
-                        }
-
-                        // Remove all activeCategory classes first
-                        document.querySelectorAll('.category-feature.activeCategory').forEach(el => {
-                            el.classList.remove('activeCategory');
-                        });
-
-                        // Toggle logic
-                        if (currentActiveCategory === category) {
-                            // Second click on same category - remove filter
-                            filterLocation('all'); // Show all features
-                            categoryFeatureElement.classList.remove('activeCategory');
-                            currentActiveCategory = 'all';
-                        } else {
-                            // New category selected
-                            filterLocation(category);
-                            categoryFeatureElement.classList.add('activeCategory');
-                            currentActiveCategory = category;
-                        }
-                    });
-
+				// Remove all activeCategory classes first
+				document.querySelectorAll('.category-feature.activeCategory').forEach(el => {
+					el.classList.remove('activeCategory');
 				});
+
+				// Toggle logic
+				if (currentActiveCategory === category) {
+					// Second click on same category - remove filter
+					filterLocation('all'); // Show all features
+					categoryFeatureElement.classList.remove('activeCategory');
+					currentActiveCategory = 'all';
+				} else {
+					// New category selected
+					filterLocation(category);
+					categoryFeatureElement.classList.add('activeCategory');
+					currentActiveCategory = category;
+				}
+			});
+
 		});
 
 		const filterLocation = (category) => {
@@ -291,7 +236,7 @@
 			map.getSource('events').setData(filtered);
 
 			currentActiveCategory = category;
-			//updateMarkers(); // now update markers as usual
+			updateMarkers(); // now update markers as usual
 		};
 
 		const createCategoryBox = () => {
@@ -327,9 +272,177 @@
 			});
 		};
 
-        map.once('idle', () => {
-            createCategoryBox();
-        });
+        const createMarker = (feature) => {
+            const id = feature.properties.api_id;
+            const imageUrl = `${imgSource}/test.png`;
+
+            // Create container element
+            const el = document.createElement('div');
+            el.className = 'marker';
+            el.dataset.id = id;
+
+            const img = document.createElement('img');
+            img.classList.add('marker-image');
+            img.src = imageUrl;
+            img.alt = 'Marker image';
+            img.dataset.id = id;
+            img.dataset.feature = JSON.stringify(feature);
+            el.appendChild(img);
+
+            return el;
+        }
+
+        const createCluster = async (feature, clusterId) => {
+            try {
+                // Get leaves from cluster
+                const clusterFeatures = await map.getSource('events').getClusterLeaves(
+                    clusterId,
+                    Infinity,
+                    0
+                );
+
+                // Create main container (matches your CSS requirements)
+                const container = document.createElement('div');
+                container.className = 'cluster-box-container';
+
+                // Create feature container for images
+                const featuresContainer = document.createElement('div');
+                featuresContainer.style.display = 'contents';
+
+                // Process each feature in cluster
+                clusterFeatures.forEach(clusterFeature => {
+                    const id = clusterFeature.properties.api_id;
+                    const coordinates = clusterFeature.geometry.coordinates;
+                    const imageUrl = `${imgSource}/test.png`;
+
+                    // Create individual image container (matches .cluster-image in your CSS)
+                    const imageContainer = document.createElement('div');
+                    imageContainer.className = 'cluster-image';
+                    imageContainer.dataset.id = id;
+                    imageContainer.dataset.feature = JSON.stringify(clusterFeature);
+
+                    // Create image element (matches your CSS requirements)
+                    const img = document.createElement('img');
+                    img.src = imageUrl;
+                    img.alt = 'Cluster image';
+
+                    imageContainer.appendChild(img);
+                    featuresContainer.appendChild(imageContainer);
+                });
+
+                // Only proceed if we have features
+                if (clusterFeatures.length > 0) {
+                    container.appendChild(featuresContainer);
+
+                    // Wait for images to load
+                    const images = container.querySelectorAll('img');
+                    await Promise.all(
+                        Array.from(images).map(img =>
+                            img.complete ? Promise.resolve() : img.decode().catch(() => { })
+                        )
+                    );
+
+                    // Calculate columns dynamically
+                    const columns = Math.min(
+						Math.max(2, Math.ceil(clusterFeatures.length / 3)),
+						6
+                    );
+
+                    // Apply grid layout
+                    container.style.display = 'grid';
+                    container.style.gridTemplateColumns = `repeat(${columns}, 30px)`;
+                    container.style.gap = '5px';
+
+                    return container;
+                }				
+            } catch (error) {
+                console.error('Error creating cluster:', error);
+            }
+            return null;
+        };
+
+        let markers = {};
+        let markersOnScreen = {};
+
+        const updateMarkers = async () => {
+			// Only update if the map is in a reasonable state
+			if (!map.isStyleLoaded() || map.isMoving()) {
+				return;
+			}
+
+            const features = map.querySourceFeatures('events');
+            const newMarkers = {};
+
+            for (const feature of features) {
+                if (!feature.properties.cluster) {  // Non-clusters
+                    const coordinates = feature.geometry.coordinates;
+                    const id = feature.properties.api_id;
+
+                    let marker = markers[id];
+                    if (!marker) {
+                        const el = await createMarker(feature);
+                        marker = markers[id] = new maplibregl.Marker({
+                            element: el
+                        }).setLngLat(coordinates);
+                    }
+                    newMarkers[id] = marker;
+
+                    // Add the marker to the map if it's not already there
+                    if (!markersOnScreen[id]) {
+                        marker.addTo(map);
+                    }
+                } else { // Clusters
+                    const coordinates = feature.geometry.coordinates;
+                    const clusterId = feature.properties.cluster_id;
+
+                    let marker = markers[clusterId];
+                    if (!marker) {
+                        const el = await createCluster(feature, clusterId);
+                        //await waitForImages(el);  // Wait for images to load
+                        marker = markers[clusterId] = new maplibregl.Marker({
+                            element: el
+                        }).setLngLat(coordinates);
+
+                    }
+                    newMarkers[clusterId] = marker;
+
+                    // Add the marker to the map if it's not already there
+                    if (!markersOnScreen[clusterId]) {
+                        marker.addTo(map);
+                    }
+                }
+            }
+
+            // Remove markers that are no longer on the screen
+            for (const id in markersOnScreen) {
+                if (!newMarkers[id]) markersOnScreen[id].remove();
+            }
+            markersOnScreen = newMarkers;
+        }
+
+		map.once('load', () => {
+			createCategoryBox();
+		});
+
+		// let markerUpdateTimeout;
+		// map.on('data', (e) => {
+		// 	if (e.sourceId !== 'events' || !e.isSourceLoaded) return;
+			
+		// 	clearTimeout(markerUpdateTimeout);
+		// 	markerUpdateTimeout = setTimeout(updateMarkers, 100);
+		// });
+
+		map.on('data', () => {
+			if (map.getSource('events') && map.isSourceLoaded('events')) {
+				updateMarkers();
+			}
+		});
+
+		map.on('moveend', () => {
+			if (map.getSource('events') && map.isSourceLoaded('events')) {
+				updateMarkers();
+			}
+		});
 
 	</script>
 </body>

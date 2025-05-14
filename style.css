@@ -67,6 +67,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 100%;
+    border: 1px solid hsl(0, 0%, 40%);
     background-color: hsl(0, 0%, 100%, 0.8);
     font-weight: 400;
     cursor: pointer;
@@ -74,16 +75,75 @@ body {
     flex-shrink: 0;
 }
 
+.category-feature p {
+    font-size: 11px;
+    font-weight: 300;
+}
+
 .activeCategory {
-    background-color: hsl(0, 0%, 0%);
+    background-color: hsla(0, 0%, 0%, 0.6);
     color: hsl(0, 0%, 100%);
 }
 
-.activeCategory h1 {
+.activeCategory p {
     font-weight: 600;
 }
 
+.marker {
+    left: 0;
+    top: 0;
+    pointer-events: auto;
+    cursor: pointer;
+    background-color: transparent !important;
+    will-change: transform;
+}
+
+.marker-image {
+    display: block;
+    pointer-events: auto;
+    max-width: 30px;
+    max-height: 30px;
+    filter: drop-shadow(2px 2px 2px hsla(0, 0%, 0%, 0.2));
+    border: 3px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.marker-circle {
+    display: none;
+    pointer-events: auto;
+}
+
+.cluster-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transform: translateY(-100%);
+    background-color: hsl(0, 0%, 100%);
+    filter: drop-shadow(2px 2px 2px hsla(0, 0%, 0%, 0.2));
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 5px;
+    border: 1px solid hsl(0, 0%, 80%);
+}
+
+.cluster-image {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.cluster-image img {
+    display: block;
+    height: auto;
+    max-width: 30px;
+    max-height: 30px;
+}
+
 h1 {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 300;
+    line-height: 1;
 }
