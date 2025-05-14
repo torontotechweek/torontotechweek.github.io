@@ -8,7 +8,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="torontotechweek.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -243,8 +243,40 @@
 						'position': [1.15, 210, 40]
 					});
 
-				});
+                    // Handle clicks on category filter
+                    document.addEventListener('click', (e) => {
+                        const categoryFeatureElement = e.target.closest('.category-feature');
+                        if (!categoryFeatureElement) return;
 
+                        const category = categoryFeatureElement.dataset.category;
+                        if (!category) return;
+
+                        // Close any open popup when clicking a category
+                        if (window.featurePopup) {
+                            window.featurePopup.remove();
+                            window.featurePopup = null;
+                        }
+
+                        // Remove all activeCategory classes first
+                        document.querySelectorAll('.category-feature.activeCategory').forEach(el => {
+                            el.classList.remove('activeCategory');
+                        });
+
+                        // Toggle logic
+                        if (currentActiveCategory === category) {
+                            // Second click on same category - remove filter
+                            filterLocation('all'); // Show all features
+                            categoryFeatureElement.classList.remove('activeCategory');
+                            currentActiveCategory = 'all';
+                        } else {
+                            // New category selected
+                            filterLocation(category);
+                            categoryFeatureElement.classList.add('activeCategory');
+                            currentActiveCategory = category;
+                        }
+                    });
+
+				});
 		});
 
 		const filterLocation = (category) => {
@@ -254,10 +286,10 @@
 				...locationData,
 				features: category === 'all'
 					? locationData.features
-					: locationData.features.filter(f => f.properties.category === category)
+					: locationData.features.filter(f => f.properties.start_date_iso?.startsWith(category))
 			};
 
-			map.getSource('location').setData(filtered);
+			map.getSource('events').setData(filtered);
 
 			currentActiveCategory = category;
 			//updateMarkers(); // now update markers as usual
@@ -272,7 +304,7 @@
 			categoryBox.appendChild(innerContainer);
 
 			// Categories
-			const dates = [
+			const categories = [
 				{ date: '2025-06-22', day: 'Sunday' },
 				{ date: '2025-06-23', day: 'Monday' },
 				{ date: '2025-06-24', day: 'Tuesday' },
@@ -281,30 +313,24 @@
 				{ date: '2025-06-27', day: 'Friday' },
 			];
 
-			categories.forEach(({ id, icon }) => {
+			categories.forEach(({ date, day }) => {
 				const categoryElement = document.createElement('div');
 				categoryElement.className = 'category-feature';
-				categoryElement.dataset.category = id;
-				const label = id
-					.replace(/and/g, '&')
-					.replace(/_/g, ' ')
-					.replace(/\b\w/g, char => char.toUpperCase());
-
-				// Create icon element separately to apply color
-				const iconElement = document.createElement('i');
-				iconElement.className = `fa-solid ${icon}`;
-				iconElement.style.color = getCategoryColor(id); // Apply category color
+				categoryElement.dataset.category = date;
 
 				// Create text span
 				const textSpan = document.createElement('span');
-				textSpan.textContent = label;
+				textSpan.textContent = day;
 
 				// Append elements
-				categoryElement.appendChild(iconElement);
 				categoryElement.appendChild(textSpan);
 				innerContainer.appendChild(categoryElement);
 			});
 		};
+
+        map.once('idle', () => {
+            createCategoryBox();
+        });
 
 	</script>
 </body>
