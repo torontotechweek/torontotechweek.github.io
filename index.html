@@ -4,18 +4,24 @@
 <head>
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 	<script src="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.js"></script>
-    <link href="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="torontotechweek.css">
 </head>
 
 <body>
 
 	<div id="map"></div>
+	<div id="category-box"></div>
 
 	<script>
 
-		zoomThreshold = 14
+		const locationFile = 'data/ttw2025_with_buildings.geojson'
+		const zoomThreshold = 14
+		let currentActiveCategory = 'all';
+		let locationData;
 
 		const map = new maplibregl.Map({
 			container: 'map',
@@ -60,178 +66,245 @@
 
 		map.on('load', () => {
 
-			// Add building source
-			map.addSource('toronto_buildings', {
-				type: 'vector',
-				tiles: ['https://torontotechweek.github.io/data/toronto_buildings/{z}/{x}/{y}.pbf']
-			});
+			fetch(locationFile)
+				.then(res => res.json())
+				.then(data => {
+					locationData = data;
 
-			// Add neighborhood source
-			map.addSource('toronto_neighborhoods', {
-				type: 'vector',
-				tiles: ['http://localhost:8000/data/toronto_neighborhoods/{z}/{x}/{y}.pbf']
-			});
+					// Add building source
+					map.addSource('toronto_buildings', {
+						type: 'vector',
+						tiles: ['https://torontotechweek.github.io/data/toronto_buildings/{z}/{x}/{y}.pbf']
+					});
 
-			// Add neighborhood centroids
-			map.addSource('toronto_neighborhoods_centroids', {
-				type: 'vector',
-				tiles: ['http://localhost:8000/data/toronto_neighborhoods_centroids/{z}/{x}/{y}.pbf']
-			});
+					// Add neighborhood source
+					map.addSource('toronto_neighborhoods', {
+						type: 'vector',
+						tiles: ['https://torontotechweek.github.io/data/toronto_neighborhoods/{z}/{x}/{y}.pbf']
+					});
 
-			// Add event source
-			map.addSource('events', {
-				'type': 'geojson',
-				'data': 'data/ttw2025_with_buildings.geojson',
-				'cluster': true,
-				'clusterRadius': 20,
-				'clusterMinPoints': 3,
-				'clusterMaxZoom': zoomThreshold - 1
-			});
+					// Add neighborhood centroids
+					map.addSource('toronto_neighborhoods_centroids', {
+						'type': 'geojson',
+						'data': 'data/toronto_neighborhoods_centroids.geojson'
+					});
 
-			// Add neighborhood outlines
-			map.addLayer({
-				'id': 'neighborhoods-outlines',
-				'source': 'toronto_neighborhoods',
-				'source-layer': 'toronto_neighborhoods',
-				'type': 'line',
-				'paint': {
-					'line-color': 'hsl(20, 50%, 70%)',
-					'line-width': [ 'interpolate', ['exponential', 1.1], ['zoom'], 10, 1, 18, 3 ],
-					'line-opacity': 0.8
-				}
-			});
+					// Add event source
+					map.addSource('events', {
+						'type': 'geojson',
+						'data': locationData,
+						'cluster': true,
+						'clusterRadius': 20,
+						'clusterMinPoints': 3,
+						'clusterMaxZoom': zoomThreshold - 1
+					});
 
-			// Add buildings
-			map.addLayer(
-				{
-					'id': 'buildings',
-					'source': 'toronto_buildings',
-					'source-layer': 'toronto_buildings',
-					'type': 'fill-extrusion',
-					'paint': {
-						'fill-extrusion-color': 'hsl(0, 0%, 100%)',
-						'fill-extrusion-height': [
-							'interpolate',
-							['linear'],
-							['zoom'],
-							15, 0,
-							16, [
-								'case',
-								['!=', ['get', 'max_height'], null], ['*', ['get', 'max_height'], 1.5],
-								['!=', ['get', 'avg_height'], null], ['*', ['get', 'avg_height'], 1.5],
-								10
-							]
-						],
-						'fill-extrusion-base': 0,
-						'fill-extrusion-opacity': 0.5
-					},
-					'minzoom': 15
-				}
-			);
+					// Add neighborhood outlines
+					map.addLayer({
+						'id': 'neighborhoods-outlines',
+						'source': 'toronto_neighborhoods',
+						'source-layer': 'toronto_neighborhoods',
+						'type': 'line',
+						'paint': {
+							'line-color': 'hsl(20, 50%, 70%)',
+							'line-width': ['interpolate', ['exponential', 1.1], ['zoom'], 10, 1, 18, 3],
+							'line-opacity': 0.8
+						}
+					});
 
-			// Add neighborhood fill
-			map.addLayer(
-				{
-					'id': 'neighborhoods',
-					'source': 'toronto_neighborhoods',
-					'source-layer': 'toronto_neighborhoods',
-					'type': 'fill',
-					'paint': {
-						'fill-color': 'hsl(20, 50%, 70%)',
-						'fill-opacity': 0
-					}
-				}
-			);
+					// Add buildings
+					map.addLayer(
+						{
+							'id': 'buildings',
+							'source': 'toronto_buildings',
+							'source-layer': 'toronto_buildings',
+							'type': 'fill-extrusion',
+							'paint': {
+								'fill-extrusion-color': 'hsl(0, 0%, 100%)',
+								'fill-extrusion-height': [
+									'interpolate',
+									['linear'],
+									['zoom'],
+									15, 0,
+									16, [
+										'case',
+										['!=', ['get', 'max_height'], null], ['get', 'max_height'],
+										['!=', ['get', 'avg_height'], null], ['get', 'avg_height'],
+										10
+									]
+								],
+								'fill-extrusion-base': 0,
+								'fill-extrusion-opacity': 0.5
+							},
+							'minzoom': 15
+						}
+					);
 
-			// Add neighborhood labels
-			map.addLayer({
-				id: 'neighborhoods-labels',
-				type: 'symbol',
-				source: 'toronto_neighborhoods_centroids',
-				'source-layer': 'toronto_neighborhoods_centroids',
-				layout: {
-					'text-field': ['get', 'area_name'],
-					'text-size': [ 'interpolate', ['exponential', 1.1], ['zoom'], 10, 1, 18, 50 ],
-					'text-font': ['inter-medium'],
-					'text-max-width': 5,
-					'text-line-height': 1,
-					'text-allow-overlap': true,
-					'text-ignore-placement': true,
-					//'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
-					'text-rotation-alignment': 'viewport',
-					'text-pitch-alignment': 'map'  
-				},
-				paint: {
-					'text-color': 'hsl(20, 50%, 70%)',
-					'text-opacity': 0.8,
-				}
-			});
+					// Add neighborhood fill
+					map.addLayer(
+						{
+							'id': 'neighborhoods',
+							'source': 'toronto_neighborhoods',
+							'source-layer': 'toronto_neighborhoods',
+							'type': 'fill',
+							'paint': {
+								'fill-color': 'hsl(20, 50%, 70%)',
+								'fill-opacity': 0
+							}
+						}
+					);
 
-			// Add event points
-			map.addLayer({
-				id: 'points',
-				type: 'circle',
-				source: 'events',
-				filter: ['!', ['has', 'point_count']],
-				paint: {
-					'circle-radius': 5,
-					'circle-color': 'hsl(0, 0%, 0%)',
-					'circle-stroke-width': 1.5,
-					'circle-stroke-color': 'hsl(0, 0%, 100%)'
-				}
-			});
+					// Add neighborhood labels
+					map.addLayer({
+						id: 'neighborhoods-labels',
+						type: 'symbol',
+						source: 'toronto_neighborhoods_centroids',
+						'source-layer': 'toronto_neighborhoods_centroids',
+						layout: {
+							'text-field': ['get', 'area_name'],
+							'text-size': ['interpolate', ['exponential', 1.1], ['zoom'], 10, 1, 18, 50],
+							'text-font': ['inter-medium'],
+							'text-max-width': 5,
+							'text-line-height': 1,
+							'text-allow-overlap': true,
+							'text-ignore-placement': true,
+							//'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+							'text-rotation-alignment': 'viewport',
+							'text-pitch-alignment': 'map'
+						},
+						paint: {
+							'text-color': 'hsl(20, 50%, 70%)',
+							'text-opacity': 0.8,
+						}
+					});
 
-			// Add cluster circles
-			map.addLayer({
-				id: 'clusters',
-				type: 'circle',
-				source: 'events',
-				filter: ['has', 'point_count'],
-				paint: {
-					'circle-color': [
-						'step',
-						['get', 'point_count'],
-						'hsl(0, 0%, 0%)',
-						10, 'hsl(0, 0%, 0%)',
-						25, 'hsl(0, 0%, 0%)'
-					],
-					'circle-radius': [
-						'step',
-						['get', 'point_count'],
-						15,
-						10, 20,
-						25, 25
-					],
-					'circle-stroke-width': 1.5,
-					'circle-stroke-color': 'hsl(0, 0%, 100%)',
-				},
-				'maxzoom': zoomThreshold
-			});
+					// Add event points
+					map.addLayer({
+						id: 'points',
+						type: 'circle',
+						source: 'events',
+						filter: ['!', ['has', 'point_count']],
+						paint: {
+							'circle-radius': 5,
+							'circle-color': 'hsl(0, 0%, 0%)',
+							'circle-stroke-width': 1.5,
+							'circle-stroke-color': 'hsl(0, 0%, 100%)'
+						}
+					});
 
-			// Add cluster count
-			map.addLayer({
-				id: 'cluster-count',
-				type: 'symbol',
-				source: 'events',
-				filter: ['has', 'point_count'],
-				layout: {
-					'text-field': '{point_count_abbreviated}',
-					'text-font': ['inter-medium'],
-					'text-size': 12
-				},
-				paint: {
-					'text-color': 'hsl(0, 0%, 100%)'
-				},
-				'maxzoom': zoomThreshold
-			});
+					// Add cluster circles
+					map.addLayer({
+						id: 'clusters',
+						type: 'circle',
+						source: 'events',
+						filter: ['has', 'point_count'],
+						paint: {
+							'circle-color': [
+								'step',
+								['get', 'point_count'],
+								'hsl(0, 0%, 0%)',
+								10, 'hsl(0, 0%, 0%)',
+								25, 'hsl(0, 0%, 0%)'
+							],
+							'circle-radius': [
+								'step',
+								['get', 'point_count'],
+								15,
+								10, 20,
+								25, 25
+							],
+							'circle-stroke-width': 1.5,
+							'circle-stroke-color': 'hsl(0, 0%, 100%)',
+						},
+						'maxzoom': zoomThreshold
+					});
 
-			map.setLight({
-				'anchor': 'viewport',
-				'color': 'hsl(0, 0%, 100%)',
-				'intensity': 0.5,
-				'position': [1.15, 210, 40]
-			});
+					// Add cluster count
+					map.addLayer({
+						id: 'cluster-count',
+						type: 'symbol',
+						source: 'events',
+						filter: ['has', 'point_count'],
+						layout: {
+							'text-field': '{point_count_abbreviated}',
+							'text-font': ['inter-medium'],
+							'text-size': 12
+						},
+						paint: {
+							'text-color': 'hsl(0, 0%, 100%)'
+						},
+						'maxzoom': zoomThreshold
+					});
+
+					map.setLight({
+						'anchor': 'viewport',
+						'color': 'hsl(0, 0%, 100%)',
+						'intensity': 0.5,
+						'position': [1.15, 210, 40]
+					});
+
+				});
+
 		});
+
+		const filterLocation = (category) => {
+			if (!locationData) return;
+
+			const filtered = {
+				...locationData,
+				features: category === 'all'
+					? locationData.features
+					: locationData.features.filter(f => f.properties.category === category)
+			};
+
+			map.getSource('location').setData(filtered);
+
+			currentActiveCategory = category;
+			//updateMarkers(); // now update markers as usual
+		};
+
+		const createCategoryBox = () => {
+			const categoryBox = document.getElementById('category-box');
+			categoryBox.innerHTML = '';
+
+			const innerContainer = document.createElement('div');
+			innerContainer.className = 'category-box-inner';
+			categoryBox.appendChild(innerContainer);
+
+			// Categories
+			const dates = [
+				{ date: '2025-06-22', day: 'Sunday' },
+				{ date: '2025-06-23', day: 'Monday' },
+				{ date: '2025-06-24', day: 'Tuesday' },
+				{ date: '2025-06-25', day: 'Wednesday' },
+				{ date: '2025-06-26', day: 'Thursday' },
+				{ date: '2025-06-27', day: 'Friday' },
+			];
+
+			categories.forEach(({ id, icon }) => {
+				const categoryElement = document.createElement('div');
+				categoryElement.className = 'category-feature';
+				categoryElement.dataset.category = id;
+				const label = id
+					.replace(/and/g, '&')
+					.replace(/_/g, ' ')
+					.replace(/\b\w/g, char => char.toUpperCase());
+
+				// Create icon element separately to apply color
+				const iconElement = document.createElement('i');
+				iconElement.className = `fa-solid ${icon}`;
+				iconElement.style.color = getCategoryColor(id); // Apply category color
+
+				// Create text span
+				const textSpan = document.createElement('span');
+				textSpan.textContent = label;
+
+				// Append elements
+				categoryElement.appendChild(iconElement);
+				categoryElement.appendChild(textSpan);
+				innerContainer.appendChild(categoryElement);
+			});
+		};
 
 	</script>
 </body>
