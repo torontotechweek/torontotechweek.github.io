@@ -98,19 +98,20 @@ body {
     will-change: transform;
 }
 
+.marker-image-wrapper {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(2px 2px 2px hsla(0, 0%, 0%, 0.2));
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .marker-image {
     display: block;
     pointer-events: auto;
-    max-width: 30px;
-    max-height: 30px;
-    filter: drop-shadow(2px 2px 2px hsla(0, 0%, 0%, 0.2));
-    border: 3px solid hsl(0, 0%, 100%);
-    border-radius: 50%;
-}
-
-.marker-circle {
-    display: none;
-    pointer-events: auto;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 .cluster-box-container {
@@ -118,7 +119,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     transform: translateY(-100%);
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, 1);
     filter: drop-shadow(2px 2px 2px hsla(0, 0%, 0%, 0.2));
     height: auto;
     width: auto;
@@ -126,6 +127,16 @@ body {
     padding: 5px;
     gap: 5px;
     border: 1px solid hsl(0, 0%, 80%);
+}
+
+.cluster-image-wrapper {
+    display: block;
+    height: auto;
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .cluster-image {
@@ -142,8 +153,290 @@ body {
     max-height: 30px;
 }
 
+.maplibregl-popup {
+    all: unset; /* Nuclear option - removes all styles */
+    position: absolute;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+.maplibregl-popup-content {
+    all: unset; /* Remove all inherited styles */
+    display: block;
+}
+
+.maplibregl-popup-tip {
+    display: none !important; /* Remove the pointer triangle */
+}
+
+.custom-popup {
+    position: fixed !important;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    z-index: 1000;
+    pointer-events: auto;
+}
+
+.popup-content {
+    position: relative;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: fit-content; /* Key property */
+    max-width: 100vw; /* Prevent overflow on mobile */
+}
+
+.popup-title {
+    max-width: 400px;
+    width: auto;
+    overflow-wrap: break-word;
+    display: inline-block;
+}
+
+.title-text {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.3;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2px 8px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+#info-box {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: auto;
+    margin: 0 auto;
+    display: none;
+    overflow: visible;
+}
+
+#info-box * {
+    pointer-events: auto;
+}
+
+#info-box.visible {
+    display: block;
+}
+
+.info-box-inner {
+    display: flex;
+    overflow-y: visible;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    /* Center a 300px-wide item */
+    scroll-padding: 0 calc(50vw - 150px);
+    gap: 10px;
+    width: 100%;
+    scrollbar-width: none;
+    padding: 20px 0 10px 0;
+}
+
+/* Center items with pseudo-elements */
+.info-box-inner::before,
+.info-box-inner::after {
+    content: "";
+    /* Half viewport minus half item width */
+    flex: 0 0 calc(50% - 150px);
+    scroll-snap-align: none;
+}
+
+.info-box-inner::-webkit-scrollbar {
+    display: none;
+}
+
+.info-feature {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 240px;
+    scroll-snap-align: center;
+    border-radius: 5px;
+    background: hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+.info-feature.active {
+    filter: none;
+}
+
+.info-popup-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.info-popup-header {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.info-popup-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.info-popup-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.info-popup-image {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.info-popup-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 96%;
+    color: hsl(0, 0%, 100%);
+    filter: drop-shadow(2px 2px 2px hsla(0, 0%, 0%, 0.2));
+    font-size: 16px;
+    font-weight: 800;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.info-popup-text {
+    padding: 10px;
+    line-height: 1.4;
+    overflow-y: auto;
+}
+
+.info-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.info-text.expanded {
+    -webkit-line-clamp: unset;
+}
+
+.info-popup-title-container {
+    display: inline;
+}
+
+.info-popup-mapname {
+    display: inline;
+    vertical-align: middle;
+}
+
+.info-popup-star {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 5px;
+    -webkit-text-stroke: 1px hsl(0, 0%, 50%);
+    text-stroke: 1px hsl(0, 0%, 50%);
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.contact-item i {
+    width: 14px;
+    margin-top: 3px;
+    text-align: center;
+    color: hsl(0, 0%, 40%);
+}
+
+.contact-item a {
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.discount-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.discount-text.expanded {
+    -webkit-line-clamp: unset;
+}
+
+.info-popup-footer {
+    display: flex;
+    gap: 5px;
+    margin-top: auto;
+    padding: 5px 5px 10px 5px;
+    background-color: hsl(0, 0%, 97%);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-footer-column {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.info-footer-column a {
+    text-decoration: none;
+}
+
 h1 {
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 400;
     line-height: 1;
 }
