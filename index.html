@@ -292,7 +292,7 @@
 			popupContent.className = 'popup-content';
 
 			// Add title
-			const title = document.createElement('h3');
+			const title = document.createElement('h1');
 			title.className = 'popup-title';
 			title.textContent = properties.title || 'Untitled Location';
 			popupContent.appendChild(title);
@@ -319,16 +319,60 @@
 
 			// Create and show popup
 			const popup = new maplibregl.Popup({
-				closeButton: false,
+				closeButton: true,
 				closeOnClick: true,
-				anchor: 'left',
-				offset: 25
+				anchor: 'left'
 			})
 				.setLngLat(coordinates)
 				.setDOMContent(popupContent)
 				.addTo(map);
 		});
 
+		map.on('click', 'clusters', async (e) => {    
+			const clusterFeatures = map.queryRenderedFeatures(e.point, {
+    layers: ['clusters'] // Make sure this matches your cluster layer name
+});
+
+if (!clusterFeatures.length) {
+    console.error('No cluster features found at click point');
+    return;
+}
+
+const clusterId = clusterFeatures[0].properties.cluster_id;
+console.log('Cluster ID:', clusterId);
+
+const features = map.querySourceFeatures('location'); // 'location' is your source ID
+
+// Array to hold all features (including individual features from clusters)
+let allFeatures = [];
+
+// Process each feature
+for (const feature of features) { 
+	if (feature.properties.cluster) {
+		// Handle clustered features
+		const clusterId = feature.properties.cluster_id;
+
+		try {
+			// Get the individual features within the cluster
+			const clusterFeatures = await map.getSource('location').getClusterLeaves(
+				clusterId,
+				Infinity, // Maximum number of points to return
+				0 // Offset (for pagination)
+			);
+
+			// Add the individual features to the allFeatures array
+			allFeatures = allFeatures.concat(clusterFeatures);
+		} catch (error) {
+			console.error('Error fetching cluster leaves:', error);
+		}
+	} else {
+		return
+	}
+}
+
+
+});
+		
 		map.once('load', () => {
 			createCategoryBox();
 		});
