@@ -4,7 +4,7 @@
 	"metadata": {
 		"maputnik:renderer": "mbgljs"
 	},
-	"glyphs": "https://https://github.com/torontotechweek/torontotechweek.github.io/assets/fonts/{fontstack}/{range}.pbf",
+	"glyphs": "https://torontotechweek.github.io/assets/fonts/{fontstack}/{range}.pbf",
 	"sprite": "https://tile-server.mappedin.com/styles/mappedin/sprite",
 	"sources": {
 		"osm": {
