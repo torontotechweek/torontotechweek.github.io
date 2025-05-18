@@ -13,13 +13,15 @@
 
 <body>
 
-	<div id="map"></div>
-	<div id="category-box"></div>
-	<div id="info-box"></div>
+	<div class="container">
+		<div id="map"></div>
+		<div id="info-box-day"></div>
+		<div id="info-box"></div>
+	</div>
 
 	<script>
 
-		const locationFile = 'data/ttw2025_with_buildings.geojson'
+		const locationFile = 'data/ttw2025_iso.geojson'
 		const zoomThreshold = 18
 		const imgSource = 'img'
 		let currentActiveCategory = 'all';
@@ -103,7 +105,7 @@
 							10
 						],
 						'fill-extrusion-base': 0,
-						'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, 0.5, 17, 0.5, 18, 0],
+						'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, 0.5, 17, 0.5, 18, 0]
 					},
 					'minzoom': 15
 				}
@@ -232,22 +234,33 @@
 				}
 			});
 
+			map.once('idle', () => {
+				//createCategoryBox();
+				updateInfoBox();
+			});
+
 		});
 
 		const filterLocation = (category) => {
-			if (!locationData) return;
+	if (!locationData) return;
 
-			const filtered = {
-				...locationData,
-				features: category === 'all'
-					? locationData.features
-					: locationData.features.filter(f => f.properties.start_date_iso?.startsWith(category))
-			};
+	const categoryTime = new Date(category).getTime();
 
-			map.getSource('events').setData(filtered);
+	const filtered = {
+		...locationData,
+		features:
+			category === 'all'
+				? locationData.features
+				: locationData.features.filter(f => {
+					const startTime = new Date(f.properties.start_date).getTime();
+					const endTime = new Date(f.properties.end_date).getTime();
+					return categoryTime >= startTime && categoryTime < endTime;
+				})
+	};
 
-			currentActiveCategory = category;
-		};
+	map.getSource('events').setData(filtered);
+	currentActiveCategory = category;
+};
 
 		const createCategoryBox = () => {
 			const categoryBox = document.getElementById('category-box');
@@ -298,16 +311,15 @@
 			popupContent.appendChild(title);
 
 			// Add image if available
-			if (properties.image) {
-				const imgContainer = document.createElement('div');
-				imgContainer.className = 'popup-image-container';
-				const img = document.createElement('img');
-				img.src = properties.cover;
-				img.alt = properties.title || '';
-				img.className = 'popup-image';
-				imgContainer.appendChild(img);
-				popupContent.appendChild(imgContainer);
-			}
+			// if (properties.cover) {
+			// 	const imgContainer = document.createElement('div');
+			// 	imgContainer.className = 'popup-image-container';
+			// 	const img = document.createElement('img');
+			// 	img.src = properties.cover;
+			// 	img.className = 'popup-image';
+			// 	imgContainer.appendChild(img);
+			// 	popupContent.appendChild(imgContainer);
+			// }
 
 			// Add description
 			if (properties.description) {
@@ -328,54 +340,126 @@
 				.addTo(map);
 		});
 
-		map.on('click', 'clusters', async (e) => {    
-			const clusterFeatures = map.queryRenderedFeatures(e.point, {
-    layers: ['clusters'] // Make sure this matches your cluster layer name
-});
+		const updateInfoBox = async () => {
+			const infoBox = document.getElementById('info-box');
 
-if (!clusterFeatures.length) {
-    console.error('No cluster features found at click point');
-    return;
-}
+			// 1. Extract all unique dates (start + end)
+			const allDates = [];
 
-const clusterId = clusterFeatures[0].properties.cluster_id;
-console.log('Cluster ID:', clusterId);
+			const processFeature = (feature) => {
+				const { start_date, end_date } = feature.properties;
+				if (start_date) allDates.push(start_date);
+				if (end_date) allDates.push(end_date);
+			};
 
-const features = map.querySourceFeatures('location'); // 'location' is your source ID
+			// Process features
+			for (const feature of locationData.features) {
+				processFeature(feature);
+			}
 
-// Array to hold all features (including individual features from clusters)
-let allFeatures = [];
+			// Remove duplicates and invalid dates, then sort chronologically
+			const uniqueValidDates = [...new Set(allDates.filter(Boolean))];
+			uniqueValidDates.sort((a, b) => new Date(a) - new Date(b));
 
-// Process each feature
-for (const feature of features) { 
-	if (feature.properties.cluster) {
-		// Handle clustered features
-		const clusterId = feature.properties.cluster_id;
+			// 2. Create the horizontal scroller
+			const innerContainer = document.createElement('div');
+			innerContainer.className = 'info-box-inner';
 
-		try {
-			// Get the individual features within the cluster
-			const clusterFeatures = await map.getSource('location').getClusterLeaves(
-				clusterId,
-				Infinity, // Maximum number of points to return
-				0 // Offset (for pagination)
-			);
+			// 3. Format and display each date
+			uniqueValidDates.forEach(dateString => {
+				const dateElement = document.createElement('div');
+				dateElement.className = 'info-feature';
+				dateElement.dataset.category = dateString;
 
-			// Add the individual features to the allFeatures array
-			allFeatures = allFeatures.concat(clusterFeatures);
-		} catch (error) {
-			console.error('Error fetching cluster leaves:', error);
+				// Parse the date while preserving timezone
+				const date = new Date(dateString);
+
+				// Format to "May 8 10PM"
+				const formattedDate = formatToEST(date);
+
+				dateElement.textContent = formattedDate;
+				innerContainer.appendChild(dateElement);
+			});
+
+			infoBox.innerHTML = '';
+			infoBox.appendChild(innerContainer);
+
+			// Get center feature
+			setupFeatureTracking();
+		};
+
+		function formatToEST(date) {
+			const formatter = new Intl.DateTimeFormat('en-US', {
+				timeZone: 'America/New_York',
+				month: 'long',   // e.g., "July"
+				day: '2-digit',  // e.g., "08"
+				hour: 'numeric',
+				hour12: true     // e.g., "10 PM"
+			});
+
+			const parts = formatter.formatToParts(date);
+			const month = parts.find(p => p.type === 'month')?.value;
+			const day = parts.find(p => p.type === 'day')?.value;
+			const hour = parts.find(p => p.type === 'hour')?.value;
+			const dayPeriod = parts.find(p => p.type === 'dayPeriod')?.value;
+
+			return `${month} ${day} ${hour}${dayPeriod}`;
 		}
-	} else {
-		return
-	}
-}
 
+		// Helper function scroll listener
+		let isUserScrolling = false;
 
-});
-		
-		map.once('load', () => {
-			createCategoryBox();
-		});
+		function setupFeatureTracking() {
+			const container = document.querySelector('.info-box-inner');
+			if (!container) return;
+
+			// Detect ALL user scroll initiations (mouse, trackpad, touch, wheel)
+			container.addEventListener('mousedown', () => isUserScrolling = true);
+			container.addEventListener('touchstart', () => isUserScrolling = true);
+			container.addEventListener('wheel', () => isUserScrolling = true, { passive: true });
+
+			// Add keyboard scroll detection (NEW)
+			document.addEventListener('keydown', (e) => {
+				const scrollKeys = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+					'PageUp', 'PageDown', 'Home', 'End'];
+				if (scrollKeys.includes(e.key)) {
+					isUserScrolling = true;
+				}
+			});
+
+			// Handle scroll events
+			container.addEventListener('scroll', () => {
+				if (!isUserScrolling) return; // Ignore programmatic scrolls
+
+				clearTimeout(window.scrollTimer);
+				window.scrollTimer = setTimeout(() => {
+					handleCenterFeature(); // Your existing center-feature function
+					isUserScrolling = false; // Reset after scroll ends
+				}, 150); // 150ms delay after scrolling stops
+			});
+		}
+
+		// Helper function to get center infobox feature
+		function handleCenterFeature() {
+			const container = document.querySelector('.info-box-inner');
+			if (!container) return;
+
+			// Calculate center position
+			const centerX = container.scrollLeft + (container.offsetWidth / 2);
+
+			// Find centered feature
+			const features = document.querySelectorAll('.info-feature');
+			for (const feature of features) {
+				const featureStart = feature.offsetLeft;
+				const featureEnd = featureStart + feature.offsetWidth;
+
+				if (featureStart <= centerX && featureEnd >= centerX) {
+					const category = feature.dataset.category;
+
+					filterLocation(category);
+				}
+			}
+		}
 
 	</script>
 </body>
