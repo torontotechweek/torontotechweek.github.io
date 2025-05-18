@@ -343,23 +343,13 @@
 		const updateInfoBox = async () => {
 			const infoBox = document.getElementById('info-box');
 
-			// 1. Extract all unique dates (start + end)
-			const allDates = [];
-
-			const processFeature = (feature) => {
-				const { start_date, end_date } = feature.properties;
-				if (start_date) allDates.push(start_date);
-				if (end_date) allDates.push(end_date);
-			};
-
-			// Process features
-			for (const feature of locationData.features) {
-				processFeature(feature);
-			}
-
-			// Remove duplicates and invalid dates, then sort chronologically
-			const uniqueValidDates = [...new Set(allDates.filter(Boolean))];
-			uniqueValidDates.sort((a, b) => new Date(a) - new Date(b));
+			const uniqueValidDates = [
+				...new Set(
+					locationData.features
+						.map(f => f.properties.start_date)
+						.filter(Boolean)
+				)
+			].sort((a, b) => new Date(a) - new Date(b));
 
 			// 2. Create the horizontal scroller
 			const innerContainer = document.createElement('div');
@@ -391,19 +381,21 @@
 		function formatToEST(date) {
 			const formatter = new Intl.DateTimeFormat('en-US', {
 				timeZone: 'America/New_York',
-				month: 'long',   // e.g., "July"
-				day: '2-digit',  // e.g., "08"
+				month: 'long',   // "July"
+				day: '2-digit',  // "08"
 				hour: 'numeric',
-				hour12: true     // e.g., "10 PM"
+				minute: '2-digit',
+				hour12: true
 			});
 
 			const parts = formatter.formatToParts(date);
 			const month = parts.find(p => p.type === 'month')?.value;
 			const day = parts.find(p => p.type === 'day')?.value;
 			const hour = parts.find(p => p.type === 'hour')?.value;
+			const minute = parts.find(p => p.type === 'minute')?.value;
 			const dayPeriod = parts.find(p => p.type === 'dayPeriod')?.value;
 
-			return `${month} ${day} ${hour}${dayPeriod}`;
+			return `${month} ${day} ${hour}:${minute}${dayPeriod}`;
 		}
 
 		// Helper function scroll listener
