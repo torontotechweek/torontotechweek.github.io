@@ -252,7 +252,7 @@
 			popupContainer.classList.add('active');
 			popupOpen = true;
 
-			flyToFeature(feature.geometry.coordinates);
+			clickFeature(feature);
 		});
 
 		// Close popup when clicking outside
@@ -277,6 +277,9 @@
 			if (features.length === 0) {
 				popupContainer.classList.remove('active');
 				popupOpen = false;
+
+				// Set all features to default style first
+				map.setPaintProperty('points', 'circle-color', 'hsl(0, 0%, 0%)');
 			}
 		});
 
@@ -443,10 +446,21 @@
         // Helper function to handle clicks
         const clickFeature = (feature) => {
             let coordinates = feature.geometry.coordinates;
+			let id = feature.properties.api_id;
 
             try {
+
                 // Fly to location
-                flyToFeature(coordinates);
+                // flyToFeature(coordinates);
+
+				// Set all features to default style first
+				map.setPaintProperty('points', 'circle-color', [
+					'case',
+					['==', ['get', 'api_id'], id],
+					'hsl(350, 85%, 45%)',
+					'hsl(0, 0%, 0%)'
+				]);
+				
             } catch (error) {
                 console.error('Error handling feature click:', error);
             }
@@ -463,7 +477,7 @@
 
                 map.easeTo({
                     center: coordinates,
-                    zoom: zoomThreshold + 2,
+                    zoom: zoomThreshold - 1,
                     offset: [0, offsetY],
                     essential: true
                 });
