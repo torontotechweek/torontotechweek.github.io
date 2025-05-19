@@ -17,6 +17,7 @@
 		<div id="map"></div>
 		<div id="info-box-day"></div>
 		<div id="info-box"></div>
+		<div id="popup-container"></div>
 	</div>
 
 	<script>
@@ -25,6 +26,7 @@
 		const zoomThreshold = 18
 		const imgSource = 'img'
 		let currentActiveCategory = 'all';
+		let popupOpen = false;
 		let locationData;
 
 		var map = new maplibregl.Map({
@@ -201,106 +203,24 @@
 				'position': [1.15, 210, 40]
 			});
 
-			// Handle clicks on category filter
-			document.addEventListener('click', (e) => {
-				const categoryFeatureElement = e.target.closest('.category-feature');
-				if (!categoryFeatureElement) return;
-
-				const category = categoryFeatureElement.dataset.category;
-				if (!category) return;
-
-				// Close any open popup when clicking a category
-				if (window.featurePopup) {
-					window.featurePopup.remove();
-					window.featurePopup = null;
-				}
-
-				// Remove all activeCategory classes first
-				document.querySelectorAll('.category-feature.activeCategory').forEach(el => {
-					el.classList.remove('activeCategory');
-				});
-
-				// Toggle logic
-				if (currentActiveCategory === category) {
-					// Second click on same category - remove filter
-					filterLocation('all'); // Show all features
-					categoryFeatureElement.classList.remove('activeCategory');
-					currentActiveCategory = 'all';
-				} else {
-					// New category selected
-					filterLocation(category);
-					categoryFeatureElement.classList.add('activeCategory');
-					currentActiveCategory = category;
-				}
-			});
-
 			map.once('idle', () => {
-				//createCategoryBox();
 				updateInfoBox();
 			});
 
 		});
 
-		const filterLocation = (category) => {
-	if (!locationData) return;
-
-	const categoryTime = new Date(category).getTime();
-
-	const filtered = {
-		...locationData,
-		features:
-			category === 'all'
-				? locationData.features
-				: locationData.features.filter(f => {
-					const startTime = new Date(f.properties.start_date).getTime();
-					const endTime = new Date(f.properties.end_date).getTime();
-					return categoryTime >= startTime && categoryTime < endTime;
-				})
-	};
-
-	map.getSource('events').setData(filtered);
-	currentActiveCategory = category;
-};
-
-		const createCategoryBox = () => {
-			const categoryBox = document.getElementById('category-box');
-			categoryBox.innerHTML = '';
-
-			const innerContainer = document.createElement('div');
-			innerContainer.className = 'category-box-inner';
-			categoryBox.appendChild(innerContainer);
-
-			// Categories
-			const categories = [
-				{ date: '2025-06-22', day: 'Sun' },
-				{ date: '2025-06-23', day: 'Mon' },
-				{ date: '2025-06-24', day: 'Tue' },
-				{ date: '2025-06-25', day: 'Wed' },
-				{ date: '2025-06-26', day: 'Thu' },
-				{ date: '2025-06-27', day: 'Fri' },
-			];
-
-			categories.forEach(({ date, day }) => {
-				const categoryElement = document.createElement('div');
-				categoryElement.className = 'category-feature';
-				categoryElement.dataset.category = date;
-
-				// Create text span
-				const textSpan = document.createElement('p');
-				textSpan.textContent = day;
-
-				// Append elements
-				categoryElement.appendChild(textSpan);
-				innerContainer.appendChild(categoryElement);
-			});
-		};
-
 		map.on('click', 'points', (e) => {
 			const feature = e.features[0];
 			const properties = feature.properties;
-			const coordinates = e.lngLat;
 
-			// Create popup content container
+			// Find the popup container
+			const popupContainer = document.getElementById('popup-container');
+			if (!popupContainer) return;
+
+			// Clear any existing content
+			popupContainer.innerHTML = '';
+
+			// Create popup content
 			const popupContent = document.createElement('div');
 			popupContent.className = 'popup-content';
 
@@ -310,17 +230,6 @@
 			title.textContent = properties.title || 'Untitled Location';
 			popupContent.appendChild(title);
 
-			// Add image if available
-			// if (properties.cover) {
-			// 	const imgContainer = document.createElement('div');
-			// 	imgContainer.className = 'popup-image-container';
-			// 	const img = document.createElement('img');
-			// 	img.src = properties.cover;
-			// 	img.className = 'popup-image';
-			// 	imgContainer.appendChild(img);
-			// 	popupContent.appendChild(imgContainer);
-			// }
-
 			// Add description
 			if (properties.description) {
 				const desc = document.createElement('p');
@@ -329,15 +238,12 @@
 				popupContent.appendChild(desc);
 			}
 
-			// Create and show popup
-			const popup = new maplibregl.Popup({
-				closeButton: true,
-				closeOnClick: true,
-				anchor: 'left'
-			})
-				.setLngLat(coordinates)
-				.setDOMContent(popupContent)
-				.addTo(map);
+			// Insert the content
+			popupContainer.appendChild(popupContent);
+
+			// Show popup container
+			popupContainer.classList.add('active');
+			popupOpen = true;
 		});
 
 		const updateInfoBox = async () => {
@@ -355,6 +261,14 @@
 			const innerContainer = document.createElement('div');
 			innerContainer.className = 'info-box-inner';
 
+			// Create reset category element
+			const resetElement = document.createElement('div');
+			resetElement.className = 'info-feature reset-category';
+			resetElement.dataset.category = 'all';
+			resetElement.textContent = 'Scroll to filter >>';
+
+			innerContainer.appendChild(resetElement);
+
 			// 3. Format and display each date
 			uniqueValidDates.forEach(dateString => {
 				const dateElement = document.createElement('div');
@@ -367,12 +281,15 @@
 				// Format to "May 8 10PM"
 				const formattedDate = formatToEST(date);
 
-				dateElement.textContent = formattedDate;
+				dateElement.innerHTML = formattedDate;
 				innerContainer.appendChild(dateElement);
 			});
 
 			infoBox.innerHTML = '';
 			infoBox.appendChild(innerContainer);
+
+			// Reset infobox
+			innerContainer.scrollLeft = 0;
 
 			// Get center feature
 			setupFeatureTracking();
@@ -395,7 +312,15 @@
 			const minute = parts.find(p => p.type === 'minute')?.value;
 			const dayPeriod = parts.find(p => p.type === 'dayPeriod')?.value;
 
-			return `${month} ${day} ${hour}:${minute}${dayPeriod}`;
+			return `
+				<div class="date-top">
+					<span class="date-month">${month}</span>
+					<span class="date-day">${day}</span>
+				</div>
+				<div class="date-bottom">
+					<span class="date-hour">${hour}:</span><span class="date-minute">${minute}</span><span class="date-ampm">${dayPeriod}</span>
+				</div>
+			`;
 		}
 
 		// Helper function scroll listener
@@ -410,7 +335,7 @@
 			container.addEventListener('touchstart', () => isUserScrolling = true);
 			container.addEventListener('wheel', () => isUserScrolling = true, { passive: true });
 
-			// Add keyboard scroll detection (NEW)
+			// Add keyboard scroll detection
 			document.addEventListener('keydown', (e) => {
 				const scrollKeys = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
 					'PageUp', 'PageDown', 'Home', 'End'];
@@ -448,10 +373,38 @@
 				if (featureStart <= centerX && featureEnd >= centerX) {
 					const category = feature.dataset.category;
 
+					// Remove active-category from all features
+					features.forEach(f => f.classList.remove('active-category'));
+
+					// Add active-category to centered one
+					feature.classList.add('active-category');
+
+					// Apply filter
 					filterLocation(category);
 				}
 			}
 		}
+
+		const filterLocation = (category) => {
+			if (!locationData) return;
+
+			const categoryTime = new Date(category).getTime();
+
+			const filtered = {
+				...locationData,
+				features:
+					category === 'all'
+						? locationData.features
+						: locationData.features.filter(f => {
+							const startTime = new Date(f.properties.start_date).getTime();
+							const endTime = new Date(f.properties.end_date).getTime();
+							return categoryTime >= startTime && categoryTime < endTime;
+						})
+			};
+
+			map.getSource('events').setData(filtered);
+			currentActiveCategory = category;
+		};
 
 	</script>
 </body>
