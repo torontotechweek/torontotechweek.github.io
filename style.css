@@ -46,19 +46,21 @@ body {
 	z-index: 9999;
     border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+    display: none;
 }
 
 #popup-container.active {
 	height: 250px;
+    display: block;
 }
 
 .popup-content {
     position: relative;
-    padding: 0px 10px;
+    padding: 20px;
     overflow-y: auto;
     overflow-x: hidden;
-    width: 250px;
-    max-width: 90vw;
+    width: 90vw;
+    max-width: 700px;
 }
 
 .popup-image-container {
@@ -178,4 +180,25 @@ p {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.4;
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 8px;  /* Adjust pill width */
+    background-color: transparent; /* Remove track background */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 0%, 0.2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsla(0, 0%, 0%, 0.3); /* Hover state */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: hsla(0, 0%, 0%, 0.2) transparent;
 }

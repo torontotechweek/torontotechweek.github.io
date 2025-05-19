@@ -203,34 +203,44 @@
 				'position': [1.15, 210, 40]
 			});
 
+			// Change cursor to pointer when hovering over points
+			map.on('mouseenter', 'points', () => {
+				map.getCanvas().style.cursor = 'pointer';
+			});
+
+			// Change cursor back to default when leaving points
+			map.on('mouseleave', 'points', () => {
+				map.getCanvas().style.cursor = '';
+			});
+
 			map.once('idle', () => {
 				updateInfoBox();
 			});
 
 		});
 
+		let ignoreNextMapClick = false;
+
 		map.on('click', 'points', (e) => {
 			const feature = e.features[0];
 			const properties = feature.properties;
-
-			// Find the popup container
 			const popupContainer = document.getElementById('popup-container');
 			if (!popupContainer) return;
 
-			// Clear any existing content
-			popupContainer.innerHTML = '';
+			// Set flag to ignore the immediate map click that triggered this
+			ignoreNextMapClick = true;
 
-			// Create popup content
+			// Clear and create popup content
+			popupContainer.innerHTML = '';
+			
 			const popupContent = document.createElement('div');
 			popupContent.className = 'popup-content';
-
-			// Add title
+			
 			const title = document.createElement('h1');
 			title.className = 'popup-title';
 			title.textContent = properties.title || 'Untitled Location';
 			popupContent.appendChild(title);
 
-			// Add description
 			if (properties.description) {
 				const desc = document.createElement('p');
 				desc.className = 'popup-description';
@@ -238,12 +248,36 @@
 				popupContent.appendChild(desc);
 			}
 
-			// Insert the content
 			popupContainer.appendChild(popupContent);
-
-			// Show popup container
 			popupContainer.classList.add('active');
 			popupOpen = true;
+
+			flyToFeature(feature.geometry.coordinates);
+		});
+
+		// Close popup when clicking outside
+		map.on('click', (e) => {
+			if (!popupOpen) return;
+			
+			// Skip if this is the click that opened the popup
+			if (ignoreNextMapClick) {
+				ignoreNextMapClick = false;
+				return;
+			}
+			
+			const popupContainer = document.getElementById('popup-container');
+			if (!popupContainer) return;
+			
+			// Check if we clicked on a point feature
+			const features = map.queryRenderedFeatures(e.point, {
+				layers: ['points']
+			});
+			
+			// Only close if NOT clicking on a point
+			if (features.length === 0) {
+				popupContainer.classList.remove('active');
+				popupOpen = false;
+			}
 		});
 
 		const updateInfoBox = async () => {
@@ -405,6 +439,38 @@
 			map.getSource('events').setData(filtered);
 			currentActiveCategory = category;
 		};
+
+        // Helper function to handle clicks
+        const clickFeature = (feature) => {
+            let coordinates = feature.geometry.coordinates;
+
+            try {
+                // Fly to location
+                flyToFeature(coordinates);
+            } catch (error) {
+                console.error('Error handling feature click:', error);
+            }
+        };
+
+        // Helper function to fly to feature
+        const flyToFeature = (coordinates) => {
+            return new Promise((resolve) => {
+
+                // Calculate dynamic offset based on viewport height
+                const viewportHeight = window.innerHeight;
+                const isMobile = window.innerWidth <= 768; // Common mobile breakpoint
+                const offsetY = isMobile ? -viewportHeight * 0.15 : -80; // Adjust percentage as needed
+
+                map.easeTo({
+                    center: coordinates,
+                    zoom: zoomThreshold + 2,
+                    offset: [0, offsetY],
+                    essential: true
+                });
+
+                map.once('moveend', resolve);
+            });
+        };
 
 	</script>
 </body>
