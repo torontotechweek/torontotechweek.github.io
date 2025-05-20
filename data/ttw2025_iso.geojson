@@ -1201,31 +1201,6 @@
         {
             "type": "Feature",
             "properties": {
-                "url": "https://lu.ma/w6a1abi9",
-                "slug": "w6a1abi9",
-                "start_date": "June 25, 2025 17:30",
-                "end_date": "2025-07-04T01:00:00.000Z",
-                "cover": "https://images.lumacdn.com/event-covers/er/d60b4b46-5f94-4bb4-a6aa-a3a4a13596b2.png",
-                "title": "JupiterHR Career Catalyst",
-                "api_id": "evt-GfoVXo4qSBqHOlT",
-                "type": "event",
-                "description": "The Career Catalyst is JupiterHR’s first in-person event, designed to connect high-potential job seekers with forward-thinking companies committed to inclusive hiring. This high-impact experience goes beyond traditional networking, it's a space where ambition meets opportunity, and real career pathways are created. Attendees will engage in meaningful conversations, gain career-building insights, and connect directly with employers looking to hire diverse, skilled talent. Sponsoring partners will have the chance to elevate their brand, build their talent pipeline, and make a direct impact.",
-                "tags": "HR / Hiring",
-                "privacy": "Invite-only.",
-                "approval": "Approved by TTW",
-                "address": "Toronto, Ontario"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -79.388303,
-                    43.654805
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "url": "https://lu.ma/40hn6l95",
                 "slug": "40hn6l95",
                 "start_date": "2025-06-24T11:30:00.000Z",

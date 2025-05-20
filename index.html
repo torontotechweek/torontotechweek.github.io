@@ -144,7 +144,7 @@
 				source: 'events',
 				filter: ['!', ['has', 'point_count']],
 				paint: {
-					'circle-radius': 10,
+					'circle-radius': 8,
 					'circle-color': 'hsl(0, 0%, 0%)',
 					'circle-stroke-width': 1.5,
 					'circle-stroke-color': 'hsl(0, 0%, 100%)'
@@ -286,7 +286,6 @@
 			}
 		});
 
-		// Create time slider
 		const updateInfoBox = async () => {
 			const infoBox = document.getElementById('info-box');
 			const infoBoxDay = document.getElementById('info-box-day');
@@ -307,10 +306,7 @@
 			const firstPerDay = [];
 
 			uniqueValidDates.forEach(dateStr => {
-				const estDate = new Date(dateStr).toLocaleString('en-US', {
-					timeZone: 'America/New_York'
-				});
-				const dayInEST = new Intl.DateTimeFormat('en-CA', { // ISO-like format YYYY-MM-DD
+				const dayInEST = new Intl.DateTimeFormat('en-CA', {
 					timeZone: 'America/New_York',
 					year: 'numeric',
 					month: '2-digit',
@@ -323,8 +319,30 @@
 				}
 			});
 
-			// 2. Add navigation buttons
-			let currentDayIndex = 0;
+			// 2. Create the horizontal scroller
+			const innerContainer = document.createElement('div');
+			innerContainer.className = 'info-box-inner';
+
+			// Create reset category element
+			const resetElement = document.createElement('div');
+			resetElement.className = 'info-feature reset-category';
+			resetElement.dataset.category = 'all';
+			resetElement.textContent = 'Scroll to filter >>';
+			innerContainer.appendChild(resetElement);
+
+			// 3. Format and display each date
+			uniqueValidDates.forEach(dateString => {
+				const dateElement = document.createElement('div');
+				dateElement.className = 'info-feature';
+				dateElement.dataset.category = dateString;
+				dateElement.innerHTML = formatToEST(new Date(dateString));
+				innerContainer.appendChild(dateElement);
+			});
+
+			infoBox.appendChild(innerContainer);
+
+			// 4. Add navigation buttons
+			let currentDayIndex = -1; // Start before first day (-1 = reset category)
 
 			const createNavButton = (label, onClick) => {
 				const btn = document.createElement('div');
@@ -335,15 +353,24 @@
 			};
 
 			const updateHighlight = () => {
-				const target = firstPerDay[currentDayIndex];
-				const el = document.querySelector(`.info-feature[data-category="${target}"]`);
-				if (el) {
-					el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+				if (currentDayIndex === -1) {
+					// Scroll to reset category
+					resetElement.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+				} else {
+					// Scroll to day
+					const target = firstPerDay[currentDayIndex];
+					const el = document.querySelector(`.info-feature[data-category="${target}"]`);
+					if (el) el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
 				}
 			};
 
+			const firstBtn = createNavButton('|◀', () => {
+				currentDayIndex = -1; // Reset category
+				updateHighlight();
+			});
+
 			const backBtn = createNavButton('◀◀', () => {
-				if (currentDayIndex > 0) {
+				if (currentDayIndex > -1) { // Allow going back to reset category
 					currentDayIndex--;
 					updateHighlight();
 				}
@@ -351,48 +378,30 @@
 
 			const fwdBtn = createNavButton('▶▶', () => {
 				if (currentDayIndex < firstPerDay.length - 1) {
-					currentDayIndex++;
+					currentDayIndex = Math.max(0, currentDayIndex + 1); // Skip -1 if coming from reset
 					updateHighlight();
 				}
 			});
 
-			infoBoxDay.appendChild(backBtn);
-			infoBoxDay.appendChild(fwdBtn);
-
-			// 2. Create the horizontal scroller
-			const innerContainer = document.createElement('div');
-			innerContainer.className = 'info-box-inner';
-
-			// Create reset category element
-			const resetElement = document.createElement('div');
-			resetElement.className = 'info-feature reset-category';
-			resetElement.dataset.category = 'all';
-			resetElement.textContent = 'Scroll to filter >>';
-
-			innerContainer.appendChild(resetElement);
-
-			// 3. Format and display each date
-			uniqueValidDates.forEach(dateString => {
-				const dateElement = document.createElement('div');
-				dateElement.className = 'info-feature';
-				dateElement.dataset.category = dateString;
-
-				// Parse the date while preserving timezone
-				const date = new Date(dateString);
-
-				// Format to "May 8 10PM"
-				const formattedDate = formatToEST(date);
-
-				dateElement.innerHTML = formattedDate;
-				innerContainer.appendChild(dateElement);
+			const lastBtn = createNavButton('▶|', () => {
+				// Get ALL date elements (including non-first-of-day items)
+				const allDateElements = document.querySelectorAll('.info-feature:not(.reset-category)');
+				
+				// Scroll to the very last item
+				if (allDateElements.length > 0) {
+					currentDayIndex = firstPerDay.length - 1; // Keep day index tracking accurate
+					allDateElements[allDateElements.length - 1].scrollIntoView({ 
+						behavior: 'smooth', 
+						inline: 'center', 
+						block: 'nearest' 
+					});
+				}
 			});
 
-			infoBox.appendChild(innerContainer);
+			infoBoxDay.append(firstBtn, backBtn, fwdBtn, lastBtn);
 
-			// Reset infobox
+			// Initialize at reset position
 			innerContainer.scrollLeft = 0;
-
-			// Get center feature
 			setupFeatureTracking();
 		};
 
