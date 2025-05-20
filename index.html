@@ -3,6 +3,7 @@
 
 <head>
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta charset="UTF-8" />
 	<script src="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.js"></script>
 	<link href="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
 	<link
@@ -15,8 +16,8 @@
 
 	<div class="container">
 		<div id="map"></div>
-		<div id="info-box-day"></div>
 		<div id="info-box"></div>
+		<div id="info-box-day"></div>
 		<div id="popup-container"></div>
 	</div>
 
@@ -143,7 +144,7 @@
 				source: 'events',
 				filter: ['!', ['has', 'point_count']],
 				paint: {
-					'circle-radius': 7,
+					'circle-radius': 10,
 					'circle-color': 'hsl(0, 0%, 0%)',
 					'circle-stroke-width': 1.5,
 					'circle-stroke-color': 'hsl(0, 0%, 100%)'
@@ -219,8 +220,10 @@
 
 		});
 
+		// This is needed to allow other clicks (wild)!
 		let ignoreNextMapClick = false;
 
+		// Handle clicks on points
 		map.on('click', 'points', (e) => {
 			const feature = e.features[0];
 			const properties = feature.properties;
@@ -232,10 +235,10 @@
 
 			// Clear and create popup content
 			popupContainer.innerHTML = '';
-			
+
 			const popupContent = document.createElement('div');
 			popupContent.className = 'popup-content';
-			
+
 			const title = document.createElement('h1');
 			title.className = 'popup-title';
 			title.textContent = properties.title || 'Untitled Location';
@@ -258,21 +261,21 @@
 		// Close popup when clicking outside
 		map.on('click', (e) => {
 			if (!popupOpen) return;
-			
+
 			// Skip if this is the click that opened the popup
 			if (ignoreNextMapClick) {
 				ignoreNextMapClick = false;
 				return;
 			}
-			
+
 			const popupContainer = document.getElementById('popup-container');
 			if (!popupContainer) return;
-			
+
 			// Check if we clicked on a point feature
 			const features = map.queryRenderedFeatures(e.point, {
 				layers: ['points']
 			});
-			
+
 			// Only close if NOT clicking on a point
 			if (features.length === 0) {
 				popupContainer.classList.remove('active');
@@ -283,8 +286,13 @@
 			}
 		});
 
+		// Create time slider
 		const updateInfoBox = async () => {
 			const infoBox = document.getElementById('info-box');
+			const infoBoxDay = document.getElementById('info-box-day');
+
+			infoBox.innerHTML = '';
+			infoBoxDay.innerHTML = '';
 
 			const uniqueValidDates = [
 				...new Set(
@@ -293,6 +301,63 @@
 						.filter(Boolean)
 				)
 			].sort((a, b) => new Date(a) - new Date(b));
+
+			// 1. Find first entry for each calendar day
+			const seenDays = new Set();
+			const firstPerDay = [];
+
+			uniqueValidDates.forEach(dateStr => {
+				const estDate = new Date(dateStr).toLocaleString('en-US', {
+					timeZone: 'America/New_York'
+				});
+				const dayInEST = new Intl.DateTimeFormat('en-CA', { // ISO-like format YYYY-MM-DD
+					timeZone: 'America/New_York',
+					year: 'numeric',
+					month: '2-digit',
+					day: '2-digit'
+				}).format(new Date(dateStr));
+
+				if (!seenDays.has(dayInEST)) {
+					seenDays.add(dayInEST);
+					firstPerDay.push(dateStr);
+				}
+			});
+
+			// 2. Add navigation buttons
+			let currentDayIndex = 0;
+
+			const createNavButton = (label, onClick) => {
+				const btn = document.createElement('div');
+				btn.className = 'nav-button';
+				btn.textContent = label;
+				btn.addEventListener('click', onClick);
+				return btn;
+			};
+
+			const updateHighlight = () => {
+				const target = firstPerDay[currentDayIndex];
+				const el = document.querySelector(`.info-feature[data-category="${target}"]`);
+				if (el) {
+					el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+				}
+			};
+
+			const backBtn = createNavButton('◀◀', () => {
+				if (currentDayIndex > 0) {
+					currentDayIndex--;
+					updateHighlight();
+				}
+			});
+
+			const fwdBtn = createNavButton('▶▶', () => {
+				if (currentDayIndex < firstPerDay.length - 1) {
+					currentDayIndex++;
+					updateHighlight();
+				}
+			});
+
+			infoBoxDay.appendChild(backBtn);
+			infoBoxDay.appendChild(fwdBtn);
 
 			// 2. Create the horizontal scroller
 			const innerContainer = document.createElement('div');
@@ -322,7 +387,6 @@
 				innerContainer.appendChild(dateElement);
 			});
 
-			infoBox.innerHTML = '';
 			infoBox.appendChild(innerContainer);
 
 			// Reset infobox
@@ -383,7 +447,8 @@
 
 			// Handle scroll events
 			container.addEventListener('scroll', () => {
-				if (!isUserScrolling) return; // Ignore programmatic scrolls
+				// Enable this ignore programmatic scrolls
+				// if (!isUserScrolling) return;
 
 				clearTimeout(window.scrollTimer);
 				window.scrollTimer = setTimeout(() => {
@@ -443,48 +508,48 @@
 			currentActiveCategory = category;
 		};
 
-        // Helper function to handle clicks
-        const clickFeature = (feature) => {
-            let coordinates = feature.geometry.coordinates;
+		// Helper function to handle clicks
+		const clickFeature = (feature) => {
+			let coordinates = feature.geometry.coordinates;
 			let id = feature.properties.api_id;
 
-            try {
+			try {
 
-                // Fly to location
-                // flyToFeature(coordinates);
+				// Fly to location
+				flyToFeature(coordinates);
 
 				// Set all features to default style first
 				map.setPaintProperty('points', 'circle-color', [
 					'case',
 					['==', ['get', 'api_id'], id],
-					'hsl(350, 85%, 45%)',
+					'hsl(30, 100%, 50%)',
 					'hsl(0, 0%, 0%)'
 				]);
-				
-            } catch (error) {
-                console.error('Error handling feature click:', error);
-            }
-        };
 
-        // Helper function to fly to feature
-        const flyToFeature = (coordinates) => {
-            return new Promise((resolve) => {
+			} catch (error) {
+				console.error('Error handling feature click:', error);
+			}
+		};
 
-                // Calculate dynamic offset based on viewport height
-                const viewportHeight = window.innerHeight;
-                const isMobile = window.innerWidth <= 768; // Common mobile breakpoint
-                const offsetY = isMobile ? -viewportHeight * 0.15 : -80; // Adjust percentage as needed
+		// Helper function to fly to feature
+		const flyToFeature = (coordinates) => {
+			return new Promise((resolve) => {
 
-                map.easeTo({
-                    center: coordinates,
-                    zoom: zoomThreshold - 1,
-                    offset: [0, offsetY],
-                    essential: true
-                });
+				// Calculate dynamic offset based on viewport height
+				const viewportHeight = window.innerHeight;
+				const isMobile = window.innerWidth <= 768; // Common mobile breakpoint
+				const offsetY = isMobile ? -viewportHeight * 0.15 : -80; // Adjust percentage as needed
 
-                map.once('moveend', resolve);
-            });
-        };
+				map.easeTo({
+					center: coordinates,
+					//zoom: zoomThreshold - 2,
+					offset: [0, offsetY],
+					essential: true
+				});
+
+				map.once('moveend', resolve);
+			});
+		};
 
 	</script>
 </body>

@@ -91,6 +91,36 @@ body {
     text-overflow: ellipsis;
 }
 
+#info-box-day {
+    position: fixed;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    z-index: 1000;
+    align-items: center;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 0%, 0.1);
+    transition: background-color 0.2s;
+}
+
+.nav-button:hover {
+    background-color: hsla(0, 0%, 0%, 0.2);
+}
+
 #info-box {
     display: flex;
     position: fixed;
@@ -130,6 +160,7 @@ body {
 }
 
 .info-feature {
+    user-select: none;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -176,7 +207,7 @@ h1 {
     line-height: 1;
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-decoration-color: hsl(350, 85%, 45%);
+    text-decoration-color: hsl(30, 100%, 50%);
 }
 
 p {
