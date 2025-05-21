@@ -225,38 +225,55 @@
 
 		// Handle clicks on points
 		map.on('click', 'points', (e) => {
-			const feature = e.features[0];
-			const properties = feature.properties;
-			const popupContainer = document.getElementById('popup-container');
-			if (!popupContainer) return;
+    const feature = e.features[0];
+    const properties = feature.properties;
+    const popupContainer = document.getElementById('popup-container');
+    if (!popupContainer) return;
 
-			// Set flag to ignore the immediate map click that triggered this
-			ignoreNextMapClick = true;
+    ignoreNextMapClick = true;
+    popupContainer.innerHTML = '';
 
-			// Clear and create popup content
-			popupContainer.innerHTML = '';
+    const popupContent = document.createElement('div');
+    popupContent.className = 'popup-content';
 
-			const popupContent = document.createElement('div');
-			popupContent.className = 'popup-content';
+    // Create flex container
+    const flexContainer = document.createElement('div');
+    flexContainer.className = 'popup-flex-container';
 
-			const title = document.createElement('h1');
-			title.className = 'popup-title';
-			title.textContent = properties.title || 'Untitled Location';
-			popupContent.appendChild(title);
+    // Add image div (left side)
+    const imgContainer = document.createElement('div');
+    imgContainer.className = 'popup-img-container';
+    
+    const img = document.createElement('img');
+    img.src = properties.cover || 'default-image.jpg';
+    imgContainer.appendChild(img);
+    flexContainer.appendChild(imgContainer);
 
-			if (properties.description) {
-				const desc = document.createElement('p');
-				desc.className = 'popup-description';
-				desc.textContent = properties.description;
-				popupContent.appendChild(desc);
-			}
+    // Add text div (right side)
+    const textContainer = document.createElement('div');
+    textContainer.className = 'popup-text-container';
 
-			popupContainer.appendChild(popupContent);
-			popupContainer.classList.add('active');
-			popupOpen = true;
+    const title = document.createElement('h1');
+    title.className = 'popup-title';
+    title.textContent = properties.title || 'Untitled Location';
+    textContainer.appendChild(title);
 
-			clickFeature(feature);
-		});
+    if (properties.description) {
+        const desc = document.createElement('p');
+        desc.className = 'popup-description';
+        desc.textContent = properties.description;
+        textContainer.appendChild(desc);
+    }
+    flexContainer.appendChild(textContainer);
+
+    // Add flex container to popup
+    popupContent.appendChild(flexContainer);
+    popupContainer.appendChild(popupContent);
+    popupContainer.classList.add('active');
+
+	popupOpen = true;
+    clickFeature(feature);
+});
 
 		// Close popup when clicking outside
 		map.on('click', (e) => {
