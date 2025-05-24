@@ -218,6 +218,20 @@
 				updateInfoBox();
 			});
 
+			// Extract all unique tags from all features
+			const uniqueTags = [...new Set(
+				locationData.features
+					.map(feature => feature.properties.tags || '') // Get tags or empty string
+					.filter(tags => tags.trim()) // Remove empty tags
+					.map(tags => {
+						// Remove surrounding backslashes if present
+						const cleaned = tags.replace(/^\\|\\$/g, '');
+						return cleaned; // Return as single tag
+					})
+			)];
+
+			console.log('Unique tags:', uniqueTags);
+
 		});
 
 		// This is needed to allow other clicks (wild)!
@@ -225,55 +239,55 @@
 
 		// Handle clicks on points
 		map.on('click', 'points', (e) => {
-    const feature = e.features[0];
-    const properties = feature.properties;
-    const popupContainer = document.getElementById('popup-container');
-    if (!popupContainer) return;
+			const feature = e.features[0];
+			const properties = feature.properties;
+			const popupContainer = document.getElementById('popup-container');
+			if (!popupContainer) return;
 
-    ignoreNextMapClick = true;
-    popupContainer.innerHTML = '';
+			ignoreNextMapClick = true;
+			popupContainer.innerHTML = '';
 
-    const popupContent = document.createElement('div');
-    popupContent.className = 'popup-content';
+			const popupContent = document.createElement('div');
+			popupContent.className = 'popup-content';
 
-    // Create flex container
-    const flexContainer = document.createElement('div');
-    flexContainer.className = 'popup-flex-container';
+			// Create flex container
+			const flexContainer = document.createElement('div');
+			flexContainer.className = 'popup-flex-container';
 
-    // Add image div (left side)
-    const imgContainer = document.createElement('div');
-    imgContainer.className = 'popup-img-container';
-    
-    const img = document.createElement('img');
-    img.src = properties.cover || 'default-image.jpg';
-    imgContainer.appendChild(img);
-    flexContainer.appendChild(imgContainer);
+			// Add image div (left side)
+			const imgContainer = document.createElement('div');
+			imgContainer.className = 'popup-img-container';
 
-    // Add text div (right side)
-    const textContainer = document.createElement('div');
-    textContainer.className = 'popup-text-container';
+			const img = document.createElement('img');
+			img.src = properties.cover || 'default-image.jpg';
+			imgContainer.appendChild(img);
+			flexContainer.appendChild(imgContainer);
 
-    const title = document.createElement('h1');
-    title.className = 'popup-title';
-    title.textContent = properties.title || 'Untitled Location';
-    textContainer.appendChild(title);
+			// Add text div (right side)
+			const textContainer = document.createElement('div');
+			textContainer.className = 'popup-text-container';
 
-    if (properties.description) {
-        const desc = document.createElement('p');
-        desc.className = 'popup-description';
-        desc.textContent = properties.description;
-        textContainer.appendChild(desc);
-    }
-    flexContainer.appendChild(textContainer);
+			const title = document.createElement('h1');
+			title.className = 'popup-title';
+			title.textContent = properties.title || 'Untitled Location';
+			textContainer.appendChild(title);
 
-    // Add flex container to popup
-    popupContent.appendChild(flexContainer);
-    popupContainer.appendChild(popupContent);
-    popupContainer.classList.add('active');
+			if (properties.description) {
+				const desc = document.createElement('p');
+				desc.className = 'popup-description';
+				desc.textContent = properties.description;
+				textContainer.appendChild(desc);
+			}
+			flexContainer.appendChild(textContainer);
 
-	popupOpen = true;
-    clickFeature(feature);
-});
+			// Add flex container to popup
+			popupContent.appendChild(flexContainer);
+			popupContainer.appendChild(popupContent);
+			popupContainer.classList.add('active');
+
+			popupOpen = true;
+			clickFeature(feature);
+		});
 
 		// Close popup when clicking outside
 		map.on('click', (e) => {
@@ -321,8 +335,9 @@
 			// 1. Find first entry for each calendar day
 			const seenDays = new Set();
 			const firstPerDay = [];
+			const dateToDayIndexMap = {}; // Maps dates to their day index
 
-			uniqueValidDates.forEach(dateStr => {
+			uniqueValidDates.forEach((dateStr, index) => {
 				const dayInEST = new Intl.DateTimeFormat('en-CA', {
 					timeZone: 'America/New_York',
 					year: 'numeric',
@@ -334,6 +349,7 @@
 					seenDays.add(dayInEST);
 					firstPerDay.push(dateStr);
 				}
+				dateToDayIndexMap[dateStr] = firstPerDay.length - 1; // Map all times to their day index
 			});
 
 			// 2. Create the horizontal scroller
@@ -348,19 +364,46 @@
 			innerContainer.appendChild(resetElement);
 
 			// 3. Format and display each date
+			const dateElements = [];
 			uniqueValidDates.forEach(dateString => {
 				const dateElement = document.createElement('div');
 				dateElement.className = 'info-feature';
 				dateElement.dataset.category = dateString;
 				dateElement.innerHTML = formatToEST(new Date(dateString));
 				innerContainer.appendChild(dateElement);
+				dateElements.push(dateElement);
 			});
 
 			infoBox.appendChild(innerContainer);
 
-			// 4. Add navigation buttons
-			let currentDayIndex = -1; // Start before first day (-1 = reset category)
+			// 4. Track current visible date
+			let currentVisibleDate = null;
 
+			const updateCurrentVisibleDate = () => {
+				const containerRect = innerContainer.getBoundingClientRect();
+				const containerCenter = containerRect.left + containerRect.width / 2;
+
+				let closestElement = null;
+				let minDistance = Infinity;
+
+				dateElements.forEach(el => {
+					const rect = el.getBoundingClientRect();
+					const elementCenter = rect.left + rect.width / 2;
+					const distance = Math.abs(elementCenter - containerCenter);
+
+					if (distance < minDistance) {
+						minDistance = distance;
+						closestElement = el;
+					}
+				});
+
+				currentVisibleDate = closestElement?.dataset.category || null;
+			};
+
+			// Update on scroll
+			innerContainer.addEventListener('scroll', updateCurrentVisibleDate);
+
+			// 5. Add navigation buttons
 			const createNavButton = (label, onClick) => {
 				const btn = document.createElement('div');
 				btn.className = 'nav-button';
@@ -369,49 +412,72 @@
 				return btn;
 			};
 
-			const updateHighlight = () => {
-				if (currentDayIndex === -1) {
-					// Scroll to reset category
+			const scrollToDayIndex = (dayIndex) => {
+				if (dayIndex === -1) {
 					resetElement.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-				} else {
-					// Scroll to day
-					const target = firstPerDay[currentDayIndex];
-					const el = document.querySelector(`.info-feature[data-category="${target}"]`);
+				} else if (dayIndex >= 0 && dayIndex < firstPerDay.length) {
+					const targetDate = firstPerDay[dayIndex];
+					const el = document.querySelector(`.info-feature[data-category="${targetDate}"]`);
 					if (el) el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
 				}
 			};
 
 			const firstBtn = createNavButton('|◀', () => {
-				currentDayIndex = -1; // Reset category
-				updateHighlight();
+				scrollToDayIndex(-1);
 			});
 
 			const backBtn = createNavButton('◀◀', () => {
-				if (currentDayIndex > -1) { // Allow going back to reset category
-					currentDayIndex--;
-					updateHighlight();
+				updateCurrentVisibleDate(); // Ensure we have latest visible date
+				if (!currentVisibleDate) {
+					// If at reset or no date visible, go to last day
+					scrollToDayIndex(firstPerDay.length - 1);
+				} else {
+					const currentDayIndex = dateToDayIndexMap[currentVisibleDate];
+					scrollToDayIndex(currentDayIndex - 1);
 				}
 			});
 
 			const fwdBtn = createNavButton('▶▶', () => {
-				if (currentDayIndex < firstPerDay.length - 1) {
-					currentDayIndex = Math.max(0, currentDayIndex + 1); // Skip -1 if coming from reset
-					updateHighlight();
+				// Get current scroll position
+				const container = document.querySelector('.info-box-inner');
+				const scrollPos = container.scrollLeft;
+
+				// If at or near reset position (first 50px)
+				if (scrollPos < 50) {
+					// Find the FIRST date element in the DOM
+					const firstDateElement = document.querySelector('.info-feature:not(.reset-category)');
+					if (firstDateElement) {
+						firstDateElement.scrollIntoView({
+							behavior: 'smooth',
+							inline: 'center',
+							block: 'nearest'
+						});
+						currentVisibleDate = firstDateElement.dataset.category;
+					}
+				} else {
+					// Existing logic for non-reset case
+					updateCurrentVisibleDate();
+					if (currentVisibleDate) {
+						const currentDayIndex = dateToDayIndexMap[currentVisibleDate];
+						scrollToDayIndex(currentDayIndex + 1);
+					}
 				}
 			});
 
 			const lastBtn = createNavButton('▶|', () => {
-				// Get ALL date elements (including non-first-of-day items)
-				const allDateElements = document.querySelectorAll('.info-feature:not(.reset-category)');
-				
-				// Scroll to the very last item
-				if (allDateElements.length > 0) {
-					currentDayIndex = firstPerDay.length - 1; // Keep day index tracking accurate
-					allDateElements[allDateElements.length - 1].scrollIntoView({ 
-						behavior: 'smooth', 
-						inline: 'center', 
-						block: 'nearest' 
+				// Get ALL time elements (excluding the reset element)
+				const allTimeElements = document.querySelectorAll('.info-feature:not(.reset-category)');
+
+				if (allTimeElements.length > 0) {
+					// Scroll to the very last time element
+					const lastElement = allTimeElements[allTimeElements.length - 1];
+					lastElement.scrollIntoView({
+						behavior: 'smooth',
+						inline: 'center',
+						block: 'nearest'
 					});
+					// Update the current visible date
+					currentVisibleDate = lastElement.dataset.category;
 				}
 			});
 
