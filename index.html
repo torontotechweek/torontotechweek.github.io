@@ -26,6 +26,7 @@
 		const locationFile = 'data/ttw2025_iso.geojson'
 		const zoomThreshold = 18
 		const imgSource = 'img'
+		const featureIds = ['concat', ['get', 'api_id'], '|']
 		let currentActiveCategory = 'all';
 		let popupOpen = false;
 		let locationData;
@@ -76,7 +77,10 @@
 				'cluster': true,
 				'clusterRadius': 30,
 				'clusterMinPoints': 2,
-				'clusterMaxZoom': zoomThreshold
+				'clusterMaxZoom': zoomThreshold,
+				'clusterProperties': {
+					'featureIds': ['concat', featureIds]
+				}
 			});
 
 			// Add neighborhood outlines
@@ -204,13 +208,13 @@
 				'position': [1.15, 210, 40]
 			});
 
-			// Change cursor to pointer when hovering over points
-			map.on('mouseenter', 'points', () => {
+			// Add pointer cursor for both points and clusters on hover
+			map.on('mouseenter', ['points', 'clusters'], () => {
 				map.getCanvas().style.cursor = 'pointer';
 			});
 
-			// Change cursor back to default when leaving points
-			map.on('mouseleave', 'points', () => {
+			// Reset cursor when mouse leaves
+			map.on('mouseleave', ['points', 'clusters'], () => {
 				map.getCanvas().style.cursor = '';
 			});
 
@@ -254,14 +258,42 @@
 			const flexContainer = document.createElement('div');
 			flexContainer.className = 'popup-flex-container';
 
-			// Add image div (left side)
-			const imgContainer = document.createElement('div');
-			imgContainer.className = 'popup-img-container';
+			// Make container clickable
+			if (properties.url) {
+				flexContainer.addEventListener('click', () => {
+					window.open(properties.url, '_blank'); // Open in new tab
+					// Alternatively: window.location.href = properties.url;
+				});
+			}
 
-			const img = document.createElement('img');
-			img.src = properties.cover || 'default-image.jpg';
-			imgContainer.appendChild(img);
-			flexContainer.appendChild(imgContainer);
+			// Add image div (left side)
+			// const imgContainer = document.createElement('div');
+			// imgContainer.className = 'popup-img-container';
+			// const img = document.createElement('img');
+			// img.src = properties.cover || 'default-image.jpg';
+			// imgContainer.appendChild(img);
+			// flexContainer.appendChild(imgContainer);
+
+			// Add date div (left side)
+			const dateContainer = document.createElement('div');
+			dateContainer.className = 'popup-date-container'; // New class for styling
+
+			// Create month element
+			const monthElement = document.createElement('div');
+			monthElement.className = 'popup-month';
+			monthElement.textContent = new Date(properties.start_date).toLocaleString('default', { month: 'short' }).toUpperCase();
+
+			// Create day element
+			const dayElement = document.createElement('div');
+			dayElement.className = 'popup-day';
+			dayElement.textContent = new Date(properties.start_date).getDate();
+
+			// Append elements to date container
+			dateContainer.appendChild(monthElement);
+			dateContainer.appendChild(dayElement);
+
+			// Add date container to flex container
+			flexContainer.appendChild(dateContainer);
 
 			// Add text div (right side)
 			const textContainer = document.createElement('div');
@@ -272,21 +304,191 @@
 			title.textContent = properties.title || 'Untitled Location';
 			textContainer.appendChild(title);
 
+			// Time
+			if (properties.start_date) {
+				const timeRange = document.createElement('p');
+				timeRange.className = 'popup-time-range';
+
+				const formatTime = (dateString) => {
+					return new Date(dateString).toLocaleTimeString('en-US', {
+						hour: 'numeric',
+						minute: '2-digit',
+						hour12: true
+					}).replace(/^0/, '');
+				};
+
+				let timeText = formatTime(properties.start_date);
+
+				// Add end time if different
+				if (properties.end_date) {
+					const start = new Date(properties.start_date).getTime();
+					const end = new Date(properties.end_date).getTime();
+					if (start !== end) {
+						timeText += ` – ${formatTime(properties.end_date)}`;
+					}
+				}
+
+				timeRange.textContent = timeText;
+				textContainer.appendChild(timeRange);
+			}
+
 			if (properties.description) {
 				const desc = document.createElement('p');
 				desc.className = 'popup-description';
 				desc.textContent = properties.description;
 				textContainer.appendChild(desc);
 			}
-			flexContainer.appendChild(textContainer);
 
-			// Add flex container to popup
+			// Assemble content
+			flexContainer.appendChild(textContainer);
 			popupContent.appendChild(flexContainer);
 			popupContainer.appendChild(popupContent);
 			popupContainer.classList.add('active');
 
 			popupOpen = true;
 			clickFeature(feature);
+		});
+
+		// Handle clicks on clusters
+		map.on('click', 'clusters', (e) => {
+			// Get the clicked cluster feature
+			const cluster = e.features[0];
+			const ids = cluster.properties.featureIds
+			const features = locationData.features;
+
+			let featureIdsArray = [];
+
+			if (ids) {
+				featureIdsArray = ids.split('|').filter(id => id !== '');
+			}
+
+			const popupContainer = document.getElementById('popup-container');
+			if (!popupContainer) return;
+
+			ignoreNextMapClick = true;
+			popupContainer.innerHTML = '';
+
+			const popupContent = document.createElement('div');
+			popupContent.className = 'popup-content';
+
+			// Get all features and sort them by start_date
+			const sortedFeatures = featureIdsArray
+				.map(id => features.find(f => f.api_id === id || f.properties?.api_id === id))
+				.filter(Boolean) // Remove any undefined results
+				.sort((a, b) => {
+					// Convert dates to timestamps for comparison
+					const dateA = new Date(a.properties.start_date).getTime();
+					const dateB = new Date(b.properties.start_date).getTime();
+					return dateA - dateB; // For ascending order (oldest first)
+					// return dateB - dateA; // For descending order (newest first)
+				});
+
+			// Log descriptions for each feature ID
+			sortedFeatures.forEach(feature => {
+				const properties = feature.properties;
+
+				// Create flex container
+				const flexContainer = document.createElement('div');
+				flexContainer.className = 'popup-flex-container';
+
+				// Make container clickable
+				if (properties.url) {
+					flexContainer.addEventListener('click', () => {
+						window.open(properties.url, '_blank'); // Open in new tab
+						// Alternatively: window.location.href = properties.url;
+					});
+				}
+
+				// Add image div (left side)
+				// const imgContainer = document.createElement('div');
+				// imgContainer.className = 'popup-img-container';
+				// const img = document.createElement('img');
+				// img.src = properties.cover || 'default-image.jpg';
+				// imgContainer.appendChild(img);
+				// flexContainer.appendChild(imgContainer);
+
+				// Add date div (left side)
+				const dateContainer = document.createElement('div');
+				dateContainer.className = 'popup-date-container'; // New class for styling
+
+				// Create month element
+				const monthElement = document.createElement('div');
+				monthElement.className = 'popup-month';
+				monthElement.textContent = new Date(properties.start_date).toLocaleString('default', { month: 'short' }).toUpperCase();
+
+				// Create day element
+				const dayElement = document.createElement('div');
+				dayElement.className = 'popup-day';
+				dayElement.textContent = new Date(properties.start_date).getDate();
+
+				// Append elements to date container
+				dateContainer.appendChild(monthElement);
+				dateContainer.appendChild(dayElement);
+
+				// Add date container to flex container
+				flexContainer.appendChild(dateContainer);
+
+				// Add text div (right side)
+				const textContainer = document.createElement('div');
+				textContainer.className = 'popup-text-container';
+
+				const title = document.createElement('h1');
+				title.className = 'popup-title';
+				title.textContent = properties.title || 'Untitled Location';
+				textContainer.appendChild(title);
+
+				// Time
+				if (properties.start_date) {
+					const timeRange = document.createElement('p');
+					timeRange.className = 'popup-time-range';
+
+					const formatTime = (dateString) => {
+						return new Date(dateString).toLocaleTimeString('en-US', {
+							hour: 'numeric',
+							minute: '2-digit',
+							hour12: true
+						}).replace(/^0/, '');
+					};
+
+					let timeText = formatTime(properties.start_date);
+
+					// Add end time if different
+					if (properties.end_date) {
+						const start = new Date(properties.start_date).getTime();
+						const end = new Date(properties.end_date).getTime();
+						if (start !== end) {
+							timeText += ` – ${formatTime(properties.end_date)}`;
+						}
+					}
+
+					timeRange.textContent = timeText;
+					textContainer.appendChild(timeRange);
+				}
+
+				if (properties.description) {
+					const desc = document.createElement('p');
+					desc.className = 'popup-description';
+					desc.textContent = properties.description;
+					textContainer.appendChild(desc);
+				}
+
+				// Assemble content
+				flexContainer.appendChild(textContainer);
+				popupContent.appendChild(flexContainer);
+			});
+
+			popupContainer.appendChild(popupContent);
+			popupContainer.classList.add('active');
+
+			// Scroll to top
+			popupContent.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
+
+			popupOpen = true;
+			clickCluster(cluster);
+
 		});
 
 		// Close popup when clicking outside
@@ -314,6 +516,9 @@
 
 				// Set all features to default style first
 				map.setPaintProperty('points', 'circle-color', 'hsl(0, 0%, 0%)');
+
+				// Set all clusters to default style first
+				map.setPaintProperty('clusters', 'circle-color', 'hsl(0, 0%, 0%)');
 			}
 		});
 
@@ -600,7 +805,7 @@
 			currentActiveCategory = category;
 		};
 
-		// Helper function to handle clicks
+		// Helper function to handle clicks on points
 		const clickFeature = (feature) => {
 			let coordinates = feature.geometry.coordinates;
 			let id = feature.properties.api_id;
@@ -610,10 +815,38 @@
 				// Fly to location
 				flyToFeature(coordinates);
 
-				// Set all features to default style first
+				// Set all clusters to default style
+				map.setPaintProperty('clusters', 'circle-color', 'hsl(0, 0%, 0%)');
+
+				// Active color
 				map.setPaintProperty('points', 'circle-color', [
 					'case',
 					['==', ['get', 'api_id'], id],
+					'hsl(30, 100%, 50%)',
+					'hsl(0, 0%, 0%)'
+				]);
+
+			} catch (error) {
+				console.error('Error handling feature click:', error);
+			}
+		};
+
+		const clickCluster = (feature) => {
+			let coordinates = feature.geometry.coordinates;
+			let id = feature.properties.cluster_id;
+
+			try {
+
+				// Fly to location
+				flyToFeature(coordinates);
+
+				// Set all features to default style first
+				map.setPaintProperty('points', 'circle-color', 'hsl(0, 0%, 0%)');
+
+				// Active color
+				map.setPaintProperty('clusters', 'circle-color', [
+					'case',
+					['==', ['get', 'cluster_id'], id],
 					'hsl(30, 100%, 50%)',
 					'hsl(0, 0%, 0%)'
 				]);
