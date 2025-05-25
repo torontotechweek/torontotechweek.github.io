@@ -481,10 +481,12 @@
 			popupContainer.classList.add('active');
 
 			// Scroll to top
-			popupContent.scrollTo({
-				top: 0,
-				behavior: 'smooth'
-			});
+			setTimeout(() => {
+				popupContent.scrollTo({
+					top: 0,
+					behavior: 'smooth'
+				});
+			}, 50);
 
 			popupOpen = true;
 			clickCluster(cluster);
