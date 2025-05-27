@@ -92,8 +92,8 @@
 				'type': 'line',
 				'paint': {
 					'line-color': 'hsl(225, 89%, 90%)',
-					'line-width': ['interpolate', ['linear'], ['zoom'], 10, 1, 18, 10],
-					'line-opacity': ['interpolate', ['linear'], ['zoom'], 17, 0.5, 18, 0.2]
+					'line-width': ['interpolate', ['exponential', 1.5], ['zoom'], 10, 1, 18, 20],
+					'line-opacity': ['interpolate', ['linear'], ['zoom'], 17, 0.5, 18, 0]
 				}
 			});
 
