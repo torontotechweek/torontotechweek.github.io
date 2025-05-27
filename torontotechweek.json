@@ -21,6 +21,18 @@
 			}
 		},
 		{
+			"source": "osm",
+			"id": "land-natural",
+			"type": "fill",
+			"source-layer": "land",
+			"filter": [ "in", "kind", "brownfield", "farmland", "farmyard", "greenfield", "greenhouse_horticulture", "orchard", "plant_nursery", "vineyard", "park", "village_green", "recreation_ground", "allotments", "garden", "miniature_golf", "playground", "golf_course", "forest", "grass", "grassland", "meadow", "wet_meadow", "heath", "scrub", "beach", "sand", "bog", "marsh", "string_bog", "swamp" ],
+			"paint": {
+			  "fill-color": "hsl(110, 60%, 80%)",
+			  "fill-opacity": 1
+			},
+			"minzoom": 10
+		},
+		{
 			"id": "site-parking",
 			"type": "fill",
 			"source": "osm",
@@ -345,7 +357,7 @@
 				"text-field": ["get", "name"],
 				"text-max-width": 8,
 				"text-line-height": 1,
-				"text-offset": [0, 1],
+				"text-offset": [0, 0.7],
 				"text-anchor": "top",
 				"icon-allow-overlap": false,
 				"text-allow-overlap": false,
@@ -359,7 +371,7 @@
 				"text-color": "hsl(0, 0%, 0%)",
 				"text-halo-color": "hsl(0, 0%, 100%)",
 				"text-halo-width": 1,
-				"text-halo-blur": 0
+				"text-halo-blur": 0.5
 			}
 		}
 	]

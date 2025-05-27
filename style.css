@@ -159,6 +159,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -167,7 +168,8 @@ body {
     font-size: 11px;
     letter-spacing: 0.1;
     border-radius: 50%;
-    background-color: hsla(0, 0%, 90%, 1);
+    border: 2px solid hsl(0, 0%, 50%);
+    background-color: hsla(0, 0%, 90%, 0.8);
     transition: background-color 0.2s;
 }
 
@@ -224,7 +226,8 @@ body {
     height: auto;
     scroll-snap-align: center;
     border-radius: 999px;
-    background-color: hsla(0, 0%, 90%, 1);
+    border: 2px solid hsl(0, 0%, 50%);
+    background-color: hsla(0, 0%, 90%, 0.8);
     padding: 5px 0 5px 20px;
 }
 
