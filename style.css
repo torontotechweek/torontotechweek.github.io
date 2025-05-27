@@ -266,19 +266,19 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 0%, 0.2);
+    background-color: hsla(0, 0%, 100%, 0.5);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: hsla(0, 0%, 0%, 0.3);
+    background-color: hsla(0, 0%, 100%, 0.7);
     /* Hover state */
 }
 
 /* For Firefox */
 * {
     scrollbar-width: auto;
-    scrollbar-color: hsla(0, 0%, 0%, 0.2) transparent;
+    scrollbar-color: hsla(0, 0%, 100%, 0.5) transparent;
 }
 
 h1 {

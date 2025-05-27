@@ -90,9 +90,9 @@
 				'source-layer': 'toronto_neighborhoods',
 				'type': 'line',
 				'paint': {
-					'line-color': 'hsl(310, 100%, 90%)',
+					'line-color': 'hsl(225, 89%, 90%)',
 					'line-width': ['interpolate', ['linear'], ['zoom'], 10, 1, 18, 10],
-					'line-opacity': ['interpolate', ['linear'], ['zoom'], 17, 0.2, 18, 0.2]
+					'line-opacity': ['interpolate', ['linear'], ['zoom'], 17, 0.5, 18, 0.2]
 				}
 			});
 
@@ -112,7 +112,7 @@
 							10
 						],
 						'fill-extrusion-base': 0,
-						'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, 1, 17, 1, 18, 0]
+						'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, 0.5, 17, 0.5, 18, 0]
 					},
 					'minzoom': 15
 				}, 'poi-amenity'
@@ -136,7 +136,7 @@
 					'text-pitch-alignment': 'viewport'
 				},
 				paint: {
-					'text-color': 'hsl(310, 100%, 90%)',
+					'text-color': 'hsl(225, 89%, 90%)',
 					'text-opacity': 0.8
 				}
 			});
@@ -149,7 +149,7 @@
 				filter: ['!', ['has', 'point_count']],
 				paint: {
 					'circle-radius': 8,
-					'circle-color': 'hsl(310, 100%, 90%)',
+					'circle-color': 'hsl(225, 89%, 90%)',
 					'circle-stroke-width': 1.5,
 					'circle-stroke-color': 'hsl(0, 0%, 20%)'
 				}
@@ -165,9 +165,9 @@
 					'circle-color': [
 						'step',
 						['get', 'point_count'],
-						'hsl(310, 100%, 90%)',
-						10, 'hsl(310, 100%, 90%)',
-						25, 'hsl(310, 100%, 90%)'
+						'hsl(225, 89%, 90%)',
+						10, 'hsl(225, 89%, 90%)',
+						25, 'hsl(225, 89%, 90%)'
 					],
 					'circle-radius': [
 						'step',
@@ -824,7 +824,7 @@
 				map.setPaintProperty('points', 'circle-color', [
 					'case',
 					['==', ['get', 'api_id'], id],
-					'hsl(30, 100%, 50%)',
+					'hsl(52, 96%, 66%)',
 					'hsl(310, 100%, 90%)'
 				]);
 
@@ -849,7 +849,7 @@
 				map.setPaintProperty('clusters', 'circle-color', [
 					'case',
 					['==', ['get', 'cluster_id'], id],
-					'hsl(30, 100%, 50%)',
+					'hsl(52, 96%, 66%)',
 					'hsl(310, 100%, 90%)'
 				]);
 
