@@ -42,7 +42,8 @@
 			bearing: 0,
 			pitch: 0,
 			pixelRatio: 1,
-			hash: true
+			hash: true,
+			attributionControl: true
 		});
 
 		map.on('load', async () => {
@@ -347,6 +348,7 @@
 
 			popupOpen = true;
 			clickFeature(feature);
+
 		});
 
 		// Handle clicks on clusters
@@ -877,6 +879,17 @@
 				map.once('moveend', resolve);
 			});
 		};
+
+
+		// Add attribution
+
+
+		map.on('load', () => {
+			const attribControl = document.querySelector('.maplibregl-ctrl-attrib-inner');
+			if (attribControl) {
+				attribControl.innerHTML = `<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a> | <a href="https://www.torontotechweek.com/" target="_blank">Toronto Tech Week</a> | <a href="https://geographyclub.github.io/" target="_blank">J&S</a>`;
+			}
+		});
 
 	</script>
 </body>
