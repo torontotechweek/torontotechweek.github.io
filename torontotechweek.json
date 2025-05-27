@@ -5,11 +5,11 @@
 		"maputnik:renderer": "mbgljs"
 	},
 	"glyphs": "https://torontotechweek.github.io/assets/fonts/{fontstack}/{range}.pbf",
-	"sprite": "https://tile-server.mappedin.com/styles/mappedin/sprite",
+	"sprite": "https://torontotechweek.github.io/assets/sprites/sprites",
 	"sources": {
 		"osm": {
 			"type": "vector",
-			"url": "https://tile-server.mappedin.com/data/osm.json"
+			"url": "https://vector.openstreetmap.org/shortbread_v1/tilejson.json"
 		}
 	},
 	"layers": [
@@ -21,54 +21,23 @@
 			}
 		},
 		{
-			"source": "osm",
-			"id": "landuse",
-			"type": "fill",
-			"source-layer": "landuse",
-			"filter": [ "in", "class", "residential", "suburb", "neighbourhood", "commercial", "industrial", "garages", "dam", "cemetery", "hospital", "school", "railway" ],
-			"paint": {
-				"fill-color": "hsl(0, 0%, 99%)",
-				"fill-opacity": 1
-			}
-		},
-		{
-			"source": "osm",
-			"id": "landcover-natural",
-			"type": "fill",
-			"source-layer": "landcover",
-			"filter": [ "in", "class", "wood", "grass", "public_park", "sand" ],
-			"paint": {
-				"fill-color": "hsl(110, 60%, 90%)",
-				"fill-opacity": 1
-			}
-		},
-		{
-			"id": "landcover-parking",
+			"id": "site-parking",
 			"type": "fill",
 			"source": "osm",
-			"source-layer": "poi",
+			"source-layer": "sites",
 			"minzoom": 15,
-			"filter": ["==", "subclass", "parking"],
+			"filter": ["in", "kind", "parking"],
 			"paint": {
 			  "fill-color": "hsl(0, 0%, 97%)",
 			  "fill-opacity": 1
-			}
-		},	  
-		{
-			"id": "boundary",
-			"type": "line",
-			"source": "osm",
-			"source-layer": "boundary",
-			"paint": {
-				"line-color": "hsl(0, 0%, 95%)",
-				"line-width": 1
 			}
 		},
 		{
 			"source": "osm",
 			"id": "water",
 			"type": "fill",
-			"source-layer": "water",
+			"source-layer": "water_polygons",
+			"filter": [ "in", "kind", "water", "river", "reservoir", "basin", "dock" ],
 			"paint": {
 				"fill-color": "hsl(200, 100%, 90%)"
 			}
@@ -77,8 +46,8 @@
 			"source": "osm",
 			"id": "waterway",
 			"type": "line",
-			"source-layer": "waterway",
-			"filter": [ "!=", "brunnel", "tunnel" ],
+			"source-layer": "water_lines",
+			"filter": [ "all", [ "in", "kind", "river" ], [ "!=", "tunnel", true ], [ "!=", "bridge", true ] ],
 			"paint": {
 				"line-color": "hsl(200, 100%, 90%)",
 				"line-width": 1,
@@ -89,7 +58,7 @@
 			"source": "osm",
 			"id": "building",
 			"type": "fill",
-			"source-layer": "building",
+			"source-layer": "buildings",
 			"paint": {
 				"fill-color": "hsl(25, 20%, 95%)",
 				"fill-opacity": { "stops": [ [ 14, 0 ], [ 15, 1 ] ] }
@@ -99,7 +68,7 @@
 			"source": "osm",
 			"id": "building-wall",
 			"type": "line",
-			"source-layer": "building",
+			"source-layer": "buildings",
 			"paint": {
 				"line-color": "hsl(25, 20%, 85%)",
 				"line-offset": { "stops": [ [ 15, 1 ], [ 20, 3 ] ] },
@@ -115,7 +84,7 @@
 			"source": "osm",
 			"id": "building-buffer",
 			"type": "line",
-			"source-layer": "building",
+			"source-layer": "buildings",
 			"paint": {
 				"line-color": "hsl(0, 0%, 99%)",
 				"line-width": { "stops": [ [ 15, 1 ], [ 20, 5 ] ] },
@@ -126,8 +95,7 @@
 			"id": "ferry",
 			"type": "line",
 			"source": "osm",
-			"source-layer": "transportation",
-			"filter": ["in", "class", "ferry"],
+			"source-layer": "ferries",
 			"paint": {
 			  "line-color": "hsl(200, 100%, 70%)",
 			  "line-dasharray": [2, 2],
@@ -136,10 +104,10 @@
 		},	  
 		{
 			"source": "osm",
-			"id": "aeroway-taxiway",
+			"id": "airport-taxiway",
 			"type": "line",
-			"source-layer": "aeroway",
-			"filter": [ "==", "class", "taxiway" ],
+			"source-layer": "streets",
+			"filter": [ "in", "kind", "taxiway" ],
 			"paint": {
 				"line-color": "hsl(214, 23%, 95%)",
 				"line-width": { "stops": [ [ 13, 0 ], [ 14, 1 ], [ 15, 8 ], [ 16, 12 ], [ 18, 18 ], [ 20, 36 ] ] },
@@ -151,10 +119,10 @@
 		},
 		{
 			"source": "osm",
-			"id": "aeroway-runway",
-			"type": "line",
-			"source-layer": "aeroway",
-			"filter": [ "==", "class", "runway" ],
+			"id": "airport-area",
+			"type": "fill",
+			"source-layer": "street_polygons",
+			"filter": [ "in", "kind", "runway", "taxiway" ],
 			"paint": {
 				"line-color": "hsl(214, 23%, 95%)",
 				"line-width": { "stops": [ [ 11, 0 ], [ 12, 5 ], [ 13, 8 ], [ 14, 14 ], [ 15, 22 ], [ 16, 38 ], [ 17, 98 ], [ 18, 158 ], [ 20, 298 ] ] },
@@ -168,8 +136,8 @@
 			"source": "osm",
 			"id": "highway-minor-buffer",
 			"type": "line",
-			"source-layer": "transportation",
-			"filter": [ "in", "class", "minor" ],
+			"source-layer": "streets",
+			"filter": [ "==", "kind", "residential" ],
 			"paint": {
 				"line-color": "hsl(0, 0%, 99%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 13, 20, 106 ],
@@ -185,8 +153,8 @@
 			"source": "osm",
 			"id": "highway-major-buffer",
 			"type": "line",
-			"source-layer": "transportation",
-			"filter": [ "in", "class", "motorway", "trunk", "primary", "secondary", "tertiary" ],
+			"source-layer": "streets",
+			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
 			"paint": {
 				"line-color": "hsl(0, 0%, 99%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 15, 20, 166 ],
@@ -201,8 +169,8 @@
 			"source": "osm",
 			"id": "highway-service-outline",
 			"type": "line",
-			"source-layer": "transportation",
-			"filter": [ "all", [ "==", "class", "service" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
+			"source-layer": "streets",
+			"filter": [ "all", [ "in", "kind", "service" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
 			"paint": {
 				"line-color": "hsl(214, 33%, 85%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 32 ]
@@ -217,8 +185,8 @@
 			"source": "osm",
 			"id": "highway-minor-outline",
 			"type": "line",
-			"source-layer": "transportation",
-			"filter": [ "in", "class", "minor" ],
+			"source-layer": "streets",
+			"filter": [ "in", "kind", "residential" ],
 			"paint": {
 				"line-color": "hsl(214, 33%, 85%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 3, 20, 96 ],
@@ -234,8 +202,8 @@
 			"source": "osm",
 			"id": "highway-major-outline",
 			"type": "line",
-			"source-layer": "transportation",
-			"filter": [ "in", "class", "motorway", "trunk", "primary", "secondary", "tertiary" ],
+			"source-layer": "streets",
+			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
 			"paint": {
 				"line-color": "hsl(214, 33%, 85%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 5, 20, 156 ],
@@ -250,8 +218,8 @@
 			"source": "osm",
 			"id": "highway-service",
 			"type": "line",
-			"source-layer": "transportation",
-			"filter": [ "all", [ "==", "class", "service" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
+			"source-layer": "streets",
+			"filter": [ "all", [ "in", "kind", "service" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
 			"paint": {
 				"line-color": "hsl(214, 33%, 95%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 30 ]
@@ -266,8 +234,8 @@
 			"source": "osm",
 			"id": "highway-minor",
 			"type": "line",
-			"source-layer": "transportation",
-			"filter": [ "in", "class", "minor" ],
+			"source-layer": "streets",
+			"filter": [ "in", "kind", "residential" ],
 			"paint": {
 				"line-color": "hsl(214, 33%, 95%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 92 ],
@@ -283,8 +251,8 @@
 			"source": "osm",
 			"id": "highway-major",
 			"type": "line",
-			"source-layer": "transportation",
-			"filter": [ "in", "class", "motorway", "trunk", "primary", "secondary", "tertiary" ],
+			"source-layer": "streets",
+			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
 			"paint": {
 				"line-color": "hsl(214, 33%, 95%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 152 ],
@@ -299,8 +267,8 @@
 			"source": "osm",
 			"id": "railway-outline",
 			"type": "line",
-			"source-layer": "transportation",
-			"filter": [ "all", [ "in", "class", "rail" ], [ "!has", "service" ], ["!in", "brunnel", "bridge", "tunnel"] ],
+			"source-layer": "streets",
+			"filter": [ "all", [ "in", "kind", "rail" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
 			"paint": {
 				"line-color": "hsl(0, 0%, 80%)",
 				"line-width": { "stops": [ [ 8, 1 ], [ 13, 1 ], [ 15, 3 ], [ 16, 4 ], [ 18, 8 ], [ 19, 11 ], [ 20, 14 ] ] },
@@ -311,8 +279,8 @@
 			"source": "osm",
 			"id": "railway",
 			"type": "line",
-			"source-layer": "transportation",
-			"filter": [ "all", [ "in", "class", "rail" ], [ "!has", "service" ], ["!in", "brunnel", "bridge", "tunnel"] ],
+			"source-layer": "streets",
+			"filter": [ "all", [ "in", "kind", "rail" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
 			"paint": {
 				"line-color": "hsl(0, 0%, 90%)",
 				"line-width": { "stops": [ [ 8, 1 ], [ 13, 1 ], [ 15, 2 ], [ 16, 3 ], [ 18, 6 ], [ 19, 8 ], [ 20, 10 ] ] },
@@ -324,8 +292,8 @@
 			"source": "osm",
 			"id": "highway-name-minor",
 			"type": "symbol",
-			"source-layer": "transportation_name",
-			"filter": [ "in", "class", "minor" ],
+			"source-layer": "street_labels",
+			"filter": [ "in", "kind", "residential" ],
 			"layout": {
 				"text-field": "{name:latin} {name:nonlatin}",
 				"text-transform": "uppercase",
@@ -346,8 +314,8 @@
 			"source": "osm",
 			"id": "highway-name-major",
 			"type": "symbol",
-			"source-layer": "transportation_name",
-			"filter": [ "in", "class", "motorway", "trunk", "primary", "secondary", "tertiary" ],
+			"source-layer": "street_labels",
+			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
 			"layout": {
 				"text-field": "{name:latin} {name:nonlatin}",
 				"text-transform": "uppercase",
@@ -363,49 +331,6 @@
 				"text-color": "hsl(0, 0%, 50%)"
 			},
 			"minzoom": 15
-		},
-		{
-			"source": "osm",
-			"id": "waterway-name",
-			"type": "symbol",
-			"source-layer": "water_name",
-			"filter": [ "in", "class", "river", "stream", "canal", "ditch", "drain" ],
-			"layout": {
-				"text-field": "{name:latin} {name:nonlatin}",
-				"text-transform": "uppercase",
-				"text-rotation-alignment": "map",
-				"text-font": [ "montserrat-semibold" ],
-				"text-letter-spacing": 0.3,
-				"symbol-placement": "line",
-				"text-max-angle": 30,
-				"text-anchor": "bottom",
-				"text-size": { "stops": [ [ 14, 6 ], [ 17, 10 ] ] }
-			},
-			"paint": {
-				"text-color": "hsl(0, 0%, 50%)"
-			}
-		},
-		{
-			"source": "osm",
-			"id": "water-name",
-			"type": "symbol",
-			"source-layer": "water_name",
-			"filter": [ "!in", "class", "river", "stream", "canal", "ditch", "drain" ],
-			"layout": {
-				"text-field": "{name:latin}\n{name:nonlatin}",
-				"text-transform": "uppercase",
-				"text-rotation-alignment": "map",
-				"text-font": [ "montserrat-semibold" ],
-				"text-letter-spacing": 0.2,
-				"text-line-height": 0.9,
-				"text-max-width": 3,
-				"symbol-placement": "point",
-				"text-anchor": "center",
-				"text-size": { "stops": [ [ 14, 6 ], [ 17, 10 ] ] }
-			},
-			"paint": {
-				"text-color": "hsl(0, 0%, 50%)"
-			}
 		}
 	]
 }
