@@ -333,7 +333,7 @@
 			"id": "poi-amenity",
 			"type": "symbol",
 			"source-layer": "pois",
-			"filter": [ "to-boolean", [ "get", "amenity" ] ],
+			"filter": [ "all", [ "to-boolean", [ "get", "amenity" ] ], ["!=", ["get", "name"], null] ],
 			"minzoom": 16,
 			"layout": {
 				"icon-size": 1,
