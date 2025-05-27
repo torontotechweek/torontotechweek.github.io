@@ -112,7 +112,7 @@
 							10
 						],
 						'fill-extrusion-base': 0,
-						'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, 0.5, 17, 0.5, 18, 0]
+						'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, 0.7, 17, 0.7, 18, 0]
 					},
 					'minzoom': 15
 				}, 'poi-amenity'
@@ -517,10 +517,10 @@
 				popupOpen = false;
 
 				// Set all features to default style first
-				map.setPaintProperty('points', 'circle-color', 'hsl(310, 100%, 90%)');
+				map.setPaintProperty('points', 'circle-color', 'hsl(225, 89%, 90%)');
 
 				// Set all clusters to default style first
-				map.setPaintProperty('clusters', 'circle-color', 'hsl(310, 100%, 90%)');
+				map.setPaintProperty('clusters', 'circle-color', 'hsl(225, 89%, 90%)');
 			}
 		});
 
@@ -818,14 +818,14 @@
 				flyToFeature(coordinates);
 
 				// Set all clusters to default style
-				map.setPaintProperty('clusters', 'circle-color', 'hsl(310, 100%, 90%)');
+				map.setPaintProperty('clusters', 'circle-color', 'hsl(225, 89%, 90%)');
 
 				// Active color
 				map.setPaintProperty('points', 'circle-color', [
 					'case',
 					['==', ['get', 'api_id'], id],
 					'hsl(52, 96%, 66%)',
-					'hsl(310, 100%, 90%)'
+					'hsl(225, 89%, 90%)'
 				]);
 
 			} catch (error) {
@@ -843,14 +843,14 @@
 				flyToFeature(coordinates);
 
 				// Set all features to default style first
-				map.setPaintProperty('points', 'circle-color', 'hsl(310, 100%, 90%)');
+				map.setPaintProperty('points', 'circle-color', 'hsl(225, 89%, 90%)');
 
 				// Active color
 				map.setPaintProperty('clusters', 'circle-color', [
 					'case',
 					['==', ['get', 'cluster_id'], id],
 					'hsl(52, 96%, 66%)',
-					'hsl(310, 100%, 90%)'
+					'hsl(225, 89%, 90%)'
 				]);
 
 			} catch (error) {

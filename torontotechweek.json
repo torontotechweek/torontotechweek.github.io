@@ -61,8 +61,9 @@
 			"source-layer": "buildings",
 			"paint": {
 				"fill-color": "hsl(280, 10%, 40%)",
-				"fill-opacity": { "stops": [ [ 14, 0 ], [ 15, 1 ] ] }
-			}
+				"fill-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 16, 0, 18, 1 ]
+			},
+			"minzoom": 16
 		},
 		{
 			"id": "ferry",
