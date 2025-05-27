@@ -5,7 +5,7 @@
 		"maputnik:renderer": "mbgljs"
 	},
 	"glyphs": "https://torontotechweek.github.io/assets/fonts/{fontstack}/{range}.pbf",
-	"sprite": "https://torontotechweek.github.io/assets/sprites/sprites",
+	"sprite": "assets/sprites/sprites",
 	"sources": {
 		"osm": {
 			"type": "vector",
@@ -120,7 +120,7 @@
 		{
 			"source": "osm",
 			"id": "airport-area",
-			"type": "fill",
+			"type": "line",
 			"source-layer": "street_polygons",
 			"filter": [ "in", "kind", "runway", "taxiway" ],
 			"paint": {
@@ -331,6 +331,27 @@
 				"text-color": "hsl(0, 0%, 50%)"
 			},
 			"minzoom": 15
+		},
+		{
+			"source": "osm",
+			"id": "poi-amenity",
+			"type": "symbol",
+			"source-layer": "pois",
+			"filter": [ "to-boolean", [ "get", "amenity" ] ],
+			"minzoom": 16,
+			"layout": {
+				"icon-size": 1,
+				"symbol-placement": "point",
+				"icon-optional": true,
+				"text-font": [ "montserrat-light" ],
+				"icon-image": [ "match", [ "get", "amenity" ], "arts_centre", "icon-art_gallery", "atm", "icon-atm", "bank", "icon-bank", "bar", "icon-bar", "bench", "icon-bench", "bicycle_rental", "icon-bicycle_share", "biergarten", "icon-beergarden", "cafe", "icon-cafe", "car_rental", "icon-car_rental", "car_sharing", "icon-car_rental", "car_wash", "icon-car_wash", "cinema", "icon-cinema", "college", "icon-college", "community_centre", "icon-community", "dentist", "icon-dentist", "doctors", "icon-doctor", "dog_park", "icon-dog_park", "drinking_water", "icon-drinking_water", "embassy", "icon-embassy", "fast_food", "icon-fast_food", "fire_station", "icon-fire_station", "fountain", "icon-fountain", "grave_yard", "icon-cemetery", "hospital", "icon-hospital", "hunting_stand", "icon-huntingstand", "library", "icon-library", "marketplace", "icon-marketplace", "nightclub", "icon-nightclub", "nursing_home", "icon-nursinghome", "pharmacy", "icon-pharmacy", "place_of_worship", "icon-place_of_worship", "playground", "icon-playground", "police", "icon-police", "post_box", "icon-postbox", "post_office", "icon-post", "prison", "icon-prison", "pub", "icon-beer", "recycling", "icon-recycling", "restaurant", "icon-restaurant", "school", "icon-school", "shelter", "icon-shelter", "telephone", "icon-telephone", "theatre", "icon-theatre", "toilets", "icon-toilet", "townhall", "icon-town_hall", "vending_machine", "icon-vendingmachine", "veterinary", "icon-veterinary", "waste_basket", "icon-waste_basket", "unknown" ]
+			},
+			"paint": {
+				"icon-opacity": { "stops": [ [ 16, 0 ], [ 17, 0.4 ] ] },
+				"text-opacity": { "stops": [ [ 16, 0 ], [ 17, 0.4 ] ] },
+				"icon-color": "hsl(0, 0%, 100%)",
+				"text-color": "hsl(0, 0%, 100%)"
+			}
 		}
 	]
 }
