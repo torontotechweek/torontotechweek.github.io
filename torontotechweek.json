@@ -60,7 +60,7 @@
 			"type": "fill",
 			"source-layer": "buildings",
 			"paint": {
-				"fill-color": "hsl(25, 20%, 95%)",
+				"fill-color": "hsl(25, 20%, 90%)",
 				"fill-opacity": { "stops": [ [ 14, 0 ], [ 15, 1 ] ] }
 			}
 		},
@@ -70,7 +70,7 @@
 			"type": "line",
 			"source-layer": "buildings",
 			"paint": {
-				"line-color": "hsl(25, 20%, 85%)",
+				"line-color": "hsl(25, 20%, 80%)",
 				"line-offset": { "stops": [ [ 15, 1 ], [ 20, 3 ] ] },
 				"line-width": { "stops": [ [ 15, 0.5 ], [ 20, 1 ] ] },
 				"line-opacity": { "stops": [ [ 15, 0 ], [ 15.5, 1 ] ] }
@@ -168,7 +168,7 @@
 			"source-layer": "streets",
 			"filter": [ "all", [ "in", "kind", "service" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 85%)",
+				"line-color": "hsl(214, 33%, 80%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 32 ]
 			},
 			"layout": {
@@ -184,7 +184,7 @@
 			"source-layer": "streets",
 			"filter": [ "in", "kind", "residential" ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 85%)",
+				"line-color": "hsl(214, 33%, 80%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 3, 20, 96 ],
 				"line-opacity": { "stops": [ [ 5, 0 ], [ 6, 1 ] ] }
 			},
@@ -201,7 +201,7 @@
 			"source-layer": "streets",
 			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 85%)",
+				"line-color": "hsl(214, 33%, 80%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 5, 20, 156 ],
 				"line-opacity": { "stops": [ [ 5, 0 ], [ 6, 1 ] ] }
 			},
@@ -217,7 +217,7 @@
 			"source-layer": "streets",
 			"filter": [ "all", [ "in", "kind", "service" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 95%)",
+				"line-color": "hsl(214, 33%, 90%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 30 ]
 			},
 			"layout": {
@@ -233,7 +233,7 @@
 			"source-layer": "streets",
 			"filter": [ "in", "kind", "residential" ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 95%)",
+				"line-color": "hsl(214, 33%, 90%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 92 ],
 				"line-opacity": { "stops": [ [ 5, 0 ], [ 6, 1 ] ] }
 			},
@@ -250,7 +250,7 @@
 			"source-layer": "streets",
 			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 95%)",
+				"line-color": "hsl(214, 33%, 90%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 152 ],
 				"line-opacity": { "stops": [ [ 5, 0 ], [ 6, 1 ] ] }
 			},
@@ -297,12 +297,12 @@
 				"text-font": [ "montserrat-semibold" ],
 				"text-letter-spacing": 0.2,
 				"symbol-placement": "line",
-				"symbol-spacing": 500,
+				"symbol-spacing": 200,
 				"text-anchor": "center",
-				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 60 ]
+				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 30 ]
 			},
 			"paint": {
-				"text-color": "hsl(0, 0%, 50%)"
+				"text-color": "hsl(0, 0%, 20%)"
 			},
 			"minzoom": 16
 		},
@@ -319,12 +319,12 @@
 				"text-font": [ "montserrat-semibold" ],
 				"text-letter-spacing": 0.2,
 				"symbol-placement": "line",
-				"symbol-spacing": 500,
+				"symbol-spacing": 200,
 				"text-anchor": "center",
-				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 60 ]
+				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 30 ]
 			},
 			"paint": {
-				"text-color": "hsl(0, 0%, 50%)"
+				"text-color": "hsl(0, 0%, 20%)"
 			},
 			"minzoom": 15
 		},
@@ -336,15 +336,15 @@
 			"filter": [ "all", [ "to-boolean", [ "get", "amenity" ] ], ["!=", ["get", "name"], null] ],
 			"minzoom": 16,
 			"layout": {
-				"icon-size": 1,
+				"icon-size": 0.5,
 				"symbol-placement": "point",
 				"icon-optional": true,
 				"icon-image": [ "match", [ "get", "amenity" ], "arts_centre", "icon-art_gallery", "atm", "icon-atm", "bank", "icon-bank", "bar", "icon-bar", "bench", "icon-bench", "bicycle_rental", "icon-bicycle_share", "biergarten", "icon-beergarden", "cafe", "icon-cafe", "car_rental", "icon-car_rental", "car_sharing", "icon-car_rental", "car_wash", "icon-car_wash", "cinema", "icon-cinema", "college", "icon-college", "community_centre", "icon-community", "dentist", "icon-dentist", "doctors", "icon-doctor", "dog_park", "icon-dog_park", "drinking_water", "icon-drinking_water", "embassy", "icon-embassy", "fast_food", "icon-fast_food", "fire_station", "icon-fire_station", "fountain", "icon-fountain", "grave_yard", "icon-cemetery", "hospital", "icon-hospital", "hunting_stand", "icon-huntingstand", "library", "icon-library", "marketplace", "icon-marketplace", "nightclub", "icon-nightclub", "nursing_home", "icon-nursinghome", "pharmacy", "icon-pharmacy", "place_of_worship", "icon-place_of_worship", "playground", "icon-playground", "police", "icon-police", "post_box", "icon-postbox", "post_office", "icon-post", "prison", "icon-prison", "pub", "icon-beer", "recycling", "icon-recycling", "restaurant", "icon-restaurant", "school", "icon-school", "shelter", "icon-shelter", "telephone", "icon-telephone", "theatre", "icon-theatre", "toilets", "icon-toilet", "townhall", "icon-town_hall", "vending_machine", "icon-vendingmachine", "veterinary", "icon-veterinary", "waste_basket", "icon-waste_basket", "unknown" ],
 				"text-font": [ "montserrat-semibold" ],
-				"text-size": 12,
+				"text-size": 10,
 				"text-field": ["get", "name"],
 				"text-max-width": 8,
-				"text-line-height": 1.2,
+				"text-line-height": 1,
 				"text-offset": [0, 1],
 				"text-anchor": "top",
 				"icon-allow-overlap": false,
@@ -353,8 +353,8 @@
 				"text-ignore-placement": false
 			},
 			"paint": {
-				"icon-opacity": { "stops": [ [ 16, 0 ], [ 17, 0.5 ] ] },
-				"text-opacity": { "stops": [ [ 16, 0 ], [ 17, 0.5 ] ] },
+				"icon-opacity": { "stops": [ [ 16, 0 ], [ 17, 0.8 ] ] },
+				"text-opacity": { "stops": [ [ 16, 0 ], [ 17, 0.8 ] ] },
 				"icon-color": "hsl(0, 0%, 0%)",
 				"text-color": "hsl(0, 0%, 0%)",
 				"text-halo-color": "hsl(0, 0%, 100%)",
