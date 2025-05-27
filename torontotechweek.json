@@ -120,16 +120,12 @@
 		{
 			"source": "osm",
 			"id": "airport-area",
-			"type": "line",
+			"type": "fill",
 			"source-layer": "street_polygons",
 			"filter": [ "in", "kind", "runway", "taxiway" ],
 			"paint": {
-				"line-color": "hsl(214, 23%, 95%)",
-				"line-width": { "stops": [ [ 11, 0 ], [ 12, 5 ], [ 13, 8 ], [ 14, 14 ], [ 15, 22 ], [ 16, 38 ], [ 17, 98 ], [ 18, 158 ], [ 20, 298 ] ] },
-				"line-opacity": { "stops": [ [ 11, 0 ], [ 12, 1 ] ] }
-			},
-			"layout": {
-				"line-join": "round"
+				"fill-color": "hsl(214, 23%, 95%)",
+				"fill-opacity": { "stops": [ [ 11, 0 ], [ 12, 1 ] ] }
 			}
 		},
 		{
