@@ -291,7 +291,7 @@
 			"source-layer": "street_labels",
 			"filter": [ "in", "kind", "residential" ],
 			"layout": {
-				"text-field": "{name:latin} {name:nonlatin}",
+				"text-field": "{name}",
 				"text-transform": "uppercase",
 				"text-rotation-alignment": "map",
 				"text-font": [ "montserrat-semibold" ],
@@ -313,7 +313,7 @@
 			"source-layer": "street_labels",
 			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
 			"layout": {
-				"text-field": "{name:latin} {name:nonlatin}",
+				"text-field": "{name}",
 				"text-transform": "uppercase",
 				"text-rotation-alignment": "map",
 				"text-font": [ "montserrat-semibold" ],
