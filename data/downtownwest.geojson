@@ -1,0 +1,3205 @@
+{
+    "type": "FeatureCollection",
+    "name": "Downtown West BIA",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Los Compas Tacos",
+                "address": "140 Spadina Ave., Toronto, ON M5V 2L4",
+                "business_type": "restaurants",
+                "website": "https://www.loscompastacos.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39626,
+                    43.6477336
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Atlas Paws",
+                "address": "161 Spadina Ave., Toronto, ON M5V 2L6",
+                "business_type": "retail",
+                "website": "https://atlaspaws.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3958615,
+                    43.6483442
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rhythm Toronto",
+                "address": "141 Bathurst St., Suite 101, Toronto, ON M5V 2R2",
+                "business_type": "retail",
+                "website": "https://rhythm.space/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.403374,
+                    43.645901
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Adelaide West Physiotherapy",
+                "address": "366 Adelaide St W #403, Toronto, ON M5V 1R7",
+                "business_type": "services",
+                "website": "https://physiotherapytoronto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3943078,
+                    43.6471084
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "STICKERS MADEEZ",
+                "address": "110 Spadina Ave. Toronto, ON M5V 2K4",
+                "business_type": "services",
+                "website": "https://stickersmadeez.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3958777,
+                    43.646913
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nicholby’s",
+                "address": "255 Front St W, Toronto, ON M5V 2W6",
+                "business_type": "quick-serve",
+                "website": "https://nicholbys.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38692,
+                    43.643993
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Burgers n’ Fries Forever",
+                "address": "106 John St Unit 2, Toronto, ON M5H 1X9",
+                "business_type": "quick-serve",
+                "website": "https://burgersnfriesforever.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.390449,
+                    43.647693
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Beatrice Society",
+                "address": "511 Richmond St W, Toronto, ON M5V 1Y4, Canada",
+                "business_type": "quick-serve",
+                "website": "https://beatricesociety.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.399833,
+                    43.647082
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Peridot Wellness",
+                "address": "626 King St W #201, Toronto, ON M5V 1M5, Canada",
+                "business_type": "services",
+                "website": "https://www.peridotwellnessto.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.401128,
+                    43.644345
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "6ix Donutz",
+                "address": "83 Portland St, Toronto, ON M5V 2M9, Canada",
+                "business_type": "bakery",
+                "website": "https://6ixdonutz.square.site/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.399894,
+                    43.644088
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Courage Cookies",
+                "address": "28 Bathurst St, Toronto, ON M5V 0C6, Canada",
+                "business_type": "bakery",
+                "website": "https://www.couragecookies.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.402169,
+                    43.640948
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CLOCKWORK Champagne & Cocktails",
+                "address": "100 Front St W, Toronto, ON M5J 1E3, Canada",
+                "business_type": "restaurants",
+                "website": "https://www.clockworktoronto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3805762,
+                    43.6459059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mr. Vander",
+                "address": "600 King St W 2nd floor, Toronto, ON M5V 1M3, Canada",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://mrvander.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400156,
+                    43.644681
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Le Labo",
+                "address": "401 Richmond Street West studio 277, Toronto, ON M5V 3A8, Canada",
+                "business_type": "services",
+                "website": "http://lelabo.ca/en/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3951517,
+                    43.6477368
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Musical Stage Company",
+                "address": "401 Richmond St W suite 350, Toronto, ON, Canada",
+                "business_type": "services",
+                "website": "https://musicalstagecompany.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.394893,
+                    43.647933
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dog World Resort & Spa",
+                "address": "23 Camden St, Toronto, ON M5V 1V2, Canada",
+                "business_type": "retail",
+                "website": "https://www.dogworldrs.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.396723,
+                    43.647044
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Spa Intercontinental Toronto Centre",
+                "address": "225 Front St W, Toronto, ON M5V 2X3, Canada",
+                "business_type": "services",
+                "website": "https://www.torontocentre.intercontinental.com/spa"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38530332766913,
+                    43.64418125
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Miraj Hammam Spa (Shangri-la Hotel)",
+                "address": "188 University Ave, Toronto, ON M5H 0A3, Canada",
+                "business_type": "services",
+                "website": "https://mirajhammamtoronto.com/the-spa/shangri-la-hotel-toronto/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386371,
+                    43.649037
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hammam Spa by Céla",
+                "address": "602 King St W, Toronto, ON M5V 1M6, Canada",
+                "business_type": "services",
+                "website": "https://hammamspa.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400268,
+                    43.644502
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Touch Massage Bar",
+                "address": "451 King St W suite 102, Toronto, ON M5V 3M4, Canada",
+                "business_type": "services"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3960104,
+                    43.6451451
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Body Blitz Spa West",
+                "address": "471 Adelaide St W, Toronto, ON M5V 1T1, Canada",
+                "business_type": "services",
+                "website": "https://bodyblitzspa.com/bbs/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4,
+                    43.645753
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Serenity Spa and Lounge",
+                "address": "The Icon, Wellington Street West, Toronto, ON, Canada",
+                "business_type": "services",
+                "website": "https://serenityspalounge.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3799642,
+                    43.6472034
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Spa myBlend (The Ritz-Carlton)",
+                "address": "181 Wellington St W, Toronto, ON M5V 3G7, Canada",
+                "business_type": "services",
+                "website": "https://www.ritzcarlton.com/en/hotels/canada/toronto/spa?scid=f2ae0541-1279-4f24-b197-a979c79310b0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386825,
+                    43.645685
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schulz Beauty & Body",
+                "address": "39 Stewart St, Toronto, ON M5V 2V8, Canada",
+                "business_type": "services",
+                "website": "https://www.schulzbeauty.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400969,
+                    43.643317
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bush Body Bar",
+                "address": "372 Richmond St W unit 116, Toronto, ON M5V 2L7, Canada",
+                "business_type": "services",
+                "website": "http://bushbodybar.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39457985,
+                    43.648401050000004
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Studio Fontana",
+                "address": "400 Wellington St W #3, Toronto, ON M5V 0B5, Canada",
+                "business_type": "services",
+                "website": "http://studiofontana.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.395498,
+                    43.64396
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Maverick Studio (Delta Toronto Hotel)",
+                "address": "75 Lower Simcoe St 2nd floor, Toronto, ON M5J 3A6, Canada",
+                "business_type": "services",
+                "website": "https://maverickbarbers.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38387181137503,
+                    43.643082
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bisha Hotel",
+                "address": "80 Blue Jays Way, Toronto, ON M5V 2G3, Canada",
+                "business_type": "accommodations",
+                "website": "https://www.bishahoteltoronto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.391968,
+                    43.645088
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sutton Place Hotel",
+                "address": "355 King St W, Toronto, ON M5V 1J5, Canada",
+                "business_type": "accommodations",
+                "website": "https://www.suttonplace.com/toronto"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3919637,
+                    43.6459456
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Myseum of Toronto",
+                "address": "401 Richmond Street West, Toronto, ON, Canada",
+                "business_type": "attractions",
+                "website": "https://www.myseumoftoronto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.394893,
+                    43.647933
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Epoch Bar & Kitchen Terrace (Ritz-Carlton)",
+                "address": "181 Wellington St W, Toronto, ON M5V 3G7, Canada",
+                "business_type": "restaurants",
+                "website": "https://epochtoronto.com/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MjczODA4MjYtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386825,
+                    43.645685
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Evangeline (Ace Hotel)",
+                "address": "51 Camden St, Toronto, ON M5V 1V2, Canada",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://www.evangelinetoronto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3981605,
+                    43.6467832
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Margo",
+                "address": "600 King St W 4th floor, Toronto, ON M5V 1M3, Canada",
+                "business_type": "restaurants",
+                "website": "https://margotoronto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400156,
+                    43.644681
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Spark Pilates",
+                "address": "487 Adelaide St W, Toronto, ON M5V 1T4, Canada",
+                "business_type": "services",
+                "website": "https://www.sparkpilates.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400808,
+                    43.645494
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "YUMART Gallery",
+                "address": "401 Richmond St W b20, Toronto, ON M5V 3A8, Canada",
+                "business_type": "attractions",
+                "website": "https://www.yumart.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.395404,
+                    43.647838
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mademoiselle",
+                "address": "563 King St W, Toronto, ON M5V 1M1, Canada",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "http://mademoiselleto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.399502,
+                    43.644319
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nutbar",
+                "address": "425 Adelaide St W suite 101, Toronto, ON M5V 3C1, Canada",
+                "business_type": "restaurants",
+                "website": "https://nutbar.co/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.397963,
+                    43.64617
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "StretchLab",
+                "address": "410 Adelaide St W unit 102, Toronto, ON M5V 1S8, Canada",
+                "business_type": "services",
+                "website": "https://www.stretchlab.com/location/torontodowntown"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3967447,
+                    43.6467308
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sun King Cleaners",
+                "address": "35 Bathurst St Suite #8, Toronto, ON M5V 2P2, Canada",
+                "business_type": "services",
+                "website": "https://www.sunkingcleaners.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.401811,
+                    43.642059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "401 Richmond Building",
+                "address": "401 Richmond St W studio 277, Toronto, ON M5V 3A8, Canada",
+                "business_type": "retail",
+                "website": "https://401richmond.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3951517,
+                    43.6477368
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "New Music Concerts",
+                "address": "401 Richmond St W suite 358, Toronto, ON, Canada",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://www.newmusicconcerts.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.394893,
+                    43.647933
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "A Space Gallery",
+                "address": "401 Richmond St W, Toronto, ON M5V 3A8, Canada",
+                "business_type": "bar",
+                "website": "https://aspacegallery.org/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3951517,
+                    43.6477368
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Artspace TMU",
+                "address": "401 Richmond St W, Toronto, ON, Canada",
+                "business_type": "attractions",
+                "website": "https://artspacetmu.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.394893,
+                    43.647933
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "BAND Gallery",
+                "address": "401 Richmond St W, Toronto, ON, Canada",
+                "business_type": "attractions",
+                "website": "https://www.bandgallery.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.394893,
+                    43.647933
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Critical Distance Centre for Curators",
+                "address": "401 Richmond Street West, Toronto, ON, Canada",
+                "business_type": "attractions",
+                "website": "https://criticaldistance.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.394893,
+                    43.647933
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gallery 44",
+                "address": "401 Richmond St W #120, Toronto, ON M5V 3A8, Canada",
+                "business_type": "attractions",
+                "website": "https://www.gallery44.org/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3951517,
+                    43.6477368
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tangled Art + Disability",
+                "address": "401 Richmond St W, Toronto, ON M5V 3A8, Canada",
+                "business_type": "attractions",
+                "website": "https://tangledarts.org/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3951517,
+                    43.6477368
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Perfect Leather Goods Ltd.",
+                "address": "555 King Street West, Toronto, ON, Canada",
+                "business_type": "retail",
+                "website": "https://www.perfectleathergoods.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3990047,
+                    43.6445168
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fit Factory Fitness",
+                "address": "373 King St W, Toronto, ON M5V 1K1, Canada",
+                "business_type": "services",
+                "website": "https://fitfactoryfitness.com/downtown/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392817,
+                    43.645844
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Yoga Tree",
+                "address": "140 Spadina Ave., Toronto, ON M5V 2J4, Canada",
+                "business_type": "services",
+                "website": "https://www.yogatree.ca/richmond-spadina/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39626,
+                    43.6477336
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Well BYND",
+                "address": "460 Richmond St W suite 500, Toronto, ON M5V 1Y1, Canada",
+                "business_type": "services",
+                "website": "https://www.wellbynd.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39773132723408,
+                    43.64788015
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "F45 Training Toronto Downtown",
+                "address": "165 King St W, Toronto, ON M5H 4H2",
+                "business_type": "services",
+                "website": "http://www.f45training.ca/torontodowntown"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.385252,
+                    43.647418
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "BlackToe Running",
+                "address": "Six50 King - Bathurst Tower, 95 Bathurst Street, Toronto, ON M5V 2P9, Canada",
+                "business_type": "retail",
+                "website": "https://www.blacktoerunning.com/products/blacktoe-run-club"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4026203,
+                    43.6444354
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Amego Electric Vehicles",
+                "address": "533 Richmond Street West, Toronto, ON M5V 3Y1, Canada",
+                "business_type": "retail",
+                "website": "https://www.amegoev.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400897,
+                    43.646915
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kiin",
+                "address": "326 Adelaide St W, Toronto, ON M5V 1R3, Canada",
+                "business_type": "restaurants",
+                "website": "https://kiintoronto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3921653,
+                    43.6476812
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sara",
+                "address": "98 Portland St, Toronto, ON M5V 2N2, Canada",
+                "business_type": "restaurants",
+                "website": "https://www.sara.restaurant/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400639,
+                    43.645185
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Blaze Pizza",
+                "address": "150 John St, Toronto, ON M5V 3C3, Canada",
+                "business_type": "quick-serve",
+                "website": "https://www.blazepizza.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.390923,
+                    43.649132
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fahrenheit Coffee",
+                "address": "529 Richmond St W, Old Toronto, Toronto, ON M5V 3Z8, Canada",
+                "business_type": "quick-serve",
+                "website": "http://www.fahrenheitcoffee.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4006862,
+                    43.646942
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Call Her Juliet",
+                "address": "510 King St W, Toronto, ON M5V 1K4, Canada",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://www.instagram.com/callherjuliet/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.397195,
+                    43.645229
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wide Open",
+                "address": "139a Spadina Ave., Toronto, ON M5V 2L7, Canada",
+                "business_type": "pubs-bars",
+                "website": "http://www.wideopenbar.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.395495,
+                    43.647633
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Miss Likklemores",
+                "address": "433 King St W, Toronto, ON M5V 1K4, Canada",
+                "business_type": "restaurants",
+                "website": "https://misslikklemores.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.395417,
+                    43.64519
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Chaska Indian Street Food",
+                "address": "218 Adelaide St W, Toronto, ON M5H 1W7, Canada",
+                "business_type": "quick-serve",
+                "website": "https://chaska.com/menu/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388013,
+                    43.648536
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Black Pearl",
+                "address": "184 Pearl St, Toronto, ON M5H 1L5, Canada",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://www.blackpearlto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.389175,
+                    43.647534
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Medusa",
+                "address": "365 King St W 2nd floor, Toronto, ON M5V 1K1, Canada",
+                "business_type": "night-clubs-entertainment-venues"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392614,
+                    43.6458885
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Spin",
+                "address": "461 King St W, Toronto, ON M5V 1K4, Canada",
+                "business_type": "pubs-bars",
+                "website": "https://wearespin.com/location/toronto/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3963866,
+                    43.6450614
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Belfast Love Public House",
+                "address": "548 King St W, Toronto, ON M5V 1M3, Canada",
+                "business_type": "pubs-bars",
+                "website": "https://www.freehouse.co/locations/belfast-love?utm_source=google&utm_medium=organic&utm_campaign=gmb"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39849538881664,
+                    43.645151549999994
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Forno Cultura",
+                "address": "609 King St W, Toronto, ON M5V 1M5",
+                "business_type": "bakery",
+                "website": "https://www.fornocultura.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4005946,
+                    43.6442255
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wvrst",
+                "address": "609 King St W, Toronto, ON M5V 1M5",
+                "business_type": "restaurants",
+                "website": "https://wvrst.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4005946,
+                    43.6442255
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Piccolo Caffe E Vino",
+                "address": "111 John St, Toronto, ON M5V 2E2",
+                "business_type": "restaurants",
+                "website": "https://www.piccolocaffe.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.51384299111506,
+                    43.70446910521535
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Little Sister",
+                "address": "102 Portland St, Toronto, ON M5V 2N2, Canada",
+                "business_type": "restaurants",
+                "website": "https://www.littlesisterto.com/ls-portland"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400884,
+                    43.645219
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Isabelle’s",
+                "address": "548 King St W #200, Toronto, ON M5V 1M3",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://www.freehouse.co/locations/isabelles-toronto"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39849538881664,
+                    43.645151549999994
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mister C (Bisha Hotel)",
+                "address": "80 Blue Jays Way, Toronto, ON M5V 2G3, Canada",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "http://www.misterctoronto.com/index.html"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.391968,
+                    43.645088
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cheffry’s Bistro",
+                "address": "388 Richmond St W, Toronto, ON M5V 3P1, Canada",
+                "business_type": "restaurants",
+                "website": "https://www.cheffrysbistro.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3951509,
+                    43.6481352
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fusaro’s Italian Kitchen",
+                "address": "147 Spadina Ave., Toronto, ON M5V 2L7, Canada",
+                "business_type": "restaurants",
+                "website": "http://fusaros.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3958078,
+                    43.6481697
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Le Gourmand",
+                "address": "152 Spadina Avenue, Toronto, ON, Canada",
+                "business_type": "quick-serve",
+                "website": "http://www.legourmand.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3964546,
+                    43.6482511
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Shawarma’s King",
+                "address": "214 King St W, Toronto, ON M5H 3S6, Canada",
+                "business_type": "quick-serve",
+                "website": "http://www.shawarmasking.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386226,
+                    43.647476
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Factory Theatre",
+                "address": "125 Bathurst St, Toronto, ON M5V 2R2, Canada",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://www.factorytheatre.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4028205,
+                    43.6455029
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Abbozzo Gallery",
+                "address": "401 Richmond St W, Toronto, ON M5V 3A8, Canada",
+                "business_type": "bar",
+                "website": "https://abbozzogallery.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3951517,
+                    43.6477368
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Red Head Gallery",
+                "address": "401 Richmond St W, Toronto, ON M5V 3A8, Canada",
+                "business_type": "attractions",
+                "website": "https://www.redheadgallery.org/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3951517,
+                    43.6477368
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Avenue Open Kitchen",
+                "address": "7 Camden Street, Toronto, ON, Canada",
+                "business_type": "restaurants"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.396449,
+                    43.647118
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Aanch",
+                "address": "259 Wellington St W, Toronto, ON M5V 3E4, Canada",
+                "business_type": "restaurants",
+                "website": "https://www.aanch.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3907,
+                    43.644762
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Locals Only",
+                "address": "589 King St W, Toronto, ON M5V 1M5, Canada",
+                "business_type": "pubs-bars",
+                "website": "http://www.localsonlytoronto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400421,
+                    43.644285
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Big Smoke Burger",
+                "address": "573 King St W, Toronto, ON M5V 1M1, Canada",
+                "business_type": "quick-serve",
+                "website": "https://bigsmokeburger.com/locations/?utm_source=G&utm_medium=LPM&utm_campaign=MTY"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3995869,
+                    43.6444049
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pilot Coffee Roasters",
+                "address": "439 Richmond St W, Toronto, ON M5V 1X9, Canada",
+                "business_type": "quick-serve",
+                "website": "https://www.pilotcoffeeroasters.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.396969,
+                    43.647673
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Angithi",
+                "address": "363 Bremner Blvd, Toronto, ON M5V 3V4, Canada",
+                "business_type": "quick-serve",
+                "website": "https://angithibiryani.com/about/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392738,
+                    43.640469
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Chin Chin Street Side Kitchen",
+                "address": "363 Bremner Blvd, Toronto, ON M5V 3V4, Canada",
+                "business_type": "quick-serve",
+                "website": "https://chinchinstreetside.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392738,
+                    43.640469
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Green Curry",
+                "address": "200 Front St W, Toronto, ON M5V 3K2, Canada",
+                "business_type": "quick-serve",
+                "website": "https://ritual.co/order/green-curry-front-simcoe-toronto/psj0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.385384,
+                    43.644806
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zoup!",
+                "address": "200 Front St W unit f010, Toronto, ON M5V 3K2, Canada",
+                "business_type": "quick-serve",
+                "website": "https://www.zoup.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.385384,
+                    43.644806
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ace Hotel",
+                "address": "51 Camden St, Toronto, ON M5V 1V2, Canada",
+                "business_type": "accommodations",
+                "website": "https://acehotel.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3981605,
+                    43.6467832
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Century",
+                "address": "580 King St W, Toronto, ON M5V 1M1, Canada",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://wearecentury.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39969,
+                    43.644736
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lost and Found",
+                "address": "577 King St W, Toronto, ON M5V 1M1, Canada",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://www.lost577.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.399629,
+                    43.644311
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Alder (Ace Hotel)",
+                "address": "51 Camden St, Toronto, ON M5V 1V2, Canada",
+                "business_type": "restaurants",
+                "website": "https://sprout.link/aldertoronto/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3981605,
+                    43.6467832
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Empire Supper Club",
+                "address": "220 King St W, Toronto, ON M5V 3M2, Canada",
+                "business_type": "restaurants",
+                "website": "https://www.empiresc.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.387331,
+                    43.647402
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Four Brothers Pizza",
+                "address": "540 King St W unit 1, Toronto, ON M5V 1M3",
+                "business_type": "restaurants",
+                "website": "https://www.fourbrotherspizza.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.397795,
+                    43.645034
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Early Mercy",
+                "address": "540 King St W, Toronto, ON M5V 1M3, Canada",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://earlymercy.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.397795,
+                    43.645034
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Roof at Soco (Delta Hotel)",
+                "address": "75 Lower Simcoe St, Toronto, ON M5J 3A6, Canada",
+                "business_type": "restaurants",
+                "website": "https://www.socokitchenandbar.ca/the-roof"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38387181137503,
+                    43.643082
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "SOMA Chocolatemaker",
+                "address": "443 King St W, Toronto, ON M5V 1K4, Canada",
+                "business_type": "quick-serve",
+                "website": "https://www.somachocolate.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.395724,
+                    43.645136
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "iQ",
+                "address": "613 King St W, Toronto, ON M5V 1M5, Canada",
+                "business_type": "quick-serve",
+                "website": "https://www.iqfoodco.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400842,
+                    43.644077
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "1 Hotel Toronto",
+                "address": "550 Wellington St W, Toronto, ON M5V 2V4",
+                "business_type": "accommodations",
+                "website": "https://www.1hotels.com/toronto?utm_campaign=gmb&utm_medium=organic&utm_source=google-gmb"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.401862,
+                    43.642854
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lee",
+                "address": "497 Richmond St W, Toronto, ON, Canada",
+                "business_type": "restaurants",
+                "website": "https://www.leerestaurant.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.398759,
+                    43.647355
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Harriet’s Rooftop (1 Hotel)",
+                "address": "550 Wellington St W Suite C, Toronto, ON M5V 2V4",
+                "business_type": "restaurants",
+                "website": "https://www.1hotels.com/toronto/taste/harriets-toronto?utm_source=google-gmb&utm_medium=organic&utm_campaign=gmb"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.401862,
+                    43.642854
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kettlemans Bagel",
+                "address": "33 Bathurst St Unit C, Toronto, ON M5V 2P1",
+                "business_type": "quick-serve",
+                "website": "https://www.kettlemansbagels.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.401538,
+                    43.641826
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Baro",
+                "address": "485 King St W, Toronto, ON M5V 1K4",
+                "business_type": "restaurants",
+                "website": "https://barotoronto.com/?utm_source=GMBlisting&utm_medium=organic"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.396965,
+                    43.644858
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pablos Snack House",
+                "address": "485 King St W, Toronto, ON M5V 3M4, Canada",
+                "business_type": "restaurants",
+                "website": "https://barotoronto.com/pablos-snack-house/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.396965,
+                    43.644858
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wilbur Mexicana",
+                "address": "552 King St W, Toronto, ON M5V 1M3",
+                "business_type": "restaurants"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.398643,
+                    43.644954
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tut’s Egyptian Street Food",
+                "address": "567 King St W, Toronto, ON M5V 1M1",
+                "business_type": "quick-serve",
+                "website": "http://www.tutsrestaurant.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39963,
+                    43.644362
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Laissez Faire",
+                "address": "589 King St W, Toronto, ON M5V 1M5",
+                "business_type": "restaurants",
+                "website": "https://laissezfairetoronto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400421,
+                    43.644285
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Vela",
+                "address": "90 Portland St, Toronto, ON M5V 2N2",
+                "business_type": "restaurants",
+                "website": "https://www.velatoronto.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49583989285715,
+                    43.619993671428574
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "LOV",
+                "address": "620 King St W Suite 102, Toronto, ON M5V 1M6",
+                "business_type": "restaurants",
+                "website": "https://lov.com/en/restaurants/lov-kingwest-toronto/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.40088977280541,
+                    43.6448221
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Buca Osteria & Enoteca",
+                "address": "604 King St W, Toronto, ON M5V 1M6",
+                "business_type": "restaurants",
+                "website": "http://buca.ca/king.html"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4004342141422,
+                    43.644697
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Masseria",
+                "address": "577 King St W, Toronto, ON M5V 1M1",
+                "business_type": "restaurants",
+                "website": "https://www.masseria.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.399629,
+                    43.644311
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lavelle",
+                "address": "627 King St W, Toronto, ON M5V 1M5",
+                "business_type": "restaurants",
+                "website": "https://chezlavelle.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4014834,
+                    43.6440094
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fat Bastard Burrito Co.",
+                "address": "628 King St W, Toronto, ON M5V 1M7",
+                "business_type": "quick-serve",
+                "website": "https://www.fatbastardburrito.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.40115274038148,
+                    43.64432135126051
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "COPS",
+                "address": "445 Adelaide St W, Rear entrance enter on, Morrison St, Toronto, ON M5V 1T1",
+                "business_type": "quick-serve",
+                "website": "https://www.eatcops.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.399074,
+                    43.645931
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "O’Frenchy",
+                "address": "212 King St W, Toronto, ON M5H 1K5",
+                "business_type": "restaurants",
+                "website": "https://ofrenchy.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386162,
+                    43.64749
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "A & W",
+                "address": "60 John St, Toronto, ON M5V 3W2",
+                "business_type": "quick-serve",
+                "website": "https://web.aw.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.389893,
+                    43.645941
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mofer Coffee Wellington",
+                "address": "224 Wellington St W, Toronto, ON M5V 3W1",
+                "business_type": "quick-serve",
+                "website": "https://www.mofercoffee.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.389632,
+                    43.645357
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Popeyes Louisiana Kitchen",
+                "address": "228 Wellington St W, Toronto, ON M5V 3W1",
+                "business_type": "quick-serve"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.389688,
+                    43.645345
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Strange Love Coffee",
+                "address": "101 Spadina Ave., Toronto, ON M5V 2K2",
+                "business_type": "quick-serve"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39534,
+                    43.64616
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Starbucks",
+                "address": "625 King St W, Toronto, ON M5V 1M5",
+                "business_type": "quick-serve",
+                "website": "https://www.starbucks.ca/store-locator/store/1014947/king-bathurst-625-king-street-west-toronto-on-m-5-v-1-m-5-ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4012884,
+                    43.6440424
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Second Cup (M.T.C.C.)",
+                "address": "255 Front St W, Toronto, ON M5V 2W6",
+                "business_type": "quick-serve",
+                "website": "https://secondcup.com/en/locations/metro-toronto-convention-centre/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38692,
+                    43.643993
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Aroma Espresso Bar",
+                "address": "137 Bremner Blvd, Toronto, ON M5J 3A7",
+                "business_type": "quick-serve",
+                "website": "https://aromacafe.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.383742,
+                    43.642152
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tim Hortons",
+                "address": "120 Bremner Blvd, Toronto, ON M5J 0A8",
+                "business_type": "quick-serve",
+                "website": "https://locations.timhortons.ca/on/toronto/120-bremner-blvd"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3829397,
+                    43.6429936
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fat Bastard Burrito Co.",
+                "address": "351 Bremner Blvd #11, Toronto, ON M5V 3V4",
+                "business_type": "quick-serve",
+                "website": "https://www.fatbastardburrito.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392047,
+                    43.640595
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Booster Juice",
+                "address": "35 Bathurst St, Toronto, ON M5V 2P2",
+                "business_type": "quick-serve",
+                "website": "https://www.boosterjuice.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.401811,
+                    43.642059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Subway",
+                "address": "393 Front St West Units A & B, Toronto, ON M5V 3S8",
+                "business_type": "quick-serve",
+                "website": "https://restaurants.subway.com/canada/on/toronto/393-front-st-west?utm_source=yxt-goog&utm_medium=local&utm_term=acq&utm_content=25572&utm_campaign=evergreen-2020"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38171,
+                    43.64877
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tim Hortons",
+                "address": "340 Front St W, Toronto, ON M5V 3W7",
+                "business_type": "quick-serve",
+                "website": "https://locations.timhortons.ca/on/toronto/340-front-st-west"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3912412,
+                    43.6434182
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Domino’s Pizza",
+                "address": "344 Front St W, Toronto, ON M5V 3W7",
+                "business_type": "quick-serve",
+                "website": "https://pizza.dominos.ca/toronto-ON-10497/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392029,
+                    43.643426
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pizza Nova",
+                "address": "365 Front St W, Toronto, ON M5V 3S8",
+                "business_type": "quick-serve",
+                "website": "https://weborders.pizzanova.com/PNAPI/order"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.391947,
+                    43.643012
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pizza Pizza",
+                "address": "340 Front St W, Toronto, ON M5V 3W7, Canada",
+                "business_type": "quick-serve",
+                "website": "https://www.pizzapizza.ca/store/1/delivery?utm_source=google&utm_medium=local&utm_campaign=google-local"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3912412,
+                    43.6434182
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sunset Grill",
+                "address": "205 Wellington St W, Toronto, ON M5V 3G7",
+                "business_type": "restaurants",
+                "website": "https://sunsetgrill.ca/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3882035,
+                    43.6452555
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Starbucks",
+                "address": "300 Front St W, Toronto, ON M5V 0E9, Canada",
+                "business_type": "quick-serve",
+                "website": "https://www.starbucks.ca/store-locator/store/1008640/front-john-300-front-street-west-toronto-on-m-5-v-0-e-9-ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388838,
+                    43.644079
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Parlour",
+                "address": "642 King St W, Toronto, ON M5V 1M7",
+                "business_type": "restaurants",
+                "website": "https://theparlourrestaurants.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4014464,
+                    43.6443091
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Shore Club",
+                "address": "155 Wellington St. W, Toronto, ON M5V 3H1",
+                "business_type": "restaurants",
+                "website": "https://theshoreclub.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3855237,
+                    43.6454895
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TOCA (The Ritz-Carlton)",
+                "address": "181 Wellington St. W, Toronto, ON M5V 3G7",
+                "business_type": "restaurants",
+                "website": "https://www.tocarestaurant.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386825,
+                    43.645685
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Town Crier Pub",
+                "address": "115 John St, Toronto ON, M5V 2E2",
+                "business_type": "pubs-bars",
+                "website": "https://towncrierpub.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.51366351058577,
+                    43.70451077163367
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tres Compadres",
+                "address": "212 King St W, Toronto, ON M5H 1K5",
+                "business_type": "restaurants",
+                "website": "https://www.trescompadresto.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386162,
+                    43.64749
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tutti Matti Ristorante Toscano",
+                "address": "364 Adelaide St. W, Toronto ON, M5V 1R7",
+                "business_type": "restaurants",
+                "website": "http://tuttimatti.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.394269,
+                    43.647229
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "URAWA Sushi",
+                "address": "254 Adelaide St. W, Toronto, ON M5H 1X6",
+                "business_type": "restaurants"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38926609696969,
+                    43.64829895
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Vagabondo Restobar",
+                "address": "310 Front St W, Toronto, ON M5V 3A4",
+                "business_type": "restaurants",
+                "website": "https://www.vagabondo.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.390191,
+                    43.643747
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Victor Restaurant & Bar (Hôtel Le Germain)",
+                "address": "30 Mercer St., Toronto, ON M5V 1H3",
+                "business_type": "restaurants",
+                "website": "https://www.victorrestaurant.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.391228,
+                    43.645731
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Watson’s",
+                "address": "388 Richmond St. W, Toronto, ON, M5V 3P1",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://www.watsonstoronto.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3951509,
+                    43.6481352
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Xango",
+                "address": "461 King St W, Toronto, ON M5V 1K4",
+                "business_type": "restaurants",
+                "website": "https://www.xangotoronto.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3963866,
+                    43.6450614
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jacked Up Coffee",
+                "address": "225 King Street West, Toronto, ON, Canada",
+                "business_type": "quick-serve",
+                "website": "https://www.jackedupcoffee.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38818917782972,
+                    43.6466584
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Anne Boleyn",
+                "address": "287 Richmond St. W, Toronto, ON M5V 1X1",
+                "business_type": "pubs-bars",
+                "website": "https://theanneboleyn.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3918922,
+                    43.6488669
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Antler Room",
+                "address": "146 Front St. W, Toronto, ON M5J 1G2",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://theloosemoose.ca/antler-room"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38378275000001,
+                    43.645097875000005
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Bar (Shangri-La Hotel)",
+                "address": "188 University Ave, Toronto, ON M5H 0A3",
+                "business_type": "pubs-bars",
+                "website": "http://www.shangri-la.com/toronto/shangrila/dining/bars-lounges/lobby-lounges"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386371,
+                    43.649037
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Fox on John",
+                "address": "106 John St, Toronto, ON M5H 1X9",
+                "business_type": "pubs-bars",
+                "website": "https://www.foxonjohn.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.390449,
+                    43.647693
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Haam (Sushi & Taco)",
+                "address": "342 Adelaide St W, Toronto, ON M5V 1R7",
+                "business_type": "restaurants",
+                "website": "https://www.thehaamtoronto.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3932435,
+                    43.647336
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Keg",
+                "address": "560 King St W, Toronto, ON M5V 1M3",
+                "business_type": "restaurants",
+                "website": "https://kegsteakhouse.com/en/locations/toronto-king-west"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.399028,
+                    43.644986
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Loose Moose Tap & Grill",
+                "address": "146 Front St. W, Toronto, ON M5J 1G2",
+                "business_type": "pubs-bars",
+                "website": "https://theloosemoose.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38378275000001,
+                    43.645097875000005
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Porchetta & Co.",
+                "address": "545 King St W, Toronto, ON M5V 1M1",
+                "business_type": "restaurants",
+                "website": "https://porchettaco.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.398861,
+                    43.644582
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Queen Anne Restaurant and Bar",
+                "address": "287 Richmond St W, Toronto, ON M5V 1X1",
+                "business_type": "pubs-bars",
+                "website": "https://www.queenannebar.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3918922,
+                    43.6488669
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Regulars",
+                "address": "668 King St W, Toronto, ON M5V 1M7",
+                "business_type": "pubs-bars",
+                "website": "https://regulars.business.site/?utm_source=gmb&utm_medium=referral"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.402741,
+                    43.644138
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Reign Restaurant",
+                "address": "100 Front St. W, Toronto ON, M5J 1E3",
+                "business_type": "restaurants",
+                "website": "https://www.reigntoronto.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3805762,
+                    43.6459059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ricarda’s",
+                "address": "134 Peter St, Toronto, ON M5V 2H2",
+                "business_type": "restaurants",
+                "website": "https://ricardas.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3935379,
+                    43.6486746
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ritz Bar (The Ritz-Carlton)",
+                "address": "181 Wellington St. W, Toronto, ON M5V 3G7",
+                "business_type": "pubs-bars",
+                "website": "https://www.ritzcarlton.com/en/hotels/canada/toronto/dining/ritz-bar"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386825,
+                    43.645685
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rock ‘n’ Horse Saloon",
+                "address": "250 Adelaide St. W, Toronto, ON M5H 1X6",
+                "business_type": "pubs-bars",
+                "website": "https://rocknhorsesaloon.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38911213709616,
+                    43.64832215
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rodney’s Oyster House",
+                "address": "469 King St W, Toronto, ON M5V 1K4",
+                "business_type": "restaurants",
+                "website": "https://rodneysoysterhouse.com/toronto"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.396396,
+                    43.645094
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ruby Soho",
+                "address": "587 King St W, Toronto, ON M5V 1M5",
+                "business_type": "pubs-bars",
+                "website": "https://www.rubysohobar.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4001695,
+                    43.6442721
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Saint John’s Tavern",
+                "address": "117 John St, Toronto, ON M5V 2E2",
+                "business_type": "restaurants",
+                "website": "https://www.saintjohnstavern.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.51357377032113,
+                    43.70453160484283
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Scaddabush Italian Kitchen & Bar",
+                "address": "200 Front St. W, Toronto, ON M5V 3J1",
+                "business_type": "restaurants",
+                "website": "https://www.scaddabush.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.385384,
+                    43.644806
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Shook",
+                "address": "77 Portland St, Toronto, ON M5V 2M9",
+                "business_type": "restaurants",
+                "website": "https://shookkitchen.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3995114,
+                    43.6439839
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Siempre Breakfast & Lunch",
+                "address": "348 Front St W, Toronto, ON M5V 3W7",
+                "business_type": "restaurants",
+                "website": "https://www.siempre-toronto.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392208,
+                    43.643378
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "SOCO Kitchen + Bar (Delta Hotel)",
+                "address": "75 Lower Simcoe St, Toronto, ON M5J 3A6",
+                "business_type": "restaurants",
+                "website": "https://www.socokitchenandbar.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38387181137503,
+                    43.643082
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "South St. Burger",
+                "address": "20 John St, Toronto, ON M5V 0G5",
+                "business_type": "restaurants",
+                "website": "https://www.southstburger.com/location/20-john-st/?utm_source=G&utm_medium=LPM&utm_campaign=MTY"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388856,
+                    43.644105
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sportsnet Grill",
+                "address": "1 Blue Jays Way, Toronto, ON M5V 1J4",
+                "business_type": "restaurants",
+                "website": "http://www.sportsnetgrill.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3899493,
+                    43.642343
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Star Sushi",
+                "address": "7 Mercer St, Toronto, ON M5V 1H2",
+                "business_type": "restaurants",
+                "website": "https://starsushi.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38988,
+                    43.645723
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pai",
+                "address": "18 Duncan St, Toronto, ON M5H 3G8",
+                "business_type": "restaurants",
+                "website": "https://www.paitoronto.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388714,
+                    43.6478355
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Par-Tee Putt",
+                "address": "26 Duncan St, Toronto, ON M5V 2B8",
+                "business_type": "night-clubs-entertainment-venues",
+                "website": "https://parteeputt.com/toronto"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388926,
+                    43.648481
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Paramount Fine Foods",
+                "address": "141 Spadina Ave, Toronto, ON M5V 1X3",
+                "business_type": "restaurants",
+                "website": "https://paramountfinefoods.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3956532,
+                    43.6477079
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Patria",
+                "address": "478 King St W, Toronto, ON M5V 1L7",
+                "business_type": "restaurants",
+                "website": "https://patriatoronto.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3963398,
+                    43.6455571
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Petros 82",
+                "address": "299 Adelaide St W, Toronto, ON M5V 1P7",
+                "business_type": "restaurants",
+                "website": "https://www.petros82.to"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.391126,
+                    43.647465
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Petty Cash",
+                "address": "487 Adelaide St W, Toronto, ON M5V 1T4",
+                "business_type": "restaurants",
+                "website": "http://pettycashtoronto.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400808,
+                    43.645494
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Khao San Road",
+                "address": "11 Charlotte St, Toronto, ON M5V 2H5",
+                "business_type": "restaurants",
+                "website": "http://www.khaosanroad.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39347704976286,
+                    43.646427
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kibo Sushi House",
+                "address": "36 Charlotte St #102, Toronto, ON M5V 3P7",
+                "business_type": "restaurants",
+                "website": "https://www.kibosushi.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3941509,
+                    43.6465609
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Copacabana Brazilian Steakhouse",
+                "address": "230 Adelaide St W, Toronto, ON M5H 3H1",
+                "business_type": "restaurants",
+                "website": "https://www.thecopa.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388438,
+                    43.648449
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Corks Beer & Wine Bar",
+                "address": "15 York St, Toronto, ON M5J 0A3",
+                "business_type": "pubs-bars",
+                "website": "https://www.facebook.com/pages/Corks-Beer-Wine-Bar/182263251790498"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.380761,
+                    43.6424718
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dasha",
+                "address": "620 King St W, Toronto, ON M5V 1K4",
+                "business_type": "restaurants",
+                "website": "https://dashatoronto.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400487,
+                    43.644454
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "District Eatery",
+                "address": "303 King St. W, Toronto, ON, M5V 1J5",
+                "business_type": "pubs-bars",
+                "website": "https://districteatery.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3903214,
+                    43.6462776
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eighteen30",
+                "address": "9 Clarence Square, Toronto, ON M5V 1H1",
+                "business_type": "restaurants",
+                "website": "https://www.eighteen30.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3938034,
+                    43.6448464
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Elephant & Castle",
+                "address": "212 King St. W, Toronto, ON M5H 1K5",
+                "business_type": "pubs-bars",
+                "website": "https://www.elephantcastle.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386162,
+                    43.64749
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gabby’s King West",
+                "address": "309 King St W, Toronto, ON M5V 1J5",
+                "business_type": "pubs-bars",
+                "website": "https://gabbys.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.390502,
+                    43.646326
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "General Assembly Pizza",
+                "address": "333 Adelaide St W, Toronto, ON M5V 1R5",
+                "business_type": "restaurants",
+                "website": "https://gapizza.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.393029,
+                    43.647175
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bang Sue Bar",
+                "address": "11 Charlotte St, second floor,  Toronto, ON M5V 2H5",
+                "business_type": "restaurants",
+                "website": "https://www.facebook.com/bangsuebar"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39347704976286,
+                    43.646427
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bar 244",
+                "address": "244 Adelaide St. W, Toronto, ON M5H 1X6",
+                "business_type": "pubs-bars",
+                "website": "http://bar244.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38888,
+                    43.648241
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bar Hop",
+                "address": "391 King St. W, Toronto, ON M5V 1K1",
+                "business_type": "pubs-bars",
+                "website": "https://www.barhopbar.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3936933,
+                    43.6457428
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bar Hop Brewco",
+                "address": "137 Peter St, Toronto, ON M5V 2H3",
+                "business_type": "pubs-bars",
+                "website": "https://www.barhopbar.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.393148,
+                    43.648871
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Biergarten (Steam Whistle Brewery)",
+                "address": "255 Bremner Blvd, Toronto, ON M5V 3M9",
+                "business_type": "restaurants",
+                "website": "https://roundhouse.steamwhistle.ca/biergarten"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.385766,
+                    43.641636
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Boston Pizza",
+                "address": "250 Front St. W, Toronto, ON M5V 3G5",
+                "business_type": "restaurants",
+                "website": "https://bostonpizza.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386898,
+                    43.644458
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Campechano",
+                "address": "504 Adelaide St W, Toronto, ON M5V 1T4",
+                "business_type": "restaurants",
+                "website": "https://www.campechano.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.401013,
+                    43.645805
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Canteen",
+                "address": "330 King St. W, Toronto, ON M5V 3X2",
+                "business_type": "restaurants",
+                "website": "https://www.obcanteen.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.390407,
+                    43.646627
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Casa Madera (1 Hotel)",
+                "address": "550 Wellington St W, Toronto, ON M5V 2V5",
+                "business_type": "restaurants",
+                "website": "https://www.1hotels.com/toronto/taste/casa-madera"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4020189,
+                    43.6431446
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Char No. 5 Whisky Bar",
+                "address": "75 Lower Simcoe St, Toronto, ON M5J 3A6",
+                "business_type": "pubs-bars",
+                "website": "https://www.charfive.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38387181137503,
+                    43.643082
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Chubby’s Jamaican Kitchen",
+                "address": "104 Portland St, Toronto, ON M5V 2N2",
+                "business_type": "restaurants",
+                "website": "https://chubbysjamaican.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.400897,
+                    43.645268
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cibo Wine Bar",
+                "address": "522 King St W, Toronto, ON M5V 1L7",
+                "business_type": "restaurants",
+                "website": "https://cibo.menu/kingwest"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3974107,
+                    43.6452161
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Coffee Oysters Champagne",
+                "address": "214 King St W, Toronto, ON M5H 3S6",
+                "business_type": "restaurants",
+                "website": "https://www.sipshucksip.com"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386226,
+                    43.647476
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wahlburgers Toronto",
+                "address": "46 Blue Jays Way, Toronto, ON M5V 2G5",
+                "business_type": "restaurants",
+                "website": "https://www.wahlburgers.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3921299,
+                    43.6451233
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "360 Restaurant (CN Tower)",
+                "address": "290 Bremner Blvd, Toronto, ON M5V 3L9",
+                "business_type": "restaurants",
+                "website": "https://www.cntower.ca/plan-an-event/our-spaces/360-restaurant"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38708718320467,
+                    43.6425637
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Real Sports Bar & Grill ",
+                "address": "15 York St, Toronto, ON M5J 2Z2",
+                "business_type": "restaurants",
+                "website": "https://www.rs.ca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.381067,
+                    43.642283
+                ]
+            }
+        }
+    ]
+}
