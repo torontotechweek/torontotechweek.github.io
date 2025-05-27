@@ -225,7 +225,7 @@ body {
     height: auto;
     scroll-snap-align: center;
     border-radius: 999px;
-    background-color: hsla(0, 0%, 100%, 0.8);
+    background-color: hsla(0, 0%, 70%, 0.8);
     padding: 5px 0 5px 20px;
 }
 
@@ -253,8 +253,8 @@ body {
 }
 
 .active-category {
-    background-color: hsl(0, 0%, 0%) !important;
-    color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, 0.8) !important;
+    color: hsl(0, 0%, 0%);
 }
 
 /* For WebKit browsers (Chrome, Safari, Edge) */
