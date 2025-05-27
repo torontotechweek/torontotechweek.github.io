@@ -17,7 +17,7 @@
 			"id": "background",
 			"type": "background",
 			"paint": {
-				"background-color": "hsl(0, 0%, 99%)"
+				"background-color": "hsl(252, 18%, 37%)"
 			}
 		},
 		{
@@ -27,22 +27,10 @@
 			"source-layer": "land",
 			"filter": [ "in", "kind", "brownfield", "farmland", "farmyard", "greenfield", "greenhouse_horticulture", "orchard", "plant_nursery", "vineyard", "park", "village_green", "recreation_ground", "allotments", "garden", "miniature_golf", "playground", "golf_course", "forest", "grass", "grassland", "meadow", "wet_meadow", "heath", "scrub", "beach", "sand", "bog", "marsh", "string_bog", "swamp" ],
 			"paint": {
-			  "fill-color": "hsl(110, 60%, 80%)",
+			  "fill-color": "hsl(165, 8%, 46%)",
 			  "fill-opacity": 1
 			},
 			"minzoom": 10
-		},
-		{
-			"id": "site-parking",
-			"type": "fill",
-			"source": "osm",
-			"source-layer": "sites",
-			"minzoom": 15,
-			"filter": ["in", "kind", "parking"],
-			"paint": {
-			  "fill-color": "hsl(0, 0%, 97%)",
-			  "fill-opacity": 1
-			}
 		},
 		{
 			"source": "osm",
@@ -51,7 +39,7 @@
 			"source-layer": "water_polygons",
 			"filter": [ "in", "kind", "water", "river", "reservoir", "basin", "dock" ],
 			"paint": {
-				"fill-color": "hsl(200, 100%, 90%)"
+				"fill-color": "hsl(216, 44%, 26%)"
 			}
 		},
 		{
@@ -61,7 +49,7 @@
 			"source-layer": "water_lines",
 			"filter": [ "all", [ "in", "kind", "river" ], [ "!=", "tunnel", true ], [ "!=", "bridge", true ] ],
 			"paint": {
-				"line-color": "hsl(200, 100%, 90%)",
+				"line-color": "hsl(216, 44%, 26%)",
 				"line-width": 1,
 				"line-opacity": { "stops": [ [ 5, 0 ], [ 6, 1 ] ] }
 			}
@@ -72,35 +60,8 @@
 			"type": "fill",
 			"source-layer": "buildings",
 			"paint": {
-				"fill-color": "hsl(25, 20%, 90%)",
+				"fill-color": "hsl(280, 10%, 40%)",
 				"fill-opacity": { "stops": [ [ 14, 0 ], [ 15, 1 ] ] }
-			}
-		},
-		{
-			"source": "osm",
-			"id": "building-wall",
-			"type": "line",
-			"source-layer": "buildings",
-			"paint": {
-				"line-color": "hsl(25, 20%, 80%)",
-				"line-offset": { "stops": [ [ 15, 1 ], [ 20, 3 ] ] },
-				"line-width": { "stops": [ [ 15, 0.5 ], [ 20, 1 ] ] },
-				"line-opacity": { "stops": [ [ 15, 0 ], [ 15.5, 1 ] ] }
-			},
-			"layout": {
-				"line-join": "miter",
-				"line-cap": "butt"
-			}
-		},
-		{
-			"source": "osm",
-			"id": "building-buffer",
-			"type": "line",
-			"source-layer": "buildings",
-			"paint": {
-				"line-color": "hsl(0, 0%, 99%)",
-				"line-width": { "stops": [ [ 15, 1 ], [ 20, 5 ] ] },
-				"line-opacity": { "stops": [ [ 14, 0 ], [ 15, 1 ] ] }
 			}
 		},
 		{
@@ -142,45 +103,12 @@
 		},
 		{
 			"source": "osm",
-			"id": "highway-minor-buffer",
-			"type": "line",
-			"source-layer": "streets",
-			"filter": [ "==", "kind", "residential" ],
-			"paint": {
-				"line-color": "hsl(0, 0%, 99%)",
-				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 13, 20, 106 ],
-				"line-opacity": { "stops": [ [ 5, 0 ], [ 6, 1 ] ] }
-			},
-			"layout": {
-				"line-join": "round",
-				"line-cap": "round"
-			},
-			"minzoom": 15
-		},
-		{
-			"source": "osm",
-			"id": "highway-major-buffer",
-			"type": "line",
-			"source-layer": "streets",
-			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
-			"paint": {
-				"line-color": "hsl(0, 0%, 99%)",
-				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 15, 20, 166 ],
-				"line-opacity": { "stops": [ [ 5, 0 ], [ 6, 1 ] ] }
-			},
-			"layout": {
-				"line-join": "round",
-				"line-cap": "round"
-			}
-		},
-		{
-			"source": "osm",
 			"id": "highway-service-outline",
 			"type": "line",
 			"source-layer": "streets",
 			"filter": [ "all", [ "in", "kind", "service" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 80%)",
+				"line-color": "hsl(233, 15%, 77%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 32 ]
 			},
 			"layout": {
@@ -196,7 +124,7 @@
 			"source-layer": "streets",
 			"filter": [ "in", "kind", "residential" ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 80%)",
+				"line-color": "hsl(233, 15%, 77%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 3, 20, 96 ],
 				"line-opacity": { "stops": [ [ 5, 0 ], [ 6, 1 ] ] }
 			},
@@ -213,7 +141,7 @@
 			"source-layer": "streets",
 			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 80%)",
+				"line-color": "hsl(233, 15%, 77%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 5, 20, 156 ],
 				"line-opacity": { "stops": [ [ 5, 0 ], [ 6, 1 ] ] }
 			},
@@ -229,7 +157,7 @@
 			"source-layer": "streets",
 			"filter": [ "all", [ "in", "kind", "service" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 90%)",
+				"line-color": "hsl(233, 15%, 67%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 30 ]
 			},
 			"layout": {
@@ -245,7 +173,7 @@
 			"source-layer": "streets",
 			"filter": [ "in", "kind", "residential" ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 90%)",
+				"line-color": "hsl(233, 15%, 67%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 92 ],
 				"line-opacity": { "stops": [ [ 5, 0 ], [ 6, 1 ] ] }
 			},
@@ -262,7 +190,7 @@
 			"source-layer": "streets",
 			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
 			"paint": {
-				"line-color": "hsl(214, 33%, 90%)",
+				"line-color": "hsl(233, 15%, 67%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 152 ],
 				"line-opacity": { "stops": [ [ 5, 0 ], [ 6, 1 ] ] }
 			},
@@ -278,7 +206,7 @@
 			"source-layer": "streets",
 			"filter": [ "all", [ "in", "kind", "rail" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
 			"paint": {
-				"line-color": "hsl(0, 0%, 80%)",
+				"line-color": "hsl(233, 15%, 57%)",
 				"line-width": { "stops": [ [ 8, 1 ], [ 13, 1 ], [ 15, 3 ], [ 16, 4 ], [ 18, 8 ], [ 19, 11 ], [ 20, 14 ] ] },
 				"line-opacity": { "stops": [ [ 14, 0 ], [ 15, 1 ] ] }
 			}
@@ -367,11 +295,11 @@
 			"paint": {
 				"icon-opacity": { "stops": [ [ 16, 0 ], [ 17, 0.8 ] ] },
 				"text-opacity": { "stops": [ [ 16, 0 ], [ 17, 0.8 ] ] },
-				"icon-color": "hsl(0, 0%, 0%)",
-				"text-color": "hsl(0, 0%, 0%)",
+				"icon-color": "hsl(310, 100%, 90%)",
+				"text-color": "hsl(310, 100%, 90%)",
 				"text-halo-color": "hsl(0, 0%, 100%)",
-				"text-halo-width": 1,
-				"text-halo-blur": 0.5
+				"text-halo-width": 0,
+				"text-halo-blur": 0
 			}
 		}
 	]

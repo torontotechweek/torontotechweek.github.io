@@ -168,8 +168,7 @@ body {
     font-size: 11px;
     letter-spacing: 0.1;
     border-radius: 50%;
-    border: 2px solid hsl(0, 0%, 50%);
-    background-color: hsla(0, 0%, 90%, 0.8);
+    background-color: hsla(0, 0%, 100%, 0.8);
     transition: background-color 0.2s;
 }
 
@@ -226,8 +225,7 @@ body {
     height: auto;
     scroll-snap-align: center;
     border-radius: 999px;
-    border: 2px solid hsl(0, 0%, 50%);
-    background-color: hsla(0, 0%, 90%, 0.8);
+    background-color: hsla(0, 0%, 100%, 0.8);
     padding: 5px 0 5px 20px;
 }
 
