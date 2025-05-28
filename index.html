@@ -9,6 +9,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -99,50 +100,51 @@
 				'paint': {
 					'line-color': 'hsl(225, 89%, 90%)',
 					'line-width': ['interpolate', ['exponential', 1.5], ['zoom'], 10, 1, 18, 20],
-					'line-opacity': ['interpolate', ['linear'], ['zoom'], 11, 0, 12, 0.5, 17, 0.5, 18, 0]
+					'line-opacity': ['interpolate', ['linear'], ['zoom'], 10, 0, 11, 0.5, 14, 0.5, 15, 0]
 				},
-				"minzoom": 11
+				"minzoom": 10,
+				"maxzoom": 15
 			});
 
 			// Add transit lines
-			map.addLayer({
-				'id': 'transit-lines',
-				'source': 'toronto_transit',
-				'type': 'line',
-				'paint': {
-					// 'line-color': [
-					// 	'case',
-					// 	['==', ['get', 'name'], 'Bloor-Danforth'], 'hsl(144, 100%, 49%)',
-					// 	['==', ['get', 'name'], 'Yonge-University'], 'hsl(47, 100%, 69%)',
-					// 	'hsl(0, 100%, 70%)'
-					// ],
-					'line-color': 'hsl(47, 100%, 69%)',
-					'line-width': ['interpolate', ['linear'], ['zoom'], 10, 0, 18, 10],
-					'line-opacity': ['interpolate', ['linear'], ['zoom'], 13, 0, 14, 0.5],
-					'line-blur': 3
-				},
-				'minzoom': 13
-			});
+			// map.addLayer({
+			// 	'id': 'transit-lines',
+			// 	'source': 'toronto_transit',
+			// 	'type': 'line',
+			// 	'paint': {
+			// 		// 'line-color': [
+			// 		// 	'case',
+			// 		// 	['==', ['get', 'name'], 'Bloor-Danforth'], 'hsl(144, 100%, 49%)',
+			// 		// 	['==', ['get', 'name'], 'Yonge-University'], 'hsl(47, 100%, 69%)',
+			// 		// 	'hsl(0, 100%, 70%)'
+			// 		// ],
+			// 		'line-color': 'hsl(47, 100%, 69%)',
+			// 		'line-width': ['interpolate', ['linear'], ['zoom'], 10, 0, 18, 10],
+			// 		'line-opacity': ['interpolate', ['linear'], ['zoom'], 13, 0, 14, 0.5],
+			// 		'line-blur': 3
+			// 	},
+			// 	'minzoom': 13
+			// });
 
 			// Add buildings
 			map.addLayer({
-					'id': 'buildings',
-					'source': 'toronto_buildings',
-					'source-layer': 'toronto_buildings',
-					'type': 'fill-extrusion',
-					'paint': {
-						'fill-extrusion-color': 'hsl(280, 10%, 40%)',
-						'fill-extrusion-height': [
-							'case',
-							['!=', ['get', 'max_height'], null], ['get', 'max_height'],
-							['!=', ['get', 'avg_height'], null], ['get', 'avg_height'],
-							10
-						],
-						'fill-extrusion-base': 0,
-						'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, 0.7, 17, 0.7, 18, 0]
-					},
-					'minzoom': 15
-				}, 'highway-name-minor');
+				'id': 'buildings',
+				'source': 'toronto_buildings',
+				'source-layer': 'toronto_buildings',
+				'type': 'fill-extrusion',
+				'paint': {
+					'fill-extrusion-color': 'hsl(280, 10%, 40%)',
+					'fill-extrusion-height': [
+						'case',
+						['!=', ['get', 'max_height'], null], ['get', 'max_height'],
+						['!=', ['get', 'avg_height'], null], ['get', 'avg_height'],
+						10
+					],
+					'fill-extrusion-base': 0,
+					'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, 0.7, 17, 0.7, 18, 0]
+				},
+				'minzoom': 15
+			}, 'highway-name-minor');
 
 			// Add neighborhood labels
 			map.addLayer({
@@ -331,10 +333,18 @@
 			title.textContent = properties.title || 'Untitled Location';
 			textContainer.appendChild(title);
 
-			// Time
+			// Time container creation
 			if (properties.start_date) {
-				const timeRange = document.createElement('p');
-				timeRange.className = 'popup-time-range';
+				const timeContainer = document.createElement('div');
+				timeContainer.className = 'popup-time-container';
+
+				// Clock icon
+				const clockIcon = document.createElement('i');
+				clockIcon.className = 'fas fa-clock popup-time-icon';
+
+				// Time text
+				const timeRange = document.createElement('span');  // Changed from <p> to <span>
+				timeRange.className = 'popup-time-text';
 
 				const formatTime = (dateString) => {
 					return new Date(dateString).toLocaleTimeString('en-US', {
@@ -345,18 +355,34 @@
 				};
 
 				let timeText = formatTime(properties.start_date);
-
-				// Add end time if different
-				if (properties.end_date) {
-					const start = new Date(properties.start_date).getTime();
-					const end = new Date(properties.end_date).getTime();
-					if (start !== end) {
-						timeText += ` – ${formatTime(properties.end_date)}`;
-					}
+				if (properties.end_date && new Date(properties.start_date).getTime() !== new Date(properties.end_date).getTime()) {
+					timeText += ` – ${formatTime(properties.end_date)}`;
 				}
 
 				timeRange.textContent = timeText;
-				textContainer.appendChild(timeRange);
+
+				timeContainer.appendChild(clockIcon);
+				timeContainer.appendChild(timeRange);
+				textContainer.appendChild(timeContainer);
+			}
+
+			// Address container creation
+			if (properties.address) {
+				const addressContainer = document.createElement('div');
+				addressContainer.className = 'popup-address-container';
+
+				// Location icon
+				const locationIcon = document.createElement('i');
+				locationIcon.className = 'fas fa-map-marker-alt popup-location-icon';
+
+				// Address text
+				const addressText = document.createElement('span');
+				addressText.className = 'popup-address-text';
+				addressText.textContent = properties.address;
+
+				addressContainer.appendChild(locationIcon);
+				addressContainer.appendChild(addressText);
+				textContainer.appendChild(addressContainer);
 			}
 
 			if (properties.description) {
@@ -465,10 +491,18 @@
 				title.textContent = properties.title || 'Untitled Location';
 				textContainer.appendChild(title);
 
-				// Time
+				// Time container creation
 				if (properties.start_date) {
-					const timeRange = document.createElement('p');
-					timeRange.className = 'popup-time-range';
+					const timeContainer = document.createElement('div');
+					timeContainer.className = 'popup-time-container';
+
+					// Clock icon
+					const clockIcon = document.createElement('i');
+					clockIcon.className = 'fas fa-clock popup-time-icon';
+
+					// Time text
+					const timeRange = document.createElement('span');  // Changed from <p> to <span>
+					timeRange.className = 'popup-time-text';
 
 					const formatTime = (dateString) => {
 						return new Date(dateString).toLocaleTimeString('en-US', {
@@ -479,18 +513,34 @@
 					};
 
 					let timeText = formatTime(properties.start_date);
-
-					// Add end time if different
-					if (properties.end_date) {
-						const start = new Date(properties.start_date).getTime();
-						const end = new Date(properties.end_date).getTime();
-						if (start !== end) {
-							timeText += ` – ${formatTime(properties.end_date)}`;
-						}
+					if (properties.end_date && new Date(properties.start_date).getTime() !== new Date(properties.end_date).getTime()) {
+						timeText += ` – ${formatTime(properties.end_date)}`;
 					}
 
 					timeRange.textContent = timeText;
-					textContainer.appendChild(timeRange);
+
+					timeContainer.appendChild(clockIcon);
+					timeContainer.appendChild(timeRange);
+					textContainer.appendChild(timeContainer);
+				}
+
+				// Address container creation
+				if (properties.address) {
+					const addressContainer = document.createElement('div');
+					addressContainer.className = 'popup-address-container';
+
+					// Location icon
+					const locationIcon = document.createElement('i');
+					locationIcon.className = 'fas fa-map-marker-alt popup-location-icon';
+
+					// Address text
+					const addressText = document.createElement('span');
+					addressText.className = 'popup-address-text';
+					addressText.textContent = properties.address;
+
+					addressContainer.appendChild(locationIcon);
+					addressContainer.appendChild(addressText);
+					textContainer.appendChild(addressContainer);
 				}
 
 				if (properties.description) {

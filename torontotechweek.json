@@ -317,10 +317,10 @@
 			"filter": [ "in", "kind", "bus_stop", "tram_stop", "light_rail" ],
 			"layout": {
 				"text-field": "{name}",
-				"icon-size": 0.5,
+				"icon-size": 0.7,
 				"symbol-placement": "point",
 				"text-font": [ "montserrat-semibold" ],
-				"text-size": 10,
+				"text-size": 12,
 				"icon-anchor": "bottom",
 				"text-anchor": "top",
 				"icon-image": "icon-bus",
@@ -330,15 +330,15 @@
 				"text-ignore-placement": false
 			},
 			"paint": {
-				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 13, 0, 14, 1 ],
-				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 13, 0, 14, 1 ],
+				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ],
+				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ],
 				"icon-color": "hsl(52, 96%, 66%)",
 				"text-color": "hsl(52, 96%, 66%)",
-				"text-halo-color": "hsl(0, 0%, 100%)",
+				"text-halo-color": "hsl(0, 0%, 20%)",
 				"text-halo-width": 0,
 				"text-halo-blur": 0
 			},
-			"minzoom": 13
+			"minzoom": 14
 		},
 		{
 			"source": "osm",
@@ -348,10 +348,10 @@
 			"filter": [ "in", "kind", "station" ],
 			"layout": {
 				"text-field": "{name}",
-				"icon-size": 0.5,
+				"icon-size": 0.7,
 				"symbol-placement": "point",
 				"text-font": [ "montserrat-semibold" ],
-				"text-size": 10,
+				"text-size": 12,
 				"icon-anchor": "bottom",
 				"text-anchor": "top",
 				"icon-image": "icon-rail_metro",
@@ -365,7 +365,7 @@
 				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 13, 0, 14, 1 ],
 				"icon-color": "hsl(52, 96%, 66%)",
 				"text-color": "hsl(52, 96%, 66%)",
-				"text-halo-color": "hsl(0, 0%, 100%)",
+				"text-halo-color": "hsl(0, 0%, 20%)",
 				"text-halo-width": 0,
 				"text-halo-blur": 0
 			},
