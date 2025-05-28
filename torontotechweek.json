@@ -290,8 +290,16 @@
 			"paint": {
 				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 1 ],
 				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 1 ],
-				"icon-color": "hsl(310, 100%, 90%)",
-				"text-color": "hsl(310, 100%, 90%)",
+				"icon-color": [
+					"case",
+					["==", ["get", "amenity"], "bicycle_rental"], "hsl(52, 96%, 66%)",
+					"hsl(310, 100%, 90%)"
+				],
+				"text-color": [
+					"case",
+					["==", ["get", "amenity"], "bicycle_rental"], "hsl(52, 96%, 66%)",
+					"hsl(310, 100%, 90%)"
+				],
 				"text-halo-color": "hsl(0, 0%, 100%)",
 				"text-halo-width": 0,
 				"text-halo-blur": 0
