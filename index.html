@@ -40,7 +40,7 @@
 			maxZoom: 18,
 			//maxBounds: [ [-79.56729275921924, 43.56518035854518],[-79.27118684581397, 43.728046474967954] ],
 			bearing: 0,
-			pitch: 0,
+			pitch: 20,
 			pixelRatio: 1,
 			hash: true,
 			attributionControl: true
@@ -71,6 +71,12 @@
 				'data': 'data/toronto_neighborhoods_centroids.geojson'
 			});
 
+			// Add transit source
+			map.addSource('toronto_transit', {
+				'type': 'geojson',
+				'data': 'data/toronto_transit.geojson'
+			});
+
 			// Add event source
 			map.addSource('events', {
 				'type': 'geojson',
@@ -93,13 +99,33 @@
 				'paint': {
 					'line-color': 'hsl(225, 89%, 90%)',
 					'line-width': ['interpolate', ['exponential', 1.5], ['zoom'], 10, 1, 18, 20],
-					'line-opacity': ['interpolate', ['linear'], ['zoom'], 17, 0.5, 18, 0]
-				}
+					'line-opacity': ['interpolate', ['linear'], ['zoom'], 11, 0, 12, 0.5, 17, 0.5, 18, 0]
+				},
+				"minzoom": 11
+			});
+
+			// Add transit lines
+			map.addLayer({
+				'id': 'transit-lines',
+				'source': 'toronto_transit',
+				'type': 'line',
+				'paint': {
+					// 'line-color': [
+					// 	'case',
+					// 	['==', ['get', 'name'], 'Bloor-Danforth'], 'hsl(144, 100%, 49%)',
+					// 	['==', ['get', 'name'], 'Yonge-University'], 'hsl(47, 100%, 69%)',
+					// 	'hsl(0, 100%, 70%)'
+					// ],
+					'line-color': 'hsl(47, 100%, 69%)',
+					'line-width': ['interpolate', ['linear'], ['zoom'], 10, 0, 18, 10],
+					'line-opacity': ['interpolate', ['linear'], ['zoom'], 13, 0, 14, 0.5],
+					'line-blur': 3
+				},
+				'minzoom': 13
 			});
 
 			// Add buildings
-			map.addLayer(
-				{
+			map.addLayer({
 					'id': 'buildings',
 					'source': 'toronto_buildings',
 					'source-layer': 'toronto_buildings',
@@ -116,8 +142,7 @@
 						'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, 0.7, 17, 0.7, 18, 0]
 					},
 					'minzoom': 15
-				}, 'poi-amenity'
-			);
+				}, 'highway-name-minor');
 
 			// Add neighborhood labels
 			map.addLayer({
@@ -138,8 +163,9 @@
 				},
 				paint: {
 					'text-color': 'hsl(225, 89%, 90%)',
-					'text-opacity': 0.8
-				}
+					'text-opacity': ['interpolate', ['linear'], ['zoom'], 11, 0, 12, 0.8, 17, 0.8, 18, 0]
+				},
+				"minzoom": 11
 			});
 
 			// Add event points
