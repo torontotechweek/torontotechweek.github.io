@@ -72,12 +72,6 @@
 				'data': 'data/toronto_neighborhoods_centroids.geojson'
 			});
 
-			// Add transit source
-			map.addSource('toronto_transit', {
-				'type': 'geojson',
-				'data': 'data/toronto_transit.geojson'
-			});
-
 			// Add event source
 			map.addSource('events', {
 				'type': 'geojson',
@@ -106,27 +100,21 @@
 				"maxzoom": 15
 			});
 
-			// Add transit lines
-			// map.addLayer({
-			// 	'id': 'transit-lines',
-			// 	'source': 'toronto_transit',
-			// 	'type': 'line',
-			// 	'paint': {
-			// 		// 'line-color': [
-			// 		// 	'case',
-			// 		// 	['==', ['get', 'name'], 'Bloor-Danforth'], 'hsl(144, 100%, 49%)',
-			// 		// 	['==', ['get', 'name'], 'Yonge-University'], 'hsl(47, 100%, 69%)',
-			// 		// 	'hsl(0, 100%, 70%)'
-			// 		// ],
-			// 		'line-color': 'hsl(47, 100%, 69%)',
-			// 		'line-width': ['interpolate', ['linear'], ['zoom'], 10, 0, 18, 10],
-			// 		'line-opacity': ['interpolate', ['linear'], ['zoom'], 13, 0, 14, 0.5],
-			// 		'line-blur': 3
-			// 	},
-			// 	'minzoom': 13
-			// });
+			// Add building outlines
+			map.addLayer({
+				'id': 'buildings-outline',
+				'source': 'toronto_buildings',
+				'source-layer': 'toronto_buildings',
+				'type': 'line',
+				'paint': {
+					'line-color': 'hsl(280, 10%, 40%)',
+					'line-width': 2,
+					'line-opacity': [ "interpolate", [ "linear" ], [ "zoom" ], 16, 0, 18, 1 ]
+				},
+				'minzoom': 16
+			}, 'highway-name-minor');
 
-			// Add buildings
+			// Add 3d buildings
 			map.addLayer({
 				'id': 'buildings',
 				'source': 'toronto_buildings',
@@ -255,94 +243,94 @@
 		});
 
 		const updateInfoBox = async () => {
-    const infoBox = document.getElementById('info-box');
-    infoBox.innerHTML = '';
+			const infoBox = document.getElementById('info-box');
+			infoBox.innerHTML = '';
 
-    if (!locationData?.features?.length) return;
+			if (!locationData?.features?.length) return;
 
-    // 1. Group features by unique calendar days
-    const featuresByDay = locationData.features.reduce((acc, feature) => {
-        if (!feature.properties.start_date) return acc;
-        
-        const dayKey = new Intl.DateTimeFormat('en-CA', {
-            timeZone: 'America/New_York',
-            year: 'numeric',
-            month: '2-digit',
-            day: '2-digit'
-        }).format(new Date(feature.properties.start_date));
+			// 1. Group features by unique calendar days
+			const featuresByDay = locationData.features.reduce((acc, feature) => {
+				if (!feature.properties.start_date) return acc;
+				
+				const dayKey = new Intl.DateTimeFormat('en-CA', {
+					timeZone: 'America/New_York',
+					year: 'numeric',
+					month: '2-digit',
+					day: '2-digit'
+				}).format(new Date(feature.properties.start_date));
 
-        if (!acc[dayKey]) {
-            acc[dayKey] = {
-                dateObj: new Date(feature.properties.start_date),
-                features: []
-            };
-        }
-        acc[dayKey].features.push(feature);
-        return acc;
-    }, {});
+				if (!acc[dayKey]) {
+					acc[dayKey] = {
+						dateObj: new Date(feature.properties.start_date),
+						features: []
+					};
+				}
+				acc[dayKey].features.push(feature);
+				return acc;
+			}, {});
 
-    // 2. Sort days chronologically
-    const sortedDays = Object.entries(featuresByDay)
-        .sort((a, b) => a[1].dateObj - b[1].dateObj);
+			// 2. Sort days chronologically
+			const sortedDays = Object.entries(featuresByDay)
+				.sort((a, b) => a[1].dateObj - b[1].dateObj);
 
-    // 3. Create container
-    const innerContainer = document.createElement('div');
-    innerContainer.className = 'info-box-inner';
+			// 3. Create container
+			const innerContainer = document.createElement('div');
+			innerContainer.className = 'info-box-inner';
 
-    // 4. Create day buttons with vertical date layout
-    sortedDays.forEach(([dayKey, dayData]) => {
-        const dateElement = document.createElement('div');
-        dateElement.className = 'info-feature';
-        if (currentActiveCategory === dayKey) {
-            dateElement.classList.add('active');
-        }
+			// 4. Create day buttons with vertical date layout
+			sortedDays.forEach(([dayKey, dayData]) => {
+				const dateElement = document.createElement('div');
+				dateElement.className = 'info-feature';
+				if (currentActiveCategory === dayKey) {
+					dateElement.classList.add('active');
+				}
 
-        // Create month element
-        const monthElement = document.createElement('div');
-        monthElement.className = 'info-feature-month';
-        monthElement.textContent = new Intl.DateTimeFormat('en-US', {
-            month: 'short'
-        }).format(dayData.dateObj);
+				// Create month element
+				const monthElement = document.createElement('div');
+				monthElement.className = 'info-feature-month';
+				monthElement.textContent = new Intl.DateTimeFormat('en-US', {
+					month: 'short'
+				}).format(dayData.dateObj);
 
-        // Create day element
-        const dayElement = document.createElement('div');
-        dayElement.className = 'info-feature-day';
-        dayElement.textContent = new Intl.DateTimeFormat('en-US', {
-            day: 'numeric'
-        }).format(dayData.dateObj);
+				// Create day element
+				const dayElement = document.createElement('div');
+				dayElement.className = 'info-feature-day';
+				dayElement.textContent = new Intl.DateTimeFormat('en-US', {
+					day: 'numeric'
+				}).format(dayData.dateObj);
 
-        // Append month and day
-        dateElement.appendChild(monthElement);
-        dateElement.appendChild(dayElement);
+				// Append month and day
+				dateElement.appendChild(monthElement);
+				dateElement.appendChild(dayElement);
 
-        dateElement.addEventListener('click', () => {
-            // Toggle active state
-            const isActive = dateElement.classList.contains('active');
-            
-            // Remove active class from all buttons
-            document.querySelectorAll('.info-feature').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // Toggle current button and update data
-            if (isActive) {
-                currentActiveCategory = 'all';
-                map.getSource('events').setData(locationData);
-            } else {
-                dateElement.classList.add('active');
-                currentActiveCategory = dayKey;
-                map.getSource('events').setData({
-                    ...locationData,
-                    features: dayData.features
-                });
-            }
-        });
+				dateElement.addEventListener('click', () => {
+					// Toggle active state
+					const isActive = dateElement.classList.contains('active');
+					
+					// Remove active class from all buttons
+					document.querySelectorAll('.info-feature').forEach(btn => {
+						btn.classList.remove('active');
+					});
+					
+					// Toggle current button and update data
+					if (isActive) {
+						currentActiveCategory = 'all';
+						map.getSource('events').setData(locationData);
+					} else {
+						dateElement.classList.add('active');
+						currentActiveCategory = dayKey;
+						map.getSource('events').setData({
+							...locationData,
+							features: dayData.features
+						});
+					}
+				});
 
-        innerContainer.appendChild(dateElement);
-    });
+				innerContainer.appendChild(dateElement);
+			});
 
-    infoBox.appendChild(innerContainer);
-};
+			infoBox.appendChild(innerContainer);
+		};
 
 		// This is needed to allow other clicks!
 		let ignoreNextMapClick = false;
@@ -648,36 +636,44 @@
 
 		});
 
-		// Close popup when clicking outside
+		// 1. Keep your existing map click handler for non-feature clicks
 		map.on('click', (e) => {
 			if (!popupOpen) return;
-
-			// Skip if this is the click that opened the popup
 			if (ignoreNextMapClick) {
 				ignoreNextMapClick = false;
 				return;
 			}
 
-			const popupContainer = document.getElementById('popup-container');
-			if (!popupContainer) return;
-
-			// Check if we clicked on a point feature
 			const features = map.queryRenderedFeatures(e.point, {
 				layers: ['points']
 			});
 
-			// Only close if NOT clicking on a point
 			if (features.length === 0) {
-				popupContainer.classList.remove('active');
-				popupOpen = false;
-
-				// Set all features to default style first
-				map.setPaintProperty('points', 'circle-color', 'hsl(225, 89%, 90%)');
-
-				// Set all clusters to default style first
-				map.setPaintProperty('clusters', 'circle-color', 'hsl(225, 89%, 90%)');
+				closePopup();
 			}
 		});
+
+		// 2. Add separate click handler for info-feature buttons
+		document.addEventListener('click', (e) => {
+			if (!popupOpen) return;
+			
+			// Check if clicked element or any of its parents is an info-feature
+			const infoFeature = e.target.closest('.info-feature');
+			if (infoFeature) {
+				closePopup();
+			}
+		});
+
+		// 3. Unified close function
+		function closePopup() {
+			const popupContainer = document.getElementById('popup-container');
+			if (popupContainer) {
+				popupContainer.classList.remove('active');
+				popupOpen = false;
+				map.setPaintProperty('points', 'circle-color', 'hsl(225, 89%, 90%)');
+				map.setPaintProperty('clusters', 'circle-color', 'hsl(225, 89%, 90%)');
+			}
+		}
 
 		// Helper function to handle clicks on points
 		const clickFeature = (feature) => {

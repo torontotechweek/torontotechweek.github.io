@@ -212,21 +212,21 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: hsla(0, 0%, 80%, 0.8);
+    background-color: hsla(0, 0%, 100%, 0.8);
     cursor: pointer;
 }
 
 .info-feature-month {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 11px;
+    font-weight: 400;
     text-transform: uppercase;
-    line-height: 0.8;
+    line-height: 0.9;
 }
 
 .info-feature-day {
     font-size: 20px;
-    font-weight: 900;
-    line-height: 0.8;
+    font-weight: 700;
+    line-height: 0.9;
 }
 
 .info-feature.active {
