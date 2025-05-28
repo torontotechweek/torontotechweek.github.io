@@ -252,23 +252,99 @@
 				updateInfoBox();
 			});
 
-			// Extract all unique tags from all features
-			const uniqueTags = [...new Set(
-				locationData.features
-					.map(feature => feature.properties.tags || '') // Get tags or empty string
-					.filter(tags => tags.trim()) // Remove empty tags
-					.map(tags => {
-						// Remove surrounding backslashes if present
-						const cleaned = tags.replace(/^\\|\\$/g, '');
-						return cleaned; // Return as single tag
-					})
-			)];
-
-			console.log('Unique tags:', uniqueTags);
-
 		});
 
-		// This is needed to allow other clicks (wild)!
+		const updateInfoBox = async () => {
+    const infoBox = document.getElementById('info-box');
+    infoBox.innerHTML = '';
+
+    if (!locationData?.features?.length) return;
+
+    // 1. Group features by unique calendar days
+    const featuresByDay = locationData.features.reduce((acc, feature) => {
+        if (!feature.properties.start_date) return acc;
+        
+        const dayKey = new Intl.DateTimeFormat('en-CA', {
+            timeZone: 'America/New_York',
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit'
+        }).format(new Date(feature.properties.start_date));
+
+        if (!acc[dayKey]) {
+            acc[dayKey] = {
+                dateObj: new Date(feature.properties.start_date),
+                features: []
+            };
+        }
+        acc[dayKey].features.push(feature);
+        return acc;
+    }, {});
+
+    // 2. Sort days chronologically
+    const sortedDays = Object.entries(featuresByDay)
+        .sort((a, b) => a[1].dateObj - b[1].dateObj);
+
+    // 3. Create container
+    const innerContainer = document.createElement('div');
+    innerContainer.className = 'info-box-inner';
+
+    // 4. Create day buttons with vertical date layout
+    sortedDays.forEach(([dayKey, dayData]) => {
+        const dateElement = document.createElement('div');
+        dateElement.className = 'info-feature';
+        if (currentActiveCategory === dayKey) {
+            dateElement.classList.add('active');
+        }
+
+        // Create month element
+        const monthElement = document.createElement('div');
+        monthElement.className = 'info-feature-month';
+        monthElement.textContent = new Intl.DateTimeFormat('en-US', {
+            month: 'short'
+        }).format(dayData.dateObj);
+
+        // Create day element
+        const dayElement = document.createElement('div');
+        dayElement.className = 'info-feature-day';
+        dayElement.textContent = new Intl.DateTimeFormat('en-US', {
+            day: 'numeric'
+        }).format(dayData.dateObj);
+
+        // Append month and day
+        dateElement.appendChild(monthElement);
+        dateElement.appendChild(dayElement);
+
+        dateElement.addEventListener('click', () => {
+            // Toggle active state
+            const isActive = dateElement.classList.contains('active');
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.info-feature').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Toggle current button and update data
+            if (isActive) {
+                currentActiveCategory = 'all';
+                map.getSource('events').setData(locationData);
+            } else {
+                dateElement.classList.add('active');
+                currentActiveCategory = dayKey;
+                map.getSource('events').setData({
+                    ...locationData,
+                    features: dayData.features
+                });
+            }
+        });
+
+        innerContainer.appendChild(dateElement);
+    });
+
+    infoBox.appendChild(innerContainer);
+};
+
+		// This is needed to allow other clicks!
 		let ignoreNextMapClick = false;
 
 		// Handle clicks on points
@@ -603,289 +679,6 @@
 			}
 		});
 
-		const updateInfoBox = async () => {
-			const infoBox = document.getElementById('info-box');
-			const infoBoxDay = document.getElementById('info-box-day');
-
-			infoBox.innerHTML = '';
-			infoBoxDay.innerHTML = '';
-
-			const uniqueValidDates = [
-				...new Set(
-					locationData.features
-						.map(f => f.properties.start_date)
-						.filter(Boolean)
-				)
-			].sort((a, b) => new Date(a) - new Date(b));
-
-			// 1. Find first entry for each calendar day
-			const seenDays = new Set();
-			const firstPerDay = [];
-			const dateToDayIndexMap = {}; // Maps dates to their day index
-
-			uniqueValidDates.forEach((dateStr, index) => {
-				const dayInEST = new Intl.DateTimeFormat('en-CA', {
-					timeZone: 'America/New_York',
-					year: 'numeric',
-					month: '2-digit',
-					day: '2-digit'
-				}).format(new Date(dateStr));
-
-				if (!seenDays.has(dayInEST)) {
-					seenDays.add(dayInEST);
-					firstPerDay.push(dateStr);
-				}
-				dateToDayIndexMap[dateStr] = firstPerDay.length - 1; // Map all times to their day index
-			});
-
-			// 2. Create the horizontal scroller
-			const innerContainer = document.createElement('div');
-			innerContainer.className = 'info-box-inner';
-
-			// Create reset category element
-			const resetElement = document.createElement('div');
-			resetElement.className = 'info-feature reset-category';
-			resetElement.dataset.category = 'all';
-			resetElement.textContent = 'Scroll to filter >>';
-			innerContainer.appendChild(resetElement);
-
-			// 3. Format and display each date
-			const dateElements = [];
-			uniqueValidDates.forEach(dateString => {
-				const dateElement = document.createElement('div');
-				dateElement.className = 'info-feature';
-				dateElement.dataset.category = dateString;
-				dateElement.innerHTML = formatToEST(new Date(dateString));
-				innerContainer.appendChild(dateElement);
-				dateElements.push(dateElement);
-			});
-
-			infoBox.appendChild(innerContainer);
-
-			// 4. Track current visible date
-			let currentVisibleDate = null;
-
-			const updateCurrentVisibleDate = () => {
-				const containerRect = innerContainer.getBoundingClientRect();
-				const containerCenter = containerRect.left + containerRect.width / 2;
-
-				let closestElement = null;
-				let minDistance = Infinity;
-
-				dateElements.forEach(el => {
-					const rect = el.getBoundingClientRect();
-					const elementCenter = rect.left + rect.width / 2;
-					const distance = Math.abs(elementCenter - containerCenter);
-
-					if (distance < minDistance) {
-						minDistance = distance;
-						closestElement = el;
-					}
-				});
-
-				currentVisibleDate = closestElement?.dataset.category || null;
-			};
-
-			// Update on scroll
-			innerContainer.addEventListener('scroll', updateCurrentVisibleDate);
-
-			// 5. Add navigation buttons
-			const createNavButton = (label, onClick) => {
-				const btn = document.createElement('div');
-				btn.className = 'nav-button';
-				btn.textContent = label;
-				btn.addEventListener('click', onClick);
-				return btn;
-			};
-
-			const scrollToDayIndex = (dayIndex) => {
-				if (dayIndex === -1) {
-					resetElement.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-				} else if (dayIndex >= 0 && dayIndex < firstPerDay.length) {
-					const targetDate = firstPerDay[dayIndex];
-					const el = document.querySelector(`.info-feature[data-category="${targetDate}"]`);
-					if (el) el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-				}
-			};
-
-			const firstBtn = createNavButton('|◀', () => {
-				scrollToDayIndex(-1);
-			});
-
-			const backBtn = createNavButton('◀◀', () => {
-				updateCurrentVisibleDate(); // Ensure we have latest visible date
-				if (!currentVisibleDate) {
-					// If at reset or no date visible, go to last day
-					scrollToDayIndex(firstPerDay.length - 1);
-				} else {
-					const currentDayIndex = dateToDayIndexMap[currentVisibleDate];
-					scrollToDayIndex(currentDayIndex - 1);
-				}
-			});
-
-			const fwdBtn = createNavButton('▶▶', () => {
-				// Get current scroll position
-				const container = document.querySelector('.info-box-inner');
-				const scrollPos = container.scrollLeft;
-
-				// If at or near reset position (first 50px)
-				if (scrollPos < 50) {
-					// Find the FIRST date element in the DOM
-					const firstDateElement = document.querySelector('.info-feature:not(.reset-category)');
-					if (firstDateElement) {
-						firstDateElement.scrollIntoView({
-							behavior: 'smooth',
-							inline: 'center',
-							block: 'nearest'
-						});
-						currentVisibleDate = firstDateElement.dataset.category;
-					}
-				} else {
-					// Existing logic for non-reset case
-					updateCurrentVisibleDate();
-					if (currentVisibleDate) {
-						const currentDayIndex = dateToDayIndexMap[currentVisibleDate];
-						scrollToDayIndex(currentDayIndex + 1);
-					}
-				}
-			});
-
-			const lastBtn = createNavButton('▶|', () => {
-				// Get ALL time elements (excluding the reset element)
-				const allTimeElements = document.querySelectorAll('.info-feature:not(.reset-category)');
-
-				if (allTimeElements.length > 0) {
-					// Scroll to the very last time element
-					const lastElement = allTimeElements[allTimeElements.length - 1];
-					lastElement.scrollIntoView({
-						behavior: 'smooth',
-						inline: 'center',
-						block: 'nearest'
-					});
-					// Update the current visible date
-					currentVisibleDate = lastElement.dataset.category;
-				}
-			});
-
-			infoBoxDay.append(firstBtn, backBtn, fwdBtn, lastBtn);
-
-			// Initialize at reset position
-			innerContainer.scrollLeft = 0;
-			setupFeatureTracking();
-		};
-
-		function formatToEST(date) {
-			const formatter = new Intl.DateTimeFormat('en-US', {
-				timeZone: 'America/New_York',
-				month: 'long',   // "July"
-				day: '2-digit',  // "08"
-				hour: 'numeric',
-				minute: '2-digit',
-				hour12: true
-			});
-
-			const parts = formatter.formatToParts(date);
-			const month = parts.find(p => p.type === 'month')?.value;
-			const day = parts.find(p => p.type === 'day')?.value;
-			const hour = parts.find(p => p.type === 'hour')?.value;
-			const minute = parts.find(p => p.type === 'minute')?.value;
-			const dayPeriod = parts.find(p => p.type === 'dayPeriod')?.value;
-
-			return `
-				<div class="date-top">
-					<span class="date-month">${month}</span>
-					<span class="date-day">${day}</span>
-				</div>
-				<div class="date-bottom">
-					<span class="date-hour">${hour}:</span><span class="date-minute">${minute}</span><span class="date-ampm">${dayPeriod}</span>
-				</div>
-			`;
-		}
-
-		// Helper function scroll listener
-		let isUserScrolling = false;
-
-		function setupFeatureTracking() {
-			const container = document.querySelector('.info-box-inner');
-			if (!container) return;
-
-			// Detect ALL user scroll initiations (mouse, trackpad, touch, wheel)
-			container.addEventListener('mousedown', () => isUserScrolling = true);
-			container.addEventListener('touchstart', () => isUserScrolling = true);
-			container.addEventListener('wheel', () => isUserScrolling = true, { passive: true });
-
-			// Add keyboard scroll detection
-			document.addEventListener('keydown', (e) => {
-				const scrollKeys = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
-					'PageUp', 'PageDown', 'Home', 'End'];
-				if (scrollKeys.includes(e.key)) {
-					isUserScrolling = true;
-				}
-			});
-
-			// Handle scroll events
-			container.addEventListener('scroll', () => {
-				// Enable this ignore programmatic scrolls
-				// if (!isUserScrolling) return;
-
-				clearTimeout(window.scrollTimer);
-				window.scrollTimer = setTimeout(() => {
-					handleCenterFeature(); // Your existing center-feature function
-					isUserScrolling = false; // Reset after scroll ends
-				}, 150); // 150ms delay after scrolling stops
-			});
-		}
-
-		// Helper function to get center infobox feature
-		function handleCenterFeature() {
-			const container = document.querySelector('.info-box-inner');
-			if (!container) return;
-
-			// Calculate center position
-			const centerX = container.scrollLeft + (container.offsetWidth / 2);
-
-			// Find centered feature
-			const features = document.querySelectorAll('.info-feature');
-			for (const feature of features) {
-				const featureStart = feature.offsetLeft;
-				const featureEnd = featureStart + feature.offsetWidth;
-
-				if (featureStart <= centerX && featureEnd >= centerX) {
-					const category = feature.dataset.category;
-
-					// Remove active-category from all features
-					features.forEach(f => f.classList.remove('active-category'));
-
-					// Add active-category to centered one
-					feature.classList.add('active-category');
-
-					// Apply filter
-					filterLocation(category);
-				}
-			}
-		}
-
-		const filterLocation = (category) => {
-			if (!locationData) return;
-
-			const categoryTime = new Date(category).getTime();
-
-			const filtered = {
-				...locationData,
-				features:
-					category === 'all'
-						? locationData.features
-						: locationData.features.filter(f => {
-							const startTime = new Date(f.properties.start_date).getTime();
-							const endTime = new Date(f.properties.end_date).getTime();
-							return categoryTime >= startTime && categoryTime < endTime;
-						})
-			};
-
-			map.getSource('events').setData(filtered);
-			currentActiveCategory = category;
-		};
-
 		// Helper function to handle clicks on points
 		const clickFeature = (feature) => {
 			let coordinates = feature.geometry.coordinates;
@@ -957,10 +750,7 @@
 			});
 		};
 
-
 		// Add attribution
-
-
 		map.on('load', () => {
 			const attribControl = document.querySelector('.maplibregl-ctrl-attrib-inner');
 			if (attribControl) {

@@ -54,7 +54,7 @@ body {
     max-width: 700px;
     display: block;
     margin: 0 auto;
-    padding: 0px;
+    padding: 10px;
     overflow-y: hidden;
     filter: drop-shadow(0px 0px 2px hsla(0, 0%, 0%, 0.5));
 }
@@ -75,7 +75,7 @@ body {
     align-items: flex-start;
     cursor: pointer;
     transition: background-color 0.2s ease;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
 }
 
@@ -176,38 +176,6 @@ body {
     text-overflow: ellipsis;
 }
 
-#info-box-day {
-    position: fixed;
-    top: 65px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 5px;
-    z-index: 1000;
-    align-items: center;
-}
-
-.nav-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    user-select: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.1;
-    border-radius: 50%;
-    background-color: hsla(0, 0%, 100%, 0.8);
-    transition: background-color 0.2s;
-}
-
-.nav-button:hover {
-    background-color: hsla(0, 0%, 80%, 1);
-}
-
 #info-box {
     display: flex;
     position: fixed;
@@ -216,8 +184,8 @@ body {
     right: 0;
     z-index: 1000;
     height: auto;
-    margin: 0 auto;
     overflow: visible;
+    user-select: none;
 }
 
 #info-box * {
@@ -226,91 +194,47 @@ body {
 
 .info-box-inner {
     display: flex;
+    align-items: center;
+    justify-content: center;
     overflow-y: visible;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    /* Center a 300px-wide item */
-    scroll-padding: 0 calc(50vw - 75px);
-    gap: 10px;
+    gap: 5px;
     width: 100%;
-    padding: 5px 0 10px 0;
-}
-
-/* Center items with pseudo-elements */
-.info-box-inner::before,
-.info-box-inner::after {
-    content: "";
-    /* Half viewport minus half item width */
-    flex: 0 0 calc(50% - 75px);
-    scroll-snap-align: none;
+    padding: 10px 0;
 }
 
 .info-feature {
-    user-select: none;
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
     flex: 0 0 auto;
-    width: 150px;
-    height: auto;
-    scroll-snap-align: center;
-    border-radius: 999px;
-    background-color: hsla(0, 0%, 70%, 0.8);
-    padding: 5px 0 5px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 80%, 0.8);
+    cursor: pointer;
 }
 
-.date-top {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1;
+.info-feature-month {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 0.8;
 }
 
-.date-hour,
-.date-minute {
-    font-size: 30px;
+.info-feature-day {
+    font-size: 20px;
     font-weight: 900;
     line-height: 0.8;
 }
 
-.date-ampm {
-    font-size: 9px;
-    font-weight: 400;
+.info-feature.active {
+    background: hsl(0, 0%, 100%);
 }
 
-.reset-category {
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.active-category {
-    background-color: hsla(0, 0%, 100%, 0.8) !important;
-    color: hsl(0, 0%, 0%);
-}
-
-/* For WebKit browsers (Chrome, Safari, Edge) */
-::-webkit-scrollbar {
-    width: 8px;
-    /* Adjust pill width */
-    background-color: transparent;
-    /* Remove track background */
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 100%, 0.5);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: hsla(0, 0%, 100%, 0.7);
-    /* Hover state */
-}
-
-/* For Firefox */
-* {
-    scrollbar-width: auto;
-    scrollbar-color: hsla(0, 0%, 100%, 0.5) transparent;
+.maplibregl-ctrl-bottom-right * {
+    font-size: 12px;
 }
 
 h1 {
