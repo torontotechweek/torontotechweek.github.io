@@ -71,7 +71,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Arcadia Earth ",
+                "name": "Arcadia Earth",
                 "status": "Available",
                 "company": "Arcadia Earth Toronto ",
                 "address": "486 Front Street W, Building C, Toronto, ON, M5V0V2",
@@ -331,7 +331,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Northeastern University Toronto Campus ",
+                "name": "Northeastern University Toronto Campus",
                 "status": "Available",
                 "company": "Northeastern University Toronto",
                 "address": "100 King St. West, Suite 4620, Toronto, ON, M5X 1E2",

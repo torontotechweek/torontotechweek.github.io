@@ -28,9 +28,9 @@
 			"filter": [ "in", "kind", "brownfield", "farmland", "farmyard", "greenfield", "greenhouse_horticulture", "orchard", "plant_nursery", "vineyard", "park", "village_green", "recreation_ground", "allotments", "garden", "miniature_golf", "playground", "golf_course", "forest", "grass", "grassland", "meadow", "wet_meadow", "heath", "scrub", "beach", "sand", "bog", "marsh", "string_bog", "swamp" ],
 			"paint": {
 			  "fill-color": "hsl(165, 30%, 36%)",
-			  "fill-opacity": 1
+			  "fill-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 16, 0, 17, 1 ]
 			},
-			"minzoom": 10
+			"minzoom": 16
 		},
 		{
 			"source": "osm",
@@ -292,13 +292,13 @@
 				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 1 ],
 				"icon-color": [
 					"case",
-					["==", ["get", "amenity"], "bicycle_rental"], "hsl(52, 96%, 66%)",
-					"hsl(310, 100%, 90%)"
+					["==", ["get", "amenity"], "bicycle_rental"], "hsl(310, 100%, 90%)",
+					"hsl(227, 89%, 90%)"
 				],
 				"text-color": [
 					"case",
-					["==", ["get", "amenity"], "bicycle_rental"], "hsl(52, 96%, 66%)",
-					"hsl(310, 100%, 90%)"
+					["==", ["get", "amenity"], "bicycle_rental"], "hsl(310, 100%, 90%)",
+					"hsl(227, 89%, 90%)"
 				],
 				"text-halo-color": "hsl(0, 0%, 100%)",
 				"text-halo-width": 0,
@@ -329,8 +329,8 @@
 			"paint": {
 				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ],
 				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ],
-				"icon-color": "hsl(52, 96%, 66%)",
-				"text-color": "hsl(52, 96%, 66%)",
+				"icon-color": "hsl(310, 100%, 90%)",
+				"text-color": "hsl(310, 100%, 90%)",
 				"text-halo-color": "hsl(0, 0%, 20%)",
 				"text-halo-width": 0,
 				"text-halo-blur": 0
@@ -360,8 +360,8 @@
 			"paint": {
 				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 13, 0, 14, 1 ],
 				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 13, 0, 14, 1 ],
-				"icon-color": "hsl(52, 96%, 66%)",
-				"text-color": "hsl(52, 96%, 66%)",
+				"icon-color": "hsl(310, 100%, 90%)",
+				"text-color": "hsl(310, 100%, 90%)",
 				"text-halo-color": "hsl(0, 0%, 20%)",
 				"text-halo-width": 0,
 				"text-halo-blur": 0

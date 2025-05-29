@@ -6,10 +6,6 @@
 	<meta charset="UTF-8" />
 	<script src="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.js"></script>
 	<link href="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,9 +13,10 @@
 
 	<div class="container">
 		<div id="map"></div>
-		<div id="info-box"></div>
-		<div id="info-box-day"></div>
-		<div id="popup-container"></div>
+		<div id="popup">
+			<div id="info-box"></div>
+			<div id="popup-container"></div>
+		</div>
 	</div>
 
 	<script>
@@ -36,7 +33,7 @@
 			container: 'map',
 			style: 'torontotechweek.json',
 			center: [-79.38709, 43.64909],
-			zoom: 12,
+			zoom: 13,
 			minZoom: 11,
 			maxZoom: 18,
 			//maxBounds: [ [-79.56729275921924, 43.56518035854518],[-79.27118684581397, 43.728046474967954] ],
@@ -52,7 +49,56 @@
 			// Load points data
 			const pointsResponse = await fetch(locationFile);
 			const pointsData = await pointsResponse.json();
-			locationData = pointsData;
+
+			// Add EST timezone properties to each feature
+			locationData = {
+				...pointsData,
+				features: pointsData.features.map(feature => {
+					const props = feature.properties;
+
+					// Helper function to format EST components
+					const getESTComponents = (dateString) => {
+						if (!dateString) return null;
+						const date = new Date(dateString);
+
+						return {
+							month: date.toLocaleString('en-US', {
+								timeZone: 'America/New_York',
+								month: 'short'
+							}),
+							day: date.toLocaleString('en-US', {
+								timeZone: 'America/New_York',
+								day: 'numeric'
+							}),
+							time: date.toLocaleString('en-US', {
+								timeZone: 'America/New_York',
+								hour: 'numeric',
+								minute: '2-digit',
+								hour12: true
+							}).replace(/^0/, ''),
+							date: date.toLocaleDateString('en-CA', {
+								timeZone: 'America/New_York'
+							})
+						};
+					};
+
+					// Use props.start
+					const startEST = getESTComponents(props.start);
+					const endEST = getESTComponents(props.end);
+
+					// Add new properties
+					return {
+						...feature,
+						properties: {
+							...props,
+							start_time_est: startEST?.time || null,
+							start_date_est: startEST?.date || null,
+							end_time_est: endEST?.time || null,
+							end_date_est: endEST?.date || null,
+						}
+					};
+				})
+			};
 
 			// Add building source
 			map.addSource('toronto_buildings', {
@@ -92,7 +138,7 @@
 				'source-layer': 'toronto_neighborhoods',
 				'type': 'line',
 				'paint': {
-					'line-color': 'hsl(225, 89%, 90%)',
+					'line-color': 'hsl(227, 89%, 90%)',
 					'line-width': ['interpolate', ['exponential', 1.5], ['zoom'], 10, 1, 18, 20],
 					'line-opacity': ['interpolate', ['linear'], ['zoom'], 10, 0, 11, 0.5, 14, 0.5, 15, 0]
 				},
@@ -109,7 +155,7 @@
 				'paint': {
 					'line-color': 'hsl(280, 10%, 40%)',
 					'line-width': 2,
-					'line-opacity': [ "interpolate", [ "linear" ], [ "zoom" ], 16, 0, 18, 1 ]
+					'line-opacity': ["interpolate", ["linear"], ["zoom"], 16, 0, 18, 1]
 				},
 				'minzoom': 16
 			}, 'highway-name-minor');
@@ -152,7 +198,7 @@
 					'text-pitch-alignment': 'viewport'
 				},
 				paint: {
-					'text-color': 'hsl(225, 89%, 90%)',
+					'text-color': 'hsl(227, 89%, 90%)',
 					'text-opacity': ['interpolate', ['linear'], ['zoom'], 11, 0, 12, 0.8, 14, 0.8, 16, 0]
 				},
 				"minzoom": 11,
@@ -167,7 +213,7 @@
 				filter: ['!', ['has', 'point_count']],
 				paint: {
 					'circle-radius': 8,
-					'circle-color': 'hsl(225, 89%, 90%)',
+					'circle-color': 'hsl(227, 89%, 90%)',
 					'circle-stroke-width': 1.5,
 					'circle-stroke-color': 'hsl(0, 0%, 20%)'
 				}
@@ -183,9 +229,9 @@
 					'circle-color': [
 						'step',
 						['get', 'point_count'],
-						'hsl(225, 89%, 90%)',
-						10, 'hsl(225, 89%, 90%)',
-						25, 'hsl(225, 89%, 90%)'
+						'hsl(227, 89%, 90%)',
+						10, 'hsl(227, 89%, 90%)',
+						25, 'hsl(227, 89%, 90%)'
 					],
 					'circle-radius': [
 						'step',
@@ -238,98 +284,181 @@
 
 			map.once('idle', () => {
 				updateInfoBox();
+				//updatePopup();
 			});
 
 		});
 
 		const updateInfoBox = async () => {
 			const infoBox = document.getElementById('info-box');
+
 			infoBox.innerHTML = '';
 
 			if (!locationData?.features?.length) return;
 
-			// 1. Group features by unique calendar days
-			const featuresByDay = locationData.features.reduce((acc, feature) => {
-				if (!feature.properties.start_date) return acc;
-				
-				const dayKey = new Intl.DateTimeFormat('en-CA', {
-					timeZone: 'America/New_York',
-					year: 'numeric',
-					month: '2-digit',
-					day: '2-digit'
-				}).format(new Date(feature.properties.start_date));
+			const uniqueValidDates = [
+				...new Set(
+					locationData.features
+						.map(f => {
+							if (!f.properties.start_date_est) return null;
+							return f.properties.start_date_est;
+						})
+						.filter(Boolean)
+				)
+			].sort();
 
-				if (!acc[dayKey]) {
-					acc[dayKey] = {
-						dateObj: new Date(feature.properties.start_date),
-						features: []
-					};
-				}
-				acc[dayKey].features.push(feature);
-				return acc;
-			}, {});
+			// Create logo
+			const logo = document.createElement('div');
+			logo.className = 'logo';
+			logo.innerHTML = '<h4><a href="https://www.torontotechweek.com/" target="_blank">Toronto Tech Week</a></h4>';
+			infoBox.appendChild(logo);
 
-			// 2. Sort days chronologically
-			const sortedDays = Object.entries(featuresByDay)
-				.sort((a, b) => a[1].dateObj - b[1].dateObj);
-
-			// 3. Create container
+			// Create the horizontal scroller
 			const innerContainer = document.createElement('div');
 			innerContainer.className = 'info-box-inner';
 
-			// 4. Create day buttons with vertical date layout
-			sortedDays.forEach(([dayKey, dayData]) => {
+			// Create reset category element
+			const resetElement = document.createElement('div');
+			resetElement.className = 'info-feature reset-category';
+			resetElement.dataset.category = 'all';
+			resetElement.innerHTML = '<h1>All</h1>';
+			innerContainer.appendChild(resetElement);
+
+			// 3. Format and display each date
+			const dateElements = [];
+			uniqueValidDates.forEach(dateString => {
 				const dateElement = document.createElement('div');
 				dateElement.className = 'info-feature';
-				if (currentActiveCategory === dayKey) {
-					dateElement.classList.add('active');
-				}
+				dateElement.dataset.category = dateString;
 
-				// Create month element
-				const monthElement = document.createElement('div');
-				monthElement.className = 'info-feature-month';
-				monthElement.textContent = new Intl.DateTimeFormat('en-US', {
-					month: 'short'
-				}).format(dayData.dateObj);
-
-				// Create day element
-				const dayElement = document.createElement('div');
-				dayElement.className = 'info-feature-day';
-				dayElement.textContent = new Intl.DateTimeFormat('en-US', {
-					day: 'numeric'
-				}).format(dayData.dateObj);
-
-				// Append month and day
-				dateElement.appendChild(monthElement);
-				dateElement.appendChild(dayElement);
-
-				dateElement.addEventListener('click', () => {
-					// Toggle active state
-					const isActive = dateElement.classList.contains('active');
-					
-					// Remove active class from all buttons
-					document.querySelectorAll('.info-feature').forEach(btn => {
-						btn.classList.remove('active');
-					});
-					
-					// Toggle current button and update data
-					if (isActive) {
-						currentActiveCategory = 'all';
-						map.getSource('events').setData(locationData);
-					} else {
-						dateElement.classList.add('active');
-						currentActiveCategory = dayKey;
-						map.getSource('events').setData({
-							...locationData,
-							features: dayData.features
-						});
-					}
-				});
+				const [_, month, day] = dateString.split('-');
+				const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+				const formatted = `${monthNames[parseInt(month, 10) - 1]} ${parseInt(day, 10)}`;
+				dateElement.innerHTML = `<h1>${formatted}</h1>`;
 
 				innerContainer.appendChild(dateElement);
+				dateElements.push(dateElement);
 			});
 
-			infoBox.appendChild(innerContainer);
+			const infoBoxContainer = document.createElement('div');
+			infoBoxContainer.className = 'info-box-container';
+
+			infoBoxContainer.appendChild(innerContainer);
+			infoBox.appendChild(infoBoxContainer);
+
+			// 4. Initialize at reset position
+			innerContainer.scrollLeft = 0;
+
+			requestAnimationFrame(() => {
+				handleCenterFeature(); // Call after scroll and layout
+			});
+
+			setupFeatureTracking();
+
+		};
+
+		const updatePopup = (features) => {
+			const popupContainer = document.getElementById('popup-container');
+			popupContainer.innerHTML = '';
+
+			if (!features?.length) return;
+
+			const popupContent = document.createElement('div');
+			popupContent.className = 'popup-content';
+
+			const sortedFeatures = [...features].sort((a, b) => {
+				const dateA = new Date(a.properties.start).getTime();
+				const dateB = new Date(b.properties.start).getTime();
+				return dateA - dateB;
+			});
+
+			sortedFeatures.forEach(feature => {
+				const properties = feature.properties;
+
+				const flexContainer = document.createElement('div');
+				flexContainer.className = 'popup-flex-container';
+
+				if (properties.url) {
+					flexContainer.addEventListener('click', () => {
+						window.open(properties.url, '_blank');
+					});
+				}
+
+				const textContainer = document.createElement('div');
+				textContainer.className = 'popup-text-container';
+
+				const title = document.createElement('h2');
+				title.className = 'popup-title';
+				title.textContent = properties.title || 'Untitled Location';
+				textContainer.appendChild(title);
+
+				if (properties.start) {
+					const timeContainer = document.createElement('div');
+					timeContainer.className = 'popup-time-container';
+
+					const timeRange = document.createElement('span');
+					timeRange.className = 'popup-time-text';
+
+					const formatDate = (dateString) => {
+						const date = new Date(dateString);
+						return date.toLocaleDateString('en-US', {
+							month: 'short',
+							day: 'numeric'
+						});
+					};
+
+					const formatTime = (dateString) => {
+						return new Date(dateString).toLocaleTimeString('en-US', {
+							hour: 'numeric',
+							minute: '2-digit',
+							hour12: true
+						}).replace(/^0/, '');
+					};
+
+					let timeText = `${formatDate(properties.start)}, ${formatTime(properties.start)}`;
+
+					if (properties.end && new Date(properties.start).getTime() !== new Date(properties.end).getTime()) {
+						const sameDay = formatDate(properties.start) === formatDate(properties.end);
+						timeText += sameDay
+							? ` – ${formatTime(properties.end)}`
+							: ` – ${formatDate(properties.end)}, ${formatTime(properties.end)}`;
+					}
+
+					timeRange.textContent = timeText;
+					timeContainer.appendChild(timeRange);
+					textContainer.appendChild(timeContainer);
+				}
+
+				if (properties.address) {
+					const addressContainer = document.createElement('div');
+					addressContainer.className = 'popup-address-container';
+
+					const addressText = document.createElement('span');
+					addressText.className = 'popup-address-text';
+					addressText.textContent = properties.address;
+
+					addressContainer.appendChild(addressText);
+					textContainer.appendChild(addressContainer);
+				}
+
+				if (properties.description) {
+					const desc = document.createElement('p');
+					desc.className = 'popup-description';
+					desc.textContent = properties.description;
+					textContainer.appendChild(desc);
+				}
+
+				flexContainer.appendChild(textContainer);
+				popupContent.appendChild(flexContainer);
+			});
+
+			popupContainer.appendChild(popupContent);
+
+			setTimeout(() => {
+				popupContent.scrollTo({ top: 0, behavior: 'smooth' });
+			}, 50);
+
+			popupOpen = true;
 		};
 
 		// This is needed to allow other clicks!
@@ -340,7 +469,6 @@
 			const feature = e.features[0];
 			const properties = feature.properties;
 			const popupContainer = document.getElementById('popup-container');
-			if (!popupContainer) return;
 
 			ignoreNextMapClick = true;
 			popupContainer.innerHTML = '';
@@ -369,47 +497,55 @@
 			// flexContainer.appendChild(imgContainer);
 
 			// Add date div (left side)
-			const dateContainer = document.createElement('div');
-			dateContainer.className = 'popup-date-container'; // New class for styling
+			// const dateContainer = document.createElement('div');
+			// dateContainer.className = 'popup-date-container'; // New class for styling
 
-			// Create month element
-			const monthElement = document.createElement('div');
-			monthElement.className = 'popup-month';
-			monthElement.textContent = new Date(properties.start_date).toLocaleString('default', { month: 'short' }).toUpperCase();
+			// // Create month element
+			// const monthElement = document.createElement('div');
+			// monthElement.className = 'popup-month';
+			// monthElement.textContent = new Date(properties.start).toLocaleString('default', { month: 'short' }).toUpperCase();
 
-			// Create day element
-			const dayElement = document.createElement('div');
-			dayElement.className = 'popup-day';
-			dayElement.textContent = new Date(properties.start_date).getDate();
+			// // Create day element
+			// const dayElement = document.createElement('div');
+			// dayElement.className = 'popup-day';
+			// dayElement.textContent = new Date(properties.start).getDate();
 
-			// Append elements to date container
-			dateContainer.appendChild(monthElement);
-			dateContainer.appendChild(dayElement);
+			// // Append elements to date container
+			// dateContainer.appendChild(monthElement);
+			// dateContainer.appendChild(dayElement);
 
-			// Add date container to flex container
-			flexContainer.appendChild(dateContainer);
+			// // Add date container to flex container
+			// flexContainer.appendChild(dateContainer);
 
 			// Add text div (right side)
 			const textContainer = document.createElement('div');
 			textContainer.className = 'popup-text-container';
 
-			const title = document.createElement('h1');
+			const title = document.createElement('h2');
 			title.className = 'popup-title';
 			title.textContent = properties.title || 'Untitled Location';
 			textContainer.appendChild(title);
 
 			// Time container creation
-			if (properties.start_date) {
+			if (properties.start) {
 				const timeContainer = document.createElement('div');
 				timeContainer.className = 'popup-time-container';
 
 				// Clock icon
-				const clockIcon = document.createElement('i');
-				clockIcon.className = 'fas fa-clock popup-time-icon';
+				// const clockIcon = document.createElement('i');
+				// clockIcon.className = 'fas fa-clock popup-time-icon';
 
 				// Time text
-				const timeRange = document.createElement('span');  // Changed from <p> to <span>
+				const timeRange = document.createElement('span');
 				timeRange.className = 'popup-time-text';
+
+				const formatDate = (dateString) => {
+					const date = new Date(dateString);
+					return date.toLocaleDateString('en-US', {
+						month: 'short',
+						day: 'numeric'
+					});
+				};
 
 				const formatTime = (dateString) => {
 					return new Date(dateString).toLocaleTimeString('en-US', {
@@ -419,14 +555,22 @@
 					}).replace(/^0/, '');
 				};
 
-				let timeText = formatTime(properties.start_date);
-				if (properties.end_date && new Date(properties.start_date).getTime() !== new Date(properties.end_date).getTime()) {
-					timeText += ` – ${formatTime(properties.end_date)}`;
+				let timeText = `${formatDate(properties.start)}, ${formatTime(properties.start)}`;
+
+				if (properties.end && new Date(properties.start).getTime() !== new Date(properties.end).getTime()) {
+					// Check if same day
+					const sameDay = formatDate(properties.start) === formatDate(properties.end);
+
+					if (sameDay) {
+						timeText += ` – ${formatTime(properties.end)}`;
+					} else {
+						timeText += ` – ${formatDate(properties.end)}, ${formatTime(properties.end)}`;
+					}
 				}
 
 				timeRange.textContent = timeText;
 
-				timeContainer.appendChild(clockIcon);
+				// timeContainer.appendChild(clockIcon);
 				timeContainer.appendChild(timeRange);
 				textContainer.appendChild(timeContainer);
 			}
@@ -437,15 +581,15 @@
 				addressContainer.className = 'popup-address-container';
 
 				// Location icon
-				const locationIcon = document.createElement('i');
-				locationIcon.className = 'fas fa-map-marker-alt popup-location-icon';
+				// const locationIcon = document.createElement('i');
+				// locationIcon.className = 'fas fa-map-marker-alt popup-location-icon';
 
 				// Address text
 				const addressText = document.createElement('span');
 				addressText.className = 'popup-address-text';
 				addressText.textContent = properties.address;
 
-				addressContainer.appendChild(locationIcon);
+				// addressContainer.appendChild(locationIcon);
 				addressContainer.appendChild(addressText);
 				textContainer.appendChild(addressContainer);
 			}
@@ -461,7 +605,6 @@
 			flexContainer.appendChild(textContainer);
 			popupContent.appendChild(flexContainer);
 			popupContainer.appendChild(popupContent);
-			popupContainer.classList.add('active');
 
 			popupOpen = true;
 			clickFeature(feature);
@@ -482,7 +625,6 @@
 			}
 
 			const popupContainer = document.getElementById('popup-container');
-			if (!popupContainer) return;
 
 			ignoreNextMapClick = true;
 			popupContainer.innerHTML = '';
@@ -490,14 +632,14 @@
 			const popupContent = document.createElement('div');
 			popupContent.className = 'popup-content';
 
-			// Get all features and sort them by start_date
+			// Get all features and sort them by start
 			const sortedFeatures = featureIdsArray
 				.map(id => features.find(f => f.api_id === id || f.properties?.api_id === id))
 				.filter(Boolean) // Remove any undefined results
 				.sort((a, b) => {
 					// Convert dates to timestamps for comparison
-					const dateA = new Date(a.properties.start_date).getTime();
-					const dateB = new Date(b.properties.start_date).getTime();
+					const dateA = new Date(a.properties.start).getTime();
+					const dateB = new Date(b.properties.start).getTime();
 					return dateA - dateB; // For ascending order (oldest first)
 					// return dateB - dateA; // For descending order (newest first)
 				});
@@ -527,47 +669,55 @@
 				// flexContainer.appendChild(imgContainer);
 
 				// Add date div (left side)
-				const dateContainer = document.createElement('div');
-				dateContainer.className = 'popup-date-container'; // New class for styling
+				// const dateContainer = document.createElement('div');
+				// dateContainer.className = 'popup-date-container'; // New class for styling
 
-				// Create month element
-				const monthElement = document.createElement('div');
-				monthElement.className = 'popup-month';
-				monthElement.textContent = new Date(properties.start_date).toLocaleString('default', { month: 'short' }).toUpperCase();
+				// // Create month element
+				// const monthElement = document.createElement('div');
+				// monthElement.className = 'popup-month';
+				// monthElement.textContent = new Date(properties.start).toLocaleString('default', { month: 'short' }).toUpperCase();
 
-				// Create day element
-				const dayElement = document.createElement('div');
-				dayElement.className = 'popup-day';
-				dayElement.textContent = new Date(properties.start_date).getDate();
+				// // Create day element
+				// const dayElement = document.createElement('div');
+				// dayElement.className = 'popup-day';
+				// dayElement.textContent = new Date(properties.start).getDate();
 
-				// Append elements to date container
-				dateContainer.appendChild(monthElement);
-				dateContainer.appendChild(dayElement);
+				// // Append elements to date container
+				// dateContainer.appendChild(monthElement);
+				// dateContainer.appendChild(dayElement);
 
-				// Add date container to flex container
-				flexContainer.appendChild(dateContainer);
+				// // Add date container to flex container
+				// flexContainer.appendChild(dateContainer);
 
 				// Add text div (right side)
 				const textContainer = document.createElement('div');
 				textContainer.className = 'popup-text-container';
 
-				const title = document.createElement('h1');
+				const title = document.createElement('h2');
 				title.className = 'popup-title';
 				title.textContent = properties.title || 'Untitled Location';
 				textContainer.appendChild(title);
 
 				// Time container creation
-				if (properties.start_date) {
+				if (properties.start) {
 					const timeContainer = document.createElement('div');
 					timeContainer.className = 'popup-time-container';
 
 					// Clock icon
-					const clockIcon = document.createElement('i');
-					clockIcon.className = 'fas fa-clock popup-time-icon';
+					// const clockIcon = document.createElement('i');
+					// clockIcon.className = 'fas fa-clock popup-time-icon';
 
 					// Time text
-					const timeRange = document.createElement('span');  // Changed from <p> to <span>
+					const timeRange = document.createElement('span');
 					timeRange.className = 'popup-time-text';
+
+					const formatDate = (dateString) => {
+						const date = new Date(dateString);
+						return date.toLocaleDateString('en-US', {
+							month: 'short',
+							day: 'numeric'
+						});
+					};
 
 					const formatTime = (dateString) => {
 						return new Date(dateString).toLocaleTimeString('en-US', {
@@ -577,14 +727,22 @@
 						}).replace(/^0/, '');
 					};
 
-					let timeText = formatTime(properties.start_date);
-					if (properties.end_date && new Date(properties.start_date).getTime() !== new Date(properties.end_date).getTime()) {
-						timeText += ` – ${formatTime(properties.end_date)}`;
+					let timeText = `${formatDate(properties.start)}, ${formatTime(properties.start)}`;
+
+					if (properties.end && new Date(properties.start).getTime() !== new Date(properties.end).getTime()) {
+						// Check if same day
+						const sameDay = formatDate(properties.start) === formatDate(properties.end);
+
+						if (sameDay) {
+							timeText += ` – ${formatTime(properties.end)}`;
+						} else {
+							timeText += ` – ${formatDate(properties.end)}, ${formatTime(properties.end)}`;
+						}
 					}
 
 					timeRange.textContent = timeText;
 
-					timeContainer.appendChild(clockIcon);
+					// timeContainer.appendChild(clockIcon);
 					timeContainer.appendChild(timeRange);
 					textContainer.appendChild(timeContainer);
 				}
@@ -595,15 +753,15 @@
 					addressContainer.className = 'popup-address-container';
 
 					// Location icon
-					const locationIcon = document.createElement('i');
-					locationIcon.className = 'fas fa-map-marker-alt popup-location-icon';
+					// const locationIcon = document.createElement('i');
+					// locationIcon.className = 'fas fa-map-marker-alt popup-location-icon';
 
 					// Address text
 					const addressText = document.createElement('span');
 					addressText.className = 'popup-address-text';
 					addressText.textContent = properties.address;
 
-					addressContainer.appendChild(locationIcon);
+					// addressContainer.appendChild(locationIcon);
 					addressContainer.appendChild(addressText);
 					textContainer.appendChild(addressContainer);
 				}
@@ -621,7 +779,6 @@
 			});
 
 			popupContainer.appendChild(popupContent);
-			popupContainer.classList.add('active');
 
 			// Scroll to top
 			setTimeout(() => {
@@ -656,7 +813,7 @@
 		// 2. Add separate click handler for info-feature buttons
 		document.addEventListener('click', (e) => {
 			if (!popupOpen) return;
-			
+
 			// Check if clicked element or any of its parents is an info-feature
 			const infoFeature = e.target.closest('.info-feature');
 			if (infoFeature) {
@@ -746,11 +903,93 @@
 			});
 		};
 
+		// Helper function scroll listener
+		let isUserScrolling = false;
+
+		function setupFeatureTracking() {
+			const container = document.querySelector('.info-box-inner');
+			if (!container) return;
+
+			// Detect ALL user scroll initiations (mouse, trackpad, touch, wheel)
+			container.addEventListener('mousedown', () => isUserScrolling = true);
+			container.addEventListener('touchstart', () => isUserScrolling = true);
+			container.addEventListener('wheel', () => isUserScrolling = true, { passive: true });
+
+			// Add keyboard scroll detection
+			document.addEventListener('keydown', (e) => {
+				const scrollKeys = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+					'PageUp', 'PageDown', 'Home', 'End'];
+				if (scrollKeys.includes(e.key)) {
+					isUserScrolling = true;
+				}
+			});
+
+			// Handle scroll events
+			container.addEventListener('scroll', () => {
+				// Enable this ignore programmatic scrolls
+				// if (!isUserScrolling) return;
+
+				clearTimeout(window.scrollTimer);
+				window.scrollTimer = setTimeout(() => {
+					handleCenterFeature(); // Your existing center-feature function
+					isUserScrolling = false; // Reset after scroll ends
+				}, 150); // 150ms delay after scrolling stops
+			});
+		}
+
+		function handleCenterFeature() {
+			const container = document.querySelector('.info-box-inner');
+			if (!container) return;
+
+			const scrollLeft = container.scrollLeft;
+			const features = document.querySelectorAll('.info-feature');
+
+			for (const feature of features) {
+				const featureStart = feature.offsetLeft;
+				const featureEnd = featureStart + feature.offsetWidth;
+
+				// Check if feature is visible from the left
+				if (featureEnd > scrollLeft) {
+					const category = feature.dataset.category;
+
+					// Remove active-category from all features
+					features.forEach(f => f.classList.remove('active-category'));
+
+					// Add active-category to the first visible one
+					feature.classList.add('active-category');
+
+					// Apply filter
+					filterLocation(category);
+					break;
+				}
+			}
+		}
+
+		const filterLocation = (category) => {
+			if (!locationData) return;
+
+			const filteredFeatures = category === 'all'
+				? locationData.features
+				: locationData.features.filter(f => {
+					if (!f.properties.start_date_est || !f.properties.end_date_est) return false;
+					return category === f.properties.start_date_est;
+				});
+
+			map.getSource('events').setData({
+				...locationData,
+				features: filteredFeatures
+			});
+
+			currentActiveCategory = category;
+
+			updatePopup(filteredFeatures);
+		};
+
 		// Add attribution
 		map.on('load', () => {
 			const attribControl = document.querySelector('.maplibregl-ctrl-attrib-inner');
 			if (attribControl) {
-				attribControl.innerHTML = `<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a> | <a href="https://www.torontotechweek.com/" target="_blank">Toronto Tech Week</a> | <a href="https://geographyclub.github.io/" target="_blank">J&S</a>`;
+				attribControl.innerHTML += ` | <a href="https://geographyclub.github.io/" target="_blank">J&S</a>`;
 			}
 		});
 
