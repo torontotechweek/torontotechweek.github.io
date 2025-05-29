@@ -1,0 +1,2291 @@
+{
+    "type": "FeatureCollection",
+    "name": "TTW2025 Events",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Brunch in the Park – APIs and IPAs",
+                "privacy": "Open to the public.",
+                "start": "2025-06-22T14:00:00.000Z",
+                "end": "2025-06-22T17:00:00.000Z",
+                "neighbourhood": "Harbourfront",
+                "title": "Brunch in the Park",
+                "description": "Calling all brunch enthusiasts, techies, and frisbee fanatics! 🥐 Join us for a delightfully whacky morning on the Toronto Islands, where the grass is green, the vibes are high, and the snacks are (lightly) provided 🍎. Whether you’re here to network, nosh, or just show off your questionable frisbee skills, there’s a spot on the picnic blanket with your name on it 🧺.\n\nBring your family, your friends, or that mysterious Tupperware of leftovers you’ve been meaning to eat—everyone’s welcome! We’ll have some snacks to get you started, but feel free to bring your own culinary creations. Let’s kick off Toronto Tech Week with sunshine ☀️, laughter, and maybe a few accidental frisbee catches. See you on the island!",
+                "audience": "General Startup Operators,HR,Product,Engineers,Creators",
+                "theme": "Engineering",
+                "format": "Breakfast / Brunch,Other",
+                "url": "https://lu.ma/5tws2ddv",
+                "slug": "5tws2ddv",
+                "cover": "https://images.lumacdn.com/event-covers/z5/e85e5d2e-e360-43fd-92bb-fffc0ed98653.png",
+                "api_id": "evt-GjdwUCLMT3BkiSo",
+                "type": "event",
+                "tags": "Engineering",
+                "approval": "Approved by TTW",
+                "address": "Toronto Islands"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.378841,
+                    43.621413
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Women in Sports & Tech: Strength, Resilience, and Innovation – Maple Leaf Venture Club",
+                "privacy": "Open to the public.",
+                "start": "2025-06-22T15:00:00.000Z",
+                "end": "2025-06-22T16:30:00.000Z",
+                "neighbourhood": "Downtown Yonge",
+                "title": "Women in Sports & Tech: Strength, Resilience, and Innovation",
+                "description": "Join us for an empowering morning spotlighting women who are shaping the future of sports and technology. Centered around the themes of Strength, Resilience, and Kindness, the Women in Sports & Tech Panel will feature inspiring leaders who are driving innovation, building communities, and breaking barriers in their fields.\n\nThis event aims to:\n* Empower Women in Sports and Tech: Celebrate the achievements of female athletes, entrepreneurs, and technologists who are leading change.\n* Build Community Connections: Foster meaningful conversations among players, industry professionals, and supporters.\n* Amplify Visibility: Share the stories of women transforming the landscape of sports and tech through media and storytelling.\n\nCome connect with a vibrant community, hear from trailblazing voices, and be part of a movement that champions women in sports, tech, and beyond.",
+                "audience": "Open To Everyone",
+                "theme": "Open to all industries",
+                "format": "Panel Event / Fireside Chat",
+                "url": "https://lu.ma/pvpl1vu7",
+                "slug": "pvpl1vu7",
+                "cover": "https://images.lumacdn.com/event-covers/tf/0aa910fd-6010-4b41-bbbd-dd6675600ee1.png",
+                "api_id": "evt-fndjppviiysHJ04",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "STACKT market"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.401688,
+                    43.640818
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "PORCH x CSA Picnic – PORCH",
+                "privacy": "Open to the public.",
+                "start": "2025-06-22T17:00:00.000Z",
+                "end": "2025-06-22T20:00:00.000Z",
+                "neighbourhood": "Fort York",
+                "title": "PORCH x CSA Picnic",
+                "description": "Kick off your Toronto Tech Week and summer with the PORCH x CSA Picnic!\n\n​Join us on Sunday, June 22nd, at the lovely Woodbine Beach Park.\n\n​We always talk about the importance of work-life balance, so turn that computer off and come unwind, play some cornhole, and enjoy the sunshine (hopefully) in Toronto.\n\n​Bring your picnic blankets, your favourite snacks, and your sunniest smiles.\n\n​It's not all games and food though – we will be hosting Pitch in the Park with the winner receiving a trip to Expand North Star in Dubai in October!",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Founders (Series A),Founders (Series C),Founders (Series B),Founders (Series D & Beyond),Creators,Sales / BD,Marketing / Comms,Finance,Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B),Investors (Series C & Beyond),Students,Other,General Startup Operators,Product,Engineers",
+                "theme": "Open to all industries",
+                "format": "Party,Lunch,Networking,Other,Pitch Event / Demo Day",
+                "url": "https://lu.ma/porch-csa-picnic",
+                "slug": "porch-csa-picnic",
+                "cover": "https://images.lumacdn.com/event-covers/v5/7fa4e004-1d71-48f1-aa84-30145b95f8f8.png",
+                "api_id": "evt-pJpLTBiTooYD3y5",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.406892,
+                    43.633782
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Summer Social Event – FoundersGap",
+                "privacy": "Open to the public.",
+                "start": "June 22, 2025 16:00",
+                "end": "",
+                "neighbourhood": "St. Lawrence",
+                "title": "Summer Social Event",
+                "description": "An outdoor community gathering to kick off Toronto Tech Week 2025! Join FoundersGap members, sponsors, and friends for an afternoon of networking, light refreshments, and cultural performances. Relax under the summer sky, connect with fellow Iranian- and Persian-heritage entrepreneurs, and discover new partnership opportunities in a welcoming, family-friendly environment.",
+                "audience": "Founders (Pre-Seed),Investors (Pre-Seed/Seed/Seed Plus),Engineers,General Startup Operators,Students",
+                "theme": "Open to all industries",
+                "format": "Happy Hour,Networking,Experiential",
+                "url": "https://www.eventbrite.com/e/foundersgap-social-summer-2025-toronto-tech-week-tickets-1383411253299?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl",
+                "slug": "https://www.eventbrite.com/e/foundersgap-social-summer-2025-toronto-tech-week-tickets-1383411253299?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl",
+                "cover": "",
+                "api_id": "",
+                "type": "",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "SunSeek 5km Run + Othership Ice Bath & Sauna – SunSeek",
+                "privacy": "Open to the public.",
+                "start": "2025-06-27T11:30:00.000Z",
+                "end": "2025-06-27T13:30:00.000Z",
+                "neighbourhood": "Yorkville",
+                "title": "SunSeek 5k + Othership (Day 3)",
+                "description": "SunSeek 5K + Othership Recovery\n\nA 5K sunrise run through the city, starting at Trinity Bellwoods and ending at Othership Yorkville for a guided sauna and cold plunge experience. Run at a relaxed pace alongside fellow founders, investors, and wellness enthusiasts. After finishing, step into Othership’s signature contrast therapy session to recharge, reset, and connect.",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus),Creators,Product",
+                "theme": "B2C / Consumer,Healthcare / HealthTech,Creators,AI",
+                "format": "Experiential",
+                "url": "https://lu.ma/l1kpuera",
+                "slug": "l1kpuera",
+                "cover": "https://images.lumacdn.com/event-covers/7j/790c9d79-5034-4693-9b36-343133cf7a39.png",
+                "api_id": "evt-nVihblo2OhoD0tq",
+                "type": "event",
+                "tags": "B2C / Consumer, Healthcare / HealthTech, AI",
+                "approval": "Approved by TTW",
+                "address": "Othership Yorkville"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392221,
+                    43.66945
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Breaking Barriers: Rethinking Tech Investment for Startups – Global Startups Accelerator",
+                "privacy": "Open to the public.",
+                "start": "June 23, 2025 09:00",
+                "end": "",
+                "neighbourhood": "Entertainment District",
+                "title": "Breaking Barriers: Rethinking Tech Investment for Startups",
+                "description": "This year’s conference reimagines the future of tech investment with dynamic TED-Talk-style sessions from industry leaders challenging outdated funding models. Explore bold investment theses that reflect today’s AI-driven market, from data-powered risk assessment to alternative capital structures like revenue-based financing and strategic venture funds. Learn how investors are adapting to shifting market dynamics, unlocking high-growth opportunities, and fueling the next wave of innovation.\n\nGain insider insights on scaling startups across borders, navigating capital flows, and leveraging collaborative ecosystems for sustainable growth. This is a must-attend event for founders and investors ready to break through barriers and rethink what’s possible in tech funding.",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus),General Startup Operators",
+                "theme": "Fundraising / Investing",
+                "format": "Other",
+                "url": "https://www.eventbrite.ca/e/breaking-barriers-rethinking-tech-investment-for-startups-tickets-1342867606159?aff=oddtdtcreator",
+                "slug": "https://www.eventbrite.ca/e/breaking-barriers-rethinking-tech-investment-for-startups-tickets-1342867606159?aff=oddtdtcreator",
+                "cover": "",
+                "api_id": "",
+                "type": "",
+                "tags": "Fundraising / Investing",
+                "approval": "Approved by TTW"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "New Stadium Co-working – ",
+                "privacy": "Open to the public.",
+                "start": "2025-06-23T13:00:00.000Z",
+                "end": "2025-06-24T01:00:00.000Z",
+                "neighbourhood": "King West",
+                "title": "New Stadium: TTW",
+                "description": "​Today, all access to the Stadium will be free.\n\n​​​​​​If you're interested in working from the Stadium at any point during the day or evening, bring your laptop and anything else you might need. If you'd like to just visit, you're also more than welcome to.",
+                "audience": "",
+                "theme": "Open to all industries",
+                "format": "",
+                "url": "https://lu.ma/stadiumttw",
+                "slug": "stadiumttw",
+                "cover": "https://images.lumacdn.com/event-covers/2n/cbcf16ad-ce2a-4e84-9594-a6ee8144859c.gif",
+                "api_id": "evt-jyDL2Gjo9WFNzvM",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "New Stadium"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.407328,
+                    43.641891
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "TechTO Hackathon – ",
+                "privacy": "Open to the public.",
+                "start": "2025-06-23T13:00:00.000Z",
+                "end": "2025-06-24T01:00:00.000Z",
+                "neighbourhood": "King West",
+                "title": "TechTO Hackathon",
+                "description": "\nJoin us for the TechTO Open Hackathon this Toronto Tech Week on Monday, June 23rd—where AI agents and apps meet real-world connection.\n\nThe theme of the hack is Connected Experiences. Come build AI agents that drive real-world connections before, during and after events.",
+                "audience": "",
+                "theme": "Engineering,Hardware",
+                "format": "",
+                "url": "https://lu.ma/6ogpkni2",
+                "slug": "6ogpkni2",
+                "cover": "https://images.lumacdn.com/event-covers/g1/59475c02-fbb6-4859-8898-f0e195208455.png",
+                "api_id": "evt-iNcohXPfIU78gCM",
+                "type": "event",
+                "tags": "Engineering, Hardware",
+                "approval": "Approved by TTW",
+                "address": "Koru Lp"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.396221,
+                    43.647592
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Immigrants in Tech Summit Virtual Launch Party x Toronto Tech Week – Scale Without Borders",
+                "privacy": "Open to the public.",
+                "start": "2025-06-23T16:00:00.000Z",
+                "end": "2025-06-23T17:30:00.000Z",
+                "neighbourhood": "Fort York",
+                "title": "Immigrants in Tech Summit Virtual Launch Party",
+                "description": "We’re throwing a virtual summit launch party—and you’re invited.\nThe Immigrants in Tech Summit is taking over the Royal Ontario Museum this fall. But first, we’re kicking it off with a Virtual Launch Party you don’t want to miss.\n\n📅 June 23 | 12PM EST\n📍 Online – from wherever you are\n\nHere’s what’s going down:\n\n* Meet some of our incredible speakers\n* Get a sneak peek of what’s coming at the ROM\n* Join exclusive roundtables + breakout sessions\n* Network with partners, leaders, and changemakers\n* Connect with fellow immigrants, allies, and tech champions\n\nThis isn’t just a preview. It’s a movement.\n⚡ Inspiration. Connection. Real talk.\n💬 Let’s build something incredible—together.\n\nRegister now. Show up. Plug in. Be part of the moment.",
+                "audience": "Engineers,Product,HR,Talent / People,Students",
+                "theme": "HR / Hiring",
+                "format": "Networking,Happy Hour,Lunch",
+                "url": "https://lu.ma/tk7oo8qy",
+                "slug": "tk7oo8qy",
+                "cover": "https://images.lumacdn.com/event-covers/jk/9c24aefb-ad27-4a16-877d-517efb5bbc40.jpg",
+                "api_id": "evt-vTIOgj1S3SUt8aS",
+                "type": "event",
+                "tags": "HR / Hiring",
+                "approval": "Approved by TTW",
+                "address": "Online Event"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Common Code: How do we shift from “always on” to “intentionally present”? – Reset",
+                "privacy": "Open to the public.",
+                "start": "2025-06-23T21:00:00.000Z",
+                "end": "2025-06-23T23:00:00.000Z",
+                "neighbourhood": "Cabbagetown",
+                "title": "COMMON CODE: How do we shift from “always on” to “intentionally present”?",
+                "description": "In a world designed to keep us constantly connected, what does it mean to truly be present? This conversation invites us to explore digital burnout, attention fatigue, and the possibilities of being fully here - with ourselves, each other, and our surroundings. Together, we’ll reflect on how Toronto’s tech culture might help shape new norms around presence, pace, and pause. \n\n__\n\nFive days. Five public spaces. Five big questions. \n\nCommon Code is a free pop-up conversation series hosted by Reset that invites Toronto’s tech community to gather in public spaces to explore questions at the intersection of tech, trust, and togetherness in Toronto. Each day, we bring a new question to life in a different neighbourhood that invites Town Hall-like dialogue and debate on topics related to surveillance, sovereignty, safety and more. An unplug valet will be available at each pop-up for anyone wishing to go phone free.",
+                "audience": "Students,General Startup Operators,Talent / People,HR,Product,Marketing / Comms,Finance,Sales / BD,Engineers,Creators,Investors (Series C & Beyond),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B),Founders (Series C),Founders (Series D & Beyond),Founders (Pre-Seed),Founders (Seed/Seed Plus),Founders (Series A),Founders (Series B)",
+                "theme": "Open to all industries",
+                "format": "Experiential,Happy Hour,Networking",
+                "url": "https://lu.ma/rusag82d",
+                "slug": "rusag82d",
+                "cover": "https://images.lumacdn.com/event-covers/e4/b2a7c4f1-8a50-4d5e-b359-c48a1d5df15b.png",
+                "api_id": "evt-71bIQ8LsXrI6Hon",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "Allan Gardens"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.374738,
+                    43.661743
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Being Online workshop – 1RG",
+                "privacy": "Open to the public.",
+                "start": "2025-06-23T22:00:00.000Z",
+                "end": "2025-06-24T01:00:00.000Z",
+                "neighbourhood": "Junction",
+                "title": "Being Online workshop",
+                "description": "​Many people are turned off by the prospect of using social media to achieve personal or professional goals. Whether it's the tone of the online arena or the act of reducing oneself to an abstracted profile, it can be an unpleasant and alienating space to occupy. \n\n​Being Online is a response to this aversion, a workshop on translating self-reflection into an online persona that feels genuine, maintains itself, and results in real world achievements. It is not a session about maximizing impressions, gaining followers, or gaming algorithms. Instead participants will be exploring how their personal goals and strategies can translate into tactics that feel natural and resonate with people on a genuine level. Among the topics we'll cover are: the concept of self as explored by philosophers and graphic novelists, the use of classical rhetorical strategies in 280 characters or less, and case studies on successful real world applications. \n\n​About the speaker\nDan Seljak is a marketing professional who has been working in the \"built environment\" for the past decade. Between helping architects, landscape designers and planners win work, his multi-media project Another Glass Box serves as an outlet for his more civic-oriented projects. His focus is on getting people excited about participating in civic life and restoring agency to citizen actors by delivering clear, informative, and (hopefully) fun messaging about how to engage communities and municipalities.",
+                "audience": "Creators,General Startup Operators,Marketing / Comms,Students",
+                "theme": "Creators,Climate,UX / Design",
+                "format": "Workshop / Roundtable",
+                "url": "https://lu.ma/z55m8mcm",
+                "slug": "z55m8mcm",
+                "cover": "https://images.lumacdn.com/event-covers/vj/0d501330-5ba8-41d6-aeca-33708eb238e4.jpg",
+                "api_id": "evt-CvwMAOunWc3PFyS",
+                "type": "event",
+                "tags": "Creators, Climate, UX / Design",
+                "approval": "Approved by TTW",
+                "address": "1RG"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.456212,
+                    43.66251
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "AI Community Showcase: Pitch • Demo • Connect – Maple Leaf Venture Club",
+                "privacy": "Open to the public.",
+                "start": "2025-06-23T22:30:00.000Z",
+                "end": "2025-06-24T00:00:00.000Z",
+                "neighbourhood": "Downtown Yonge",
+                "title": "AI Community Showcase: Pitch • Demo • Connect",
+                "description": "Looking to connect with Toronto’s AI ecosystem in a real, meaningful way? AI Community Showcase is your go-to community night where builders, founders, investors, and curious minds come together to share projects, exchange ideas, and build relationships.\n\nThis isn’t a formal conference — it’s an open, high-energy space for pitching, learning, and most importantly, connecting.\n\n🎤 Got something to share?\nWe offer 5-minute open mic pitch slots for community members!Send your pitch blurb or deck to wendyhuangworkemail@gmail.com\n\n🤝 What to Expect:\n\nLive pitches and demos from local AI startups and builders\n\nA relaxed environment to share early ideas or get feedback\n\nQuality networking — no business cards, just real conversations\n\nA chance to meet future collaborators, co-founders, or investors\n\nWhether you're working on something cool or just want to meet others in the space, come hang out. This is where ideas turn into relationships, and small talks turn into big moves.Let’s grow the AI community — together.",
+                "audience": "Engineers,Investors (Pre-Seed/Seed/Seed Plus),Founders (Series A),Founders (Seed/Seed Plus),Founders (Pre-Seed)",
+                "theme": "AI,Fundraising / Investing",
+                "format": "Pitch Event / Demo Day",
+                "url": "https://lu.ma/91j35u7r",
+                "slug": "91j35u7r",
+                "cover": "https://images.lumacdn.com/event-covers/e0/6d2300d0-dae3-4c3e-8bc9-2ef449792198.png",
+                "api_id": "evt-kZnjfQxg6O965kh",
+                "type": "event",
+                "tags": "AI, Fundraising / Investing",
+                "approval": "Approved by TTW",
+                "address": "NEXT Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.382488,
+                    43.670902
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Agentforce World Tour Toronto  – Salesforce",
+                "privacy": "Open to the public.",
+                "start": "June 24, 2025 08:30",
+                "end": "",
+                "neighbourhood": "Trinity Bellwoods",
+                "title": "Agentforce World Tour Toronto",
+                "description": "Experience what AI was meant to be at Agentforce World Tour Toronto.\nExplore expert-led sessions, demos, and hands-on trainings. Learn how to power personalized data-driven agents that take action and drive results 24/7 across financial services, retail, manufacturing, technology, and more. Experience the latest agent-first innovation for your business live in Toronto. All in one day, all for free.",
+                "audience": "Product,Marketing / Comms,Finance,Sales / BD,HR",
+                "theme": "AI,B2B,GTM (Marketing,Sales,Growth)",
+                "format": "Experiential,Hackathon,Lunch,Networking,Panel Event / Fireside Chat,Workshop / Roundtable,Other,Happy Hour",
+                "url": "https://www.salesforce.com/events/world-tour/toronto/",
+                "slug": "https://www.salesforce.com/events/world-tour/toronto/",
+                "cover": "",
+                "api_id": "",
+                "type": "",
+                "tags": "AI, B2B, GTM (Marketing, Sales, Growth)",
+                "approval": "Approved by TTW"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Homecoming – TTW",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T13:00:00.000Z",
+                "end": "2025-06-24T18:00:00.000Z",
+                "neighbourhood": "Rosedale",
+                "title": "Toronto Tech Week 2025: Homecoming",
+                "description": "​Homecoming kicks off Toronto Tech Week 2025 by uniting the people who’ve built, backed, and bet on this story. Join 1,000+ of Canada's top builders from around the world as we mark the week with the energy, focus, and momentum it deserves.\n\n​We’re bringing the biggest names to Toronto's mainstage, featuring:\n\n​Tobi Lütke – CEO & Co-Founder, Shopify\n\n​Chamath Palihapitiya – CEO & Founder, Social Capital\n\n​Michael Katchen – CEO & Founder, Wealthsimple\n\n​Aidan Gomez – CEO & Co-Founder, Cohere\n\n​Raquel Urtasun – CEO & Founder, Waabi\n\n​Sanja Fidler – VP of AI Research, NVIDIA\n\n​Harley Finkelstein – President, Shopify\n\n​and more to be announced!\n\n​Set at the beautiful Evergreen Brick Works—a hidden gem nestled in Toronto’s ravines—it’s the ultimate summer vibe. Come for the real talk, stay for the food trucks, music, and people.",
+                "audience": "",
+                "theme": "Open to all industries",
+                "format": "",
+                "url": "https://lu.ma/torontotechweek-homecoming",
+                "slug": "torontotechweek-homecoming",
+                "cover": "https://images.lumacdn.com/event-covers/4t/0c0f6169-da18-428c-9c40-b102c00a07fe.png",
+                "api_id": "evt-EaWtxjPtUgQIS5o",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.364713,
+                    43.684331
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Growing Your Career in Tech – FreshBooks",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T13:00:00.000Z",
+                "end": "2025-06-26T15:00:00.000Z",
+                "neighbourhood": "Entertainment District",
+                "title": "Growing Your Career in Tech: Panel & Speed Networking",
+                "description": "45 minute panel with folks across companies and industries who have built interesting careers in tech, followed by \"speed networking\" for 45 minutes (talk to 5 x 7 minutes). Coffee & treats",
+                "audience": "Open To Everyone",
+                "theme": "B2B,Engineering,FinTech,\"GTM (Marketing, Sales, Growth)\"",
+                "format": "Networking,Panel Event / Fireside Chat",
+                "url": "https://lu.ma/w12joqs2",
+                "slug": "w12joqs2",
+                "cover": "https://images.unsplash.com/photo-1672826980330-93ae1ac07b41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHwxNzh8fG5ldHdvcmtpbmd8ZW58MHx8fHwxNzQ2NTQ1OTIyfDI&ixlib=rb-4.1.0&q=80&w=1080",
+                "api_id": "evt-mFRUQl5goAaWje5",
+                "type": "event",
+                "tags": "B2B, Engineering, FinTech, \"GTM (Marketing, Sales, Growth)\"",
+                "approval": "Approved by TTW",
+                "address": "FreshBooks"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388174,
+                    43.646682
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Cowork & Connect for Creatives by Staples Studio – Staples Studio, Studio Corktown",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T14:00:00.000Z",
+                "end": "2025-06-24T20:00:00.000Z",
+                "neighbourhood": "Corktown",
+                "title": "Cowork & Connect for Creatives by Staples Studio",
+                "description": "Experience a unique day of productivity and connection at Cowork & Connect for Creatives by Staples Studio\nJoin us during Toronto Tech Festival for a complimentary coworking experience in one of Toronto’s most beautiful spaces. Enjoy high-speed Wi-Fi, ergonomic workstations, and unlimited coffee—indoors or on our stunning patio. Whether you need a spot to work between events or want to meet fellow creatives professionals, our doors are open from 10 AM to 4 PM.\n\nHighlights:\n•\tFree access to all coworking amenities\n•\tWork indoors or soak up the sun on our patio\n•\tComplimentary coffee and tea\n•\tPizza slices will be offered around lunch time (12:30–1:30 PM) \n•\tTours of Studio Corktown and info on memberships\n",
+                "audience": "Founders (Series A),Creators,Sales / BD,Marketing / Comms,HR",
+                "theme": "B2B,B2C / Consumer,\"GTM (Marketing, Sales, Growth)\",Media / Entertainment,Creators",
+                "format": "Networking,Other",
+                "url": "https://lu.ma/93twio9g",
+                "slug": "93twio9g",
+                "cover": "https://images.lumacdn.com/event-covers/8c/e532e149-0ead-4578-8031-780525f6fe5f.png",
+                "api_id": "evt-KFYxUETFKMQnDXG",
+                "type": "event",
+                "tags": "B2B, B2C / Consumer, \"GTM (Marketing, Sales, Growth)\", Media / Entertainment, Creators",
+                "approval": "Approved by TTW",
+                "address": "Staples Studio Corktown Coworking"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.364477,
+                    43.654142
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Astra – Astra",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T17:00:00.000Z",
+                "end": "2025-06-24T20:00:00.000Z",
+                "neighbourhood": "Financial District",
+                "title": "Astra | Young Builders Symposium",
+                "description": "Astra Symposium is where young builders, artists, and creators come together to share the projects they’ve been crafting. We’ll have booth and stage demos for the friday night hackers, artists creating new worlds, and people exploring just cuz. Come to be inspired by people creating stuff they love, or sign up to demo you’re awesome work.",
+                "audience": "Students,Creators,Engineers,Open To Everyone",
+                "theme": "Open to all industries",
+                "format": "Pitch Event / Demo Day",
+                "url": "https://lu.ma/5y7rfeci",
+                "slug": "5y7rfeci",
+                "cover": "https://images.lumacdn.com/event-covers/2x/7a73f596-8d5d-4a86-a6cb-ad16cbc5dd4d.jpg",
+                "api_id": "evt-m41l4s89HmWMHSN",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "372 Bay St. suite 200"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.381417,
+                    43.651006
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Startup Sweats - Toronto Tech Week – Startup Sweats",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T19:00:00.000Z",
+                "end": "2025-06-24T21:00:00.000Z",
+                "neighbourhood": "Entertainment District",
+                "title": "Startup Sweats x Alan - Toronto Tech Week",
+                "description": "​Startup Sweats is a curated series that brings together members of the tech community to sweat and connect through a shared interest in fitness, health and technology. Coaches from Fit Factory Fitness will lead a 50-minute strength and conditioning workout followed by an hour of healthy refreshments and networking. Spaces are limited and allocated on a first-come, first-serve basis. You won't want to miss this workout!",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Founders (Series A),Founders (Series B),Founders (Series C),Founders (Series D & Beyond),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B),Investors (Series C & Beyond),Engineers,Creators,Sales / BD,Finance,Marketing / Comms,Product,HR,Talent / People,General Startup Operators,Students",
+                "theme": "Open to all industries",
+                "format": "Networking,Other",
+                "url": "https://lu.ma/xt55yr91",
+                "slug": "xt55yr91",
+                "cover": "https://images.lumacdn.com/event-covers/41/799e5185-c82d-4579-ab63-c14a0f36a09f.png",
+                "api_id": "evt-E8ydoLW9H9e03s4",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "Fit Factory Downtown"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392904,
+                    43.64571
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Toronto Open Source Meetup, hosted by Intuit Canada – Intuit",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T19:00:00.000Z",
+                "end": "2025-06-24T23:00:00.000Z",
+                "neighbourhood": "King West",
+                "title": "Toronto Open Source Meetup",
+                "description": "We all know that AI is transforming the technological landscape. But what happens when you combine AI with the power of open source?\n\nIntuit is hosting an Open Source Developer Meetup where you can connect with industry experts to learn and share the latest innovations, observations and challenges. The event will host a product demo on Numaflow, a panel discussion and networking. \n",
+                "audience": "Engineers,Founders (Pre-Seed),Students,General Startup Operators,Product",
+                "theme": "Engineering,AI",
+                "format": "Panel Event / Fireside Chat,Networking",
+                "url": "https://lu.ma/ifizyhiv",
+                "slug": "ifizyhiv",
+                "cover": "https://images.lumacdn.com/event-covers/1h/3f8f9b54-1d17-411f-acf5-00a8ad67f426.png",
+                "api_id": "evt-SrtyEzd07oLsepN",
+                "type": "event",
+                "tags": "Engineering, AI",
+                "approval": "Approved by TTW",
+                "address": "The Well"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39579,
+                    43.642791
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Join Free Geek Toronto for a Hands-On Open House! – Free Geek Toronto",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T19:00:00.000Z",
+                "end": "2025-06-24T23:00:00.000Z",
+                "neighbourhood": "Trinity Bellwoods",
+                "title": "Free Geek Toronto Open House",
+                "description": "Are you passionate about sustainability, digital inclusion, or simply love tech? Don’t miss this opportunity to explore Free Geek Toronto’s impactful work in the heart of Toronto!\n\nAs a non-profit, tech reuse social enterprise, we’re on a mission to bridge the digital divide and reduce e-waste. We’re opening our doors to show you how we're accomplishing this.\n\nHere’s what you can expect at our open house:\n\n:wrench: Transforming tech\nGet an inside look at how we refurbish old devices, giving them new life with secure data wipes, repairs, and open-source software. We’re not just fixing computers—we’re creating affordable tech solutions for individuals and organizations in need.\n\n:earth_africa: Sustainable solutions\n Discover how our eco-friendly tech programs are making a difference, from reducing e-waste to offering green solutions that support both local communities and the planet.\n\n:bulb: Supporting digital inclusion\nBy partnering with local organizations, we provide low-cost technology and job training to communities facing barriers to tech access. Learn how you can help expand opportunities for those in need, while developing skills for yourself.\n\n:seedling: Network with like-minded innovators\nWhether you're a techie, an environmental advocate, or just someone looking to give back, you'll meet others who are eager to make a positive impact through technology.\n\nWe’re more than just a tech hub; we’re a community-driven force for good. Come see how we’re building a more inclusive, sustainable future—one \ncomputer at a time.\n\nJoin us at Free Geek Toronto’s Open House! Let’s build a greener, more inclusive digital world—together. :computer::recycle: See you there!",
+                "audience": "Students,Other,General Startup Operators",
+                "theme": "Climate,Hardware",
+                "format": "Other",
+                "url": "https://lu.ma/2zd1q0nx",
+                "slug": "2zd1q0nx",
+                "cover": "https://images.lumacdn.com/event-covers/cp/d7e45c15-966d-4d34-91d5-eb4b3910dd8e.png",
+                "api_id": "evt-zOclvYj6o6mkjrg",
+                "type": "event",
+                "tags": "Climate, Hardware",
+                "approval": "Approved by TTW",
+                "address": "180 Sudbury St c3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.425182,
+                    43.641888
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "CentML @ New Stadium - BBQ and Social – CentML",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T20:00:00.000Z",
+                "end": "2025-06-25T00:00:00.000Z",
+                "neighbourhood": "Queen West",
+                "title": "CentML @ New Stadium -     BBQ and Social",
+                "description": "Join us on June 24 from 4–8 PM at The New Stadium for an informal evening of drinks, food, and great conversation. Hosted by CentML and New Stadium teams, this laid-back social is a chance for the local tech community to connect, share ideas, and chat about the future of AI. No pitches, no panels—just good vibes, BBQ and smart people.",
+                "audience": "Open To Everyone",
+                "theme": "AI,B2B,B2C / Consumer,Hardware,Infrastructure",
+                "format": "Party,Happy Hour,Experiential,Networking",
+                "url": "https://lu.ma/7g4s23f6",
+                "slug": "7g4s23f6",
+                "cover": "https://images.lumacdn.com/event-covers/dn/300a9dec-0ea1-4e91-a02d-d8fcc5c4ec28.png",
+                "api_id": "evt-Tnz3BmFnlCo8Zn2",
+                "type": "event",
+                "tags": "AI, B2B, B2C / Consumer, Hardware, Infrastructure",
+                "approval": "Approved by TTW",
+                "address": "New Stadium"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.407328,
+                    43.641891
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Common Code: How can we reimagine capturing content in public and politicized spaces to better enable trust, safety, and presence? – Reset",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T21:00:00.000Z",
+                "end": "2025-06-24T23:00:00.000Z",
+                "neighbourhood": "Downtown Yonge",
+                "title": "COMMON CODE: How can we reimagine capturing content in public spaces to better enable trust, safety, and presence?",
+                "description": "Photos and videos are everywhere, but our comfort with being captured isn’t always equal. This gathering opens space to rethink how we create, share, and consume content in public - especially in moments or movements where safety and trust matter most. What would it take to document with care, and create norms that protect both presence and power?\n\n---\n\nFive days. Five public spaces. Five big questions. \n\nCommon Code is a free pop-up conversation series hosted by Reset that invites Toronto’s tech community to gather in public spaces to explore questions at the intersection of tech, trust, and togetherness in Toronto. Each day, we bring a new question to life in a different neighbourhood that invites Town Hall-like dialogue and debate on topics related to surveillance, sovereignty, safety and more. An unplug valet will be available at each pop-up for anyone wishing to go phone free.\n",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Founders (Series A),Founders (Series B),Founders (Series C),Founders (Series D & Beyond),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B),Investors (Series C & Beyond),Engineers,Creators,Sales / BD,Finance,Marketing / Comms,Product,HR,Talent / People,General Startup Operators,Students",
+                "theme": "Open to all industries",
+                "format": "Experiential,Happy Hour,Networking",
+                "url": "https://lu.ma/h9105qcv",
+                "slug": "h9105qcv",
+                "cover": "https://images.lumacdn.com/event-covers/e4/b2a7c4f1-8a50-4d5e-b359-c48a1d5df15b.png",
+                "api_id": "evt-G4D4BI2En6fZs0V",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "Nathan Phillips Square"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.383414,
+                    43.652707
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Buy in, Stand out: Your climate action starts with carbon removal – Carbon Removal Canada",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T21:00:00.000Z",
+                "end": "2025-06-24T23:00:00.000Z",
+                "neighbourhood": "Yorkville",
+                "title": "Buy in, Stand out: Your climate action starts with carbon removal",
+                "description": "Lately, tech companies like Microsoft, Meta, and Google have made headlines for major purchases of carbon removal credits — where they pay companies up front for taking carbon dioxide out of the atmosphere. The carbon removal companies themselves utilize incredible tech so economic and environmental benefits of these purchases are particularly synergistic. But how exactly do carbon removal credits work, and how can your company make its own purchases? Join Carbon Removal Canada x MaRS' panel event to hear from both buyers and sellers, and then join us for a networking reception afterwards.\n",
+                "audience": "Sales / BD,Founders (Series C),Investors (Series C & Beyond),Engineers",
+                "theme": "Climate,Deep Tech,Fundraising / Investing,International / Expansion,B2B",
+                "format": "Networking,Panel Event / Fireside Chat",
+                "url": "https://lu.ma/nytdal22",
+                "slug": "nytdal22",
+                "cover": "https://images.lumacdn.com/event-covers/z7/c37f784b-924e-4d43-94c2-a8c41eb792bf.jpg",
+                "api_id": "evt-IWgkoBJPxdmQnXG",
+                "type": "event",
+                "tags": "Climate, Deep Tech, Fundraising / Investing, International / Expansion, B2B",
+                "approval": "Approved by TTW",
+                "address": "Industrious"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.385954,
+                    43.669928
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Agentics Foundation  – Reuven Cohen",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T21:30:00.000Z",
+                "end": "2025-06-25T00:30:00.000Z",
+                "neighbourhood": "Entertainment District",
+                "title": "Agentics Tech Week",
+                "description": "Join rUv for hands on SOTA IDE setup for AI Driven Software Development. \n\nWe are officially part of Toronto Tech Week 2025, a weeklong citywide collection of events to connect and celebrate the builders. June 23 → June 27, 2025 |torontotechweek.comcontact@torontotechweek.com",
+                "audience": "Engineers,Creators,Product,Investors (Pre-Seed/Seed/Seed Plus)",
+                "theme": "AI,Engineering",
+                "format": "Networking,Panel Event / Fireside Chat,Workshop / Roundtable",
+                "url": "https://lu.ma/afp6zoy2",
+                "slug": "afp6zoy2",
+                "cover": "https://images.lumacdn.com/event-covers/ip/33d466bc-6870-45f2-889c-41eaca95293d.png",
+                "api_id": "evt-WEETjvV4aUFg35U",
+                "type": "event",
+                "tags": "AI, Engineering",
+                "approval": "Approved by TTW",
+                "address": "25 John St"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388724,
+                    43.644656
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "The Future of Travel & Hospitality – Nappr",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T21:30:00.000Z",
+                "end": "2025-06-25T00:30:00.000Z",
+                "neighbourhood": "Junction",
+                "title": "Nappr Presents: The Future of Travel & Hospitality",
+                "description": "Calling all travel tech nerds, jet-lagged founders, overcaffeinated marketers and anyone who's ever said, \"I just need 20 minutes and a hotel bed.\" \n\nNappr is pulling up to Toronto Tech Week to host The Future of Travel & Hospitality - one of the few events that's not about AI, crypto, or reinventing the wheel with blockchain...but about actual rest. Revolutionary, we know.\n\nJoin us for a night of:\n\n• Sweet, sweet sleep mask + earplug swag\n• Free stay giveaways\n• Chill vibes, good people, and a few industry secrets we probably shouldn't say out loud\n\nWhether you're in hotels, airlines, OTAs or just here for the drinks, swing on through and let’s talk ZzZs, hospitality, and how to make travel less soul-crushing.\n\nSee ya there Toronto! 🛏️🍁🥂\n\n_____\n​​About Us\n\n​Nappr is a marketplace that offers 2 to 12-hour hotel stays to help people catch up on rest and meet the demands of their unique schedules. Our network of 1,100+ global properties enables anyone on-the-go to book rooms same-day at chains like Marriott, Hilton, Hyatt, Sheraton and also many boutiques for up to 50% off the overnight rate - and with all of the amenities included. This also gives hotels the ability to fill their unused capacity and generate extra revenue with convenient, hourly scheduling.\n\nOur LinkTree:\nhttps://linktr.ee/nappr\n_____",
+                "audience": "Investors (Pre-Seed/Seed/Seed Plus),Creators,Founders (Seed/Seed Plus),Founders (Pre-Seed)",
+                "theme": "B2C / Consumer,Healthcare / HealthTech",
+                "format": "Happy Hour",
+                "url": "https://lu.ma/26315qv9",
+                "slug": "26315qv9",
+                "cover": "https://images.lumacdn.com/event-covers/u4/eb961895-a2de-4d31-a30e-5ce893e8c734.png",
+                "api_id": "evt-fPH4JwEnoQ0kRmK",
+                "type": "event",
+                "tags": "B2C / Consumer, Healthcare / HealthTech",
+                "approval": "Approved by TTW",
+                "address": "Nickel 9 Distillery | Distillery in Toronto"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.464571,
+                    43.670734
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Bball Toronto – Studio 535",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T22:00:00.000Z",
+                "end": "2025-06-25T00:00:00.000Z",
+                "neighbourhood": "Corktown",
+                "title": "Bball Toronto",
+                "description": "Team size depending on number of RSVPs\nAll skill levels welcome\n​Bring basketball or running shoes",
+                "audience": "Other",
+                "theme": "Defense,Gaming,Media / Entertainment",
+                "format": "Other",
+                "url": "https://lu.ma/3l43wmpm",
+                "slug": "3l43wmpm",
+                "cover": "https://images.lumacdn.com/event-covers/on/c2328ef3-e977-4806-8f97-d720c210acc0.jpg",
+                "api_id": "evt-XGksiBahg3B4AKb",
+                "type": "event",
+                "tags": "Defense, Gaming, Media / Entertainment",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.35672,
+                    43.656969
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Healthtech Social – Scalpels & Spreadsheets",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T22:30:00.000Z",
+                "end": "2025-06-25T00:30:00.000Z",
+                "neighbourhood": "Fashion District",
+                "title": "Toronto Tech Week: Healthtech Social",
+                "description": "Healthcare and life science professionals! Join us for this networking event with likeminded individuals. Whether you're building, investing or shaping the industry - you'll find your crowd here!\n\nExpect to be surrounded by entrepreneurs, investors and others from healthtech, medtech, pharma/biotech, health IT & public health backgrounds.",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Founders (Series A),Founders (Series C),Founders (Series B),Founders (Series D & Beyond),Investors (Series A/Series B),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series C & Beyond),General Startup Operators,Talent / People,Marketing / Comms,Finance,Creators,Engineers,Other,Students,Product,Sales / BD",
+                "theme": "Healthcare / HealthTech",
+                "format": "Networking,Panel Event / Fireside Chat",
+                "url": "https://lu.ma/x7koo2w8",
+                "slug": "x7koo2w8",
+                "cover": "https://images.lumacdn.com/event-covers/z8/a0e079ad-e4e9-4c1a-9b74-c5989cc1f87b.png",
+                "api_id": "evt-H2O7jKHGsdPGg88",
+                "type": "event",
+                "tags": "Healthcare / HealthTech",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392714,
+                    43.648042
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Technology Capacity Building for Nonprofits – Christie Ossington Neighbourhood Centre",
+                "privacy": "Open to the public.",
+                "start": "2025-06-24T22:45:00.000Z",
+                "end": "2025-06-25T01:00:00.000Z",
+                "neighbourhood": "The Annex",
+                "title": "Technology Capacity Building for Nonprofits",
+                "description": "Under the umbrella of Toronto Tech Week, this will be a free event suitable for other Toronto shelters, nonprofits, and small businesses that are interested in improving their technology and security approaches, held in the evening at the George Chuvalo Neighbourhood Centre. This event will deliver a 45–90-minute seminar that will include threats that nonprofits face, how to prepare staff for them, and actionable ways to prepare an organization for future threats. Our speakers bring experience working on tech teams for shelters, nonprofit, and government.",
+                "audience": "Students,General Startup Operators,Talent / People,Creators,Engineers,HR,Finance",
+                "theme": "Infrastructure,Cybersecurity",
+                "format": "Other,Panel Event / Fireside Chat,Workshop / Roundtable",
+                "url": "https://lu.ma/8nbdanf8",
+                "slug": "8nbdanf8",
+                "cover": "https://images.lumacdn.com/event-covers/55/15499bea-2cfe-49d7-b2ea-08b6b713d214.png",
+                "api_id": "evt-PEq37Yo8kQS21Gj",
+                "type": "event",
+                "tags": "Infrastructure, Cybersecurity",
+                "approval": "Approved by TTW",
+                "address": "50 Sousa Mendes St"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.453915,
+                    43.661643
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "2025 World Vitiligo Day Innovation Summit – The Vitiligo Research Foundation",
+                "privacy": "Open to the public.",
+                "start": "June 25, 2025 07:30",
+                "end": "",
+                "neighbourhood": "Harbourfront",
+                "title": "2025 World Vitiligo Day Innovation Summit",
+                "description": "Vitiligo affects nearly 100 million people worldwide – not just physically, but emotionally and socially too. Today, the conversation is louder and more powerful than ever – and this year, Canada proudly joins the global movement.\n\nWorld Vitiligo Day is one of the largest health awareness movements in the world, in 2025 its Canadian history. For the very first time, the World Vitiligo Day comes to Toronto, shining a powerful spotlight on vitiligo and the incredible global community behind it.\n\nHosted by Skinopathy in partnership with the Vitiligo Research Foundation and in collaboration with Vitiligo Voices Canada, this year’s theme, “Innovation for Every Skin” explores how artificial intelligence, medtech, and research are revolutionizing care, access, and equity for people with vitiligo.\n\nJoin us learn how you can help those with vitiligo!",
+                "audience": "Students,Talent / People,HR,Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B)",
+                "theme": "Healthcare / HealthTech,AI,Media / Entertainment,Fundraising / Investing,International / Expansion",
+                "format": "Breakfast / Brunch,Lunch,Networking,Panel Event / Fireside Chat,Pitch Event / Demo Day,Workshop / Roundtable",
+                "url": "https://www.eventbrite.ca/e/world-vitiligo-day-innovation-summit-tickets-1310485059089",
+                "slug": "https://www.eventbrite.ca/e/world-vitiligo-day-innovation-summit-tickets-1310485059089",
+                "cover": "",
+                "api_id": "",
+                "type": "",
+                "tags": "Healthcare / HealthTech, AI, Media / Entertainment, Fundraising / Investing, International / Expansion",
+                "approval": "Approved by TTW"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "SunSeek 5km Run + Othership Ice Bath & Sauna – SunSeek",
+                "privacy": "Open to the public.",
+                "start": "2025-06-27T11:30:00.000Z",
+                "end": "2025-06-27T13:30:00.000Z",
+                "neighbourhood": "Yorkville",
+                "title": "SunSeek 5k + Othership (Day 3)",
+                "description": "SunSeek 5K + Othership Recovery\n\nA 5K sunrise run through the city, starting at Trinity Bellwoods and ending at Othership Yorkville for a guided sauna and cold plunge experience. Run at a relaxed pace alongside fellow founders, investors, and wellness enthusiasts. After finishing, step into Othership’s signature contrast therapy session to recharge, reset, and connect.",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus),Engineers,Product",
+                "theme": "B2C / Consumer,Healthcare / HealthTech,AI",
+                "format": "Experiential",
+                "url": "https://lu.ma/l1kpuera",
+                "slug": "l1kpuera",
+                "cover": "https://images.lumacdn.com/event-covers/7j/790c9d79-5034-4693-9b36-343133cf7a39.png",
+                "api_id": "evt-nVihblo2OhoD0tq",
+                "type": "event",
+                "tags": "B2C / Consumer, Healthcare / HealthTech, AI",
+                "approval": "Approved by TTW",
+                "address": "Othership Yorkville"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392221,
+                    43.66945
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Scaling Up in Style: Immigration Essentials for Tech Trailblazers – Green and Spiegel - Immigration Law",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T13:00:00.000Z",
+                "end": "2025-06-25T14:30:00.000Z",
+                "neighbourhood": "Financial District",
+                "title": "Scaling Up in Style: Immigration Essentials for Tech Trailblazers",
+                "description": "Join us for coffee, conversation and doughnuts at Green and Spiegel, an immigration law firm located in the heart of the financial district!\n\nAs tech companies continue to grow and evolve, attracting the right talent and expanding operations across borders has never been more critical. Whether you are a Canadian tech company looking to hire top-tier talent or an entrepreneur aiming to scale your operations into North America, understanding the available immigration pathways is essential.\n\nBoth Canada and the United States offer a wide array of immigration programs tailored to meet the needs of the technology sector. From hiring skilled foreign workers to facilitating international expansion, the right immigration options can significantly enhance your company’s growth potential.\n\n",
+                "audience": "Investors (Pre-Seed/Seed/Seed Plus),HR,Talent / People,General Startup Operators,Engineers",
+                "theme": "Engineering,Healthcare / HealthTech,HR / Hiring,Gaming,AI",
+                "format": "Panel Event / Fireside Chat,Other",
+                "url": "https://lu.ma/8w01fck1",
+                "slug": "8w01fck1",
+                "cover": "https://images.lumacdn.com/event-covers/oh/5666feb2-2689-4ad3-b7c4-208edd866d66.png",
+                "api_id": "evt-CuPHeUNJAas3RFf",
+                "type": "event",
+                "tags": "Engineering, Healthcare / HealthTech, HR / Hiring, Gaming, AI",
+                "approval": "Approved by TTW",
+                "address": "Green and Spiegel LLP"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.384656,
+                    43.649616
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Women in Tech: Debug Your Finances Rooftop Brunch – Novel Wealth",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T13:00:00.000Z",
+                "end": "2025-06-25T16:00:00.000Z",
+                "neighbourhood": "Queen West",
+                "title": "Women in Tech: Debug Your Finances Rooftop Brunch",
+                "description": "KEEP MORE OF WHAT YOU EARN: Discover how to optimize your tech compensation and avoid mistakes that cost you thousands of dollars each year.\n\nThis event is crafted for women working at Canadian and US tech companies - and feisty start-ups 💥🚀\n\n​Here’s what’s in store for you: \n\n​Rooftop Vibes: Greet the day with a premium brunch selection, freshly brewed coffee and DJ set by Roncy's High Notes Coffee + Vinyl. \n\n​Network: Connect with tech-focused financial advisors who specialize in RSUs, stock options, and tax optimization.\n\n​Questions Answered: How do I keep more of what I earn? How can I reduce tax liabilities and minimize fees? How should I diversify my tech stocks?\n\n​“Tech compensation is complex and tech pros face unique challenges optimizing their plans,” says Mike Masotti, partner at Novel Wealth.\n\n“This unique event gives women access to leading experts in tech compensation to get answers to their questions in a casual setting.”  \n\n===\n\n​Kick your day off with great coffee, mimosas, a delicious brunch, and chill beats by Roncy's High Notes Coffee + Vinyl.\n\n===\n\nGetting here: Close to UP EXPRESS train to Union Station. Close to Dundas West Subway. Steps to Dundas & College streetcars. UP gets you downtown in 10 minutes.\n\n===\n\n​It is a rooftop, so space is limited. Register today!\n\n​We are officially part of Toronto Tech Week 2025, a weeklong citywide collection of events to connect and celebrate the builders. June 23 → June 27, 2025 |",
+                "audience": "Founders (Series C),Engineers,Sales / BD,Finance,Talent / People",
+                "theme": "FinTech,B2C / Consumer,HR / Hiring,Creators",
+                "format": "Breakfast / Brunch,Networking",
+                "url": "https://lu.ma/iiwj25lq",
+                "slug": "iiwj25lq",
+                "cover": "https://images.lumacdn.com/event-covers/ja/a5f7f330-dbb1-44c4-81ab-c82f47aa15f0.png",
+                "api_id": "evt-ow286wDWHEaNkbv",
+                "type": "event",
+                "tags": "FinTech, B2C / Consumer, HR / Hiring, Creators",
+                "approval": "Approved by TTW",
+                "address": "25 Morrow Ave"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.446837,
+                    43.652554
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "MaRS Mornings: Frontiers of AI in Toronto’s Discovery District – MaRS Discovery District",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T13:30:00.000Z",
+                "end": "2025-06-25T16:00:00.000Z",
+                "neighbourhood": "Financial District",
+                "title": "MaRS Mornings: Frontiers of AI in Toronto’s Discovery District",
+                "description": "​Visit the epicentre of AI innovation — Toronto's Discovery District — where modern artificial intelligence was crafted by Nobel Laureate Geoffrey Hinton and continues to evolve through world-leading research and commercialization. \n\n​​Frontiers of AI is a day of programming on June 25 delivered in partnership with MaRS, the University of Toronto (UofT) and Vector Institute, featuring a hands-on showcase of Canadian innovation that is shaping the global future of AI — take part in engaging conversations, demos, workshops and networking. Meet emerging and established leaders in AI, alongside decision-makers in business and tech.\n\n​​​Located in the heart of Toronto's innovation corridor, this event brings together three powerhouse institutions that have helped establish Toronto as a world-leading AI hub: MaRS, the world's largest urban innovation hubs; the University of Toronto, home to pioneering AI breakthroughs that sparked the global AI revolution and The Vector Institute, renowned for bridging cutting-edge AI research with real-world applications across 32 enterprise partners and 200+ startups.\n\n​MaRS Mornings will take place from 10:00 a.m. - 12:00 p.m. at the MaRS Centre. Join us for:\n\n​Panel discussions on current developments and the long-term impacts of AI\n​Special focus on breakthrough applications in health, climate and emerging technologies\n\n​​This event is open to:\n\n​​Founders and entrepreneurs in AI and deep tech\n​​Corporate innovation leaders and investors\n​​AI researchers and practitioners\n​​Students and professionals interested in AI careers\n​​Industry partners seeking AI collaboration opportunities\n\n​​Why Toronto's Discovery District: Home to Nobel Prize-winning AI research, U of T and Vector Institute's globally renowned AI expertise, the MaRS Centre and a concentration of research hospitals and innovation centres all within a 5-block radius, the Discovery District represents the intersection of academic excellence, industry innovation, and startup dynamism that makes Toronto a unique global AI hub.\n\n​​Event Access: Free, open to the public\n\nRegistration is required due to limited capacity\n\n​​Join us in celebrating Toronto leading deep technology startups as well as its legacy as the birthplace of modern AI. Explore how our ecosystem continues to shape the future of technology and innovation globally.\n\n",
+                "audience": "Founders (Series A),General Startup Operators,Founders (Pre-Seed),Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus)",
+                "theme": "AI,Climate,Deep Tech,Engineering,Hardware",
+                "format": "Panel Event / Fireside Chat,Breakfast / Brunch",
+                "url": "https://lu.ma/s092g9a4",
+                "slug": "s092g9a4",
+                "cover": "https://images.lumacdn.com/event-covers/iw/ed7e394c-3344-446c-ba74-aa6c93068546.png",
+                "api_id": "evt-4D4yXsXUFlnOjiq",
+                "type": "event",
+                "tags": "AI, Climate, Deep Tech, Engineering, Hardware",
+                "approval": "Approved by TTW",
+                "address": "MaRS Centre"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388659,
+                    43.65993
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Hackathon/Builder Day – Jai Mansukhani",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T15:00:00.000Z",
+                "end": "2025-06-27T00:00:00.000Z",
+                "neighbourhood": "Queen West",
+                "title": "no name® hackathon.",
+                "description": "Hands-on hackathon where developers, product teams, and AI enthusiasts come together to build, experiment, and push the limits of AI Agents. Whether you're integrating AI agents into workflows, connecting APIs, or solving real-world business problems, this is your chance to create and test with Cell’s language layer, and build product super quickly for some really cool prizes",
+                "audience": "Founders (Seed/Seed Plus),Founders (Pre-Seed),Founders (Series A),Founders (Series B),Founders (Series C),Investors (Pre-Seed/Seed/Seed Plus),Engineers,Creators,Product,General Startup Operators",
+                "theme": "AI",
+                "format": "Breakfast / Brunch,Dinner,Hackathon,Networking,Pitch Event / Demo Day",
+                "url": "https://lu.ma/amkza3nz",
+                "slug": "amkza3nz",
+                "cover": "https://images.lumacdn.com/event-covers/d9/846506ee-9d64-4d81-9585-9808fa54d16d.png",
+                "api_id": "evt-EmAEvbBp0qtHbZ6",
+                "type": "event",
+                "tags": "AI",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.398818,
+                    43.637221
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Frontiers of AI: Insights from a Nobel Laureate (U of T x Desjardins Speaker Series) – University of Toronto",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T19:00:00.000Z",
+                "end": "2025-06-25T20:30:00.000Z",
+                "neighbourhood": "Financial District",
+                "title": "Frontiers of AI: Insights from a Nobel Laureate (U of T x Desjardins Speaker Series)",
+                "description": "Visit the epicentre of AI innovation — Toronto's Discovery District — where modern artificial intelligence was crafted by Nobel Laureate Geoffrey Hinton and continues to evolve through world-leading research and commercialization. \n\n​​Join University Professor Emeritus and Nobel Prize winner, Geoffrey Hinton, for a candid conversation with Nick Frosst, Co-Founder of Cohere, on the opportunities, challenges, and obligations when building a new venture leveraging the power of artificial intelligence.\n\n​​Artificial intelligence adoption has quickly captured the public imagination and sparked important debates around the world. Governments, business leaders and global citizens are having critical conversations about whether and how AI should be regulated and what guardrails need to be in place to protect society. Advocates on both sides argue about both the enormous potential and risks of this disruptive technology. The rapid emergence of generative AI and large language models (LLMs) has accelerated this debate.\n\n​​The fireside chat will cover a broad range of topics, including:\n\n​​- Canada’s place in the AI revolution\n- Do LLMs understand language in the same way as we do?\n- Reasons for optimism\n- ​​Risks of AI\n- Is digital intelligence better than analog intelligence?\n\n​Frontiers of AI is a day of programming on June 25 delivered in partnership with the University of Toronto (U of T), MaRS and The Vector Institute, featuring a hands-on showcase of Canadian innovation that is shaping the global future of AI — take part in engaging conversations, demos, workshops and networking. Meet emerging and established leaders in AI, alongside decision-makers in business and tech.\n\n​​Located in the heart of Toronto's innovation corridor, this event brings together three powerhouse institutions that have helped establish Toronto as a world-leading AI hub: MaRS, the world's largest urban innovation hubs; the University of Toronto, home to pioneering AI breakthroughs that sparked the global AI revolution and The Vector Institute, renowned for bridging cutting-edge AI research with real-world applications across 32 enterprise partners and 200+ startups.\n\n​This event is open to:\n\n​​- Founders and entrepreneurs in AI and deep tech\n- Corporate innovation leaders and investors\n- AI researchers and practitioners\n- Students and professionals interested in AI careers\n- Industry partners seeking AI collaboration opportunities\n\n​Registration is required due to limited capacity.",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B),General Startup Operators",
+                "theme": "AI,Cybersecurity,Deep Tech",
+                "format": "Networking,Panel Event / Fireside Chat",
+                "url": "https://lu.ma/qxsn9q0z",
+                "slug": "qxsn9q0z",
+                "cover": "https://images.lumacdn.com/event-covers/dj/26113a0b-018e-4592-afca-913b0125252a.png",
+                "api_id": "evt-gbKouldqJTTdlDQ",
+                "type": "event",
+                "tags": "AI, Cybersecurity, Deep Tech",
+                "approval": "Approved by TTW",
+                "address": "Convocation Hall"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.395233,
+                    43.660909
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Winning at Retail: The Future of CPG & Retail Innovation 🚀 – ",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T19:00:00.000Z",
+                "end": "2025-06-25T23:00:00.000Z",
+                "neighbourhood": "Fort York",
+                "title": "Winning at Retail: The Future of CPG & Retail Innovation 🚀",
+                "description": "​Winning at Retail is an exclusive, and curated event during Toronto Tech Week designed for CPG founders, retail leaders, brand builders, and investors who are shaping the future of how products win—both on shelf and online.\n\n​Powered by Loblaw Digital, this elevated afternoon experience will spotlight some of the top Canadian CPG brands scaling across the country and beyond. We’ll dive into what it really takes to drive velocity, build retail partnerships, and blend digital strategy with merchandising success.",
+                "audience": "",
+                "theme": "\"GTM (Marketing, Sales, Growth)\"",
+                "format": "",
+                "url": "https://lu.ma/ExperienceCPG",
+                "slug": "ExperienceCPG",
+                "cover": "https://images.lumacdn.com/event-covers/96/0440ef43-1c6f-4a77-b1c2-14627d67bb09.png",
+                "api_id": "evt-YUZFIgNhY5IqcDu",
+                "type": "event",
+                "tags": "GTM (Marketing, Sales, Growth)",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.398818,
+                    43.637221
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Hands-on PowerBI Clinic – PRAKTIKAI",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T20:00:00.000Z",
+                "end": "2025-06-26T00:00:00.000Z",
+                "neighbourhood": "Queen West",
+                "title": "Business Intelligence in Action: Hands-on Microsoft Power BI Clinic",
+                "description": "Join us for PRAKTIKAI’s first hands-on workshop with our Power BI Clinic. Open to practitioners in business intelligence of all skill levels, from beginners to seasoned users.\n\n​In this 2-hour session, we’ll introduce the essential features of Power BI and quickly move on to the theoretical backing for good data visualization and dashboard design and then go hands-on with to build a dashboard from scratch.\n\n​We’ll also have time allotted at the end of the workshop for Q&A and 1-1 work in the clinic portion. Come with questions or your own business intelligence questions and let us help you level up your Power BI skills.\n\n​Agenda:\n​🎬 Introduction & Overview (20 minutes): Background on Power BI, evolution of the platform, market positioning, core capabilities\n​📊 Visualization Fundamentals (30 minutes): Learn about best practices for designing clear, effective, and informative visuals\n​⚒️ Power BI – Hands-on (40 minutes): Step-by-step guidance on creating your own dashboard, from importing data to setting up measures and creating visualizations using an example industry dataset (30 minutes)\n​🩺 Q&A & Power BI Clinic (30 minutes): Clear your doubts and discuss challenges with us and other users, live and in-person. Apply what you've learned by working on a project of your choice or building on our example dashboard.\n\n​Who Should Attend:\n- This workshop is suitable for practitioners of all skill levels, and even those completely new to Power BI wishing to learn:\n- ​Beginners in data and analytics wanting to get started with Power BI\n- ​Intermediate users looking to refine their skills and design best-in-class dashboards\n- ​Professionals who manage or analyze data as part of their role\n\n​About the presenters:\nYou can learn more about PRAKTIKAI and your presenters here: https://www.praktikai.com/company\n\n​Technical Requirements:\nTo join this workshop, attendees must have Power BI installed on their device. The workshop will be conducted entirely within the Power BI platform. You can download an install the latest version of Power BI here: microsoft.com/en-us/power-platform/products/power-bi/downloads\n\n​Contact Us: For any questions prior to the event, please reach out directly via the event form or at via email at contact at PRAKTIKAI dot com.",
+                "audience": "Open To Everyone",
+                "theme": "AI,Open to all industries",
+                "format": "Workshop / Roundtable",
+                "url": "https://lu.ma/ydifo9yr",
+                "slug": "ydifo9yr",
+                "cover": "https://images.lumacdn.com/event-covers/0s/b6830be5-fe62-42ca-9613-cb0797635e4a.png",
+                "api_id": "evt-M1tbCfYIsCWnDCD",
+                "type": "event",
+                "tags": "AI, Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "Prema Coffee and Bar"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.389883,
+                    43.651498
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Tech Money Smarts: Rooftop Grill & Chill – Novel Wealth",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T20:00:00.000Z",
+                "end": "2025-06-25T23:00:00.000Z",
+                "neighbourhood": "Queen West",
+                "title": "Tech Money Smarts: Rooftop Grill & Chill",
+                "description": "KEEP MORE OF WHAT YOU EARN: Discover how to optimize your tech compensation and avoid mistakes that cost you thousands of dollars each year.\n\nIf you work at Canadian or US tech companies, including feisty start-ups, this event is for you.\n\n​Here’s what to expect\n\n​Rooftop Vibes: Enjoy the sunshine with an ice-cold bevvie and Steak BBQ courtesy of STEAK HOME. Chill to a reggae set by DJ Brian Asha.\n\n​​Network: Connect with tech-focused financial advisors who specialize in RSUs, stock options, and tax optimization.\n\n​​Questions Answered: How do I keep more of what I earn? How can I reduce tax liabilities and minimize fees? How should I diversify my tech stocks?\n\n​​“Tech compensation is complex and tech pros face unique challenges optimizing their plans,” says Mike Masotti, partner at Novel Wealth. “This unique event gives you access to leading experts in tech compensation to get answers to your questions in a casual setting.”\n\n===  \n\n​Kick back with BBQ steaks, cold beer and wine, and rooftop reggae vibes at Novel Wealth’s “Debug Your Finances” Open House in Roncesvalles Village.\n\n===\n\n​Getting here: Close to UP EXPRESS train to Union Station. Close to Dundas West Subway. Steps to Dundas & College streetcars. UP gets you downtown in 10 minutes.\n\n===\n\n​​It is a rooftop, so space is limited. Register today!\n\n​We are officially part of Toronto Tech Week 2025, a weeklong citywide collection of events to connect and celebrate the builders. June 23 → June 27, 2025 | torontotechweek.com.",
+                "audience": "Talent / People,Engineers,Sales / BD,Finance,Founders (Series C)",
+                "theme": "FinTech,B2C / Consumer,HR / Hiring,GTM (Marketing,Sales,Growth)",
+                "format": "Networking,Happy Hour",
+                "url": "https://lu.ma/zk1pls74",
+                "slug": "zk1pls74",
+                "cover": "https://images.lumacdn.com/event-covers/za/061369d9-1038-43c5-b480-10616c2066af.png",
+                "api_id": "evt-JAI5dKryIkw62rm",
+                "type": "event",
+                "tags": "FinTech, B2C / Consumer, HR / Hiring, GTM (Marketing, Sales, Growth)",
+                "approval": "Approved by TTW",
+                "address": "25 Morrow Ave"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.446837,
+                    43.652554
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Monitor and graph everything with OSS Tools – Grafana Labs",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T21:00:00.000Z",
+                "end": "2025-06-26T00:00:00.000Z",
+                "neighbourhood": "Chinatown",
+                "title": "Monitor and graph everything with Grafana OSS Tools",
+                "description": "Join us for a number of interactive sessions on how to instrument, monitor and graph pretty much anything with purely Open Source Tools. We'll be hosting live demos, workshops on best practices and provide an opportunity for you to network with your tech peers in Toronto.",
+                "audience": "Engineers,Product,Creators",
+                "theme": "Open to all industries",
+                "format": "Pitch Event / Demo Day,Workshop / Roundtable,Networking,Hackathon",
+                "url": "https://lu.ma/k8ranqkw",
+                "slug": "k8ranqkw",
+                "cover": "https://images.lumacdn.com/event-covers/v5/a80facbf-14f0-4083-ae36-bae9326b7d86.png",
+                "api_id": "evt-AwSo1vpsicbCPZH",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "192 Spadina Ave."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.397192,
+                    43.650103
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Common Code: Is consent possible in a world of ambient surveillance, advertising and artificial intelligence? – Reset",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T21:00:00.000Z",
+                "end": "2025-06-25T23:00:00.000Z",
+                "neighbourhood": "Entertainment District",
+                "title": "COMMON CODE: Is consent possible in a world of ambient surveillance, advertising and artificial intelligence?",
+                "description": "From smart speakers to facial recognition, surveillance is no longer an exception - it’s ambient. This conversation explores the shifting meaning of informed consent in a world where tech sees, tracks, and predicts us often without our awareness. How do we reclaim agency, and what does ethical design look like when the systems are invisible?\n\n--\n\nFive days. Five public spaces. Five big questions. \n\nCommon Code is a free pop-up conversation series hosted by Reset that invites Toronto’s tech community to gather in public spaces to explore questions at the intersection of tech, trust, and togetherness in Toronto. Each day, we bring a new question to life in a different neighbourhood that invites Town Hall-like dialogue and debate on topics related to surveillance, sovereignty, safety and more. An unplug valet will be available at each pop-up for anyone wishing to go phone free.\n",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Founders (Series A),Founders (Series B),Founders (Series C),Founders (Series D & Beyond),Investors (Series A/Series B),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series C & Beyond),Engineers,Creators,Sales / BD,Finance,Marketing / Comms,Product,HR,Talent / People,General Startup Operators,Students",
+                "theme": "B2C / Consumer,Cybersecurity,AI",
+                "format": "Experiential,Happy Hour,Networking",
+                "url": "https://lu.ma/cexkpoou",
+                "slug": "cexkpoou",
+                "cover": "https://images.lumacdn.com/event-covers/e4/b2a7c4f1-8a50-4d5e-b359-c48a1d5df15b.png",
+                "api_id": "evt-ChkDKfZyDHox5Br",
+                "type": "event",
+                "tags": "B2C / Consumer, Cybersecurity, AI",
+                "approval": "Approved by TTW",
+                "address": "Sankofa Square"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.380451,
+                    43.655914
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "The Future is Accessible: Challenging Ableism in Tech – Whimble",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T21:00:00.000Z",
+                "end": "2025-06-26T00:00:00.000Z",
+                "neighbourhood": "Queen West",
+                "title": "The Future is Accessible: Challenging Ableism in Tech",
+                "description": "​Join Whimble for a thought-provoking and empowering gathering designed for folks in Toronto with disabilities working in tech or tech-adjacent fields, as well as DEI leaders, allies, and anyone else eager to build a more inclusive tech ecosystem.\n\n​We’ll discuss and challenge the hidden (and not-so-hidden) ableism across the industry, while offering a radically inclusive, low-barrier space to connect, share stories, and build community. Expect deep insights from a panel, real talk, community-building, and a space where access isn’t an afterthought.",
+                "audience": "Engineers,Creators,HR,Talent / People,Other",
+                "theme": "Healthcare / HealthTech,AI,HR / Hiring,B2C / Consumer,UX / Design",
+                "format": "Happy Hour,Panel Event / Fireside Chat,Networking",
+                "url": "https://lu.ma/mignda2o",
+                "slug": "mignda2o",
+                "cover": "https://images.lumacdn.com/event-covers/wy/9f6d506e-3804-4d0b-b40c-5b859ad8fb6d.png",
+                "api_id": "evt-l4nzz41pwVtHuw8",
+                "type": "event",
+                "tags": "Healthcare / HealthTech, AI, HR / Hiring, B2C / Consumer, UX / Design",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39027,
+                    43.643281
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Off The Record with Zain Manji – Studio 535",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T22:00:00.000Z",
+                "end": "2025-06-26T01:00:00.000Z",
+                "neighbourhood": "Corktown",
+                "title": "Off The Record: Zain Manji",
+                "description": "Zain is a co-founder at Lazer, a studio that has built products across commerce, crypto, AI and more. Prior to this, he founded and sold numerous tech companies. He was also world-ranking junior tennis player.",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Founders (Series A),Founders (Series B),Founders (Series C),Engineers,Creators,Sales / BD,Finance,Marketing / Comms,Product,General Startup Operators,Students",
+                "theme": "Engineering,E-Commerce,AI,B2B,Crypto / Web3",
+                "format": "Panel Event / Fireside Chat",
+                "url": "https://lu.ma/oq85tujm",
+                "slug": "oq85tujm",
+                "cover": "https://images.lumacdn.com/event-covers/76/9b6f4386-632a-4a5d-909c-226a32df5961.png",
+                "api_id": "evt-EN4hHwPZUzYCQnc",
+                "type": "event",
+                "tags": "Engineering, E-Commerce, AI, B2B, Crypto / Web3",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.35672,
+                    43.656969
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "TechTO Summer Social – TechTO",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T22:00:00.000Z",
+                "end": "2025-06-26T02:00:00.000Z",
+                "neighbourhood": "Harbourfront",
+                "title": "TechTO Summer Social - Hosted by Koru & Teachers' Venture Growth",
+                "description": "This is an outdoor summer social event, where our tech community can gather in-person and enjoy the beautiful weather together.\nGet ready to connect, meet new people, and discover some exciting companies making amazing contributions to Canada's tech ecosystem!",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Founders (Series A),Founders (Series B),Founders (Series C),Founders (Series D & Beyond),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B),Investors (Series C & Beyond),Engineers,Creators,Sales / BD,Finance,Marketing / Comms,Product,HR,Students,General Startup Operators,Talent / People",
+                "theme": "Open to all industries",
+                "format": "Happy Hour,Networking",
+                "url": "https://lu.ma/TechTOSummerSocial",
+                "slug": "TechTOSummerSocial",
+                "cover": "https://images.lumacdn.com/event-covers/5k/493da889-5eb5-418a-af61-840aa348e877.png",
+                "api_id": "evt-spG9MVfgBkS6ilP",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "The Slip"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.383115,
+                    43.637984
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Founders x Funders x Futures: The Mixer: LevelUp Society – Aashima asthana ",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T22:00:00.000Z",
+                "end": "2025-06-26T00:30:00.000Z",
+                "neighbourhood": "King West",
+                "title": "Founders x Funders x Futures: The Mixer: LevelUp Society",
+                "description": "\nFounders X Funders X Futures: The Mixer by Level Up Society is an exclusive gathering designed to connect Toronto’s leading founders, visionary investors, and future-focused builders.\n\nHosted at the Reverie Hotel in downtown Toronto, the event moves away from formal panels and presentations, instead creating an environment for authentic, high-energy conversations. Founders will have the opportunity to share ideas in casual settings, investors will engage directly with emerging talent, and entrepreneurs and innovators will collaborate on new possibilities.\n\nThe evening is structured to spark genuine relationships, spontaneous collaborations, and bold discussions about the future of tech, business, and innovation. Attendance is intentionally limited to maintain the quality of connections and ensure a vibrant, engaged atmosphere.\n",
+                "audience": "Founders (Pre-Seed),Founders (Series A),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B),Investors (Series C & Beyond)",
+                "theme": "AI,B2B,Deep Tech,Fundraising / Investing,FinTech",
+                "format": "Happy Hour,Networking,Match Making",
+                "url": "https://lu.ma/yppxgg8e",
+                "slug": "yppxgg8e",
+                "cover": "https://images.lumacdn.com/event-covers/1l/a8c01b89-706e-433b-ba09-47f68ab0bbc2.png",
+                "api_id": "evt-0jdle2kP6G5tEPk",
+                "type": "event",
+                "tags": "AI, B2B, Deep Tech, Fundraising / Investing, FinTech",
+                "approval": "Approved by TTW",
+                "address": "Revery Toronto Downtown, Curio Collection by Hilton"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.393236,
+                    43.64699
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Culture and Wellbeing in Tech – Chantaie Allick Co-Founder of Re-Work",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T23:00:00.000Z",
+                "end": "2025-06-26T01:00:00.000Z",
+                "neighbourhood": "Entertainment District",
+                "title": "Culture & Wellbeing in Tech Hosted by Re-Work",
+                "description": "Join us during Toronto Tech Week 2025 for a powerful panel discussion hosted by Re-Work, exploring the future of culture and well-being in the tech industry.\n\nThis conversation will bring together tech leaders, creatives, and community builders to reimagine what healthy workplace culture can look like, and how we can build sustainable models of success that does not come at the cost of well-being.\n\nLet’s challenge grind culture and explore how to build in ways that are intentional, humane, and long-lasting.",
+                "audience": "HR,Talent / People",
+                "theme": "HR / Hiring",
+                "format": "Panel Event / Fireside Chat",
+                "url": "https://lu.ma/vxa13oki",
+                "slug": "vxa13oki",
+                "cover": "https://images.lumacdn.com/event-covers/8d/62267ebc-8bee-4d6d-8501-f03678e65c04.png",
+                "api_id": "evt-eSD1Q1kkZQvD7Xj",
+                "type": "event",
+                "tags": "HR / Hiring",
+                "approval": "Approved by TTW",
+                "address": "Entertainment District"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38879,
+                    43.642661
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "The 4 C’s of Coworking: Collisions, Collaboration, Connection, and Community – LAUFT",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T13:00:00.000Z",
+                "end": "2025-06-26T22:00:00.000Z",
+                "neighbourhood": "Distillery District",
+                "title": "The 4 C’s of Coworking: Collisions, Collaboration, Connection, and Community",
+                "description": "The 4 C’s of Coworking: Collisions, Collaboration, Connection, and Community\n\n📅 Thursday, June 26th | 🕘 9:00 AM – 6:00 PM | 📍 LAUFT King East + EVNT by LAUFT\n\nJoin us for a full day of free coworking, authentic connection, collaboration, and thought leadership at LAUFT King East!\n\nWhat’s Happening:\n\n🔓 Open House Coworking (9:00 AM – 6:00 PM)\n\nExplore the LAUFT experience firsthand with a complimentary day pass! Book a desk for free at our King East location using promo code TOTECH and enjoy a productive day in our thoughtfully designed workspace.\n\n🤝 Community-Driven Panel Lunch (12:00 PM – 1:30 PM)\n\nJoin us next door in the EVNT by LAUFT space for a special lunchtime panel featuring LAUFT CEO Graham Wong and local community partners. The discussion will center on how working with local organizations and voices allows LAUFT to create exceptional workspace experiences while building meaningful, lasting connections around our locations. Lunch provided. \n\nWe’ll explore the power of place, collaboration, and shared purpose in shaping the future of work — one neighborhood at a time.\n\nWhether you're a remote professional, entrepreneur, or simply curious about coworking, Coworking and Community is your invitation to connect, learn, and be part of something bigger.\n\nReserve your spot now — use code TOTECH to book for free!",
+                "audience": "General Startup Operators,Founders (Pre-Seed),Talent / People,HR,Investors (Pre-Seed/Seed/Seed Plus)",
+                "theme": "Proptech / Real Estate",
+                "format": "Lunch,Networking,Panel Event / Fireside Chat,Other",
+                "url": "https://lu.ma/50sdb6u6",
+                "slug": "50sdb6u6",
+                "cover": "https://images.lumacdn.com/event-covers/ec/0161699f-e901-4468-9476-5d0de794a78e.png",
+                "api_id": "evt-uVi29TzvQdRlpQB",
+                "type": "event",
+                "tags": "Proptech / Real Estate",
+                "approval": "Approved by TTW",
+                "address": "95 King St E"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.374692,
+                    43.649649
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "TiEQUEST Summit 2025 – TiE Toronto",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T12:45:00.000Z",
+                "end": "2025-06-26T21:00:00.000Z",
+                "neighbourhood": "Discovery District",
+                "title": "TiEQuest Summit 2025: Building in Canada for the World",
+                "description": "In its 20th year, TiE Toronto presents its most celebrated event of the year TiEQuest Summit 2025. Featuring a stellar lineup of industry luminaries, thought leaders, and trailblazers, this event promises to inspire, educate, and connect you with the preeminent experts across industries. The event will feature a series of speakers including some international keynote speakers as well as the TieQUEST final pitch competition.\n\n",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Founders (Series A),Investors (Pre-Seed/Seed/Seed Plus),General Startup Operators",
+                "theme": "Fundraising / Investing,International / Expansion,\"GTM (Marketing, Sales, Growth)\"",
+                "format": "Breakfast / Brunch,Happy Hour,Lunch,Panel Event / Fireside Chat,Pitch Event / Demo Day,Networking",
+                "url": "https://lu.ma/TiEQuest2025",
+                "slug": "TiEQuest2025",
+                "cover": "https://images.lumacdn.com/event-covers/h6/985afecd-d77f-417c-a6e9-99478d89e4e4.png",
+                "api_id": "evt-eYin7ygynZTLc4D",
+                "type": "event",
+                "tags": "Fundraising / Investing, International / Expansion, \"GTM (Marketing, Sales, Growth)\"",
+                "approval": "Approved by TTW",
+                "address": "MaRS Discovery District"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388659,
+                    43.65993
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Two Small Fish Open House – Two Small Fish",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T15:00:00.000Z",
+                "end": "2025-06-26T18:00:00.000Z",
+                "neighbourhood": "Entertainment District",
+                "title": "Two Small Fish Open House",
+                "description": "Two Small Fish is an early-stage venture capital firm focused on the next frontier of computing and its applications–from deep-tech AI to industrial automation to smart energy to semiconductors and everything in between. We are pleased to be hosting an open house to showcase our investments in the next frontier of computing and its applications.\n\nAgenda\n\n11 pm - 11:15 pm: Opening remarks\n\n11:15 pm - 11:45 pm: Fireside chat 1\n\n11:45 pm - 2:45 pm: Showcase/networking\n\n2:45 pm - 3:15 pm: Fireside chat 2\n\n3:15 - 3:45: Networking",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B),Engineers",
+                "theme": "AI,Deep Tech,Engineering,Hardware",
+                "format": "Pitch Event / Demo Day",
+                "url": "https://lu.ma/agfbh7wu",
+                "slug": "agfbh7wu",
+                "cover": "https://images.lumacdn.com/event-covers/bg/6bfc4dd3-8856-496f-b75a-41afb2a0bdda.png",
+                "api_id": "evt-jnjfsr5nigN2Ohp",
+                "type": "event",
+                "tags": "AI, Deep Tech, Engineering, Hardware",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388174,
+                    43.646682
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "AI Compliance Clinic 101 - Will you be able to sell in EU in 2026? – Fairly AI",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T15:00:00.000Z",
+                "end": "2025-06-26T17:00:00.000Z",
+                "neighbourhood": "Financial District",
+                "title": "Will You Be Able to Sell in the EU? AI Compliance Clinic 101 for Canadian Startups",
+                "description": "The EU AI Act is not a “wait and see” issue. If your product touches Europe in any way – users, customers, or data – you’ll need to prove it’s compliant. Otherwise, you’re out.\n\nWho should attend:\n- SMBs and startups building AI features/products\n- SaaS companies using AI to enhance offerings\n- Compliance, product, and engineering teams\n- Non-EU companies selling globally",
+                "audience": "Founders (Seed/Seed Plus),Founders (Pre-Seed),Founders (Series A),Sales / BD,General Startup Operators",
+                "theme": "AI",
+                "format": "Lunch",
+                "url": "https://lu.ma/m5fu2yqt",
+                "slug": "m5fu2yqt",
+                "cover": "https://images.lumacdn.com/event-covers/wd/09da1ee6-2852-46b9-b95d-5980447a51ff.png",
+                "api_id": "evt-mCuegB2kNJ12BUS",
+                "type": "event",
+                "tags": "AI",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.383952,
+                    43.650291
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Elevate Talks: Elizabeth Stone, Netflix CTO – Elevate",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T17:00:00.000Z",
+                "end": "2025-06-26T18:30:00.000Z",
+                "neighbourhood": "Financial District",
+                "title": "Elevate Talks: Elizabeth Stone, Netflix CTO & More",
+                "description": "Join us for an exclusive fireside chat with Elizabeth Stone, CTO of Netflix about the company's evolution from a streaming service into a global entertainment powerhouse. From building Netflix’s in-house content delivery network, Open Connect, to scaling infrastructure for live content and games, Elizabeth has led the innovation behind Netflix’s most ambitious technical challenges. Hear how she and her team power seamless streaming for 700M+ members worldwide.",
+                "audience": "Open To Everyone",
+                "theme": "Open to all industries",
+                "format": "Panel Event / Fireside Chat",
+                "url": "https://lu.ma/ma3q52z3",
+                "slug": "ma3q52z3",
+                "cover": "https://images.lumacdn.com/event-covers/q9/59085308-eaec-4df2-942d-7e466d956f83.png",
+                "api_id": "evt-WpH35o0UPxdcqfa",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "Design Exchange Events Venue"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.380328,
+                    43.647694
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "The Founder Mindset: NEXT Canada Class with Reza Satchu & Josh Domingues – NEXT Canada",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T17:30:00.000Z",
+                "end": "2025-06-26T20:00:00.000Z",
+                "neighbourhood": "Yorkville",
+                "title": "The Founder Mindset: NEXT Canada Class with Reza Satchu & Josh Domingues",
+                "description": "Join us for an exclusive behind-the-scenes look at Canada's premiere founder development program in action featuring demos from the 2025 cohorts and one of our \"Founder Mindset\" classes with NEXT Canada Founding Chairman, Reza Satchu & Guest Speaker, Josh Domingues, Founder & Chairman of Flashfood.",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),General Startup Operators,Open To Everyone,Investors (Pre-Seed/Seed/Seed Plus)",
+                "theme": "Open to all industries,AI,B2B,Deep Tech,\"GTM (Marketing, Sales, Growth)\"",
+                "format": "Panel Event / Fireside Chat,Experiential",
+                "url": "https://lu.ma/zpph5ggm",
+                "slug": "zpph5ggm",
+                "cover": "https://images.lumacdn.com/event-covers/0d/856509d4-6fb0-4b07-96fb-18b49d2b3bf5.png",
+                "api_id": "evt-C6yTtinH3tCou9z",
+                "type": "event",
+                "tags": "Open to all industries, AI, B2B, Deep Tech, \"GTM (Marketing, Sales, Growth)\"",
+                "approval": "Approved by TTW",
+                "address": "NEXT Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.382488,
+                    43.670902
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Human-Centred AI × The Future: Insight, Foresight & Solutions – The Opening Door",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T18:00:00.000Z",
+                "end": "2025-06-26T22:00:00.000Z",
+                "neighbourhood": "Fashion District",
+                "title": "Human-Centred AI × The Future: Insight, Foresight & Solutions",
+                "description": "Forward-thinking brands, investors and built-world pioneers share a common question: how do we unlock AI’s upside without sacrificing human trust, creative integrity or long-term value? This launch-party edition of The Opening Door’s flagship event tackles that challenge head-on, unpacking why human-centred AI data, design and decision-making is the fastest route to sustainable growth.\n\n​Join agency innovators, venture investors and real-estate visionaries for an afternoon of fresh insight, actionable foresight and celebratory connection—all hosted by The Opening Door as we unveil our re-launch.\n\n​Agenda\n\n​2:00 PM – Doors Open & Brand-Reveal\n\n​2:30 PM – Keynote: The 5 Future-Proof Pillars of Human-Centred AI\n\n​2:55 PM – Cross-Sector Panel: Responsible AI ROI— Creative, Capital & Concrete\n\n​3:20 PM – Auction Style Hot-Seat Audience Q&A\n\n​3:45 PM – Responsible AI Futures Mixer & Launch Party\n\n​Stay for the mixer to mingle with decision-makers, enjoy complimentary refreshments, and explore our new branding—space is limited, so register now to open the door to your human-centred AI future.\n\n​We are officially part of Toronto Tech Week 2025, a weeklong citywide collection of events to connect and celebrate the builders. June 23 → June 27, 2025 | torontotechweek.com.\n",
+                "audience": "Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B),Investors (Series C & Beyond),Marketing / Comms,General Startup Operators",
+                "theme": "AI,GTM (Marketing,Sales,Growth),Media / Entertainment,Fundraising / Investing",
+                "format": "Happy Hour,Networking,Panel Event / Fireside Chat",
+                "url": "https://lu.ma/nkijc4gw",
+                "slug": "nkijc4gw",
+                "cover": "https://images.lumacdn.com/event-covers/7v/615aed82-a205-4bdc-b081-333cba18552c.png",
+                "api_id": "evt-EQVqzuHBu8lt7Fq",
+                "type": "event",
+                "tags": "AI, GTM (Marketing, Sales, Growth), Media / Entertainment, Fundraising / Investing",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39784,
+                    43.646079
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "The Future of Digital Storytelling - Automating Creativity: Can Procedural Tech Power Inclusive Design? – swyvl",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T19:00:00.000Z",
+                "end": "2025-06-26T20:30:00.000Z",
+                "neighbourhood": "CityPlace",
+                "title": "The Future of Digital Storytelling - Automating Creativity: Can Procedural Tech Power Inclusive Design?",
+                "description": "Automation is revolutionizing how we build digital worlds—but can it also make them more human?\n\nThis session dives into how procedural tools like SideFX’s Houdini, AI-generated content, and accessibility-forward design principles are changing the landscape for neurodivergent creators, immersive storytellers, and the future of inclusive entertainment.",
+                "audience": "Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus),Engineers,Creators,Product",
+                "theme": "AI,Creators,Gaming,Media / Entertainment",
+                "format": "Panel Event / Fireside Chat",
+                "url": "https://lu.ma/5b5lykwi",
+                "slug": "5b5lykwi",
+                "cover": "https://images.lumacdn.com/event-covers/j0/b5002c27-7372-427d-96ac-8201929b9daa.png",
+                "api_id": "evt-R2mLDVHvCqizwzJ",
+                "type": "event",
+                "tags": "AI, Creators, Gaming, Media / Entertainment",
+                "approval": "Approved by TTW",
+                "address": "SideFX Software"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.383161,
+                    43.644995
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "AWS User Group Toronto: Hands-On ML with Amazon Q CLI & Technical Presentation – Bansi Delwadia",
+                "privacy": "Open to the public.",
+                "start": "June 26, 2025 16:00",
+                "end": "",
+                "neighbourhood": "Harbourfront",
+                "title": "AWS User Group Toronto: Hands-On ML with Amazon Q CLI & Technical Presentation",
+                "description": "Join AWS User Group Toronto during Toronto Tech Week for an exciting evening of cloud innovation and AI-powered tooling!\n\nWe’ll kick off a hands-on workshop: \"Smarter Way to Work in CLI with Amazon Q Developer.\" Learn how to boost your productivity in the terminal using natural language, auto-suggestions, and intelligent AWS integrations, followed by a cloud case study by Rewind on automating restore testing for compliance.\n\nPerfect for developers, cloud builders, and anyone looking to supercharge their CLI workflow.",
+                "audience": "Students,Engineers,Talent / People,Product",
+                "theme": "AI,Engineering,Infrastructure,Deep Tech",
+                "format": "Networking,Workshop / Roundtable",
+                "url": "https://www.meetup.com/aws-ug-toronto/events/308009163",
+                "slug": "https://www.meetup.com/aws-ug-toronto/events/308009163",
+                "cover": "",
+                "api_id": "",
+                "type": "",
+                "tags": "AI, Engineering, Infrastructure, Deep Tech",
+                "approval": "Approved by TTW"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Tech Thursday takes Toronto – Tech Thursday",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T20:00:00.000Z",
+                "end": "2025-06-26T23:00:00.000Z",
+                "neighbourhood": "",
+                "title": "Canada's Fintech Opportunity: Collaborating for a Productive Edge",
+                "description": "Tech Thursday hosts weekly tech panels in Winnipeg, Calgary, Edmonton, and Ottawa. We're thrilled to come to Toronto for a one-off event for Toronto Tech Week. The event will tie in some of our existing sponsors for a panel on the Tech and Innovation space.",
+                "audience": "Founders (Series A),Founders (Seed/Seed Plus),Founders (Pre-Seed),Investors (Pre-Seed/Seed/Seed Plus)",
+                "theme": "FinTech,AI",
+                "format": "Networking,Panel Event / Fireside Chat",
+                "url": "https://lu.ma/ljohkdvw",
+                "slug": "ljohkdvw",
+                "cover": "https://images.lumacdn.com/event-covers/wf/4d29c2f5-ffa3-4e3f-98dd-c07318b9a70a.png",
+                "api_id": "evt-jdverS3t3PXqGOS",
+                "type": "event",
+                "tags": "FinTech, AI",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.383184,
+                    43.653226
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "The Future of Digital Storytelling - High-Performance, Low Barrier: Making Creative Tech Accessible for All – swyvl",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T20:30:00.000Z",
+                "end": "2025-06-26T21:30:00.000Z",
+                "neighbourhood": "CityPlace",
+                "title": "The Future of Digital Storytelling - High-Performance, Low Barrier: Making Creative Tech Accessible for All",
+                "description": "Powerful computing is no longer the domain of large studios. With affordable AI-enabled hardware, creators at every level can now unlock real-time workflows and advanced capabilities once out of reach.\n\nIn this panel, leaders from AMD and swyvl explore how new generations of compute tech are breaking down economic and cognitive barriers—opening doors for independent creators, neurodivergent professionals, and small studios.",
+                "audience": "Founders (Seed/Seed Plus),Creators,Engineers,Investors (Pre-Seed/Seed/Seed Plus),Product",
+                "theme": "AI,Hardware",
+                "format": "Panel Event / Fireside Chat",
+                "url": "https://lu.ma/rabw6nky",
+                "slug": "rabw6nky",
+                "cover": "https://images.lumacdn.com/event-covers/c0/9a3e06c9-9985-4747-a9a5-d1e8116a5238.png",
+                "api_id": "evt-4ulVvfeuUEEqD8r",
+                "type": "event",
+                "tags": "AI, Hardware",
+                "approval": "Approved by TTW",
+                "address": "SideFX Software"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.383161,
+                    43.644995
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Common Code: Can we build public spaces that are smart and sovereign? – Reset",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T21:00:00.000Z",
+                "end": "2025-06-26T23:00:00.000Z",
+                "neighbourhood": "Fort York",
+                "title": "COMMON CODE: Can we build public spaces that are smart and sovereign?",
+                "description": "Public space is changing - with smart tech offering efficiency, artificial intelligence, and real-time data. But what’s the cost of convenience, and who controls the code behind the infrastructure? This dialogue explores how we can embed values like sovereignty, accountability, and collective stewardship into the design of tomorrow’s public spaces.\n\n---\n\nFive days. Five public spaces. Five big questions. \n\nCommon Code is a free pop-up conversation series hosted by Reset that invites Toronto’s tech community to gather in public spaces to explore questions at the intersection of tech, trust, and togetherness in Toronto. Each day, we bring a new question to life in a different neighbourhood that invites Town Hall-like dialogue and debate on topics related to surveillance, sovereignty, safety and more. An unplug valet will be available at each pop-up for anyone wishing to go phone free.\n",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Founders (Series A),Founders (Series B),Founders (Series C),Founders (Series D & Beyond),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series C & Beyond),Investors (Series A/Series B),Engineers,Creators,Sales / BD,Finance,Marketing / Comms,Product,HR,Talent / People,General Startup Operators,Students",
+                "theme": "Infrastructure",
+                "format": "Experiential,Happy Hour,Networking",
+                "url": "https://lu.ma/6l1jv1ok",
+                "slug": "6l1jv1ok",
+                "cover": "https://images.lumacdn.com/event-covers/e4/b2a7c4f1-8a50-4d5e-b359-c48a1d5df15b.png",
+                "api_id": "evt-VIbZkuRn8y2IyXv",
+                "type": "event",
+                "tags": "Infrastructure",
+                "approval": "Approved by TTW",
+                "address": "The Bentway"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.406306,
+                    43.637793
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Ada x 1Password Event – Ada Support",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T21:00:00.000Z",
+                "end": "2025-06-26T23:00:00.000Z",
+                "neighbourhood": "King West",
+                "title": "the trust factor: unlocking the CEO mindset with ada x 1Password",
+                "description": "Join us for a fireside chat with Mike Murchison, CEO & Co-Founder of Ada and Jeff Shiner, Co-CEO of 1Password, followed by networking activities in the evening with the Toronto Tech community.",
+                "audience": "Founders (Series C),Founders (Series D & Beyond),Investors (Series C & Beyond),General Startup Operators,Product",
+                "theme": "AI,Engineering,International / Expansion,\"GTM (Marketing, Sales, Growth)\"",
+                "format": "Networking,Panel Event / Fireside Chat",
+                "url": "https://lu.ma/f3uy0g03",
+                "slug": "f3uy0g03",
+                "cover": "https://images.lumacdn.com/event-covers/ah/197a499c-929b-4f77-abd9-fbb3bd981844.png",
+                "api_id": "evt-eWtZyr44DmdwpEg",
+                "type": "event",
+                "tags": "AI, Engineering, International / Expansion, \"GTM (Marketing, Sales, Growth)\"",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.395009,
+                    43.644686
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Co-Founder Connect With BEA & Yspace – Black Entrepreneurship Alliance",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T21:00:00.000Z",
+                "end": "2025-06-27T02:00:00.000Z",
+                "neighbourhood": "Queen West",
+                "title": "Co-Founder Connect With BEA & Yspace",
+                "description": "Co-founder Connect, presented by the Black Entrepreneurship Alliance and YSpace, is an evening designed to help founders find the right partners to grow their ventures. From quickfire pitches and curated co-founder matching to a fireside chat on building the perfect team, expect meaningful connections, good food, and great vibes.",
+                "audience": "Founders (Pre-Seed),Talent / People,General Startup Operators,Founders (Seed/Seed Plus)",
+                "theme": "HR / Hiring",
+                "format": "Match Making,Networking,Panel Event / Fireside Chat,Dinner,Other",
+                "url": "https://lu.ma/b3zgldor",
+                "slug": "b3zgldor",
+                "cover": "https://images.lumacdn.com/event-covers/el/f16e3fee-31d5-45f0-8356-177df4973cab.png",
+                "api_id": "evt-53TCtYRAmQ09rvO",
+                "type": "event",
+                "tags": "HR / Hiring",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.399186,
+                    43.646867
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "The Future of Digital Storytelling - Beyond the Blockbuster: How VFX Workflows Can Power Real-World Storytelling – swyvl",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T21:30:00.000Z",
+                "end": "2025-06-26T22:30:00.000Z",
+                "neighbourhood": "CityPlace",
+                "title": "The Future of Digital Storytelling - Beyond the Blockbuster: How VFX Workflows Can Power Real-World Storytelling",
+                "description": "Virtual production, neural rendering, and AI-driven pipelines have transformed how blockbusters are made—but their true potential goes far beyond the big screen.\n\nThis session explores how cutting-edge VFX workflows are being adapted for new impact-driven uses, from education and healthcare to inclusion and advocacy. Discover how tools originally designed for high-end film production can empower initiatives like swyvl to create immersive, accessible, and emotionally resonant experiences that support neurodivergent communities and beyond.",
+                "audience": "Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus),Engineers,Creators,Product",
+                "theme": "AI,AR / VR,Creators,Media / Entertainment,Healthcare / HealthTech",
+                "format": "Panel Event / Fireside Chat",
+                "url": "https://lu.ma/opn5ff8r",
+                "slug": "opn5ff8r",
+                "cover": "https://images.lumacdn.com/event-covers/u2/56e1d8dd-2f70-469a-af33-33378b2cefed.png",
+                "api_id": "evt-E3vYUXQ0kSTCliN",
+                "type": "event",
+                "tags": "AI, AR / VR, Creators, Media / Entertainment, Healthcare / HealthTech",
+                "approval": "Approved by TTW",
+                "address": "SideFX Software"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.383161,
+                    43.644995
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "The Future of Buildings: A Proptech Collective x Building Transformations Social – Proptech Collective",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T21:30:00.000Z",
+                "end": "2025-06-26T23:30:00.000Z",
+                "neighbourhood": "Financial District",
+                "title": "The Future of Buildings: A Proptech Collective x Building Transformations Social",
+                "description": "Join us for a social for proptech trailblazers and real estate professionals who are driving the digital transformation of the built world. This event is a collaboration between Proptech Collective & Building Transformations, bringing together an incredible crowd of innovators, industry leaders, and change-makers!",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus),Founders (Series A),Founders (Series B)",
+                "theme": "B2C / Consumer,B2B,Real Estate / PropTech",
+                "format": "Networking",
+                "url": "https://lu.ma/naucleq6",
+                "slug": "naucleq6",
+                "cover": "https://images.lumacdn.com/event-covers/z2/1cd300a9-42fb-42dc-9d77-0f4d96cc4cb5.png",
+                "api_id": "evt-Zs1S8uE4cy3GpAc",
+                "type": "event",
+                "tags": "B2C / Consumer, B2B, Real Estate / PropTech",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.381195,
+                    43.657622
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "TAICO Toronto Tech Week meetup – Adaptavist Group",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T21:30:00.000Z",
+                "end": "2025-06-27T00:00:00.000Z",
+                "neighbourhood": "St. Lawrence",
+                "title": "TAICO Toronto Tech Week Meetup",
+                "description": "If you're interested in AI or cybersecurity or anything in between, this is the meetup for you! Toronto is a hotbed of high tech. We have some of the best people in the industry creating new technologies and applying them to the real world.\n\nTAICO is a meetup specifically created to talk about AI, cybersecurity, and the spaces where they intersect. A typical meetup will have talks that are all about AI, talks that are all about cybersecurity, and then talks where the two important fields come together to create something unique; the space where the two intersect.\n\nThe meetup is free for anyone to attend, and our call for papers is open to any level of experience.",
+                "audience": "Engineers,Creators,General Startup Operators,Product",
+                "theme": "AI,Cybersecurity",
+                "format": "Other",
+                "url": "https://lu.ma/cemkfon9",
+                "slug": "cemkfon9",
+                "cover": "https://images.lumacdn.com/event-covers/93/e43f38df-b87c-4c2a-9c83-572163006fa7.png",
+                "api_id": "evt-BioQskQzOChVDwC",
+                "type": "event",
+                "tags": "AI, Cybersecurity",
+                "approval": "Approved by TTW",
+                "address": "43 Front St E"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.374534,
+                    43.647946
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "MCP Servers & the Future of AI Agents – Deskree",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T22:00:00.000Z",
+                "end": "2025-06-27T01:30:00.000Z",
+                "neighbourhood": "",
+                "title": "MCP Servers & the Future of AI Agents",
+                "description": "Discover how MCP servers are transforming the way AI agents are built, scaled, and deployed. This event brings together engineers and AI builders to explore the cutting edge of modular AI infrastructure, where flexibility meets performance. Dive into real-world demos, swap insights with fellow innovators, and see why MCPs are at the heart of the next AI revolution.\n\nAgenda:\n\n6:00-7:00 PM: Arrivals + Food & Drinks\n\n7:00-8:30 PM: Live Demos \n\n8:30-9:30 PM: Happy Hour",
+                "audience": "Engineers",
+                "theme": "Engineering",
+                "format": "Happy Hour,Networking,Panel Event / Fireside Chat",
+                "url": "https://lu.ma/sv4pax28",
+                "slug": "sv4pax28",
+                "cover": "https://images.lumacdn.com/event-covers/e8/3b36a67c-7ff4-446c-8e83-a0db3c5a3404.png",
+                "api_id": "evt-UcdeP8XMmYWreVc",
+                "type": "event",
+                "tags": "Engineering",
+                "approval": "Approved by TTW",
+                "address": "Register to See Address"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "STARTUP INVESTOR DRINKS: WHERE OPEN CHECKBOOKS MEET TECHWEEK – TorontoStarts",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T22:00:00.000Z",
+                "end": "2025-06-27T00:30:00.000Z",
+                "neighbourhood": "CityPlace",
+                "title": "🔥 STARTUP INVESTOR DRINKS: WHERE OPEN CHECKBOOKS MEET TECH WEEK 🔥",
+                "description": "Startup Investor Drinks – Toronto Tech Week Edition\nThursday, June 26, 2025 | Doors Open at 6:00 PM\nWorkhaus Coworking, 180 Dundas St W, 25th Floor, Toronto\n\nWhere startups connect with funding opportunities. Will you be next?\n\n🚀 WHY THIS IS A MUST-ATTEND DURING TECH WEEK:\n\nThis is not a panel. Not a lecture. This is Toronto's best startup networking event where founders, investors, and ecosystem leaders gather in one room.\n\nYour startup is just one conversation away from the right connection.\n\nWe are officially part of Toronto Tech Week 2025, a weeklong citywide collection of events to connect and celebrate the builders. June 23 → June 27, 2025 | TorontoTechWeek.com.\n\n\n💰 WHO YOU'LL MEET:\n\nActive investors looking for their next opportunity\nAngel investors from Toronto's vibrant investment community\nVC representatives from leading firms\nStartup founders at various stages of growth\nTech Week participants looking to connect and collaborate\n\n\n\n🌟 WHAT MAKES THIS EVENT DIFFERENT:\n\nOpen mic pitching – 20 seconds to capture investor attention\nToronto's best startup networking - the most impactful founder-investor meetup\nFood and drinks included with your ticket\nStunning 25th floor penthouse views overlooking the city\n\n🎟️ TICKET OPTIONS:\n⭐ GENERAL ADMISSION\nFull event access\nFood & drinks included\nNetworking opportunities with investors and founders\n\n⭐⭐ 30-SECOND PITCH TICKET\nEverything in General Admission PLUS:\nGuaranteed 30-second pitch on stage\nYour slide featured in event presentation (must be emailed in advance)\n\n⭐⭐⭐ 1-MINUTE PITCH TICKET\nEverything in 30-Second Pitch Ticket PLUS:\nExtended 1-minute pitch opportunity\nMore time to make your impact\n\n🏆 SPONSORSHIP TICKET\nBrand placement throughout venue\nPitch + promo table\nSlide deck inclusion\nAttendee list access\nHigh-visibility brand positioning\n\n🗣️ WHAT PAST ATTENDEES SAY:\n\"I came looking for seed funding and left with three investor meetings. Closed my round within weeks.\"\n\"The quality of connections at TorontoStarts events is unmatched. This is where serious founders and investors meet.\"\n\n⚠️ THIS WILL SELL OUT – TORONTO TECH WEEK PREMIUM EVENTS ALWAYS DO\n\nSecure your spot now. Your competition already has.",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B),General Startup Operators",
+                "theme": "Fundraising / Investing,AI,Media / Entertainment",
+                "format": "Pitch Event / Demo Day,Happy Hour,Networking,Dinner",
+                "url": "https://lu.ma/d8nkj5yv",
+                "slug": "d8nkj5yv",
+                "cover": "https://images.lumacdn.com/event-covers/nw/64e9b529-cba6-4b19-9d19-3554e7ebd223.jpg",
+                "api_id": "evt-ktbjTIkZHeJVnNF",
+                "type": "event",
+                "tags": "Fundraising / Investing, AI, Media / Entertainment",
+                "approval": "Approved by TTW",
+                "address": "Workhaus Coworking & Office Space"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386289,
+                    43.655433
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "PopIn Open Networking – PopIn",
+                "privacy": "Open to the public.",
+                "start": "2025-06-25T22:00:00.000Z",
+                "end": "2025-06-26T00:30:00.000Z",
+                "neighbourhood": "Entertainment District",
+                "title": "PopIn X Open Networking",
+                "description": "A networking event to bring together AI and Tech community in Toronto!",
+                "audience": "Founders (Pre-Seed),Engineers,General Startup Operators,Students,Creators",
+                "theme": "Open to all industries",
+                "format": "Networking,Match Making",
+                "url": "https://lu.ma/s6qdo037",
+                "slug": "s6qdo037",
+                "cover": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHwzMHx8Y29tbXVuaXR5fGVufDB8fHx8MTc0MzkyNDk2MXwy&ixlib=rb-4.0.3&q=80&w=1080",
+                "api_id": "evt-cG58mrq3EJLrWLc",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "Toronto, Ontario"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392714,
+                    43.648042
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Ditch the design studio. – OneMethod",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T22:00:00.000Z",
+                "end": "2025-06-27T01:00:00.000Z",
+                "neighbourhood": "Entertainment District",
+                "title": "Ditch the design studio.",
+                "description": "In this session, the world class design studio OneMethod will tell you everything you need to know about building a brand and… how you can pretty much do it all without them. Come for the learning, stay for the existential crisis & drinks!",
+                "audience": "Founders (Pre-Seed),Founders (Series A),Founders (Series C),Founders (Series D & Beyond)",
+                "theme": "AI,B2B,B2C / Consumer",
+                "format": "Networking,Workshop / Roundtable,Happy Hour",
+                "url": "https://lu.ma/gx5xpx49",
+                "slug": "gx5xpx49",
+                "cover": "https://images.lumacdn.com/event-covers/kf/8bcedb6c-4cc1-44a5-8954-10f4ee929ab6.png",
+                "api_id": "evt-Sr1eB9zllbxyv81",
+                "type": "event",
+                "tags": "AI, B2B, B2C / Consumer",
+                "approval": "Approved by TTW",
+                "address": "The Combine"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.388816,
+                    43.645121
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Building with AI: The Latin@ Way Meetup – BrainTrainr",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T22:00:00.000Z",
+                "end": "2025-06-27T00:30:00.000Z",
+                "neighbourhood": "Financial District",
+                "title": "Building Our Future in AI Together: The Latin@ Way Meetup",
+                "description": "What to Expect\nNetworking with Purpose:\n Start the night with refreshments and speed networking to build connections and spark ideas.\n\n\nInspiring Stories:\n Hear from 2-3 Latin@ leaders who have transitioned into AI, sharing real stories of challenges, lessons learned, and success.\n\n\nBreakout Jam: “What Should We Build?”\n Roll up your sleeves in small groups focused on:\n\nRepresentation & Leadership\n\nAccess & Education\n\n\nCollaboration & Culture\nPitch your best ideas, solve challenges, and dream big—together!\n\n\nSkills & Mini-Challenges:\n Get hands-on with guided mini-challenges using AI tools (like generating images, writing with AI, or building your resume). No experience required!\n\n\nPanel: Where Do I Go From Here?\n Leave with concrete next steps—learn about free resources (Spanish & English), bootcamps, job opportunities, mentorship, and local community channels.\n\n\nShowcase:\n Spotlight on Latino-led AI projects and initiatives shaping Canadian tech.\n\n\nCommunity Building:\n Finish the evening with networking and an invitation to join our growing LinkedIn group and upcoming gatherings.\n\n\nWho Should Attend?\nLatin@s and allies interested in AI, data, or tech—at any stage of their journey\nStudents and professionals exploring new paths\nCommunity organizers, mentors, and educators\nAnyone excited to build a more inclusive and innovative future\n\n\nOur Vision\nWe imagine a future where the Latin@ community is at the forefront of AI innovation and leadership—achieved through collaborative networks, inclusive education, and equitable opportunities. By coming together, we open doors not just for ourselves but for the next generation of diverse leaders in tech.\nReserve your spot and help us build the future of AI—together!\n",
+                "audience": "Creators,Engineers,Talent / People,Other,Marketing / Comms",
+                "theme": "AI,Deep Tech,Cybersecurity,Crypto / Web3,Creators",
+                "format": "Networking,Pitch Event / Demo Day,Panel Event / Fireside Chat",
+                "url": "https://lu.ma/yfw2xghu",
+                "slug": "yfw2xghu",
+                "cover": "https://images.lumacdn.com/event-covers/8d/4e1681ba-db41-4a93-84d1-d16ef6d0906e.png",
+                "api_id": "evt-x3VEpnAbImEyd8A",
+                "type": "event",
+                "tags": "AI, Deep Tech, Cybersecurity, Crypto / Web3, Creators",
+                "approval": "Approved by TTW",
+                "address": "First Canadian Place"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.381667,
+                    43.648611
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Tech Basketball Run – Maple Leaf Venture Club",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T22:00:00.000Z",
+                "end": "2025-06-27T00:00:00.000Z",
+                "neighbourhood": "Yorkville",
+                "title": "Tech Basketball Run - Toronto Tech Week Edition",
+                "description": "🏀Welcome to the Toronto Tech Basketball Run! This event is designed for founders, tech enthusiasts, investors, and corporate professionals to come together for a fun, high-energy basketball experience. It's not just about the game—it’s about building meaningful connections with people who share a passion for both technology and sports.\n\n💡Whether you're looking to network, collaborate, or just enjoy some friendly competition, this run offers the perfect space to meet like-minded individuals from across the tech and business community. Beginners are welcome—don’t worry if you’re not a basketball pro! This run is about community and connection as much as it is about the game.\n\n📨There is a capacity to the gym, so spots are limited and available on a first-come, first-served basis, so don’t miss out!\n\n🏷️The drop-in fee helps cover the cost of court rental, ensuring we have a great space to play.\n\n🙌This run invites everyone to step up, connect, and build community both on and off the court. So grab your sneakers, bring your A-game, and get ready to shoot some hoops!",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus),Finance,Investors (Series A/Series B)",
+                "theme": "AI",
+                "format": "Other,Networking",
+                "url": "https://lu.ma/5mn78gts",
+                "slug": "5mn78gts",
+                "cover": "https://images.lumacdn.com/event-covers/2n/46cded03-e2cc-4e7b-a31c-79a8c546aee3.jpg",
+                "api_id": "evt-d9VRUh0aC1MFNdb",
+                "type": "event",
+                "tags": "AI",
+                "approval": "Approved by TTW",
+                "address": "371 Bloor St W"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.402301,
+                    43.666906
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Toronto Java User Group - Agentic RAG with Evaluations and MCP - Dan Dobrin – Theresa Mammarella",
+                "privacy": "Open to the public.",
+                "start": "June 26, 2025 18:30",
+                "end": "",
+                "neighbourhood": "Kensington Market",
+                "title": "Toronto Java User Group - Agentic RAG with Evaluations and MCP - Dan Dobrin",
+                "description": "The Toronto Java User Group (TJUG) is a community-driven meetup for Java developers in the Toronto area. We host monthly events featuring expert talks, hands-on workshops, and networking opportunities covering topics like modern Java frameworks, performance optimization, and best practices. Whether you're a beginner or an experienced developer, TJUG provides a space to learn, share knowledge, and connect with fellow Java practitioners. Join the group to stay up to date with the latest in Java development and grow your skills in a collaborative environment.\n\nTalk Details\nBuild more capable and reliable AI systems by combining context-aware retrieval-augmented generation (RAG) with agentic decision-making in an enterprise AI platform, all in Java! This session covers everything from architecture, context construction, and model routing to action planning, dynamic retrieval, and recursive reasoning, as well as the implementation of essential guardrails and monitoring systems for safe deployments. Learn about best practices, trade-offs, performance, and advanced techniques like evaluations and model context protocol.\n\nAbout the venue\nFree Times Cafe has bistro-style seating and a full food and drink menu. Please consider helping to support the venue by planning to have supper during the talk.\n\nPresenter Info\nDan Dobrin is an App Architect in Google Cloud, helping customer teams adopt modern cloud-native patterns, practices and technologies. His focus is on GenAI, Vertex, Gemini, CodeAssist, Cloud Run, K8s, Native Java Images, Spring, Event-driven Architectures, Production-readiness and Performance Optimization.\n\nPrior to joining Google Cloud, he has built highly scalable, low-latency, frameworks for technology, security and financial services organizations.\n\nRecent conference talks: Google Cloud Next24, Spring I/O 2024 and Devoxx Belgium 2024",
+                "audience": "Engineers",
+                "theme": "Engineering",
+                "format": "Networking,Workshop / Roundtable",
+                "url": "https://www.meetup.com/toronto-java-users-group/events/307291751",
+                "slug": "https://www.meetup.com/toronto-java-users-group/events/307291751",
+                "cover": "",
+                "api_id": "",
+                "type": "",
+                "tags": "Engineering",
+                "approval": "Approved by TTW"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "The Sunset Social – YEDI",
+                "privacy": "Open to the public.",
+                "start": "June 26, 2025 19:00",
+                "end": "",
+                "neighbourhood": "Distillery District",
+                "title": "The Sunset Social",
+                "description": "The sun is out and so are we.\nJoin YEDI (York Entrepreneurship Development Institute) for an evening of connections and conversations at The Sunset Social.\nWe are officially part of Toronto Tech Week 2025, a weeklong citywide collection of events to connect and celebrate the builders from June 23 → June 27, 2025.\n \nMix and mingle with startups and entrepreneurs from across industries at Arta Gallery while enjoying curated wines, light refreshments, and warm summer energy. \n\nWhether you're looking to spark new collaborations, expand your circle, or just unwind, this is the perfect opportunity to connect over good food, great wine, and meaningful conversation.",
+                "audience": "Founders (Pre-Seed),Investors (Pre-Seed/Seed/Seed Plus),Creators,General Startup Operators,Students",
+                "theme": "B2B,B2C / Consumer,International / Expansion,Healthcare / HealthTech,GTM (Marketing,Sales,Growth)",
+                "format": "Happy Hour,Networking",
+                "url": "https://www.eventbrite.ca/e/the-sunset-social-tickets-1353409998739?aff=oddtdtcreator",
+                "slug": "https://www.eventbrite.ca/e/the-sunset-social-tickets-1353409998739?aff=oddtdtcreator",
+                "cover": "",
+                "api_id": "",
+                "type": "",
+                "tags": "B2B, B2C / Consumer, International / Expansion, Healthcare / HealthTech, GTM (Marketing, Sales, Growth)",
+                "approval": "Approved by TTW"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Ladies Foodies Club Dinner- How to prevent and manage a stroke – Ladies Foodies Club",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T23:00:00.000Z",
+                "end": "2025-06-27T02:30:00.000Z",
+                "neighbourhood": "Downtown Yonge",
+                "title": "Ladies Foodies Club Dinner-  How to prevent and manage a stroke",
+                "description": "​The Ladies Foodies Club and the When Women Know Initiative invite you to our June Edition on \"How to prevent and manage a stroke\" May 21 at 7 PM at The Host Fine Indian Cuisine. ​Join us for an unforgettable evening as we talk Stroke Awareness. Learn what is a stroke? How does it happens? How can we prevent it and manage life post-stroke. How are advances in health technologies helping? ( Stroke monitoring app, wearables, robotics in rehabilitation).\n\n",
+                "audience": "Talent / People,Students,Founders (Pre-Seed),Founders (Seed/Seed Plus),Other",
+                "theme": "Healthcare / HealthTech,B2C / Consumer",
+                "format": "Panel Event / Fireside Chat,Networking,Happy Hour,Dinner,Workshop / Roundtable",
+                "url": "https://lu.ma/6x716lil",
+                "slug": "6x716lil",
+                "cover": "https://images.lumacdn.com/event-covers/k6/4bc202a9-5ae2-417e-94ff-1300c5486a22.jpg",
+                "api_id": "evt-VsfKxAWn2uBnb7P",
+                "type": "event",
+                "tags": "Healthcare / HealthTech, B2C / Consumer",
+                "approval": "Approved by TTW",
+                "address": "The Host Fine Indian Cuisine (Toronto)"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386175,
+                    43.656706
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "CTRL SHIFT Vol. 4 @ TTW – Superjuicy",
+                "privacy": "Open to the public.",
+                "start": "2025-06-26T23:00:00.000Z",
+                "end": "2025-06-27T03:00:00.000Z",
+                "neighbourhood": "Trinity Bellwoods",
+                "title": "CTRL SHIFT Vol 4. @ Toronto Tech Week",
+                "description": "CTRL SHIFT returns for a special Tech Week edition where creative tech takes center stage. Join us for Vol. 4, an immersive evening of talks, digital art, and community connection at the intersection of AI, creativity, and culture.\n\n​We’re bringing together artists, technologists, designers, and dreamers who see generative AI not as a replacement for human creativity, but as a collaborator, unlocking new forms of expression across image, video, audio, and text.\n\n​What to Expect\n🎤 Talks from pioneering minds rethinking how we create with machines\n🖼️ Interactive art installations pushing the boundaries of generative media\n🤝 Meaningful networking with creatives and builders at the frontier of tech\n💬 Live discussions on what it means to create in an AI-assisted world\n\n​Whether you’re building, experimenting, or just curious CTRL SHIFT Vol. 4 is your place to connect, learn, and reimagine the future of creative work. Details TBD",
+                "audience": "Creators,Product,General Startup Operators,Students,Engineers",
+                "theme": "AI,Creators,Media / Entertainment,UX / Design,B2C / Consumer",
+                "format": "Networking,Panel Event / Fireside Chat,Experiential",
+                "url": "https://lu.ma/f0q4oqpa",
+                "slug": "f0q4oqpa",
+                "cover": "https://images.lumacdn.com/event-covers/7b/8dd869b3-af8a-4897-a2f8-f71bf8ace967.png",
+                "api_id": "evt-BtIiWyTcFHGE0uP",
+                "type": "event",
+                "tags": "AI, Creators, Media / Entertainment, UX / Design, B2C / Consumer",
+                "approval": "Approved by TTW",
+                "address": "Youthful Vengeance - Cafe & Gallery"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.419999,
+                    43.649583
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "SunSeek 5km Run + Othership Ice Bath & Sauna – SunSeek",
+                "privacy": "Open to the public.",
+                "start": "2025-06-27T11:30:00.000Z",
+                "end": "2025-06-27T13:30:00.000Z",
+                "neighbourhood": "Yorkville",
+                "title": "SunSeek 5k + Othership (Day 3)",
+                "description": "SunSeek 5K + Othership Recovery\n\nA 5K sunrise run through the city, starting at Trinity Bellwoods and ending at Othership Yorkville for a guided sauna and cold plunge experience. Run at a relaxed pace alongside fellow founders, investors, and wellness enthusiasts. After finishing, step into Othership’s signature contrast therapy session to recharge, reset, and connect.",
+                "audience": "Founders (Seed/Seed Plus),Founders (Pre-Seed),Engineers,Investors (Pre-Seed/Seed/Seed Plus),Product",
+                "theme": "B2C / Consumer,Healthcare / HealthTech,AI",
+                "format": "Experiential",
+                "url": "https://lu.ma/l1kpuera",
+                "slug": "l1kpuera",
+                "cover": "https://images.lumacdn.com/event-covers/7j/790c9d79-5034-4693-9b36-343133cf7a39.png",
+                "api_id": "evt-nVihblo2OhoD0tq",
+                "type": "event",
+                "tags": "B2C / Consumer, Healthcare / HealthTech, AI",
+                "approval": "Approved by TTW",
+                "address": "Othership Yorkville"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392221,
+                    43.66945
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Open Coworking: Tech Builders by Staples Studio – Staples Studio",
+                "privacy": "Open to the public.",
+                "start": "2025-06-27T14:00:00.000Z",
+                "end": "2025-06-27T20:00:00.000Z",
+                "neighbourhood": "Downtown Yonge",
+                "title": "Open Coworking: Tech Builders by Staples Studio",
+                "description": "Drop in for a free day of coworking during Toronto Tech Week!\n\nFrom 10 AM–4 PM, enjoy high-speed Wi-Fi, ergonomic workspaces, and unlimited tea and coffee at Staples Studio University.\n\nSign up to claim your desk—we’ve also reserved our event space to ensure you can network and make meaningful connections throughout the day.\n\nWhether you’re a tech entrepreneur, investor, or professional bringing ideas to life, come network with fellow builders or squeeze in work between festival events.\n\nBring your laptop and ideas!",
+                "audience": "Creators,Engineers,Investors (Pre-Seed/Seed/Seed Plus),Product,Founders (Series A)",
+                "theme": "Open to all industries",
+                "format": "Other,Networking",
+                "url": "https://lu.ma/ljpvf8d7",
+                "slug": "ljpvf8d7",
+                "cover": "https://images.lumacdn.com/event-covers/1c/86c721b2-4b65-44b7-a6a2-035754704c18.png",
+                "api_id": "evt-TlhSKZRdyumxWKL",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "Staples Studio Toronto - University Ave Coworking Space"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386823,
+                    43.653525
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Find Your Match: Raising the Right Round with the Right Investor – Global Startups",
+                "privacy": "Open to the public.",
+                "start": "2025-06-27T16:00:00.000Z",
+                "end": "2025-06-27T17:00:00.000Z",
+                "neighbourhood": "Entertainment District",
+                "title": "Find Your Match: Raising the Right Round with the Right Investor",
+                "description": "Raising money doesn’t have to feel like a guessing game. Join us in person on June 27th for a practical and insightful session built for pre-seed and seed stage startups ready to take their fundraising to the next level.\n\nNo fundraising experience? No problem. This session is designed with first-time founders in mind — whether you're still figuring out what a cap table is or already talking to investors, you'll walk away with a clearer path forward.",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Investors (Pre-Seed/Seed/Seed Plus),General Startup Operators",
+                "theme": "Fundraising / Investing",
+                "format": "Lunch",
+                "url": "https://lu.ma/63x64rej",
+                "slug": "63x64rej",
+                "cover": "https://images.lumacdn.com/event-covers/r2/be269cc6-67bb-4655-82bc-92f6bc62b165.jpg",
+                "api_id": "evt-IARuKloBH2c3otd",
+                "type": "event",
+                "tags": "Fundraising / Investing",
+                "approval": "Approved by TTW",
+                "address": "325 Front St W"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.390137,
+                    43.643507
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Common Code: Is Toronto’s tech community ready to become leaders in addressing loneliness? – Reset",
+                "privacy": "Open to the public.",
+                "start": "2025-06-27T21:00:00.000Z",
+                "end": "2025-06-27T23:00:00.000Z",
+                "neighbourhood": "The Annex",
+                "title": "COMMON CODE: Is Toronto’s tech community ready to become leaders in addressing loneliness?",
+                "description": "Loneliness is a growing public health crisis - and connection is one of the greatest challenges of our time. Can tech workers and builders in Toronto be part of the solution? This final gathering invites the community to imagine how we design digital tools, spaces, and cultures that reduce isolation and foster belonging.\n\n---\n\nFive days. Five public spaces. Five big questions. \n\nCommon Code is a free pop-up conversation series hosted by Reset that invites Toronto’s tech community to gather in public spaces to explore questions at the intersection of tech, trust, and togetherness in Toronto. Each day, we bring a new question to life in a different neighbourhood that invites Town Hall-like dialogue and debate on topics related to surveillance, sovereignty, safety and more. An unplug valet will be available at each pop-up for anyone wishing to go phone free.",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Founders (Series A),Founders (Series B),Founders (Series C),Founders (Series D & Beyond),Investors (Pre-Seed/Seed/Seed Plus),Investors (Series A/Series B),Investors (Series C & Beyond),Engineers,Creators,Sales / BD,Finance,Marketing / Comms,Product,HR,General Startup Operators,Talent / People,Students",
+                "theme": "Open to all industries",
+                "format": "Experiential,Happy Hour,Networking",
+                "url": "https://lu.ma/4ccx8g34",
+                "slug": "4ccx8g34",
+                "cover": "https://images.lumacdn.com/event-covers/e4/b2a7c4f1-8a50-4d5e-b359-c48a1d5df15b.png",
+                "api_id": "evt-kOxRvM38UbUaPkS",
+                "type": "event",
+                "tags": "Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "Mirvish Village"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.411027,
+                    43.664093
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "Ecstatic Dance & Embodiment for Tech Innovators – Reema Khithani: The Hira Collective",
+                "privacy": "Open to the public.",
+                "start": "2025-06-27T23:00:00.000Z",
+                "end": "2025-06-28T03:00:00.000Z",
+                "neighbourhood": "Kensington Market",
+                "title": "Into the Flow: Cacao Ceremony, Ecstatic Dance & Intuitive Activation for Creators",
+                "description": "Your body is your greatest untapped innovation tool.\nInto the Flow is a high-energy, immersive dance and movement experience designed for founders, creators, and innovators who want to break free from mental loops, reset their nervous systems, and unlock deeper creative flow.\nIn the fast-paced world of tech, we spend so much time in our heads—strategizing, coding, scaling. This experience invites you to drop into the body, shake off stress, and reconnect with your intuition and vitality through ecstatic dance, somatic movement, and music-driven embodiment practices.\nNo choreography. No performance. Just you, your body, the music, and the freedom to move.\n\nWhat to Expect:\n\t•\tA guided warm-up to land in your body and set your intention\n\t•\tA facilitated ecstatic dance journey designed to release tension and unlock creative energy\n\t•\tBreathwork + somatic grounding practices to integrate and return to calm\n\t•\tA playful, judgment-free space to connect, move, and create from a place of authenticity\n\nWhether you’re facing a creative block, decision fatigue, or just want to reconnect with joy and inspiration—this session is your invitation to return to flow, freedom, and embodied clarity.\n",
+                "audience": "Founders (Pre-Seed),Founders (Seed/Seed Plus),Creators,Marketing / Comms,General Startup Operators",
+                "theme": "Creators,Open to all industries",
+                "format": "Workshop / Roundtable",
+                "url": "https://lu.ma/ix0w5ft9",
+                "slug": "ix0w5ft9",
+                "cover": "https://images.lumacdn.com/event-covers/01/146f4c87-9e52-4f70-8f1b-108557627e66.jpg",
+                "api_id": "evt-B4nXbWOSUw81Cpb",
+                "type": "event",
+                "tags": "Creators, Open to all industries",
+                "approval": "Approved by TTW",
+                "address": "520 Richmond St W"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.399504,
+                    43.647425
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title_host": "SUPERCOLLIDER: TORONTO TECH COMMUNITIES AFTERPARTY ⚛️ – PRAKTIKAI",
+                "privacy": "Open to the public.",
+                "start": "2025-06-28T00:00:00.000Z",
+                "end": "2025-06-28T04:00:00.000Z",
+                "neighbourhood": "King West",
+                "title": "SUPERCOLLIDER: TORONTO TECH WEEK AFTERPARTY",
+                "description": "Get ready for a high-energy reaction! SUPERCOLLIDER is bringing Toronto's tech communities together for the can't-miss social event of Toronto Tech Week. We're colliding worlds – startups, VCs, devs, data scientists, AI tinkerers, and more – all under one roof. Forget stuffy networking - this is where Toronto's tech scene connects and celebrates.   We're bringing together brilliant minds, innovative ideas, and diverse perspectives from across the GTA's tech ecosystem.",
+                "audience": "Open To Everyone,Engineers,Students,General Startup Operators,Founders (Pre-Seed)",
+                "theme": "AI,Cybersecurity,Engineering,Infrastructure",
+                "format": "Experiential,Party",
+                "url": "https://lu.ma/fdr3q3yj",
+                "slug": "fdr3q3yj",
+                "cover": "https://images.lumacdn.com/event-covers/tw/efe9e8f4-09fa-45cb-830f-87cd8ffdc6d3.jpg",
+                "api_id": "evt-39a6tEoCECBgsL3",
+                "type": "event",
+                "tags": "AI, Cybersecurity, Engineering, Infrastructure",
+                "approval": "Approved by TTW",
+                "address": "GRETA Bar YYZ"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.399574,
+                    43.644716
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,805 @@
+{
+    "type": "FeatureCollection",
+    "name": "TTW2025 Venues",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "25 York St.",
+                "status": "Available",
+                "company": "TELUS Global Ventures",
+                "address": "25 York St.",
+                "neighbourhood": "Financial District",
+                "type": "Auditorium",
+                "description": "",
+                "address_formatted": "25 York Street, Old Toronto, ON M5J 2Z2, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3808365,
+                    43.6434677
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "ACE Hotel Toronto",
+                "status": "Available",
+                "company": "ACE Hotel Toronto",
+                "address": "51 Camden Street",
+                "neighbourhood": "Fashion District",
+                "type": "Co-working Space,Conference Room,Restaurant,Outdoor Space",
+                "description": "ACE Hotel Toronto is where innovation meets inspiration. Our dynamic event spaces — from modern studios to airy lounges and rooftop venues — are designed to spark big ideas and bold connections. Located in the heart of the city’s creative corridor, ACE offers the perfect backdrop for panels, launches, networking sessions, and after-hours meetups. Thoughtful design, cutting-edge amenities, and warm hospitality set the stage for the future of tech — and the people shaping it.",
+                "address_formatted": "51 Camden Street, Old Toronto, ON M5V 3N3, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.398199,
+                    43.64681
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Adelaide Hall",
+                "status": "Available",
+                "company": "The MRG Group",
+                "address": "250 Adelaide St. W ",
+                "neighbourhood": "Entertainment District",
+                "type": "Restaurant,Other",
+                "description": "Multifaceted event space and concert venue, regularly hosting speaking events and industry mixers. The venue can easily be adapted to fit a variety of Toronto Tech Week events from industry nights to pitch events. Perfect for private functions, big or small complete with a full production and catering team for both food and drink, including bar service.\n\nNote also that Adelaide Hall, Dublin Calling and Rock N Horse are all in the same building and connected to each other. So there is an option to combine multiple venues into a larger event, if needed. ",
+                "address_formatted": "250 Adelaide Street West, Old Toronto, ON M5H 1X6, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38911213709616,
+                    43.64832215
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Arcadia Earth ",
+                "status": "Available",
+                "company": "Arcadia Earth Toronto ",
+                "address": "486 Front Street W, Building C, Toronto, ON, M5V0V2",
+                "neighbourhood": "Other",
+                "type": "Other",
+                "description": "Founded with a profound desire for change and an unwavering commitment\nto a sustainable future, Arcadia Earth is Toronto’s one-of-a-kind immersive\njourney through planet Earth.\n\nThe immersive experience combines large-scale art installations and exciting\ntechnology like virtual and augmented reality and projection mapping that\nallows visitors to experience our planet like never before, while inspiring them\nto take action towards a better future.",
+                "address_formatted": "486 Front Street West, Toronto, ON M5V 2M3, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39711,
+                    43.642111
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Convocation Hall",
+                "status": "Available",
+                "company": "University of Toronto",
+                "address": "31 King's College Cir, Toronto, ON M5S 1A1",
+                "neighbourhood": "Other",
+                "type": "Auditorium",
+                "description": "Constructed in 1907 by the architectural firm Pearson and Darling for the University of Toronto, Convocation Hall is the largest venue on the St. George Campus. It is home to academic lectures, Convocation ceremonies, and events.",
+                "address_formatted": "Convocation Hall, 31 King's College Circle, Old Toronto, ON M5S 1A1, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3954329541008,
+                    43.66077185
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CRAFT Beer Market",
+                "status": "Available",
+                "company": "CRAFT Beer Market",
+                "address": "1 Adelaide St E, Toronto ON M5C 2V9",
+                "neighbourhood": "Financial District",
+                "type": "Restaurant,Outdoor Space",
+                "description": "CRAFT is the perfect location to host any type of celebration. Our restaurants feature private and semi private spaces to accommodate corporate and personal events. We pride ourselves on creating a welcoming and inviting atmosphere, and our event team is here to take care of you and your guests every step of the way.\n\nOur culinary and beverage programs are crafted with the highest quality ingredients and suppliers, using sustainable practices so you can feel good about what you’re eating. We offer over 100 drinks on tap giving way to the moniker: Where everything is on tap",
+                "address_formatted": "1 Adelaide Street East, Old Toronto, ON M5C 2V9, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3779302,
+                    43.6501672
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dublin Calling",
+                "status": "Available",
+                "company": "The MRG Group",
+                "address": "250 Adelaide St. W ",
+                "neighbourhood": "Entertainment District",
+                "type": "Other,Restaurant",
+                "description": "Features over 20 big-screen TVs; games like pool, darts and skee-ball; on-site catering service offering pub fare including food and full bar options; and flexible seating arrangements to accommodate industry mixers or speaking events. This makes Dublin Calling a perfect spot to host a variety of event types at Toronto Tech Week, from panels to networking. \n\nNote also that Adelaide Hall, Dublin Calling and Rock N Horse are all in the same building and connected to each other. So there is an option to combine multiple venues into a larger event, if needed.  ",
+                "address_formatted": "250 Adelaide Street West, Old Toronto, ON M5H 1X6, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38911213709616,
+                    43.64832215
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "EVNT by LAUFT",
+                "status": "Available",
+                "company": "EVNT by LAUFT",
+                "address": "95 King Street East Unit 101",
+                "neighbourhood": "Other",
+                "type": "Co-working Space,Conference Room,Office Space,Other",
+                "description": "Looking for the perfect event space in the heart of Toronto? Whether you're planning a corporate meeting, networking event, panel discussion or a casual get-together, we offer versatile event space tailored to any occasion.  With customizable layouts, great AV solutions, top-notch catering options, and expert event planning services, we ensure your event is as unique as it is unforgettable.  Discover the ideal backdrop for your next gathering right here in the bustling core of Toronto!",
+                "address_formatted": "95 King Street East, Old Toronto, ON M5C 2V8, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3747587,
+                    43.6497413
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fitzgerald Atrium",
+                "status": "Available",
+                "company": "University of Toronto",
+                "address": "150 College Street",
+                "neighbourhood": "Other",
+                "type": "Other",
+                "description": "The historic Fitzgerald Building, originally constructed in 1927, is designated under Part IV of the Heritage Act. After a modern rehabilitation, the Fitzgerald Atrium is perimetered by three of the building’s original exterior walls and completed with a new glass exterior wall and ceiling to complement its original beauty. The Atrium a suitable space to host a reception or other social gathering when an open space is ideal. ",
+                "address_formatted": "150 College Street, Old Toronto, ON M5S 3E1, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3925161,
+                    43.6603996
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "GRETA BAR YYZ",
+                "status": "Available",
+                "company": "GRETA BAR YYZ",
+                "address": "590 King St. West Toronto ON",
+                "neighbourhood": "King West",
+                "type": "Restaurant",
+                "description": "NEWEST BAR/RESTAURANT ARCADE on King West (19+ Venue)\n\nGLOBAL STREET FOOD:\nFRESH NEVER FROZEN! LOCALLY SOURCED INGREDIENTS.\nYou can’t party on an empty stomach. GRETA fuels the fun with a choice of fresh, locally-sourced grab-and-go. Street food inspired from around the world is more than a match for the appetite you’ll work up defeating Ms. Pac Man. Step up to the food truck window or sit down to be served restaurant-style.\n\nGames at Greta\nOver fifty arcade games range from large format Pop-A-Shot Basketball and Air Hockey to classics like Donkey Kong and Tetris.",
+                "address_formatted": "590 King Street West, Old Toronto, ON M5V 0L5, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.39972037041719,
+                    43.64489815
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hot House Restaurant",
+                "status": "Available",
+                "company": "Hot House Restaurant ",
+                "address": "35 Church Street",
+                "neighbourhood": "St. Lawrence",
+                "type": "Restaurant",
+                "description": "Located in the heart of St.Lawrence Neighbourhood, offers a warm and inviting atmosphere perfect for a wide range of events. \n\nKey features:\n✅ Flexible floor plan accommodating up to 450 guests for seated dinners or cocktail-style receptions\n✅ Private dining room(s) for intimate gatherings (up to 40 seated)\n✅ Spacious patio or outdoor seating \n✅ Full-service bar with customizable drink packages\n✅ In-house catering with seasonal and locally sourced menus\n✅ Professional staff dedicated to exceptional service\n✅ AV capabilities for presentations, music, or entertainment\n✅ Convenient location with ample parking or public transportation access\n\nWe specialize in hosting a variety of events, including corporate meetings, birthday celebrations, bridal showers, rehearsal dinners, weddings, holiday parties, and more.\n\nWhether you’re planning a casual get-together or an elegant affair, HotHouse provides the perfect backdrop to make your event unforgettable.",
+                "address_formatted": "35 Church Street, Toronto, ON M9N 3C3, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.5229528,
+                    43.704154149999994
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "King & Bay Bespoke Solutions",
+                "status": "Available",
+                "company": "King & Bay Bespoke",
+                "address": "161 Bay Street, Suite 2515",
+                "neighbourhood": "Financial District",
+                "type": "Other",
+                "description": "Located in the iconic Brookfield Place at 161 Bay Street, 25th floor, in the vibrant heart of downtown Toronto, our venue offers breathtaking views of the city skyline. Designed for memorable experiences, our main lounge accommodates up to 50 guests standing or 40 guests for seated dinners on elegant round tables. \n\nWhat sets us apart is our integrated bespoke clothing component, offering a truly unique and turnkey event solution. From curated food and beverage experiences to professional wait staff, exclusive wine or whiskey tastings, celebrity appearances, and media support for presentations, we handle every detail to create an unparalleled event. We collaborate with Toronto's top restaurants to deliver an exceptional private dining experience, ensuring every event is unforgettable. \n\nDiscover a venue where sophistication meets seamless service, perfect for cocktail style reception, networking events, panel discussions, 7 course dinners and exclusive gatherings.",
+                "address_formatted": "161 Bay Street, Old Toronto, ON M5J 1E5, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3789908,
+                    43.6462045
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "La Bettola di Terroni",
+                "status": "Available",
+                "company": "Terroni",
+                "address": "106 Victoria St.",
+                "neighbourhood": "Financial District",
+                "type": "Restaurant",
+                "description": "La Bettola translates to “hole in the wall,” which is exactly the inspiration for this restaurant. Have a taste of traditional Italian cuisine served at what is our smallest location. The menu is curated by our Sicilian Chef Costantino who highlights this region along with classic signature dishes from Terroni.\n\nRegular reservations and walk-ins are welcome. Capacities listed are for semi-private and private spaces.",
+                "address_formatted": "La Bettola Di Terroni, 106 Victoria Street, Old Toronto, ON M5C 1N7, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3779646,
+                    43.6520182
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "MaRS Centre",
+                "status": "Available",
+                "company": "MaRS Discovery District",
+                "address": "101 College Street, Toronto",
+                "neighbourhood": "Financial District",
+                "type": "Auditorium,Conference Room",
+                "description": "MaRS Discovery District is the tech community’s premier destination for special events. Whether you’re planning an exhibition, reception, private meeting, or conference, we offer versatile spaces to meet your needs. Our spaces range in size from smaller convening workshops to larger conference and reception spaces. ",
+                "address_formatted": "101 College Street, Old Toronto, ON M5G 1L5, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3881289,
+                    43.6598584
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Myth",
+                "status": "Available",
+                "company": "Myth ",
+                "address": "522 King Street West",
+                "neighbourhood": "King West",
+                "type": "Restaurant",
+                "description": "Traditional Greek dishes in an upscale venue with an elegant atmosphere, patio seating & a full bar.",
+                "address_formatted": "522 King Street West, Old Toronto, ON M5V 1L7, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3974107,
+                    43.6452161
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nickel 9 Distillery",
+                "status": "Available",
+                "company": "Nickel 9 Distillery",
+                "address": "90 Cawthra Ave, Unit #100\nM6N 3C2 Toronto, ON Canada",
+                "neighbourhood": "Other",
+                "type": "Auditorium,Co-working Space,Conference Room,Restaurant,Other",
+                "description": "Nickel 9 Distillery, your premier destination for craft alcohol and spirits in Toronto. Located in one of the city’s most spectacular neighborhoods, we’re a community hub in the centre of Toronto's culture-rich, super-friendly junction triangle. Always bustling, we offer a unique junction landing spot - a large, gorgeous space that feels both in the centre of the action, yet, private and secluded. Nickel 9 is located minutes from Toronto's Dundas West Subway Station, as well as a short ride From both the 401 highway and the Gardiner Expressway. Parking is plentiful. We can’t wait to build your event with you!",
+                "address_formatted": "90 Cawthra Avenue, Old Toronto, ON M6N 3C2, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4642287807942,
+                    43.670185799484614
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Northeastern University Toronto Campus ",
+                "status": "Available",
+                "company": "Northeastern University Toronto",
+                "address": "100 King St. West, Suite 4620, Toronto, ON, M5X 1E2",
+                "neighbourhood": "Financial District",
+                "type": "Office Space",
+                "description": "70-80 people capacity, with different layouts (lecture style, panels, standing reception, group discussion tables)\nHybrid capabilities available \nPreferred catering options (other options by approval)  \nOperations and space set-up support ",
+                "address_formatted": "100 King Street West, Old Toronto, ON M5X 1E2, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3817297,
+                    43.6487466
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Par-Tee Pong",
+                "status": "Available",
+                "company": "The MRG Group",
+                "address": "26 Duncan St. ",
+                "neighbourhood": "Entertainment District",
+                "type": "Restaurant,Other",
+                "description": "Our space features 10 ping pong tables, including unique concept tables, fostering an atmosphere of friendly competition, perfect for networking and creating a unique backdrop for hackathons or panel events. We provide a diverse menu of shareable plates, complemented by a full-service bar. With private rooms like the Grand Slam Suite and Sip and Rally Bar, equipped with customizable menus and AV equipment, we can also accommodate more dynamic sessions such as pitch events or workshops as well. \n\nNote also that Par-tee Pong and Par-tee Putt are in the same building and connected to each other as well. So there is an option to combine multiple venues into a larger event, if needed.  ",
+                "address_formatted": "26 Duncan Street, Old Toronto, ON M5V 2B9, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3891118,
+                    43.648593250000005
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Par-Tee Putt",
+                "status": "Available",
+                "company": "The MRG Group",
+                "address": "26 Duncan St. ",
+                "neighbourhood": "Entertainment District",
+                "type": "Restaurant,Other",
+                "description": "Our space features 27 themed mini-golf holes and a full kitchen and bar so that par-tee attendees can snack and golf! This makes for a fun and interactive setting for networking, matchmaking and more. ",
+                "address_formatted": "26 Duncan Street, Old Toronto, ON M5V 2B9, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3891118,
+                    43.648593250000005
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rhythm",
+                "status": "Available",
+                "company": "Rhythm",
+                "address": "141 Bathurst",
+                "neighbourhood": "Queen West",
+                "type": "Co-working Space,Other,Auditorium",
+                "description": "Welcome to Rhythm — a multifaceted space designed for community, creativity, and culture.\n\nWe’re more than just a record store. Rhythm is a hybrid venue that combines a vinyl boutique, co-working space, event venue, and podcast studio — all under one roof.\n\n🎶 Room One: The Heartbeat of Rhythm\nBy day, it’s our record store. By night (and sometimes by day), it transforms into our event space, equipped with:\n\nA custom-built sound system (two ceiling-hung tops, two mids, and two massive subs)\nA DJ booth with both turntables and CDJs\nA projector for visuals, screenings, or presentations\nA bar area — while liquor is served with a special occasion permit, we have a full network of experienced bar staff ready to go\nFlexible seating including couches and bean bags for laid-back gatherings\nPerfect for listening sessions, parties, screenings, talks, workshops or intimate live performances.\n\n💻 Room Two: The Work Lounge\nThis is our co-working and hangout space, featuring:\n\n6 desks and seating for up to 20 people\nA comfy couch for casual meetings or downtime\nA small kitchen (fridge, microwave, and dry storage) A great spot for daytime productivity, workshops, team retreats, or casual creative meetups.\n\n🎙️ Bonus: Podcast Studio\nA dedicated, sound-treated podcast room ready for creators looking to record interviews, episodes, or voiceovers with a clean and professional setup.\n\nWe’re always open to collaborations, bookings, and ideas. Let us know what you need — and we’ll make sure the right elements are in place to bring your vision to life.\n\nLet’s build something together.\nReach out anytime — we’d love to work with you.",
+                "address_formatted": "141 Bathurst Street, Old Toronto, ON M5V 2R3, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.40284185295224,
+                    43.646107799999996
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rock N Horse Saloon",
+                "status": "Available",
+                "company": "The MRG Group",
+                "address": "250 Adelaide St. W ",
+                "neighbourhood": "Entertainment District",
+                "type": "Restaurant,Other",
+                "description": "Voted Canada’s top country bar, we are a unique space for Toronto Tech Week, combining country vibes- including a mechanical bull! – and modern amenities such as a full kitchen and bar, wifi and AV. With modular seating and a stage, Rock N Horse is well-suited for anything rom speaker sessions to networking events. Taken together, this makes for a unique and memorable experience for Toronto Tech Week attendees! \n\nNote also that Rock N Horse, Adelaide Hall and Dublin Calling are all in the same building and connected to each other. So there is an option to combine multiple venues into a larger event, if needed.  ",
+                "address_formatted": "250 Adelaide Street West, Old Toronto, ON M5H 1X6, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38911213709616,
+                    43.64832215
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schwartz Reisman Innovation Campus",
+                "status": "Available",
+                "company": "University of Toronto",
+                "address": "108 College Street",
+                "neighbourhood": "Other",
+                "type": "Conference Room,Auditorium,Outdoor Space",
+                "description": "The Schwartz Reisman Innovation Campus at the University of Toronto is located on the eastern edge of the St. George campus. It is in the heart of the city, just steps away from multiple public transportation stops and in close proximity to many key sites like Queen’s Park, the Legislative Assembly of Ontario, and the Royal Ontario Museum.\n\nThe Schwartz Reisman Innovation Campus offers innovative event and meeting space, providing the perfect backdrop for your next event or conference. Clients also have access to dedicated support from U of T’s own Campus Events team, who deliver a full-service, customizable approach to ensure event success.\n\nhttps://sric.utoronto.ca/event-spaces/",
+                "address_formatted": "108 College Street, Old Toronto, ON M5G 1L5, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38975633333332,
+                    43.66009883333333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Spaccio",
+                "status": "Available",
+                "company": "Terroni",
+                "address": "22 Sackville St.",
+                "neighbourhood": "Distillery District",
+                "type": "Outdoor Space,Restaurant,Other",
+                "description": "Terroni Sud Forno Produzione e Spaccio, known to regulars simply as Spaccio. Spaccio was designed to service all Terroni restaurants and bakeries allowing daytime guests a peek into daily production with an open-concept central kitchen for production on full view. This location has many faces: a kitchen, caffè, grocer, wine shop & the popular Spaccio Restaurant. You will find classic Terroni hits with some special surprises not found at Terroni locations. Located close to the distillery district in the area referred to as Corktown, visit this gem for a unique dining experience that Conde Nast Travel referred to “for it’s Dolce Vita goodness”.\n\nRegular reservations and walk-ins are welcome. Capacities listed are for semi-private and private spaces. Intimate patio available.",
+                "address_formatted": "22 Sackville Street, Old Toronto, ON M5A 3G4, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3602754,
+                    43.654215
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Staples Studio Corktown",
+                "status": "Available",
+                "company": "Staples Studio",
+                "address": "517 Richmond Street East, Toronto",
+                "neighbourhood": "Distillery District",
+                "type": "Co-working Space,Outdoor Space,Conference Room",
+                "description": "Elevate your work experience at our Corktown location—a hub of productivity, community, and inspiration. \nOur charming 1,050 sqft INDOOR LOFT SPACE seamlessly blends cutting-edge technology with functionality and comfort.\nOur expansive 1,850 sqft ROOFTOP PATIO transforms every gathering into a memorable celebration.\n\nWe are redefining the way people work, connect, and create. Whether you need a charming loft-style coworking space, or state-of-the-art meeting rooms and podcast booths, and access to versatile indoor and outdoor event spaces.\n\nLet’s build something great together! Reach out to explore how we can support and help you do your best work.",
+                "address_formatted": "517 Richmond Street East, Old Toronto, ON M5A 1R3, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3650756,
+                    43.6541669
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Studio University",
+                "status": "Available",
+                "company": "Staples Studio",
+                "address": "375 University Ave., Toronto",
+                "neighbourhood": "Financial District",
+                "type": "Auditorium,Co-working Space,Conference Room",
+                "description": "The Staples Studio Spotlight space—available at Studio University, Oakville, Ottawa, and Kelowna—is a sophisticated, adaptable event venue designed to foster collaboration and learning. Featuring cutting-edge AV technology, a wall-mounted TV, and a seamless audio system, it offers the perfect setting for speaker sessions, workshops, seminars, and meetings. Whether you're hosting an intimate workshop or a lunch-and-learn, Spotlight ensures a dynamic and engaging experience for all attendees.",
+                "address_formatted": "375 University Avenue, Old Toronto, ON M5G 2J5, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3871386,
+                    43.6533816
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sud Forno Queen",
+                "status": "Available",
+                "company": "Terroni",
+                "address": "716 Queen St W.",
+                "neighbourhood": "Queen West",
+                "type": "Other,Co-working Space",
+                "description": "Sud Forno Queen is our first bakery, neighbouring the original Terroni on Queen St West. This area is known for its creative arts, film and design crowd, and is just down the street from Trinity Bellwoods Park. Sud has evolved from a daily bakery offering fresh bread, pastries, panini, stirata pizza, to a small grocer also featuring a small bottle shop and ready to eat meals. Unique private or semi-private space upstairs for workshops, cocktail parties and networking events. \n\nRegular reservations and walk-ins are welcome. Capacities listed are for semi-private and private spaces."
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sud Forno Temperance",
+                "status": "Available",
+                "company": "Terroni",
+                "address": "132 Yonge St.",
+                "neighbourhood": "Financial District",
+                "type": "Restaurant,Other",
+                "description": "Sud Forno is a contemporary interpretation of a basilica ruin built inside a heritage building at Yonge & Temperance. Sud Forno is located in the heart of the financial district, walking distance to several theatres, the Eaton Center, and other attractions. Ideal for cocktailing or corporate sit down dinners. It’s an accessible location with elevator access to all levels of the building & outdoor patio available in summer months.\n\nRegular reservations and walk-ins are welcome. Capacities listed are for semi-private and private spaces.",
+                "address_formatted": "132 Yonge Street, Old Toronto, ON M5C 1W4, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.378807,
+                    43.650921
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TechTO HQ",
+                "status": "Available",
+                "company": "TechTO",
+                "address": "StartWell - Offsite Venue\n782 King St W, Toronto, ON M5V 1N6, Canada",
+                "neighbourhood": "King West",
+                "type": "Auditorium,Office Space,Conference Room",
+                "description": "The TechTO HQ is a place you can call home all week long. With space to work, network and hear curated content for a full five days, it’s going to be jam packed and your home base for the week. We're currently looking for content partners. Be in touch!",
+                "address_formatted": "782 King Street West, Old Toronto, ON M5V 3M7, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.40634846666667,
+                    43.64326953333333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Terroni Adelaide",
+                "status": "Available",
+                "company": "Terroni",
+                "address": "57 Adelaide St. E.",
+                "neighbourhood": "Financial District",
+                "type": "Restaurant,Outdoor Space,Other,Conference Room",
+                "description": "Terroni Adelaide, a designated historical location built in 1853, home to a former courthouse with jail cells on the lower level-now used for wine storage. This location spans across four floors (stair access only) with a variety of rooms and spaces perfect for large group dining and private events of different sizes. Includes courtyard main floor patio next to Court Street Park, patio available in the summer. Due to the historical nature of Terroni Adelaide, this location is not wheelchair accessible.\n\nRegular reservations and walk-ins are welcome. Capacities listed are for semi-private and private spaces. \n",
+                "address_formatted": "57 Adelaide Street East, Toronto, ON M5C 1K6, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.375841,
+                    43.650745
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Terroni Price",
+                "status": "Available",
+                "company": "Terroni",
+                "address": "1095 Yonge St. ",
+                "neighbourhood": "Yorkville",
+                "type": "Restaurant,Outdoor Space,Other",
+                "description": "Located in the heart of Summerhill, Price is the latest Terroni to open. This location spans over 3 floors and is defined by the characteristics of a number of distinct spaces such as the large eating bar, dining room, private dining areas and the now infamous rooftop patio. Wheelchair accessible location to all floors excluding the rooftop patio.\n\nRegular reservations and walk-ins are welcome. Capacities listed are for semi-private and private spaces. Patio can accommodate up to 100+",
+                "address_formatted": "1095 Yonge Street, Old Toronto, ON M4W 2L9, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3905818,
+                    43.6800242
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Terroni Queen",
+                "status": "Available",
+                "company": "Terroni",
+                "address": "720 Queen St W.",
+                "neighbourhood": "Queen West",
+                "type": "Outdoor Space,Restaurant,Other",
+                "description": "The first, the original Terroni located in the Queen West district, opened in 1992. Queen West has long been known for its independent boutiques, shops, galleries and restaurants and is a short walk from Trinity Bellwoods park. Recently renovated to celebrate the old with the new and includes a second floor cocktail lounge as well as additional spaces for the larger parties. Enjoy the large outdoor patio available during the summer months. This location is wheelchair accessible on the main floor only.\n\nRegular reservations and walk-ins are welcome. Capacities listed are for semi-private and private spaces. Patio seating available. ",
+                "address_formatted": "720 Queen Street East, Old Toronto, ON M4M 1H4, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.34945128461538,
+                    43.659100469230765
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Terroni Sterling",
+                "status": "Available",
+                "company": "Terroni",
+                "address": "128 Sterling Road",
+                "neighbourhood": "Other",
+                "type": "Outdoor Space,Restaurant,Other",
+                "description": "Terroni Sterling is part of the Terroni expansion in 2022 and is located in a historic building from 1882. This location combines a Terroni restaurant with a Spaccio/Sud Forno grocer, offering a hybrid menu, a grab-and-go counter, and a compact cocktail bar within an expansive, open space. Situated in the Lower Junction, right next to the Museum of Contemporary Art (MOCA), the entrance features a street-level patio open during the summer months—perfect for enjoying a Terroni cocktail before diving into your favourite pizza. This location can accommodate wheelchairs with special arrangements with management.\n\nRegular reservations and walk-ins are welcome. Capacities listed are for semi-private and private spaces. Patio seating available.",
+                "address_formatted": "128 Sterling Road, Old Toronto, ON M6R 2B6, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.444837,
+                    43.6537759
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Engineering Partnerships Office",
+                "status": "Available",
+                "company": "University of Toronto",
+                "address": "800 Bay St",
+                "neighbourhood": "Other",
+                "type": "Co-working Space,Conference Room,Office Space",
+                "description": "Located in the heart of the Discovery District at College and Bay, the Engineering Partnerships Office (EPO) has a 4090 sq ft, multi-purpose event space with a 250 person standing capacity. Furniture for flexible configurations available to suit your event needs. Rental includes use of integrated audio-visual technology and a kitchen/prep area for your catering staff. Competitive rates and inclusive pricing. ",
+                "address_formatted": "800 Bay Street, Old Toronto, ON M4Y 1A3, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.386169,
+                    43.6611096
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Jamii Hub",
+                "status": "Available",
+                "company": "Jamii Esplanade",
+                "address": "264 The Esplanade",
+                "neighbourhood": "St. Lawrence",
+                "type": "Co-working Space,Office Space,Other",
+                "description": "Located in the heart of Old Town Toronto, The Jamii Hub is a bright and adaptable venue, perfect for tech meetups, networking events, workshops, celebrations, and panel discussions. With a capacity of up to 100 standing guests, our space blends historic charm with modern amenities to create an inspiring setting for innovation and collaboration.\n\nWhy Choose The Jamii Hub?\nDistinctive Setting – Exposed brick, wood beams, and an open-concept layout in a historic castle\nBright & Inviting – Natural light floods through large windows\nTech-Ready – High-speed internet, sound system (speakers, mics, soundboard), screen & projector\nComfort & Convenience – Stocked kitchen (fridge, dishwasher, microwave, toaster oven, kettle, coffee maker) and flexible furnishings (7 tables, 37 chairs, patio furniture, red couch set)\nExclusive Features – Upright piano for performances and an optional executive stage\nCustomizable – Bring in your preferred setup and branding to match your event’s vision\nFlexible Scheduling – Available for daytime and evening events, with early booking options\nEasy Access – Street-level entrance with a café and eatery next door\nA Meaningful Choice – Your booking supports local arts and community programming\n\nNestled in the vibrant St. Lawrence neighbourhood and just steps from the Distillery Historic District, The Jamii Hub is an ideal venue for tech-focused events, fostering creativity, collaboration, and community.\n\n",
+                "address_formatted": "264 The Esplanade, Old Toronto, ON M5A 4H8, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.363744,
+                    43.650057
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Porch",
+                "status": "Available",
+                "company": "The MRG Group",
+                "address": "250 Adelaide St. W",
+                "neighbourhood": "Entertainment District",
+                "type": "Outdoor Space,Restaurant",
+                "description": "Perched atop Toronto’s Entertainment District, the Porch offers unobstructed panoramic views of the CN Tower and downtown skyline. This open-air bar includes a retractable roof and modular seating or standing options making it a perfect spot for networking events, panel discussions or social gatherings. The Porch features a diverse menu of modern bar fare and an extensive selection of drinks, including our signature margarita buckets topped with Mexican beer and a watermelon. This makes the Porch the ideal spot for Toronto Tech Week to foster memorable moments for both the conversations and views!",
+                "address_formatted": "250 Adelaide Street West, Old Toronto, ON M5H 1X6, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.38911213709616,
+                    43.64832215
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Sutton Place Hotel Toronto",
+                "status": "Available",
+                "company": "Abrielle Restaurants, Inc.",
+                "address": "355 King Street West, Toronto ON, M5V 1J6",
+                "neighbourhood": "Entertainment District",
+                "type": "Auditorium,Co-working Space,Conference Room,Office Space,Restaurant",
+                "description": "Serving as a contemporary landmark within a historic facade on the iconic corner of King Street West and Blue Jays Way, our downtown Toronto hotel stands proud among the buzz of the Toronto Entertainment District. Close to the CN Tower, Roger’s Centre, and Scotiabank Arena, it’s ideally located to access all that downtown Toronto has to offer.\n\nThe Sutton Place Hotel Toronto is a name deep-rooted in history—all within an exquisite, cosmopolitan environment and guaranteed to make an impact. Our award-winning restaurant Abrielle features a coastal Mediterranean menu and vibe emanating approachable relaxed luxury.",
+                "address_formatted": "355 King Street West, Old Toronto, ON M5V 1J6, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.392132,
+                    43.645993
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Well",
+                "status": "Available",
+                "company": "The Well",
+                "address": "486 Front st. W",
+                "neighbourhood": "King West",
+                "type": "Conference Room,Outdoor Space",
+                "description": "",
+                "address_formatted": "486 Front Street West, Old Toronto, ON M5V 3B4, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3956095,
+                    43.6430048
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TIFF Lightbox",
+                "status": "Available",
+                "company": "Toronto International Film Festival",
+                "address": "350 King Street West, Reitman Square",
+                "neighbourhood": "Entertainment District",
+                "type": "Auditorium,Conference Room,Office Space,Restaurant",
+                "description": "Whether you’re enjoying spectacular sight and sound in our six cinemas, toasting in our intimate café-bar Varda, or star-gazing in our elegant Founders’ Lounge, you’ll find TIFF Lightbox fills every moment with movie magic. Join us for our milestone 50th Festival and be part of film history.",
+                "address_formatted": "TIFF Lightbox, 350 King Street West, Old Toronto, ON M5V 3X5, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3905334,
+                    43.6467198
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TOOR Hotel",
+                "status": "Available",
+                "company": "TOOR Hotel",
+                "address": "203 Jarvis Street",
+                "neighbourhood": "Financial District",
+                "type": "Conference Room,Office Space,Outdoor Space,Restaurant",
+                "description": "",
+                "address_formatted": "203 Jarvis Street, Old Toronto, ON M5B 2J9, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.373835,
+                    43.655512
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Waterfront Innovation Centre",
+                "status": "Available",
+                "company": "MaRS Discovery District",
+                "address": "55 Queens Quay E, Suite 200, Toronto",
+                "neighbourhood": "Harbourfront",
+                "type": "Conference Room,Outdoor Space,Other",
+                "description": "MaRS Waterfront is located within the Waterfront Innovation Centre on Queens Quay in East Bayfront, Toronto’s newest smart-city district. Packed with entrepreneurs and creators, its arsenal of high-tech buildings bring digital connectivity, environmental features and access to transit. The neighbourhood is also rich with bars, restaurants, beautiful parks and community services. ",
+                "address_formatted": "55 Queens Quay East, Old Toronto, ON M5E 1A3, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.372033,
+                    43.64272125806452
+                ]
+            }
+        }
+    ]
+}
