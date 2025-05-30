@@ -403,8 +403,10 @@
 
 					if (cluster) {
 						clickCluster(cluster);
+						console.log(cluster.properties.cluster_id)
 					} else {
 						clickFeature(feature);
+						console.log(feature)
 					}
 				});
 
@@ -686,23 +688,25 @@
 					]);
 				}, 50);
 
-				const popupContainer = document.getElementById('popup-container');
-				const targetId = feature.properties.api_id;
-				const targetElement = popupContainer.querySelector(`.popup-flex-container[data-id="${targetId}"]`);
+				setTimeout(() => {
+					const popupContainer = document.getElementById('popup-container');
+					const targetId = feature.properties.api_id;
+					const targetElement = popupContainer.querySelector(`.popup-flex-container[data-id="${targetId}"]`);
 
-				// Remove highlight from all popup items
-				popupContainer.querySelectorAll('.popup-flex-container.active').forEach(el => {
-					el.classList.remove('active');
-				});
+					// Remove highlight from all popup items
+					popupContainer.querySelectorAll('.popup-flex-container.active').forEach(el => {
+						el.classList.remove('active');
+					});
 
-				// Scroll and highlight all matched features
-				matchedFeatures.forEach(f => {
-					const id = f.api_id || f.properties?.api_id;
-					const el = popupContainer.querySelector(`.popup-flex-container[data-id="${id}"]`);
-					if (el) {
-						el.classList.add('active');
-					}
-				});
+					// Scroll and highlight all matched features
+					matchedFeatures.forEach(f => {
+						const id = f.api_id || f.properties?.api_id;
+						const el = popupContainer.querySelector(`.popup-flex-container[data-id="${id}"]`);
+						if (el) {
+							el.classList.add('active');
+						}
+					});
+				}, 150);
 
 			} catch (error) {
 				console.error('Error handling feature click:', error);
