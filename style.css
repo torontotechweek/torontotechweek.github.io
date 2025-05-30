@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'VolksansRegular';
-    src: url('assets/fonts/volksans_Regular.otf') format('opentype');
+    src: url('assets/fonts/Volksans/volksans_Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -55,9 +55,9 @@ body {
 
 .info-box-container {
     position: relative;
-    top: 26px;
+    top: 25px;
     display: flex;
-    width: 90%;
+    width: calc(100% - 64px);
     height: 40px;
     margin: 0 auto;
 }
@@ -95,22 +95,26 @@ body {
 }
 
 .info-feature h1 {
-    color: hsl(220, 9%, 40%);
-    line-height: 0.8;
+    color: hsl(239, 100%, 94%);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -1%;
+    opacity: 40%;
+}
+
+.active-category h1 {
+    opacity: 100%;
 }
 
 .reset-category {
     width: 40px;
 }
 
-.active-category h1 {
-    color: hsl(238, 100%, 95%);
-}
-
 .logo {
     position: relative;
-    top: 10px;
-    left: 15px;
+    top: 14px;
+    left: 32px;
 }
 
 .logo a {
@@ -156,12 +160,18 @@ body {
 .popup-flex-container {
     position: relative;
     display: flex;
+    gap: 48px;
     flex-direction: column;
     align-items: flex-start;
     scroll-snap-align: start;
     transition: background-color 0.2s ease;
     border-bottom: 1px solid hsla(227, 89%, 90%, 0.2);
-    padding: 24px;
+    padding: 32px;
+    cursor: pointer;
+}
+
+.popup-flex-container:hover {
+    background-color: hsla(230, 10%, 50%, 0.1);
 }
 
 .popup-flex-container:last-child {
@@ -182,8 +192,33 @@ body {
     z-index: 100;
 }
 
+.popup-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 15, 15, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 10;
+}
+  
+  .popup-overlay i {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
 .title-container {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -1%;
+    line-height: 120%;
+    color: hsl(238, 100%, 94%);
 }
 
 .title-container * {
@@ -195,17 +230,38 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    color: hsl(238, 100%, 95%);
-    font-size: 14px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -1%;
+    color: hsl(226, 89%, 90%);
 }
 
 .popup-address-container {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 12px;
-    color: hsl(238, 100%, 95%);
-    font-size: 14px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -1%;
+    color: hsl(226, 89%, 90%);
+}
+
+.popup-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1%;
+    color: hsl(238, 100%, 94%);
+    opacity: 70%;
 }
 
 .popup-text-container {
@@ -230,14 +286,6 @@ body {
 
 .popup-title:hover {
     color: hsl(227, 89%, 80%);
-}
-
-.popup-description {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .popup-filter-button {

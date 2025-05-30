@@ -286,9 +286,9 @@
 					'circle-radius': [
 						'step',
 						['get', 'point_count'],
-						12,
-						10, 16,
-						25, 20
+						10,
+						10, 14,
+						25, 18
 					],
 					'circle-stroke-width': 0,
 					'circle-stroke-color': 'hsl(180, 21%, 5%)',
@@ -307,7 +307,7 @@
 					'text-font': ['volksans-regular'],
 					'text-size': 14,
 					'text-anchor': 'center',
-					'text-offset': [0, 0.1],
+					'text-offset': [0, 0.13],
 					'text-allow-overlap': true,
 					'text-ignore-placement': true
 				},
@@ -362,7 +362,7 @@
 			// Create logo
 			const logo = document.createElement('div');
 			logo.className = 'logo';
-			logo.innerHTML = '<h4><a href="https://www.torontotechweek.com/" target="_blank">Toronto Tech Week</a></h4>';
+			logo.innerHTML = '<a href="https://www.torontotechweek.com/" target="_blank"><img src="assets/ttw_logo.svg" alt="Toronto Tech Week logo" width="174" height="18"></a>';
 			infoBox.appendChild(logo);
 
 			// Create the horizontal scroller
@@ -431,29 +431,43 @@
 				flexContainer.className = 'popup-flex-container';
 				flexContainer.dataset.id = feature.properties.api_id;
 
-				const textContainer = document.createElement('div');
-				textContainer.className = 'popup-text-container';
-
-				const titleContainer = document.createElement('div');
-				titleContainer.className = 'title-container';
-
-				const mapIcon = document.createElement('i');
-				mapIcon.className = 'fas fa-location-dot popup-map-icon';
-				titleContainer.appendChild(mapIcon);
-
-				mapIcon.addEventListener('click', () => {
+				flexContainer.addEventListener('click', () => {
 					const featureId = feature.api_id || feature.properties?.api_id;
 
 					const cluster = findClusterByFeatureId(featureId);
 
 					if (cluster) {
 						clickCluster(cluster);
-						console.log(cluster.properties.cluster_id)
+						//console.log(cluster.properties.cluster_id)
 					} else {
 						clickFeature(feature);
-						console.log(feature)
+						//console.log(feature)
 					}
 				});
+
+				const textContainer = document.createElement('div');
+				textContainer.className = 'popup-text-container';
+
+				const titleContainer = document.createElement('div');
+				titleContainer.className = 'title-container';
+
+				// const mapIcon = document.createElement('i');
+				// mapIcon.className = 'fas fa-location-dot popup-map-icon';
+				// titleContainer.appendChild(mapIcon);
+
+				// mapIcon.addEventListener('click', () => {
+				// 	const featureId = feature.api_id || feature.properties?.api_id;
+
+				// 	const cluster = findClusterByFeatureId(featureId);
+
+				// 	if (cluster) {
+				// 		clickCluster(cluster);
+				// 		console.log(cluster.properties.cluster_id)
+				// 	} else {
+				// 		clickFeature(feature);
+				// 		console.log(feature)
+				// 	}
+				// });
 
 				const title = document.createElement('h2');
 				title.className = 'popup-title';
@@ -505,17 +519,17 @@
 					textContainer.appendChild(timeContainer);
 				}
 
-				if (properties.address) {
-					const addressContainer = document.createElement('div');
-					addressContainer.className = 'popup-address-container';
+				// if (properties.address) {
+				// 	const addressContainer = document.createElement('div');
+				// 	addressContainer.className = 'popup-address-container';
 
-					const addressText = document.createElement('span');
-					addressText.className = 'popup-address-text';
-					addressText.textContent = properties.address;
+				// 	const addressText = document.createElement('span');
+				// 	addressText.className = 'popup-address-text';
+				// 	addressText.textContent = properties.address;
 
-					addressContainer.appendChild(addressText);
-					textContainer.appendChild(addressContainer);
-				}
+				// 	addressContainer.appendChild(addressText);
+				// 	textContainer.appendChild(addressContainer);
+				// }
 
 				if (properties.description) {
 					const desc = document.createElement('p');
