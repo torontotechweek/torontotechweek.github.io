@@ -195,7 +195,7 @@
 				layout: {
 					'text-field': ['get', 'area_name'],
 					'text-size': ['interpolate', ['exponential', 1.1], ['zoom'], 10, 1, 18, 50],
-					'text-font': ['montserrat-semibold'],
+					'text-font': ['volksans-regular'],
 					'text-max-width': 5,
 					'text-line-height': 1,
 					'text-allow-overlap': true,
@@ -219,7 +219,7 @@
 				source: 'events',
 				filter: ['!', ['has', 'point_count']],
 				paint: {
-					'circle-radius': 14,
+					'circle-radius': 12,
 					'circle-color': 'hsl(232, 76%, 84%)',
 					'circle-opacity': 0.2,
 					'circle-stroke-width': 0,
@@ -234,7 +234,7 @@
 				source: 'events',
 				filter: ['!', ['has', 'point_count']],
 				paint: {
-					'circle-radius': 8,
+					'circle-radius': 6,
 					'circle-color': 'hsl(232, 76%, 84%)',
 					'circle-stroke-width': 0,
 					'circle-stroke-color': 'hsl(180, 21%, 5%)'
@@ -259,9 +259,9 @@
 					'circle-radius': [
 						'step',
 						['get', 'point_count'],
-						20,
-						10, 26,
-						25, 30
+						18,
+						10, 22,
+						25, 26
 					],
 					'circle-stroke-width': 0,
 					'circle-stroke-color': 'hsl(180, 21%, 5%)',
@@ -286,9 +286,9 @@
 					'circle-radius': [
 						'step',
 						['get', 'point_count'],
-						14,
-						10, 20,
-						25, 24
+						12,
+						10, 16,
+						25, 20
 					],
 					'circle-stroke-width': 0,
 					'circle-stroke-color': 'hsl(180, 21%, 5%)',
@@ -304,8 +304,8 @@
 				filter: ['has', 'point_count'],
 				layout: {
 					'text-field': '{point_count_abbreviated}',
-					'text-font': ['montserrat-semibold'],
-					'text-size': 16,
+					'text-font': ['volksans-regular'],
+					'text-size': 14,
 					'text-allow-overlap': true,
 					'text-ignore-placement': true
 				},
