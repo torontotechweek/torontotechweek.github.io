@@ -212,6 +212,21 @@
 				"maxzoom": 16
 			});
 
+			// Add event point halos
+			map.addLayer({
+				id: 'points-halo',
+				type: 'circle',
+				source: 'events',
+				filter: ['!', ['has', 'point_count']],
+				paint: {
+					'circle-radius': 14,
+					'circle-color': 'hsl(232, 76%, 84%)',
+					'circle-opacity': 0.2,
+					'circle-stroke-width': 0,
+					'circle-stroke-color': 'hsl(180, 21%, 5%)'
+				}
+			});
+
 			// Add event points
 			map.addLayer({
 				id: 'points',
@@ -220,10 +235,38 @@
 				filter: ['!', ['has', 'point_count']],
 				paint: {
 					'circle-radius': 8,
-					'circle-color': 'hsl(227, 89%, 90%)',
-					'circle-stroke-width': 1.5,
-					'circle-stroke-color': 'hsl(0, 0%, 20%)'
+					'circle-color': 'hsl(232, 76%, 84%)',
+					'circle-stroke-width': 0,
+					'circle-stroke-color': 'hsl(180, 21%, 5%)'
 				}
+			});
+
+			// Add cluster circle halos
+			map.addLayer({
+				id: 'clusters-halo',
+				type: 'circle',
+				source: 'events',
+				filter: ['has', 'point_count'],
+				paint: {
+					'circle-color': [
+						'step',
+						['get', 'point_count'],
+						'hsl(232, 76%, 84%)',
+						10, 'hsl(232, 76%, 84%)',
+						25, 'hsl(232, 76%, 84%)'
+					],
+					'circle-opacity': 0.2,
+					'circle-radius': [
+						'step',
+						['get', 'point_count'],
+						20,
+						10, 26,
+						25, 30
+					],
+					'circle-stroke-width': 0,
+					'circle-stroke-color': 'hsl(180, 21%, 5%)',
+				},
+				'maxzoom': zoomThreshold + 1
 			});
 
 			// Add cluster circles
@@ -236,19 +279,19 @@
 					'circle-color': [
 						'step',
 						['get', 'point_count'],
-						'hsl(227, 89%, 90%)',
-						10, 'hsl(227, 89%, 90%)',
-						25, 'hsl(227, 89%, 90%)'
+						'hsl(232, 76%, 84%)',
+						10, 'hsl(232, 76%, 84%)',
+						25, 'hsl(232, 76%, 84%)'
 					],
 					'circle-radius': [
 						'step',
 						['get', 'point_count'],
-						15,
+						14,
 						10, 20,
-						25, 25
+						25, 24
 					],
-					'circle-stroke-width': 1.5,
-					'circle-stroke-color': 'hsl(0, 0%, 20%)',
+					'circle-stroke-width': 0,
+					'circle-stroke-color': 'hsl(180, 21%, 5%)',
 				},
 				'maxzoom': zoomThreshold + 1
 			});
@@ -267,7 +310,7 @@
 					'text-ignore-placement': true
 				},
 				paint: {
-					'text-color': 'hsl(0, 0%, 20%)'
+					'text-color': 'hsl(180, 21%, 5%)'
 				},
 				'maxzoom': zoomThreshold + 1
 			});
@@ -596,8 +639,8 @@
 				popupContainer.classList.remove('active');
 				popupOpen = false;
 
-				map.setPaintProperty('points', 'circle-color', 'hsl(225, 89%, 90%)');
-				map.setPaintProperty('clusters', 'circle-color', 'hsl(225, 89%, 90%)');
+				map.setPaintProperty('points', 'circle-color', 'hsl(232, 76%, 84%)');
+				map.setPaintProperty('clusters', 'circle-color', 'hsl(232, 76%, 84%)');
 
 				toggleFilterButton(false)
 
@@ -636,14 +679,14 @@
 				flyToFeature(coordinates);
 
 				// Set all clusters to default style
-				map.setPaintProperty('clusters', 'circle-color', 'hsl(225, 89%, 90%)');
+				map.setPaintProperty('clusters', 'circle-color', 'hsl(232, 76%, 84%)');
 
 				// Active color for clicked point
 				map.setPaintProperty('points', 'circle-color', [
 					'case',
 					['==', ['get', 'api_id'], id],
-					'hsl(52, 96%, 66%)',
-					'hsl(225, 89%, 90%)'
+					'hsl(45, 92%, 64%)',
+					'hsl(232, 76%, 84%)'
 				]);
 
 			} catch (error) {
@@ -676,15 +719,15 @@
 				flyToFeature(coordinates);
 
 				// Set all features to default style first
-				map.setPaintProperty('points', 'circle-color', 'hsl(225, 89%, 90%)');
+				map.setPaintProperty('points', 'circle-color', 'hsl(232, 76%, 84%)');
 
 				// Active color
 				setTimeout(() => {
 					map.setPaintProperty('clusters', 'circle-color', [
 						'case',
 						['==', ['get', 'cluster_id'], id],
-						'hsl(52, 96%, 66%)',
-						'hsl(225, 89%, 90%)'
+						'hsl(45, 92%, 64%)',
+						'hsl(232, 76%, 84%)'
 					]);
 				}, 50);
 

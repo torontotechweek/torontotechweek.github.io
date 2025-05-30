@@ -17,7 +17,7 @@
 			"id": "background",
 			"type": "background",
 			"paint": {
-				"background-color": "hsl(252, 18%, 27%)"
+				"background-color": "hsl(220, 13%, 10%)"
 			}
 		},
 		{
@@ -93,63 +93,12 @@
 		},
 		{
 			"source": "osm",
-			"id": "highway-service-outline",
-			"type": "line",
-			"source-layer": "streets",
-			"filter": [ "all", [ "in", "kind", "service" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
-			"paint": {
-				"line-color": "hsl(233, 15%, 47%)",
-				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 32 ],
-				"line-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 1 ]
-			},
-			"layout": {
-				"line-join": "round",
-				"line-cap": "butt"
-			},
-			"minzoom": 15
-		},
-		{
-			"source": "osm",
-			"id": "highway-minor-outline",
-			"type": "line",
-			"source-layer": "streets",
-			"filter": [ "in", "kind", "unclassified", "residential", "living_street" ],
-			"paint": {
-				"line-color": "hsl(233, 15%, 47%)",
-				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 3, 20, 96 ],
-				"line-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ]
-			},
-			"layout": {
-				"line-join": "round",
-				"line-cap": "round"
-			},
-			"minzoom": 14
-		},
-		{
-			"source": "osm",
-			"id": "highway-major-outline",
-			"type": "line",
-			"source-layer": "streets",
-			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
-			"paint": {
-				"line-color": "hsl(233, 15%, 47%)",
-				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 15, 5, 20, 156 ],
-				"line-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 11, 0, 12, 1 ]
-			},
-			"layout": {
-				"line-join": "round",
-				"line-cap": "round"
-			},
-			"minzoom": 11
-		},
-		{
-			"source": "osm",
 			"id": "highway-service",
 			"type": "line",
 			"source-layer": "streets",
 			"filter": [ "all", [ "in", "kind", "service" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
 			"paint": {
-				"line-color": "hsl(233, 15%, 57%)",
+				"line-color": "hsl(230, 5%, 25%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 30 ],
 				"line-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 1 ]
 			},
@@ -166,7 +115,7 @@
 			"source-layer": "streets",
 			"filter": [ "in", "kind", "unclassified", "residential", "living_street" ],
 			"paint": {
-				"line-color": "hsl(233, 15%, 57%)",
+				"line-color": "hsl(230, 5%, 25%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 92 ],
 				"line-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ]
 			},
@@ -183,7 +132,7 @@
 			"source-layer": "streets",
 			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
 			"paint": {
-				"line-color": "hsl(233, 15%, 57%)",
+				"line-color": "hsl(230, 5%, 25%)",
 				"line-width": [ "interpolate", [ "exponential", 2 ], [ "zoom" ], 10, 0, 20, 152 ],
 				"line-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 11, 0, 12, 1 ]
 			},
@@ -200,7 +149,7 @@
 			"source-layer": "streets",
 			"filter": [ "all", [ "in", "kind", "rail" ], [ "!=", "bridge", true ], [ "!=", "tunnel", true ] ],
 			"paint": {
-				"line-color": "hsl(233, 15%, 57%)",
+				"line-color": "hsl(230, 5%, 25%)",
 				"line-width": { "stops": [ [ 8, 1 ], [ 13, 1 ], [ 15, 3 ], [ 16, 4 ], [ 18, 8 ], [ 19, 11 ], [ 20, 14 ] ] },
 				"line-opacity": { "stops": [ [ 14, 0 ], [ 15, 1 ] ] }
 			}

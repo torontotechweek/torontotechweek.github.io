@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'VolksansRegular';
+    src: url('assets/fonts/volksans_Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +22,7 @@ body {
     color: hsl(227, 89%, 90%);
     height: 100vh;
     width: 100vw;
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-family: 'VolksansRegular', sans-serif;
     font-size: 16px;
     line-height: 1.3;
 }
@@ -92,6 +99,10 @@ body {
     line-height: 0.8;
 }
 
+.reset-category {
+    width: 40px;
+}
+
 .active-category h1 {
     color: hsl(238, 100%, 95%);
 }
@@ -117,7 +128,7 @@ body {
     height: auto;
     margin: 10px 0 10px 10px;
     border-radius: 5px;
-    border: 1px solid hsl(227, 89%, 90%);
+    border: 0.5px solid hsla(227, 89%, 90%, 0.5);
     user-select: none;
 }
 
@@ -146,12 +157,11 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0px;
     align-items: flex-start;
     scroll-snap-align: start;
     transition: background-color 0.2s ease;
     border-bottom: 1px solid hsla(227, 89%, 90%, 0.2);
-    padding: 20px;
+    padding: 24px;
 }
 
 .popup-flex-container:last-child {
@@ -172,32 +182,34 @@ body {
     z-index: 100;
 }
 
+.title-container {
+    margin-bottom: 12px;
+}
+
+.title-container * {
+    display: inline;
+    vertical-align: baseline;
+}
+
 .popup-time-container {
     display: flex;
     align-items: center;
     gap: 16px;
     color: hsl(238, 100%, 95%);
+    font-size: 14px;
 }
 
 .popup-address-container {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     color: hsl(238, 100%, 95%);
+    font-size: 14px;
 }
 
 .popup-text-container {
     flex: 1;
-}
-
-.title-container {
-    margin-bottom: 8px;
-}
-
-.title-container * {
-    display: inline;
-    vertical-align: baseline;
 }
 
 .popup-map-icon {
