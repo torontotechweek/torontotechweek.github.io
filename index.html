@@ -6,6 +6,7 @@
 	<meta charset="UTF-8" />
 	<script src="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.js"></script>
 	<link href="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -50,54 +51,60 @@
 			const pointsResponse = await fetch(locationFile);
 			const pointsData = await pointsResponse.json();
 
-			// Add EST timezone properties to each feature
+			// Enhance features
+			let processedFeatures = pointsData.features.map(feature => {
+				const props = feature.properties;
+
+				const getESTComponents = (dateString) => {
+					if (!dateString) return null;
+					const date = new Date(dateString);
+
+					return {
+						month: date.toLocaleString('en-US', {
+							timeZone: 'America/New_York',
+							month: 'short'
+						}),
+						day: date.toLocaleString('en-US', {
+							timeZone: 'America/New_York',
+							day: 'numeric'
+						}),
+						time: date.toLocaleString('en-US', {
+							timeZone: 'America/New_York',
+							hour: 'numeric',
+							minute: '2-digit',
+							hour12: true
+						}).replace(/^0/, ''),
+						date: date.toLocaleDateString('en-CA', {
+							timeZone: 'America/New_York'
+						})
+					};
+				};
+
+				const startEST = getESTComponents(props.start);
+				const endEST = getESTComponents(props.end);
+
+				return {
+					...feature,
+					properties: {
+						...props,
+						start_time_est: startEST?.time || null,
+						start_date_est: startEST?.date || null,
+						end_time_est: endEST?.time || null,
+						end_date_est: endEST?.date || null,
+					}
+				};
+			});
+
+			// ✅ Filter out features with null geometry or missing api_id
+			processedFeatures = processedFeatures.filter(f =>
+				f.geometry && f.geometry.coordinates &&
+				(f.properties.api_id || f.api_id)
+			);
+
+			// Set locationData
 			locationData = {
 				...pointsData,
-				features: pointsData.features.map(feature => {
-					const props = feature.properties;
-
-					// Helper function to format EST components
-					const getESTComponents = (dateString) => {
-						if (!dateString) return null;
-						const date = new Date(dateString);
-
-						return {
-							month: date.toLocaleString('en-US', {
-								timeZone: 'America/New_York',
-								month: 'short'
-							}),
-							day: date.toLocaleString('en-US', {
-								timeZone: 'America/New_York',
-								day: 'numeric'
-							}),
-							time: date.toLocaleString('en-US', {
-								timeZone: 'America/New_York',
-								hour: 'numeric',
-								minute: '2-digit',
-								hour12: true
-							}).replace(/^0/, ''),
-							date: date.toLocaleDateString('en-CA', {
-								timeZone: 'America/New_York'
-							})
-						};
-					};
-
-					// Use props.start
-					const startEST = getESTComponents(props.start);
-					const endEST = getESTComponents(props.end);
-
-					// Add new properties
-					return {
-						...feature,
-						properties: {
-							...props,
-							start_time_est: startEST?.time || null,
-							start_date_est: startEST?.date || null,
-							end_time_est: endEST?.time || null,
-							end_date_est: endEST?.date || null,
-						}
-					};
-				})
+				features: processedFeatures
 			};
 
 			// Add building source
@@ -357,7 +364,7 @@
 
 		};
 
-		const updatePopup = (features) => {
+		const updatePopup = (features = locationData?.features || []) => {
 			const popupContainer = document.getElementById('popup-container');
 			popupContainer.innerHTML = '';
 
@@ -377,20 +384,42 @@
 
 				const flexContainer = document.createElement('div');
 				flexContainer.className = 'popup-flex-container';
-
-				if (properties.url) {
-					flexContainer.addEventListener('click', () => {
-						window.open(properties.url, '_blank');
-					});
-				}
+				flexContainer.dataset.id = feature.properties.api_id;
 
 				const textContainer = document.createElement('div');
 				textContainer.className = 'popup-text-container';
 
+				const titleContainer = document.createElement('div');
+				titleContainer.className = 'title-container';
+
+				const mapIcon = document.createElement('i');
+				mapIcon.className = 'fas fa-location-dot popup-map-icon';
+				titleContainer.appendChild(mapIcon);
+
+				mapIcon.addEventListener('click', () => {
+					const featureId = feature.api_id || feature.properties?.api_id;
+
+					const cluster = findClusterByFeatureId(featureId);
+
+					if (cluster) {
+						clickCluster(cluster);
+					} else {
+						clickFeature(feature);
+					}
+				});
+
 				const title = document.createElement('h2');
 				title.className = 'popup-title';
 				title.textContent = properties.title || 'Untitled Location';
-				textContainer.appendChild(title);
+				titleContainer.appendChild(title);
+				textContainer.appendChild(titleContainer);
+
+				if (properties.url) {
+					title.addEventListener('click', (e) => {
+						e.stopPropagation(); // Prevent click from bubbling
+						window.open(properties.url, '_blank');
+					});
+				}
 
 				if (properties.start) {
 					const timeContainer = document.createElement('div');
@@ -461,6 +490,49 @@
 			popupOpen = true;
 		};
 
+		const findClusterByFeatureId = (featureId) => {
+			if (!map || !featureId) return null;
+
+			// Query all features from the 'clusters' layer in the 'events' source
+			const clusterFeatures = map.querySourceFeatures('events');
+
+			for (const cluster of clusterFeatures) {
+				const ids = cluster.properties.featureIds?.split('|') || [];
+				if (ids.includes(featureId)) {
+					return cluster;
+				}
+			}
+
+			return null; // No cluster contains the given featureId
+		};
+
+		let filterButtonInitialized = false;
+
+		function toggleFilterButton(show = true) {
+			const popupContainer = document.getElementById('popup');
+			let filterButton = document.querySelector('.popup-filter-button');
+
+			if (!filterButtonInitialized) {
+				filterButton = document.createElement('div');
+				filterButton.className = 'popup-filter-button';
+				filterButton.textContent = 'FULL LIST'
+
+				filterButton.addEventListener('click', (e) => {
+					e.stopPropagation();
+
+					toggleFilterButton(false);
+
+					closePopup();
+				});
+
+				popupContainer.appendChild(filterButton);
+				filterButtonInitialized = true;
+
+			}
+
+			filterButton.style.display = show ? 'flex' : 'none';
+		}
+
 		// This is needed to allow other clicks!
 		let ignoreNextMapClick = false;
 
@@ -468,327 +540,21 @@
 		map.on('click', 'points', (e) => {
 			const feature = e.features[0];
 			const properties = feature.properties;
-			const popupContainer = document.getElementById('popup-container');
 
 			ignoreNextMapClick = true;
-			popupContainer.innerHTML = '';
 
-			const popupContent = document.createElement('div');
-			popupContent.className = 'popup-content';
+			toggleFilterButton(false)
 
-			// Create flex container
-			const flexContainer = document.createElement('div');
-			flexContainer.className = 'popup-flex-container';
-
-			// Make container clickable
-			if (properties.url) {
-				flexContainer.addEventListener('click', () => {
-					window.open(properties.url, '_blank'); // Open in new tab
-					// Alternatively: window.location.href = properties.url;
-				});
-			}
-
-			// Add image div (left side)
-			// const imgContainer = document.createElement('div');
-			// imgContainer.className = 'popup-img-container';
-			// const img = document.createElement('img');
-			// img.src = properties.cover || 'default-image.jpg';
-			// imgContainer.appendChild(img);
-			// flexContainer.appendChild(imgContainer);
-
-			// Add date div (left side)
-			// const dateContainer = document.createElement('div');
-			// dateContainer.className = 'popup-date-container'; // New class for styling
-
-			// // Create month element
-			// const monthElement = document.createElement('div');
-			// monthElement.className = 'popup-month';
-			// monthElement.textContent = new Date(properties.start).toLocaleString('default', { month: 'short' }).toUpperCase();
-
-			// // Create day element
-			// const dayElement = document.createElement('div');
-			// dayElement.className = 'popup-day';
-			// dayElement.textContent = new Date(properties.start).getDate();
-
-			// // Append elements to date container
-			// dateContainer.appendChild(monthElement);
-			// dateContainer.appendChild(dayElement);
-
-			// // Add date container to flex container
-			// flexContainer.appendChild(dateContainer);
-
-			// Add text div (right side)
-			const textContainer = document.createElement('div');
-			textContainer.className = 'popup-text-container';
-
-			const title = document.createElement('h2');
-			title.className = 'popup-title';
-			title.textContent = properties.title || 'Untitled Location';
-			textContainer.appendChild(title);
-
-			// Time container creation
-			if (properties.start) {
-				const timeContainer = document.createElement('div');
-				timeContainer.className = 'popup-time-container';
-
-				// Clock icon
-				// const clockIcon = document.createElement('i');
-				// clockIcon.className = 'fas fa-clock popup-time-icon';
-
-				// Time text
-				const timeRange = document.createElement('span');
-				timeRange.className = 'popup-time-text';
-
-				const formatDate = (dateString) => {
-					const date = new Date(dateString);
-					return date.toLocaleDateString('en-US', {
-						month: 'short',
-						day: 'numeric'
-					});
-				};
-
-				const formatTime = (dateString) => {
-					return new Date(dateString).toLocaleTimeString('en-US', {
-						hour: 'numeric',
-						minute: '2-digit',
-						hour12: true
-					}).replace(/^0/, '');
-				};
-
-				let timeText = `${formatDate(properties.start)}, ${formatTime(properties.start)}`;
-
-				if (properties.end && new Date(properties.start).getTime() !== new Date(properties.end).getTime()) {
-					// Check if same day
-					const sameDay = formatDate(properties.start) === formatDate(properties.end);
-
-					if (sameDay) {
-						timeText += ` – ${formatTime(properties.end)}`;
-					} else {
-						timeText += ` – ${formatDate(properties.end)}, ${formatTime(properties.end)}`;
-					}
-				}
-
-				timeRange.textContent = timeText;
-
-				// timeContainer.appendChild(clockIcon);
-				timeContainer.appendChild(timeRange);
-				textContainer.appendChild(timeContainer);
-			}
-
-			// Address container creation
-			if (properties.address) {
-				const addressContainer = document.createElement('div');
-				addressContainer.className = 'popup-address-container';
-
-				// Location icon
-				// const locationIcon = document.createElement('i');
-				// locationIcon.className = 'fas fa-map-marker-alt popup-location-icon';
-
-				// Address text
-				const addressText = document.createElement('span');
-				addressText.className = 'popup-address-text';
-				addressText.textContent = properties.address;
-
-				// addressContainer.appendChild(locationIcon);
-				addressContainer.appendChild(addressText);
-				textContainer.appendChild(addressContainer);
-			}
-
-			if (properties.description) {
-				const desc = document.createElement('p');
-				desc.className = 'popup-description';
-				desc.textContent = properties.description;
-				textContainer.appendChild(desc);
-			}
-
-			// Assemble content
-			flexContainer.appendChild(textContainer);
-			popupContent.appendChild(flexContainer);
-			popupContainer.appendChild(popupContent);
-
-			popupOpen = true;
 			clickFeature(feature);
-
 		});
 
 		// Handle clicks on clusters
 		map.on('click', 'clusters', (e) => {
 			// Get the clicked cluster feature
 			const cluster = e.features[0];
-			const ids = cluster.properties.featureIds
-			const features = locationData.features;
-
-			let featureIdsArray = [];
-
-			if (ids) {
-				featureIdsArray = ids.split('|').filter(id => id !== '');
-			}
-
-			const popupContainer = document.getElementById('popup-container');
 
 			ignoreNextMapClick = true;
-			popupContainer.innerHTML = '';
 
-			const popupContent = document.createElement('div');
-			popupContent.className = 'popup-content';
-
-			// Get all features and sort them by start
-			const sortedFeatures = featureIdsArray
-				.map(id => features.find(f => f.api_id === id || f.properties?.api_id === id))
-				.filter(Boolean) // Remove any undefined results
-				.sort((a, b) => {
-					// Convert dates to timestamps for comparison
-					const dateA = new Date(a.properties.start).getTime();
-					const dateB = new Date(b.properties.start).getTime();
-					return dateA - dateB; // For ascending order (oldest first)
-					// return dateB - dateA; // For descending order (newest first)
-				});
-
-			// Log descriptions for each feature ID
-			sortedFeatures.forEach(feature => {
-				const properties = feature.properties;
-
-				// Create flex container
-				const flexContainer = document.createElement('div');
-				flexContainer.className = 'popup-flex-container';
-
-				// Make container clickable
-				if (properties.url) {
-					flexContainer.addEventListener('click', () => {
-						window.open(properties.url, '_blank'); // Open in new tab
-						// Alternatively: window.location.href = properties.url;
-					});
-				}
-
-				// Add image div (left side)
-				// const imgContainer = document.createElement('div');
-				// imgContainer.className = 'popup-img-container';
-				// const img = document.createElement('img');
-				// img.src = properties.cover || 'default-image.jpg';
-				// imgContainer.appendChild(img);
-				// flexContainer.appendChild(imgContainer);
-
-				// Add date div (left side)
-				// const dateContainer = document.createElement('div');
-				// dateContainer.className = 'popup-date-container'; // New class for styling
-
-				// // Create month element
-				// const monthElement = document.createElement('div');
-				// monthElement.className = 'popup-month';
-				// monthElement.textContent = new Date(properties.start).toLocaleString('default', { month: 'short' }).toUpperCase();
-
-				// // Create day element
-				// const dayElement = document.createElement('div');
-				// dayElement.className = 'popup-day';
-				// dayElement.textContent = new Date(properties.start).getDate();
-
-				// // Append elements to date container
-				// dateContainer.appendChild(monthElement);
-				// dateContainer.appendChild(dayElement);
-
-				// // Add date container to flex container
-				// flexContainer.appendChild(dateContainer);
-
-				// Add text div (right side)
-				const textContainer = document.createElement('div');
-				textContainer.className = 'popup-text-container';
-
-				const title = document.createElement('h2');
-				title.className = 'popup-title';
-				title.textContent = properties.title || 'Untitled Location';
-				textContainer.appendChild(title);
-
-				// Time container creation
-				if (properties.start) {
-					const timeContainer = document.createElement('div');
-					timeContainer.className = 'popup-time-container';
-
-					// Clock icon
-					// const clockIcon = document.createElement('i');
-					// clockIcon.className = 'fas fa-clock popup-time-icon';
-
-					// Time text
-					const timeRange = document.createElement('span');
-					timeRange.className = 'popup-time-text';
-
-					const formatDate = (dateString) => {
-						const date = new Date(dateString);
-						return date.toLocaleDateString('en-US', {
-							month: 'short',
-							day: 'numeric'
-						});
-					};
-
-					const formatTime = (dateString) => {
-						return new Date(dateString).toLocaleTimeString('en-US', {
-							hour: 'numeric',
-							minute: '2-digit',
-							hour12: true
-						}).replace(/^0/, '');
-					};
-
-					let timeText = `${formatDate(properties.start)}, ${formatTime(properties.start)}`;
-
-					if (properties.end && new Date(properties.start).getTime() !== new Date(properties.end).getTime()) {
-						// Check if same day
-						const sameDay = formatDate(properties.start) === formatDate(properties.end);
-
-						if (sameDay) {
-							timeText += ` – ${formatTime(properties.end)}`;
-						} else {
-							timeText += ` – ${formatDate(properties.end)}, ${formatTime(properties.end)}`;
-						}
-					}
-
-					timeRange.textContent = timeText;
-
-					// timeContainer.appendChild(clockIcon);
-					timeContainer.appendChild(timeRange);
-					textContainer.appendChild(timeContainer);
-				}
-
-				// Address container creation
-				if (properties.address) {
-					const addressContainer = document.createElement('div');
-					addressContainer.className = 'popup-address-container';
-
-					// Location icon
-					// const locationIcon = document.createElement('i');
-					// locationIcon.className = 'fas fa-map-marker-alt popup-location-icon';
-
-					// Address text
-					const addressText = document.createElement('span');
-					addressText.className = 'popup-address-text';
-					addressText.textContent = properties.address;
-
-					// addressContainer.appendChild(locationIcon);
-					addressContainer.appendChild(addressText);
-					textContainer.appendChild(addressContainer);
-				}
-
-				if (properties.description) {
-					const desc = document.createElement('p');
-					desc.className = 'popup-description';
-					desc.textContent = properties.description;
-					textContainer.appendChild(desc);
-				}
-
-				// Assemble content
-				flexContainer.appendChild(textContainer);
-				popupContent.appendChild(flexContainer);
-			});
-
-			popupContainer.appendChild(popupContent);
-
-			// Scroll to top
-			setTimeout(() => {
-				popupContent.scrollTo({
-					top: 0,
-					behavior: 'smooth'
-				});
-			}, 50);
-
-			popupOpen = true;
 			clickCluster(cluster);
 
 		});
@@ -827,8 +593,14 @@
 			if (popupContainer) {
 				popupContainer.classList.remove('active');
 				popupOpen = false;
+
 				map.setPaintProperty('points', 'circle-color', 'hsl(225, 89%, 90%)');
 				map.setPaintProperty('clusters', 'circle-color', 'hsl(225, 89%, 90%)');
+
+				toggleFilterButton(false)
+
+				filterLocation();
+
 			}
 		}
 
@@ -837,15 +609,34 @@
 			let coordinates = feature.geometry.coordinates;
 			let id = feature.properties.api_id;
 
-			try {
+			filterLocation(currentActiveCategory);
 
+			setTimeout(() => {
+				const popupContainer = document.getElementById('popup-container');
+				const targetId = feature.properties.api_id;
+				const targetElement = popupContainer.querySelector(`.popup-flex-container[data-id="${targetId}"]`);
+
+				// Remove highlight from all popup items
+				popupContainer.querySelectorAll('.popup-flex-container.active').forEach(el => {
+					el.classList.remove('active');
+				});
+
+				if (targetElement) {
+					// Scroll into view
+					targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+					// Add highlight class
+					targetElement.classList.add('active');
+				}
+			}, 100);
+
+			try {
 				// Fly to location
 				flyToFeature(coordinates);
 
 				// Set all clusters to default style
 				map.setPaintProperty('clusters', 'circle-color', 'hsl(225, 89%, 90%)');
 
-				// Active color
+				// Active color for clicked point
 				map.setPaintProperty('points', 'circle-color', [
 					'case',
 					['==', ['get', 'api_id'], id],
@@ -862,6 +653,21 @@
 			let coordinates = feature.geometry.coordinates;
 			let id = feature.properties.cluster_id;
 
+			const ids = feature.properties.featureIds
+			let featureIdsArray = [];
+
+			if (ids) {
+				featureIdsArray = ids.split('|').filter(id => id !== '');
+			}
+			const features = locationData.features;
+			const matchedFeatures = featureIdsArray
+				.map(id => features.find(f => f.api_id === id || f.properties?.api_id === id))
+				.filter(Boolean); // Remove undefined in case of unmatched ids
+
+			toggleFilterButton(true)
+
+			updatePopup(matchedFeatures);
+
 			try {
 
 				// Fly to location
@@ -871,12 +677,32 @@
 				map.setPaintProperty('points', 'circle-color', 'hsl(225, 89%, 90%)');
 
 				// Active color
-				map.setPaintProperty('clusters', 'circle-color', [
-					'case',
-					['==', ['get', 'cluster_id'], id],
-					'hsl(52, 96%, 66%)',
-					'hsl(225, 89%, 90%)'
-				]);
+				setTimeout(() => {
+					map.setPaintProperty('clusters', 'circle-color', [
+						'case',
+						['==', ['get', 'cluster_id'], id],
+						'hsl(52, 96%, 66%)',
+						'hsl(225, 89%, 90%)'
+					]);
+				}, 50);
+
+				const popupContainer = document.getElementById('popup-container');
+				const targetId = feature.properties.api_id;
+				const targetElement = popupContainer.querySelector(`.popup-flex-container[data-id="${targetId}"]`);
+
+				// Remove highlight from all popup items
+				popupContainer.querySelectorAll('.popup-flex-container.active').forEach(el => {
+					el.classList.remove('active');
+				});
+
+				// Scroll and highlight all matched features
+				matchedFeatures.forEach(f => {
+					const id = f.api_id || f.properties?.api_id;
+					const el = popupContainer.querySelector(`.popup-flex-container[data-id="${id}"]`);
+					if (el) {
+						el.classList.add('active');
+					}
+				});
 
 			} catch (error) {
 				console.error('Error handling feature click:', error);
@@ -895,7 +721,8 @@
 				map.easeTo({
 					center: coordinates,
 					//zoom: zoomThreshold - 2,
-					offset: [0, offsetY],
+					//offset: [0, offsetY],
+					offset: [0, 0],
 					essential: true
 				});
 
@@ -965,7 +792,7 @@
 			}
 		}
 
-		const filterLocation = (category) => {
+		const filterLocation = (category = currentActiveCategory) => {
 			if (!locationData) return;
 
 			const filteredFeatures = category === 'all'
@@ -983,6 +810,8 @@
 			currentActiveCategory = category;
 
 			updatePopup(filteredFeatures);
+
+			toggleFilterButton(false)
 		};
 
 		// Add attribution

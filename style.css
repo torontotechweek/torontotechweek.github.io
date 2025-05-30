@@ -128,11 +128,12 @@ body {
 #popup-container {
     position: absolute;
     top: 100px;
-    left: 20px;
+    left: 0;
+    right: 0;
     bottom: 10px;
-    width: 290px;
     height: auto;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .popup-content {
@@ -148,23 +149,29 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
     align-items: flex-start;
-    cursor: pointer;
     transition: background-color 0.2s ease;
-    padding: 20px 0px;
-}
-
-.popup-flex-container {
     border-bottom: 1px solid hsla(227, 89%, 90%, 0.2);
+    padding: 20px;
 }
 
 .popup-flex-container:last-child {
     border-bottom: none;
 }
 
-.popup-flex-container:hover {
-    background-color: hsl(180, 35%, 10%);
+.popup-flex-container.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid hsl(227, 89%, 90%);
+    z-index: 100;
 }
 
 .popup-img-container {
@@ -215,11 +222,6 @@ body {
     color: hsl(238, 100%, 95%);
 }
 
-.popup-time-icon {
-    text-align: center;
-    width: 16px;
-}
-
 .popup-address-container {
     display: flex;
     align-items: center;
@@ -228,17 +230,37 @@ body {
     color: hsl(238, 100%, 95%);
 }
 
-.popup-location-icon {
-    text-align: center;
-    width: 16px;
-}
-
 .popup-text-container {
     flex: 1;
 }
 
-.popup-title {
+.title-container {
     margin-bottom: 8px;
+}
+
+.title-container * {
+  display: inline;
+  vertical-align: baseline;
+}
+
+.popup-map-icon {
+    position: relative;
+    font-size: 14px;
+    margin-right: 10px;
+    top: -2px;
+    cursor: pointer;
+}
+
+.popup-map-icon:hover {
+    color: hsl(227, 89%, 80%);
+}
+
+.popup-title {
+    cursor: pointer;
+}
+
+.popup-title:hover {
+    color: hsl(227, 89%, 80%);
 }
 
 .popup-description {
@@ -247,6 +269,25 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.popup-filter-button {
+	position: absolute;
+	top: 100px;
+	right: 10px;
+    color: hsl(180, 35%, 5%);
+    background-color: hsla(227, 89%, 90%, 0.8);
+	font-size: 10px;
+    font-weight: 600;
+    padding: 2px 6px;
+	border-radius: 4px;
+	cursor: pointer;
+	user-select: none;
+	z-index: 10;
+}
+
+.popup-filter-button:hover {
+	background-color: hsl(227, 89%, 80%);
 }
 
 .maplibregl-ctrl-bottom-right * {
