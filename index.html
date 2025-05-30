@@ -115,7 +115,7 @@
 			// Add neighborhood centroids
 			map.addSource('toronto_neighborhoods_centroids', {
 				'type': 'geojson',
-				'data': 'data/toronto_neighborhoods_centroids.geojson'
+				'data': 'https://torontotechweek.github.io/data/toronto_neighborhoods_centroids.geojson'
 			});
 
 			// Add event source
@@ -168,12 +168,7 @@
 				'type': 'fill-extrusion',
 				'paint': {
 					'fill-extrusion-color': 'hsl(280, 10%, 40%)',
-					'fill-extrusion-height': [
-						'case',
-						['!=', ['get', 'max_height'], null], ['get', 'max_height'],
-						['!=', ['get', 'avg_height'], null], ['get', 'avg_height'],
-						10
-					],
+					'fill-extrusion-height': ['coalesce', ['get', 'height'], 0],
 					'fill-extrusion-base': 0,
 					'fill-extrusion-opacity': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, 0.7, 17, 0.7, 18, 0]
 				},
