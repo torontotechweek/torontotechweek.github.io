@@ -92,6 +92,7 @@ body {
     width: 80px;
     height: auto;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .info-feature h1 {
@@ -101,6 +102,11 @@ body {
     line-height: 120%;
     letter-spacing: -1%;
     opacity: 40%;
+}
+
+.info-feature h1:hover {
+    color: hsl(227, 89%, 80%);
+    opacity: 100%;
 }
 
 .active-category h1 {
