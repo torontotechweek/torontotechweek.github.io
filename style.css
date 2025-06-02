@@ -257,11 +257,14 @@ body {
     vertical-align: baseline;
 }
 
+.popup-text-container {
+    flex: 1;
+}
+
 .popup-time-container {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 16px;
     font-size: 15px;
     font-weight: 500;
     line-height: 100%;
@@ -293,10 +296,21 @@ body {
     letter-spacing: -1%;
     color: hsl(238, 100%, 94%);
     opacity: 70%;
+    margin: 16px 0;
 }
 
-.popup-text-container {
-    flex: 1;
+.popup-link {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background-color: hsl(240, 89%, 94%);
+    color: hsl(180, 35%, 5%);
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.popup-link:hover {
+    background-color: hsl(227, 89%, 80%);
 }
 
 .popup-map-icon {
@@ -311,14 +325,6 @@ body {
     color: hsl(227, 89%, 80%);
 }
 
-.popup-title {
-    cursor: pointer;
-}
-
-.popup-title:hover {
-    color: hsl(227, 89%, 80%);
-}
-
 .popup-filter-button {
     position: absolute;
     top: 100px;
@@ -328,7 +334,7 @@ body {
     font-size: 9px;
     font-weight: 800;
     padding: 2px 6px;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     user-select: none;
     z-index: 10;
@@ -392,6 +398,6 @@ p {
         width: auto;
         margin: 0 10px 10px 10px; 
         max-width: calc(100% - 20px);
-        border-radius: 10px;
+        border-radius: 5px;
     }
 }

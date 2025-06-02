@@ -414,32 +414,32 @@
 
 			const children = Array.from(innerContainer.children);
 
-function scrollToSibling(forward = true) {
-    const containerRect = innerContainer.getBoundingClientRect();
-    const scrollLeft = innerContainer.scrollLeft;
+			function scrollToSibling(forward = true) {
+				const containerRect = innerContainer.getBoundingClientRect();
+				const scrollLeft = innerContainer.scrollLeft;
 
-    // Find the index of the first visible child
-    const currentIndex = children.findIndex(child => {
-        const rect = child.getBoundingClientRect();
-        return rect.left >= containerRect.left && rect.right <= containerRect.right;
-    });
+				// Find the index of the first visible child
+				const currentIndex = children.findIndex(child => {
+					const rect = child.getBoundingClientRect();
+					return rect.left >= containerRect.left && rect.right <= containerRect.right;
+				});
 
-    if (currentIndex === -1) return;
+				if (currentIndex === -1) return;
 
-    const targetIndex = forward
-        ? Math.min(currentIndex + 1, children.length - 1)
-        : Math.max(currentIndex - 1, 0);
+				const targetIndex = forward
+					? Math.min(currentIndex + 1, children.length - 1)
+					: Math.max(currentIndex - 1, 0);
 
-    const target = children[targetIndex];
-    innerContainer.scrollTo({
-        left: target.offsetLeft,
-        behavior: 'smooth'
-    });
-}
+				const target = children[targetIndex];
+				innerContainer.scrollTo({
+					left: target.offsetLeft,
+					behavior: 'smooth'
+				});
+			}
 
-// Hook up to buttons
-backButton.addEventListener('click', () => scrollToSibling(false));
-forwardButton.addEventListener('click', () => scrollToSibling(true));
+			// Hook up to buttons
+			backButton.addEventListener('click', () => scrollToSibling(false));
+			forwardButton.addEventListener('click', () => scrollToSibling(true));
 
 			infoBoxContainer.appendChild(innerContainer);
 			infoBox.appendChild(infoBoxContainer);
@@ -447,9 +447,7 @@ forwardButton.addEventListener('click', () => scrollToSibling(true));
 			// 4. Initialize at reset position
 			innerContainer.scrollLeft = 0;
 
-//			requestAnimationFrame(() => {
-				handleCenterFeature();
-//			});
+			handleCenterFeature();
 
 			setupFeatureTracking();
 
@@ -510,13 +508,6 @@ forwardButton.addEventListener('click', () => scrollToSibling(true));
 				titleContainer.appendChild(title);
 				textContainer.appendChild(titleContainer);
 
-				if (properties.url) {
-					title.addEventListener('click', (e) => {
-						e.stopPropagation(); // Prevent click from bubbling
-						window.open(properties.url, '_blank');
-					});
-				}
-
 				if (properties.start) {
 					const timeContainer = document.createElement('div');
 					timeContainer.className = 'popup-time-container';
@@ -571,6 +562,19 @@ forwardButton.addEventListener('click', () => scrollToSibling(true));
 					desc.className = 'popup-description';
 					desc.textContent = properties.description;
 					textContainer.appendChild(desc);
+				}
+
+				if (properties.url) {
+					const linkButton = document.createElement('div');
+					linkButton.className = 'popup-link';
+					linkButton.textContent = 'VIEW EVENT';
+
+					linkButton.addEventListener('click', (e) => {
+						e.stopPropagation();
+						window.open(properties.url, '_blank');
+					});
+					
+					textContainer.appendChild(linkButton);
 				}
 
 				flexContainer.appendChild(textContainer);
