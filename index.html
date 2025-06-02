@@ -400,6 +400,47 @@
 			const infoBoxContainer = document.createElement('div');
 			infoBoxContainer.className = 'info-box-container';
 
+            // Add forward/back buttons
+            const backButton = document.createElement('div');
+            backButton.id = 'info-box-back';
+            backButton.innerHTML = '<i class="fas fa-arrow-left"></i>';
+
+            const forwardButton = document.createElement('div');
+            forwardButton.id = 'info-box-forward';
+            forwardButton.innerHTML = '<i class="fas fa-arrow-right"></i>';
+
+            infoBox.appendChild(backButton);
+            infoBox.appendChild(forwardButton);
+
+			const children = Array.from(innerContainer.children);
+
+function scrollToSibling(forward = true) {
+    const containerRect = innerContainer.getBoundingClientRect();
+    const scrollLeft = innerContainer.scrollLeft;
+
+    // Find the index of the first visible child
+    const currentIndex = children.findIndex(child => {
+        const rect = child.getBoundingClientRect();
+        return rect.left >= containerRect.left && rect.right <= containerRect.right;
+    });
+
+    if (currentIndex === -1) return;
+
+    const targetIndex = forward
+        ? Math.min(currentIndex + 1, children.length - 1)
+        : Math.max(currentIndex - 1, 0);
+
+    const target = children[targetIndex];
+    innerContainer.scrollTo({
+        left: target.offsetLeft,
+        behavior: 'smooth'
+    });
+}
+
+// Hook up to buttons
+backButton.addEventListener('click', () => scrollToSibling(false));
+forwardButton.addEventListener('click', () => scrollToSibling(true));
+
 			infoBoxContainer.appendChild(innerContainer);
 			infoBox.appendChild(infoBoxContainer);
 
