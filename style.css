@@ -124,6 +124,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 12px;
 }
 
 #info-box-back:hover, #info-box-forward:hover {
@@ -185,7 +186,6 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 }
 
 .popup-flex-container {
@@ -194,7 +194,6 @@ body {
     gap: 48px;
     flex-direction: column;
     align-items: flex-start;
-    scroll-snap-align: start;
     transition: background-color 0.2s ease;
     border-bottom: 1px solid hsla(227, 89%, 90%, 0.2);
     padding: 32px;
