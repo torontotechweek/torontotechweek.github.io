@@ -112,7 +112,8 @@ body {
     width: 40px;
 }
 
-#info-box-back, #info-box-forward {
+#info-box-back,
+#info-box-forward {
     display: inline;
     width: 30px;
     height: 30px;
@@ -127,7 +128,8 @@ body {
     font-size: 12px;
 }
 
-#info-box-back:hover, #info-box-forward:hover {
+#info-box-back:hover,
+#info-box-forward:hover {
     color: hsl(227, 89%, 80%);
 }
 
@@ -186,6 +188,21 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: hsla(0, 0%, 100%, 0.4) transparent;
+}
+
+.popup-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.popup-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, 0.4);
+    border-radius: 4px;
 }
 
 .popup-flex-container {
@@ -235,8 +252,8 @@ body {
     padding: 20px;
     z-index: 10;
 }
-  
-  .popup-overlay i {
+
+.popup-overlay i {
     font-size: 24px;
     color: #fff;
     cursor: pointer;
@@ -395,7 +412,7 @@ p {
         right: 0;
         height: 250px;
         width: auto;
-        margin: 0 10px 10px 10px; 
+        margin: 0 10px 10px 10px;
         max-width: calc(100% - 20px);
         border-radius: 5px;
     }
