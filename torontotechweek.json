@@ -185,7 +185,7 @@
 				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 25 ]
 			},
 			"paint": {
-				"text-color": "hsl(0, 0%, 20%)",
+				"text-color": "hsl(0, 0%, 100%)",
 				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 1 ]
 			},
 			"minzoom": 15
@@ -208,7 +208,7 @@
 				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 30 ]
 			},
 			"paint": {
-				"text-color": "hsl(0, 0%, 20%)",
+				"text-color": "hsl(0, 0%, 100%)",
 				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 1 ]
 			},
 			"minzoom": 15
