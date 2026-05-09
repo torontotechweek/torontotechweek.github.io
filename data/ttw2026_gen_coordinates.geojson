@@ -1,0 +1,799 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/4eciyuzk",
+                "slug": "4eciyuzk",
+                "start": "2026-05-26T09:00:00.000-04:00",
+                "end": "2026-05-26T11:00:00.000-04:00",
+                "title": "Anchored In Innovation - Agentic AI, Data Architecture & Governance",
+                "description": "This ‘Anchored In Innovation Executive Session’ is designed for senior technology leaders responsible for enabling AI-driven transformation while maintaining operational stability, trust, and control.\nAs organizations move beyond experimentation into AI systems that can plan, decide, and act, technology executives sit at the center of a rapidly expanding mandate—balancing innovation velocity with security, governance, and enterprise risk.\nThis executive technology briefing session provides a practical, executive‑level forum to explore how Agentic AI, modern data architecture, and AI governance must evolve together to support scalable, defensible adoption.\nThis session is deliberately non‑vendor, non‑theoretical, and grounded in real operating environments.\nThis session is deliberately non vendor, non theoretical, and grounded in real operating environments.\nAgentic AI in Practice\r\n• What distinguishes Agentic AI from GenAI, RPA, and traditional automation\r\n• Where enterprises are realistically deploying agents today\r\n• Early signals that indicate whether an initiative can scale safely\nData Architecture as an Enabler (and Governor)\r\nTechnology executives will explore:\r\n• Why agentic systems are only as reliable as their underlying data architecture\r\n• Architectural controls for:\r\no Data quality and validation\r\no Lineage, traceability, and explainability\r\no Context management and grounding\r\n• Patterns that allow innovation without sacrificing operability or auditability\nEngineering Governance into the Stack\r\nMoving governance “left” into solution design, including:\r\n• Embedding guardrails into platforms rather than relying on downstream controls\r\n• Integrating AI governance with existing SDLC, platform, and risk practices\r\n• Defining clear ownership for agent behaviour, outcomes, and failures\r\n• Designing for human in the loop and human on the loop oversight where it matters\nSecurity, Resilience & Trust\r\n• How agentic AI expands the attack surface across data pipelines and orchestration layers\r\n• Risks introduced by tool calling agents and autonomous decision flows\r\n• Practical controls to preserve trust without slowing teams down\nFormat\r\n• Closed door, peer level executive session\r\n• Facilitated discussion with shared problem solving\r\n• Designed to surface patterns, pitfalls, and pragmatic solutions\r\nThe session prioritizes technology leader realities—budget pressure, constrained talent, legacy platforms, and rising expectations from boards and regulators.\nOutcomes for Technology Executives\r\nParticipants will leave with:\r\n• A clearer mental model of where Agentic AI belongs (and doesn’t)\r\n• Reference architecture patterns for enabling autonomous systems safely\r\n• Practical governance models aligned to engineering and platform teams\r\n• Better questions to ask vendors, architects, and delivery teams\r\n• Peer validated insights from leaders facing similar challenges\nWhy Anchoram Consulting / Harry Cheema\r\nAnchoram Consulting works with organizations operating in regulated, security sensitive, and mission critical environments, specializing in:\r\n• AI governance and responsible AI implementation\r\n• Data architecture and digital strategy\r\n• Cybersecurity and enterprise risk\r\n• Complex transformation under operational constraints\nHarpreet (Harry) Cheema brings hands on experience advising technology leaders where failure is not an option, translating governance and risk into architectural and operational decisions that teams can actually implement.\nThis session is particularly well suited for:\r\n• CIOs, CTOs, and CDOs\r\n• Heads of Engineering, Architecture, and Platforms\r\n• CISOs and technology risk leaders\r\n• Digital and transformation executives preparing for AI scale\nSpace is limited and there will be a waitlist for this highly anticipated event.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/uploads/qx/6f4f610a-40d4-4745-8835-6cff4914ee85.png",
+                "api_id": "https://luma.com/4eciyuzk",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/m0ppnz7n",
+                "slug": "m0ppnz7n",
+                "start": "2026-05-28T12:00:00.000-04:00",
+                "end": "2026-05-28T16:00:00.000-04:00",
+                "title": "Aurmada Presents: The Future of Fashion & Defence - In partnership with the Canada Startup Association. A live showcase and industry mixer.",
+                "description": "Aurmada presents The Future of Fashion & Defence, a live showcase and industry mixer exploring the convergence of advanced materials, wearable systems, and next-generation performance.\nHosted in partnership with the Canada Startup Association and in collaboration with TMU Fashion Zone, this event brings together founders, operators, investors, and ecosystem leaders working at the intersection of design, protection, and technology.\nThe evening will feature a live showcase of emerging products and prototypes, alongside a curated selection of early-stage startups building across adjacent domains. Select speakers will share perspectives on where the industry is heading, followed by an industry mixer designed for meaningful connections.\nThe event will also feature the official launch of Startup Growth Magazine, a new initiative by Canadian SME Magazine highlighting emerging companies and innovation across the ecosystem.\nWith participation from global delegates, including Expand North Star representatives visiting Canada as part of their national roadshow, and support from partners such as Founders Gap and GAIN (Global Angel Investor Network), this is a focused environment for discovery, collaboration, and early access to what’s coming next.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com",
+                "address": "The TMU Sandbox - 341 Yonge Street, 3rd Floor ",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/l2/4c09346d-3fbe-4551-98a9-80850cb6ce0f.jpg",
+                "api_id": "https://luma.com/m0ppnz7n",
+                "geo_address_info": {
+                    "type": "manual",
+                    "address": "The TMU Sandbox - 341 Yonge Street, 3rd Floor ",
+                    "mode": "shown"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3784,
+                    43.6566
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/oe7vdexz",
+                "slug": "oe7vdexz",
+                "start": "2026-05-27T18:00:00.000-04:00",
+                "end": "2026-05-27T21:00:00.000-04:00",
+                "title": "Agents After Hours - Lazer",
+                "description": "Join Lazer for an evening dedicated to the builders, engineers, and founders defining what frontier agents look like in 2026.\n\nThe Vibe: No panels. No pitch decks. Just live code, high-signal conversations, a premium open bar, and full catering.\n\nThe Schedule\n6:00 PM | 🥂 Doors Open & Mingling Arrive early for the open bar and light bites. This is your time to connect with the founders and engineers who are actually shipping.\n6:30 PM | 🏠 Inside the Studio (The Lazer Showcase) We’re opening the hood. We’ll showcase internal agentic workflows that help us ship 10x faster and real-world client projects where AI agents are solving high-stakes problems. We’ll also share our best practices for AI-augmented coding.\n7:15 PM | 💰 The Investor’s Lens (Fireside Chat) We’re sitting down with a guest investor to cut through the hype. We’ll discuss the future of venture capital in an agent-first world and which AI trends are signal vs. noise.\n7:45 PM | 🍽️ Dinner & Drinks Break A full catering spread and open bar. Refuel and network before the community demos begin.\n8:15 PM | 👀 Community Demo Stage The floor belongs to the makers. We’ve selected 3-4 builders from the Toronto community to show off the agentic tools they’re pushing to the limit.\n9:00 PM | 🍸 After Hours Stick around for cocktails and the kind of deep-dive conversations that only happen when the right people are in the same room.\nCall for Demos 🚀\n\nAre you building something agentic? We have 1-2 slots left for the Community Showcase. We want to see working code, not slides. If you want to demo your project to a room of 100+ AI builders and investors, fill out this google form to apply: https://forms.gle/hSYnFSVdnWe7DBJV8\n\nLocation: Downtown Toronto (TBA to confirmed guests)",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/ph/e5e284ee-9e2f-43c1-93b7-fc6a0dd20189.jpg",
+                "api_id": "https://luma.com/oe7vdexz",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/tpy7056f",
+                "slug": "tpy7056f",
+                "start": "2026-05-27T15:30:00.000-04:00",
+                "end": "2026-05-27T19:00:00.000-04:00",
+                "title": "Hackathon: ARI.Software & Claude Code",
+                "description": "ARI.Software is an AI-native, open-source, self-hosted hyper-personal workspace for managing tasks, docs, notes, contacts, knowledge, and workflows in one place. ARI's magic is that it also lets you build your own custom modules in minutes with no code, giving you a unified system so you can do your best work and live your best life.\nARI is deeply personal and flexible. Using AI tools like Claude Code you can quickly create modules tailored to your exact needs, whether that is a CRM, fitness tracker, shipment dashboard, financial manager, invoice generator, prompt library, voice notes tool, content planner, or something entirely unique. Every module is editable, remixable, and shareable, so your software can adapt to how you think and operate.\nWe're excited to invite you to the live ARI Hackathon on May 27 from 3:30 PM to 7:30 PM EST. This is your chance to build your own custom ARI module, collaborate with other builders, experiment with the platform, and bring your ideas to life. Whether you are a developer, founder, or simply curious about what's possible, you'll get hands-on experience creating something real.\nYou can build any module you want such as a personal financial manager, fitness coach, invoice generator, OpenClaw orchestrator, personal relationship manager, nutritional meal planner, health metrics dashboard, prompt library, voice notes tracker, content planner, brainstorming tool etc.\nWe'll be awarding $2,500 to the winning project! So come ready to build, learn fast, and ship something great!\n\nFREQUENTLY ASKED QUESTIONS:\n\nWhat is Toronto Tech Week?\nThe ARI.Software Hackathon is an official tech parter of Toronto Tech Week. Toronto Tech Week is a citywide celebration of the people building what's next. From May 26–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com.\n\nWhere is the venue?\nWe've secured a great venue downtown Toronto on King street west near Bathurst. Fast WiFi (1gbps mesh network), good music, freshly brewed on-site coffee, a selection of self-service teas, still and sparkling water on tap.\nWhat experience do I need? \n\nAny level is welcome, but experience with code-generating AI tools Claude Code is recommended. Non-devs can still be valuable on teams to help with planning, design, UI/UX etc.\n\nClaude Code is used to create ARI.Software modules and a paid Claude Code account is required. https://claude.com/download\n\nWhat is the prize?\n\nThe winning team will win $2,500!\nDo I need a team?\nYou can come solo or with a team (up to 3 people). If you arrive solo, we'll help match you with a team.\nWhat should I build?\n\nARI comes with dozens of productivity modules built in like task manager, knowledge manager, fitness tracker, trip planner etc. You can custom any new module which solves a real problem or adds clear value. It can be professional/fun/creative/unique.. as long as it is useful!\nWhat should I bring?\n\nA laptop, charger, and anything you need to code. Optional: headphones, snacks, and ideas you want to explore.\nCan I use AI tools and existing libraries?\n\nYes. AI tools, open-source libraries, and frameworks are allowed. Disclose any pre-built code.\nDo I need to finish a complete product?\nThe submission should be a working module.\nHow are projects judged?\n Based on usefulness, creativity, execution, integration with ARI, and design.\nWhat do I need to submit?\n\nSubmit a Github link with the code with a README file. A demo video is encouraged.\nFor rules, judging criteria and more visit: https://ari.software/hackathon\n\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/09/4fb760e8-1650-4f50-9e69-e9940ebc12cb.jpg",
+                "api_id": "https://luma.com/tpy7056f",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/gx8jrdjo",
+                "slug": "gx8jrdjo",
+                "start": "2026-05-27T13:00:00.000-04:00",
+                "end": "2026-05-27T16:00:00.000-04:00",
+                "title": "Investor Forum",
+                "description": "Investor Forum: Connecting Toronto’s Top Founders with Investors during Toronto Tech Week\nPlanned as part of Toronto Tech Week 2026, a weeklong citywide collection of events to connect and celebrate the builders. May 25 → May 29, 2026 | torontotechweek.com\nThe Investor Forum is a curated platform designed to foster powerful connections between forward-thinking founders and leading investors. Hosted between MaRS Investment Accelerator Fund (IAF) and YSpace, this exclusive forum offers an opportunity to explore potential partnerships and investment opportunities that drive growth and innovation within the startup ecosystem.\nKey Details\nApplication Deadline: May 14th at 5:00 PM EST\nEvent Date: May 27, 2025\n\nHow It Works for Founders:\nApply by May 14th\nReceive your personalized schedule by May 20\nJoin us in-person May 27 from 1:00 – 4:00 PM\nHow it Works for Investors:\nApply by May 14th\nJoin us in-person on May 27th for your 1-on-1s\n\nAdmission Policy\nParticipation in the Investor Forum is application-based. All founder must submit their forms by May 14, 2026 at 5:00 PM EST to be considered.\n👉 Please note:\nParticipating investors will review founder applications and select ventures based on interest and alignment. As this is a curated forum, not all applicants will be selected for 1-on-1 meetings.\n\nQuestions?\nIf you have additional questions, contact us at yspace@yorku.ca\n\nAbout the Hosts\nMaRS Investment Accelerator Fund (IAF) is a leading seed stage fund investing in high-potential IT, health and cleantech companies in Ontario. IAF has over a 20-year history of successfully providing innovative firms with the capital, mentorship, and networks needed to validate ideas and bring products to market. Its mission is to keep Ontario’s talent and technology local while helping its companies go global.\nYSpace is York University’s pan-university entrepreneurship and innovation hub supporting startups and entrepreneurs from a variety of sectors and communities. Our programming spans across scaling innovative technologies through customer and investor capital to scaling agri-food businesses into mass retail to diversity-focused initiatives like **ELLA powered by Desjardins** for women-led businesses and Black Entrepreneurship Alliance (BEA) for Black-led businesses. Additionally with our Start-Up Visa program, we are building a robust ecosystem, driving positive change and empowering entrepreneurs to shape the future. We are also home to two physical hubs in the City of Markham and the Town of Georgina.\nTD Innovation Partners (TDIP) is a division of The Toronto-Dominion Bank. TDIP is a full-service team providing bespoke, high-touch banking and financing solutions in support of Technology and innovation companies at all stages. TDIP offers a broad suite of services to address the unique challenges and opportunities faced by technology entrepreneurs from banking and lending products to principal investments and private banking solutions.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech.",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/5x/75ae207d-a5d5-4b0d-aac2-f5609870f5ae.png",
+                "api_id": "https://luma.com/gx8jrdjo",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/1eact5rt",
+                "slug": "1eact5rt",
+                "start": "2026-05-28T11:30:00.000-04:00",
+                "end": "2026-05-28T13:30:00.000-04:00",
+                "title": "Bring One Thing, Automate It With Claude — A Live Hands-On Hour",
+                "description": "About the event\nAI tools have changed how work gets done — but most people are still using Claude like a smarter search bar. What does it look like to actually get leverage from it?\nThis interactive session brings together professionals, builders, and the AI-curious to learn how to use Claude effectively in real work. This is not a product pitch or a passive demo — it is a hands-on, task-driven hour focused on automating something you actually do.\nShow and Share\nThe session opens with a live walkthrough of the different ways to use Claude — conversational chat, projects, and Claude Code — and where each one earns its keep in real workflows.\nLearn by Doing\nParticipants will then work on their own task, with guidance, to explore:\nHow to break a real task into a prompt Claude can act on\nWhen to use chat vs. projects vs. agentic modes\nPrompting habits that separate \"neat trick\" from \"saves me three hours a week\"\nWhere Claude falls short and how to design around its limits\nEach participant brings one task from their real work — a recurring email, a messy spreadsheet, a research summary, a meeting prep ritual, anything you'd rather not do again — and automates it live with us in the room.\nThe session will conclude with a brief recap of patterns that worked across the group, followed by open networking for those who want to continue the conversation.\nWhat to bring: A laptop and one task you do every week that you wish you didn't.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com.",
+                "address": "Online Event",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/uploads/32/ec872488-178f-4348-ab7d-3e415831775d.png",
+                "api_id": "https://luma.com/1eact5rt",
+                "geo_address_info": {},
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/qj2syu93",
+                "slug": "qj2syu93",
+                "start": "2026-05-29T10:30:00.000-04:00",
+                "end": "2026-05-29T11:30:00.000-04:00",
+                "title": "Beyond Automation: How AI Reveals What Customers Really Want",
+                "description": "AI is changing how businesses understand their customers. Yet most companies are still missing valuable signals hidden in everyday interactions. In this online webinar, we will explore how conversations, searches, and customer questions contain insights that businesses often overlook. Attendees will learn how modern AI tools can help capture and analyze these signals to better understand what customers actually want. The session will explain key concepts behind AI-driven business intelligence, how customer conversations can become useful data, and why understanding these signals is becoming essential for growth. This webinar is designed for business owners, operators, and anyone interested in learning how AI is shaping the future of customer insight and decision making.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com",
+                "address": "Online Event",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/ha/5c916340-4a34-4065-be33-125a97768596.png",
+                "api_id": "https://luma.com/qj2syu93",
+                "geo_address_info": {},
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/z2kal958",
+                "slug": "z2kal958",
+                "start": "2026-05-25T09:00:00.000-04:00",
+                "end": "2026-05-25T12:30:00.000-04:00",
+                "title": "Market Mindfulness and Finliti's Game of Gains",
+                "description": "Market Mindfulness is a beginner-friendly board game about investing, designed to make the stock market fun, social, and easy to understand.\nAt the Finliti Game of Gains Fintech Tournament, players step into the role of investors and learn how emotions like fear, confidence and regret can shape financial decisions.\nCo-hosted by Jennifer Schell, fintech founder of Finliti and Highline Beta, this interactive event blends financial literacy, strategy, and friendly competition. Inspired by poker, blackjack, and Dungeons & Dragons, the game takes players through bull markets, downturns and behavioral traps that mirror real investing scenarios.\nWhether you're a founder, builder, student, or simply curious about the markets, this is a welcoming chance to learn, play, and compete for prizes in an unforgettable experience.\nAbout Highline Beta:\nHighline Beta is a venture studio and venture capital firm working with corporate partners and family offices in the United States, Canada and globally to build and fund new ventures and launch venture studios. We validate unsolved problems, access untapped markets and leverage under-utilized assets, to drive growth, new revenue streams and innovation.\nAbout Finliti:\nFinliti builds behavioural finance software for the investment industry — helping advisors and investors better understand money decisions, risk, and personality. Our Game of Gains brings that mission to life through a fun investing game, first played on the floor of the New York Stock Exchange.\nAbout Toronto Tech Week:\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 26–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com",
+                "address": "372 Bay Street, Suite 200, Toronto, ON M5H 2W9",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/ow/1f310faa-6fd4-4153-9ac2-8ac1f05ea93d.png",
+                "api_id": "https://luma.com/z2kal958",
+                "geo_address_info": {
+                    "type": "manual",
+                    "address": "372 Bay Street, Suite 200, Toronto, ON M5H 2W9",
+                    "mode": "shown"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6501
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/yfabmbvp",
+                "slug": "yfabmbvp",
+                "start": "2026-05-27T11:00:00.000-04:00",
+                "end": "2026-05-27T17:00:00.000-04:00",
+                "title": "Gatherly Venture Expo Q2 2026",
+                "description": "The Ultimate Founder-Investor Networking Experience!\n🛑 STOP! 🛑\nNew to Gatherly?\n👇👇👇\n🎥 Watch the Q1 Expo Highlights [60 secs]\n☝️☝️☝️\nThe Venture Expo is hosted in an immersive multi-floor venue that’s built for exploration and high-signal networking.\nFounders showcase their companies in expo booths, while the audience explores and engages-at their own pace.\nMost of the agenda is intentionally unstructured.\nWhat's Gatherly?\nGatherly is the perfect \"home\" for online communities.\nDigital 'venues' are 100% custom, and support deeper belonging and culture than static video calls.\nThe Gatherly Venture Expo is a flagship event series we created to support a global startup ecosystem. 🌎\n\nWhy the Gatherly Venture Expo Is Different\nLife-like digital venue with multiple floors and spaces\nOrganic networking and movement\nAsynchronous interactions\nOnce you click the join link:\nMove around by clicking on the mini-map.\nApproach others to instantly join chats\nExplore different levels using the Elevators\nThe experience feels closer to an in-person convention, without the limitations.\n\nAudience Composition: 400+ (continuous flow)\nFounders (40%) | Investors (30%) | Industry Operators (19%) | Service Providers (11%)\nToronto Tech Week Partners with us for Q2 2026!\nToronto Tech Week is a citywide celebration of the people building what’s next. Learn more at Torontotechweek.com.\n\n\nGatherly Venture Expo — Live Agenda\nExpo Hall is open throughout\n11:00 AM — Doors Open\n11:10 AM — Opening Remarks\n11:00 AM – 4:00 PM — Expo Hall Open & Networking\nSpotlight Sessions — 11:30AM — 3:30PM\n10-minute fireside conversations, every 30 minutes (X:00, X:30)\nEach followed by 20 minutes of open exploration\n\n11:30 AM - Jason Butcher, MD @ Orbit Capital\n12:00 PM - Brian Lee, MD @ Gildre\n12:30 PM - Daniel Warner, CEO @ ChaiTech\n1:00 PM - Kris Oei, CIO @ AskScout\n1:30 PM - Sarah Romanko, Venture Capital @ Geek Ventures\n2:00 PM - Quan Nguyen, Angel Investor and Principle @ NTiP\n2:30 PM - Pascale Archambault, VP Investments @ Inovia VC\n3:00 PM - Katheryn Vatt, CEO @ Moatly\n3:30 PM - Mona Shadid, Associate @ Blaney McMurtry LLP\n4:00 PM - JJ Richa, MD @ Pismo Ventures\n4:30 PM — Closing Remarks\nVenue remains open for ongoing exploration\n\nFrequently Asked Questions\nDo I need to download anything? No. Everything runs in your browser. We recommend Google Chrome with your camera and microphone enabled.\nDo I have to follow a set schedule? Not at all. The Expo Hall is open all day and there's no required path. Spotlight Sessions broadcast to every floor, so you won't miss them wherever you are.\nIs this just another Zoom call? No. Gatherly is an immersive digital venue — you move between spaces, drop into conversations, and explore freely. It's built to feel like an in-person event.\n\nThank you to our Q2 Expo Partners!\nToronto Tech Week\nInovia VC\nOrbit Capital\nGeek Ventures\nNguyen Tarbet LLC\nAskScout.ai\nThe Gildre Network\nMoatly.ai\nBlaney McMurtry LLP\nChaiTech Accelerator\nPismo Ventures\nGatherly Ecosystem Partners\nLiberty Ventures\nPROLINK\n5 to 9 Society\nFounders Who Give a F*ck\nEntrepreneurship Development Association (EDA)\n\nPartner with Gatherly!\nPartnership Opportunities are all spoken for for the Q2 Expo, but reach out to us directly to learn more about upcoming opportunities!\n\n👇\nadib@gatherly.io",
+                "address": "Online Event",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/a5/f2330654-a5ac-428e-9439-2a712ccb97db.png",
+                "api_id": "https://luma.com/yfabmbvp",
+                "geo_address_info": {},
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/upbustl7",
+                "slug": "upbustl7",
+                "start": "2026-05-28T10:00:00.000-04:00",
+                "end": "2026-05-28T12:00:00.000-04:00",
+                "title": "AI in Job Search: What’s Working in 2026",
+                "description": "About the event\nJob search has changed dramatically with the rise of AI tools—but what actually works in practice?\nThis interactive session brings together job seekers, builders, and professionals to share real-world experiences using AI in the job search process. This is not a job fair or recruiting event—instead, it is a collaborative, discussion-driven session focused on learning from each other.\nShow and Share\nParticipants are invited to share how they are leveraging AI in their job search—tools used, strategies that worked, and challenges faced.\nLearn with Others\nParticipants will work in small groups to explore:\nHow AI is being used for resumes, applications, and outreach\nWhat strategies are leading to interviews and offers\nWhere AI tools fall short or create new challenges\nKey pain points in today’s job search experience\nEach group will share insights with the broader audience, helping us collectively map what’s effective—and what’s still missing.\nThe session will conclude with a brief overview of emerging approaches and tools to address these challenges, followed by open networking for those who want to continue the conversation.\nThis event is designed to be participatory, practical, and grounded in real experiences. Whether you’re actively job searching, exploring AI tools, or building in this space, you’ll leave with actionable insights and new connections.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com.",
+                "address": "Online Event",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/hg/5cd952ab-9aa4-4e19-a6d3-68c8da21a179.png",
+                "api_id": "https://luma.com/upbustl7",
+                "geo_address_info": {},
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4002,
+                    43.6466
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/ss16uemv",
+                "slug": "ss16uemv",
+                "start": "2026-05-26T15:00:00.000-04:00",
+                "end": "2026-05-26T18:00:00.000-04:00",
+                "title": "Market Mindfulness and Finliti's Game of Gains",
+                "description": "Market Mindfulness is a beginner-friendly board game about investing, designed to make the stock market fun, social, and easy to understand.\nAt the Finliti Game of Gains Fintech Tournament, players step into the role of investors and learn how emotions like fear, confidence, regret, and ambition can shape financial decisions.\nSponsored by NEXT AI and hosted by Jennifer Schell, fintech founder of Finliti, this interactive event blends financial literacy, strategy, behavioural finance, and friendly competition. Inspired by poker, blackjack, and Dungeons & Dragons, the game takes players through bull markets, downturns, surprise events, and behavioural traps that mirror real investing scenarios.\nWhether you are a founder, builder, student, finance professional, or simply curious about the markets, this is a welcoming chance to learn, play, compete for prizes, and experience investing in a whole new way.\nAbout NEXT AI\nNEXT AI is a world-class accelerator for AI-enabled startups, helping founders build and scale ambitious ventures through mentorship, education, technical support, and access to an exceptional entrepreneurial network.\nAbout Finliti\nFinliti builds behavioural finance software for the investment industry, helping advisors and investors better understand money decisions, risk, and personality. Its Game of Gains brings that mission to life through a fun investing game, first played on the floor of the New York Stock Exchange.\nAbout Toronto Tech Week:\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 26–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/uploads/og/5023df0f-c913-4072-80c5-bfbe6e66ee13.png",
+                "api_id": "https://luma.com/ss16uemv",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/8ft57ipn",
+                "slug": "8ft57ipn",
+                "start": "2026-05-27T18:00:00.000-04:00",
+                "end": "2026-05-27T20:00:00.000-04:00",
+                "title": "PersonyFi Demo Night: Your Money Has a Story. Does Your App Know It?",
+                "description": "You've got a solid income, multiple accounts, RSUs on the way, a mortgage, a lease. On paper, you're doing well. But ask your finance app \"can I afford to buy a house?\" and it stares blankly back at you because it only knows your transactions.\nThe rules of your financial life aren't in your bank feed. They're in PDFs. Contracts. Grant letters. Documents no app has ever been able to read, until now.\nPersonyFi fuses structured bank data with unstructured financial documents to build a complete financial picture. Join us for an evening demo during Toronto Tech Week.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 26–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com.",
+                "address": "Online Event",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/xf/521a6c5d-b3df-402a-a3fa-9a54c662430a.png",
+                "api_id": "https://luma.com/8ft57ipn",
+                "geo_address_info": {},
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/8z5e24xg",
+                "slug": "8z5e24xg",
+                "start": "2026-05-28T15:00:00.000-04:00",
+                "end": "2026-05-28T16:30:00.000-04:00",
+                "title": "Zero-to-One Growth Playbook for Early Stage B2B Startups",
+                "description": "You’ve built an MVP, set up an initial “coming soon” website, and maybe have a few design partners. Now what?\nJoin Mucker Capital's resident growth advisor Tony Yang as he opens up his playbooks and shares learnings on how scrappy B2B startups are scaling their go-to-market growth today. You’ll learn tips on how to define your ICP, run customer discovery calls, start an outbound sales motion, and implement the beginnings of a GTM strategy that actually works.\nNote: This session is designed for startup founders. Space is limited, and preference will be given to early-stage founders. Final location details will be shared upon approval.\nSponsored by Davies Ward Phillips & Vineberg LLP.\nBy submitting this form, you agree to receive communications from Mucker and sponsors.\nBy registering for and attending this event, you consent to potentially being photographed or recorded during the session. These materials may be used by Mucker Capital and its partners for marketing and promotional purposes.\nIf you do not consent to being photographed or recorded, please withdraw your RSVP prior to the event.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com.",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/re/d37f0e26-5274-49b7-af01-9cb17c211095.png",
+                "api_id": "https://luma.com/8z5e24xg",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/53j2gbab",
+                "slug": "53j2gbab",
+                "start": "2026-05-28T13:30:00.000-04:00",
+                "end": "2026-05-28T17:00:00.000-04:00",
+                "title": "[In Person] AI Gatherings @ Toronto Tech Week",
+                "description": "AI Gatherings brings together top AI startups and developers, connecting them with the best of Google AI for in-person and livestream experiences. We’re creating an AI-first community of the best minds to explore the cutting edge of AI.\nThrough these events, you will:\nGain insights on the latest in AI from Google and other experts\nNetwork with top AI Startups and Developers\nBe inspired by AI success stories\nDiscover how to build with AI for your products\nContribute to the future of AI\nImportant: Due to limited in-person capacity, priority registration is reserved for technical founders and developers, while all other guests are encouraged to register for the livestream event.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech  torontotechweek.com.",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/gallery-images/ui/01c9cb66-d401-4867-beb1-a105654060c5.png",
+                "api_id": "https://luma.com/53j2gbab",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/gi9pffc5",
+                "slug": "gi9pffc5",
+                "start": "2026-05-26T13:00:00.000-04:00",
+                "end": "2026-05-26T15:00:00.000-04:00",
+                "title": "Anchored in Innovation: Australia Canada Case Study - Catalyzing Clinical AI",
+                "description": "What happens when frontline clinical reality meets AI innovation, national leadership, and global collaboration?\nAnchoram Canada is pleased to host an executive roundtable featuring Dr. Simon Kos, Global Chief Medical Officer at Heidi Health, and Dr. Rashaad Bhyat, Senior Clinical Leader at Canada Health Infoway, for a focused discussion on the future of AI in healthcare.\nBringing together perspectives from Australia and Canada, this session will explore how leading global practices can be translated into scalable impact within the Canadian healthcare system.\nDr. Kos shares the perspective of a physician leader who has practiced critical care medicine in Australia and led global digital health initiatives at Microsoft and other international organizations over the past two decades. \nDr. Bhyat offers a national view, advancing digital health adoption across Canada and shaping interoperability, clinician engagement, and system-wide innovation.\nAmong our discussion topics, we’ll explore:\nHow AI is moving from pilot to real-world clinical impact\nWhat it takes to drive clinician adoption at scale\nPatient impact of AI\nThe role of interoperability, data quality, and workflow integration\nHow global lessons from Australia can be applied in Canada\nDesigned for senior clinical, technology and policy leaders, this executive roundtable focuses on moving beyond experimentation to measurable transformation.\nSpace is limited and there will be a waitlist for this highly anticipated event.\nExpect a dynamic exchange of practical insights and peer perspectives, centered on one key question:\nHow do we turn global AI innovation into everyday clinical reality for clinicians and patients in Canada?\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/uploads/o1/ebbe23ba-9565-4929-b149-a5f8d9fa5a90.png",
+                "api_id": "https://luma.com/gi9pffc5",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/8fgvewf1",
+                "slug": "8fgvewf1",
+                "start": "2026-05-26T12:00:00.000-04:00",
+                "end": "2026-05-26T13:00:00.000-04:00",
+                "title": "The Burnout Invoice: What It's Costing Your Tech Team And the Tools to Fix It",
+                "description": "The tech industry moves fast. Deadlines don't wait, sprints don't slow down, and somewhere between the Slack notifications and the all-hands meetings, your team is running on fumes.\nBut here's what most companies aren't tracking: burnout isn't just a wellness problem. It's a performance problem, a retention problem, and a leadership problem and it's showing up on your bottom line whether you're measuring it or not.\nThe Burnout Invoice is a free, virtual webinar designed specifically for tech leaders, HR professionals, and people teams who want to understand what burnout is actually costing their organizations and walk away with real tools to do something about it.\nThis isn't a lecture about self-care. This is a practical, honest conversation about what's happening inside your teams, why high-performing people are burning out fastest, and what leaders can do right now to change the trajectory.\nWhat You'll Learn:\nIn 60 focused minutes, you'll gain:\n— A clear, clinical understanding of burnout: what it is, what it isn't, and why stress management advice alone isn't enough\n— The hidden organizational costs of burnout including lost productivity, increased absenteeism, and high turnover — with context for what that means in the tech sector specifically\n— How to spot burnout early in your team before it becomes a resignation letter or a breakdown\n— Practical, evidence-based tools you can implement as a leader or HR professional without overhauling your entire culture overnight\n— A downloadable resource to take back to your team, your manager, or your next planning cycle\n\nWho This Is For:\nThis webinar is built for people who carry responsibility for others at work:\n— Tech managers and team leads who want to support their people without burning out themselves\n— HR professionals and people operations teams navigating mental health in high-pressure environments\n— Founders and executives who are starting to notice the cracks in their team's performance and culture\n— Anyone in the tech industry who suspects burnout is closer than they'd like to admit\n\nWhy This Conversation Matters Now:\nBurnout in the tech sector is not new  but it is getting worse. The rise of remote work, always-on communication culture, layoffs, and relentless pressure to deliver have created a perfect storm for psychological exhaustion. And yet most organizations are still responding with ping pong tables and pizza Fridays.\nThe research is clear: burnout is a systemic issue, not a personal failing. It requires a systemic response. This webinar gives you the language, the data, and the tools to start building one.\n\nAbout Your Host:\nThis webinar is hosted by Grey Couch Counselling, (www.greycouchcounselling.com) a practice dedicated to supporting the mental health and psychological wellbeing of individuals navigating high-pressure professional environments. Our work sits at the intersection of clinical expertise and real-world relevance  because good mental health support shouldn't feel disconnected from the life you're actually living.\nWe work with individuals, teams, and organizations to build sustainable approaches to performance, stress, and mental health at work.\n\nAlongside Toronto Tech Week: \n\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com.\n\nWhat You'll Walk Away With:\n-A framework for understanding and identifying burnout in yourself and your team \n\n- Practical tools you can use immediately, no lengthy rollout required \n\n-A downloadable resource guide to reference after the session \n\n- Clarity on when burnout requires professional support and how to have that conversation\n\n- An open Q&A to get your specific questions answered live\n\nEvent Details:\nDate: May 25 \nTime: 12- 1 pm \nFormat: Virtual — Zoom link provided upon registration  Investment: Your lunch hour \nIncludes live Q&A\n\nReserve Your Spot:\nSpace is limited to ensure an intimate, high-quality experience. Register now to secure your place and the webinar link directly to your inbox.\n\nHave questions about the webinar or interested in bringing this conversation to your organization? Contact us at hello@greycouchcounselling.com to discuss corporate sessions, team workshops, and speaking engagements.",
+                "address": "Online Event",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/y6/c3e53994-137d-49ea-af7e-82ad9a65139e.png",
+                "api_id": "https://luma.com/8fgvewf1",
+                "geo_address_info": {},
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/0r3ggn9i",
+                "slug": "0r3ggn9i",
+                "start": "2026-05-29T10:00:00.000-04:00",
+                "end": "2026-05-29T12:30:00.000-04:00",
+                "title": "Developers At Tech Week TO",
+                "description": "Attention Devs & CTOs\nStop watching and start building. Join our BUILD with AI hands-on session led by an official Google Developer Expert Tanmay Bakshi.\n\nTalk Title: From First Principles to Agentic AI: How Language Models Learn and Generalize\nJoin us for a hands-on workshop exploring the machine learning fundamentals behind modern agentic AI applications. We’ll start from first principles: how models learn from data, how training changes behavior, and why generalization matters when building systems that need to reason, adapt, and act reliably. Through a practical language-model experiment using JAX and Google Cloud TPUs, attendees will see how different model sizes respond to the same learning task and how well they transfer that learning to examples they have never seen before. By the end, participants will have a grounded understanding of the core ML ideas that underpin today’s AI-powered and agentic applications\nTo participate, you must bring your own laptop and power cable. The activities are intended for laptops and cannot be completed on a tablet or phone.\n\nAgenda:\nRegistration and Breakfast Bites - 10:00 - 11:00AM\nWorkshop - 11:00- 12:30PM\n“Toronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com”",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/uploads/tk/1f344813-4232-4d78-b17c-ec2a910a8fd8.png",
+                "api_id": "https://luma.com/0r3ggn9i",
+                "geo_address_info": {},
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3752,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/84i5p7ys",
+                "slug": "84i5p7ys",
+                "start": "2026-05-26T15:00:00.000-04:00",
+                "end": "2026-05-26T17:30:00.000-04:00",
+                "title": "The New Foundations for High Performing Teams.",
+                "description": "OVERVIEW\nThe playbook for high-performing teams has changed. While change is a constant for team leads across departments and industries - the pace of change has made it harder than ever before to establish strong processes, practices and systems of cooperation.\nMost of us are adapting in real time. And most of us are doing it without a map.\nSo what does high performance actually look like right now? What still works, and what needs to be rethought? What will a great team look like six months from now?\nThat's what this evening is about.\nWe've designed an intentional evening, balanced between inspirational talks and intimate, industry specific breakout rooms to dive into these topics and establish some creative consensus. \n\nFor Our Keynote - we're pleased to welcome:\nEmile Studham, founder of Cooperation Works, author of the forthcoming book The Cooperation Code. Emile has lead cultural development for The Toronto Blue Jays, BMO, Hydro One and dozens of startups. Following Emile, we'll be inviting a curated panel of Team Leads and AI practitioners picks up the threads Emile will setup for us all. \n\nFor Our Panel (more panelists to be announced soon)\n\nWe're going to have a down to earth conversation to capture a pulse about the most challenging collaboration issues & opportunities that various leaders within different industries are seeing & feeling at the moment.\n\nModerator: \nJason Goodman | Product & AI Consultant for Brave Teams.\n\nPanelists:\nMarkus Grupp | Senior Director of Product Design & UX Research at Loblaws Digital \n\nHolly Heglin | Partner, AI & Innovation at Jarvis Consulting Group\n\nThe Breakout Rooms\nYou'll be able to join one of 10 industry-specific breakout rooms — each consisting of five people and a dedicated facilitator.\nAfter the event, you'll receive a customized report with the key takeaways and actionable recommendations from your session.\nFood and drinks are on us throughout.\n\nSCHEDULE\n3:00 PM  — Doors open and refreshments & food served.\n3:30 PM  — Keynote — Emile Studham, Cooperation Works \n3:45 PM  — Panel discussion \n4:15 PM   — Breakout sessions (you pick your room) \n4:55 PM  — Final thoughts + synthesis \n5:00 PM  — Networking & refreshments cont.\n\nWHO SHOULD ATTEND\nThis one's for you if you're a Team Lead, people leader, or Founder who's actively thinking about how to build and sustain a high-performing team right now — not in theory, but in practice.\nTeam Leads across product, engineering, operations, marketing, and HR\nFounders rethinking how their teams work in an AI-accelerated environment\nPeople leaders and department heads who know culture is the work, not a side project\nAttendance will be capped at around 60 people.\n\nABOUT VEN GARDEN\nVen Garden is a Fractional Venture Studio built on a new model of cooperation. Led by Jason Goodman, Fractional Product & AI Lead at Goodman & Co. (www.goodmanandcompany.io) Ven Garden brings together fractional talent who invest their expertise in exchange for revenue share — a different kind of alignment between builders and the ventures they grow together.\nVen Garden's first venture is Aretek (www.aretek.ca) — the innovation layer for the construction industry.\nvengarden.com\n\nABOUT VISION TALENT\nVision Talent is a full-service tech talent partner for companies at every stage — from building junior pipelines through hire-train-deploy to finding the right senior leaders when it counts. Their whole approach is built around one thing: getting the right people in place so you can actually focus on the work.\nvisiontalent.io\n\nABOUT TORONTO TECH WEEK\nToronto Tech Week is a citywide celebration of the people building what's next. From May 25 to 29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people across the Canadian tech ecosystem.\ntorontotechweek.com",
+                "address": "First Canadian Place, 100 King Street West, Suite 4730, Toronto, Ontario M5X 1A9",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/xy/2e09978b-69b1-4723-a09a-e8931ce632c7.png",
+                "api_id": "https://luma.com/84i5p7ys",
+                "geo_address_info": {
+                    "type": "manual",
+                    "address": "First Canadian Place, 100 King Street West, Suite 4730, Toronto, Ontario M5X 1A9",
+                    "mode": "shown"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/k6maldvf",
+                "slug": "k6maldvf",
+                "start": "2026-05-26T17:30:00.000-04:00",
+                "end": "2026-05-26T20:30:00.000-04:00",
+                "title": "SWB Employer Slow-Dating Night",
+                "description": "🌟 Looking for a Job? Stop Scrolling.\nGet direct access to our hiring partners through this private career fair! You must apply here to get in: https://scalewithoutborders.com/for-newcomers/\nIn partnership with Toronto Tech Week, this private event brings together top talent, hiring leaders, and community in one high-impact space.\nWhether you’re brand new to SWB or already part of the community, this is your chance to tap into the full power of your membership — and meet hiring leaders who are actively looking for skilled immigrant tech talent.\nThis evening is designed around connection, real job opportunities, and Q/A with actively hiring employers.  confidence, and real connection.\n\n🤝 Employer Slow Dating\nYou’ll get an energizing introduction to everything your SWB membership unlocks — from high-value resources to insider opportunities and a network built to help you thrive in tech.\nThen comes the highlight: Employer Slow Dating — our signature, small-group career-building experience.\nThink of it as a curated, more intentional version of a career fair — where recruiters are there to genuinely connect with you.\nYou’ll have the opportunity to engage directly with talent leaders and gain insights into hiring needs across:\nSoftware Engineering • Data • Business Analytics • Cybersecurity • Cloud • DevOps • Product • QA • AI/ML • IT, and more\n💡 Important: Each roundtable is like a mini interview. Come prepared to introduce yourself, speak to your experience, and ask thoughtful questions — this is your chance to make a strong, lasting impression.\n\n This is a members only event. To become a member, you\n🔒 Members-Only Experience\nThis is a members-only event.\nNot a member yet? You can apply and access a free 30-day trial here:\n👉 https://scalewithoutborders.com/for-newcomers/\n\n✨ Close the Evening\nWe’ll wrap up with open networking — a chance to reconnect, exchange LinkedIns, speak with the SWB team, and continue building meaningful relationships.\n\n🚀 Why You Should Attend\nBecause opportunity grows when people connect.\nBecause your next role — or your next hire — might be sitting across the table.\nBecause this community was built to help you rise.\n\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com",
+                "address": "Online Event",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/ls/53d145c7-e48d-4f68-a2b6-bc37c94aea96.jpg",
+                "api_id": "https://luma.com/k6maldvf",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/3w5dlz1p",
+                "slug": "3w5dlz1p",
+                "start": "2026-05-26T13:30:00.000-04:00",
+                "end": "2026-05-26T17:00:00.000-04:00",
+                "title": "[In Person] Google for Startups Accelerator: Canada Demo Day",
+                "description": "Join us to hear from the 14 startups in the 2026 Google for Startups Accelerator: Canada cohort. They will each present their impactful AI/ML- driven businesses and share their inspiring journeys. Get ready to be inspired! We hope to see you there!\nImportant: Due to limited in-person capacity, priority registration is reserved for investors, funds, and ecosystem partners, while all other guests are encouraged to register for the livestream event.\nAbout the program: \nGoogle for Startups Accelerator: Canada is a 10-week hybrid accelerator program for Seed to Series A technology startups headquartered in Canada. The accelerator is designed to bring the best of Google’s products, people and technology to startups across the country. Learn more here.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech  torontotechweek.com.",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/8h/054ce20e-fb92-4ed5-b68d-ec12ade9d54e.png",
+                "api_id": "https://luma.com/3w5dlz1p",
+                "geo_address_info": {},
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/vih2uzs0",
+                "slug": "vih2uzs0",
+                "start": "2026-05-27T16:30:00.000-04:00",
+                "end": "2026-05-27T19:00:00.000-04:00",
+                "title": "Land & Expand",
+                "description": "Land & Expand celebrates arrival and ambition: the decision to choose the Toronto Region, and what becomes possible once that choice is made. In the GTA, expansion can mean many things, from new partnerships and wider networks to bigger teams, broader operations, and greater impact across the region. The evening brings together the people and organizations who help make both parts of that story possible.\nSet against the backdrop of one of the world’s most dynamic city-regions, attendees will have the opportunity to connect with investors, industry executives, government partners, and ecosystem builders who are shaping the GTA’s economic future.\n\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com.",
+                "address": "Waterworks Food Hall (East Hall)",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/kd/b1417a90-cca2-4629-9048-d57b8475435b.png",
+                "api_id": "https://luma.com/vih2uzs0",
+                "geo_address_info": {
+                    "type": "manual",
+                    "address": "Waterworks Food Hall (East Hall)",
+                    "mode": "shown"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    79.3925,
+                    43.6515
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/6ssgo8vw",
+                "slug": "6ssgo8vw",
+                "start": "2026-05-25T10:00:00.000-04:00",
+                "end": "2026-05-25T16:00:00.000-04:00",
+                "title": "Reimagining Education in the Age of AI",
+                "description": "Land to Innovate Presents \"Reimagining Education in the Age of AI\" Part of Toronto Tech Week Event.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com.\nJoin us on May 25th 2026 to see how artificial intelligence is reshaping how we teach, learn, and prepare the next generation.\nReimagining Education in the Age of AI is a youth-driven innovation event hosted by Land to Innovate at Webtree Academy, bringing together educators, technology leaders, startups, and students to explore how AI is transforming the future of learning. Unlike traditional conferences, this event places young innovators at the center, giving youth entrepreneurs the opportunity to pitch ideas, engage with EdTech companies, and drive meaningful discussions about the future of education.\nFor Detailed Event Agenda Visit www.landtoinnovate.org\nTime Session Details\n10:00 – 11:00 Youth Startup Pitch Youth teams pitch AI + education ideas. Judged by industry & academia.\n11:00 – 12:00 Youth Inspired Talks Short talks from youth leaders and founders on AI, startups, and education.\n12:00 – 1:00 Lunch & Showcase Networking lunch + demo booths from EdTech, AI platforms & student projects.\n1:00 – 2:00 Breakout Roundtables 4 rooms: AI Classroom | EdTech Startups | Future Skills | AI Tutors.\n2:00 – 3:00 Panel Discussion \"What Should Education Look Like in 2035?\"\n3:00 – 4:00 Open Networking Connect with speakers, founders, educators, and investors.\nJoin us in reimagining education for the AI generation.",
+                "address": "60 Scarsdale Rd Unit 100, North York, ON M3B 2R7",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/gallery-images/iw/6d364f57-87f8-420c-94fa-371a2b1369df.png",
+                "api_id": "https://luma.com/6ssgo8vw",
+                "geo_address_info": {
+                    "type": "manual",
+                    "address": "60 Scarsdale Rd Unit 100, North York, ON M3B 2R7",
+                    "mode": "shown"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.373911,
+                    43.733738
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/jxj32nm2",
+                "slug": "jxj32nm2",
+                "start": "2026-05-27T12:00:00.000-04:00",
+                "end": "2026-05-27T13:00:00.000-04:00",
+                "title": "The Business Case for Safe Autonomy: Efficiency, Accountability, and Remote Oversight",
+                "description": "Autonomy can deliver real efficiency , lower operating costs, better utilization, and more consistent service , but only when deployments are designed with clear accountability and a credible safety approach. \n\nThis virtual session is for founders and companies evaluating autonomy as an operational advantage. We will share a practical, non-proprietary framework to assess autonomy initiatives: where ROI is most achievable, how to define measurable efficiency outcomes, what “safe enough” means in day-to-day operations, and how remote oversight (human-in-the-loop support and escalation) helps maintain control, uptime, and responsible decision-making. \n\nWe will also cover common reasons pilots fail, mis-scoped use cases, unclear success metrics, missing incident processes, and stakeholder misalignment and how to structure pilots that can progress toward scalable deployments. Attendees will leave with a buyer-ready checklist for evaluating autonomy solutions and designing pilots that satisfy both efficiency goals and safety requirements. Q&A included.\nAbout Speaker\nOmid Sadeghi, a Toronto-based product leader with 15 years of experience in bridging innovation and commercialization. Over the past 5 years in mobility product commercialization domain, I have built over 20 partnerships worth $3M+ through grants, pilots, and industry collaborations, aligning R&D with market goals. As an early-stage product developer and commercialization strategist, I help startups validate products faster, refine investor narratives, and turn complex tech into scalable solutions.\n\nAbout Telebotics\nTelebotics is developing cost-effective autonomy for urban and campus fleets, helping them operate more safely and efficiently.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com.",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/bk/8460cd2e-4ef5-4103-acbb-7610c5b3b7e8.jpg",
+                "api_id": "https://luma.com/jxj32nm2",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3871,
+                    43.6453
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/230svixr",
+                "slug": "230svixr",
+                "start": "2026-05-27T12:00:00.000-04:00",
+                "end": "2026-05-27T14:00:00.000-04:00",
+                "title": "SWB AI Hackathon Demo Day",
+                "description": "As part of Toronto Tech Week 2026, join us for Hackathon Demo Day — a virtual showcase featuring the top 8 finalist teams and the innovative solutions they’ve brought to life through our AI-themed hackathon.\nOver the course of the hackathon, participants have collaborated, built, and refined ideas designed to tackle real-world challenges using AI. Demo Day is their moment to present live, share their journey, and celebrate the creativity and momentum that came out of this experience.\nThis event is especially meaningful as it highlights the innovation and potential of immigrant talent in tech. At Scale Without Borders, we’re proud to create spaces where immigrant professionals can build, be seen, and connect with real opportunities across Canada’s tech ecosystem.\n\n✨ What to Expect\nLive demos from the top 8 finalist teams\nInspiring speakers and community voices\nA chance to discover emerging AI-driven solutions and bold ideas\nA high-energy virtual showcase during Toronto Tech Week\nThese finalists have put in the work — and this is their moment to shine. Come support them and see what’s possible when talent, community, and innovation come together.\n\n📅 Event Details\n🗓 May 27, 2026\n🕛 12:00 PM – 2:00 PM\n📍 Virtual\n\n🤖 Want to Participate in the Hackathon?\nWe’re currently accepting applications for our AI-themed hackathon. Whether you’re technical or non-technical, this is your opportunity to build, collaborate, and showcase your ideas.\n👉 Apply here: https://forms.gle/MguVimCiS1DoK5Si7\n⏰ Deadline to apply: May 11th, 11:59 PM EST\n\n🌍 About Scale Without Borders\nScale Without Borders is one of North America’s largest communities supporting immigrant professionals in tech. We create opportunities to connect talent with employers, resources, and a network that helps them grow and succeed.\nInterested in becoming a member?\n👉 https://scalewithoutborders.com/for-newcomers/\n\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com",
+                "address": "Online Event",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/ps/e2a1fa94-2359-49b4-99e6-89c6a787e990.jpg",
+                "api_id": "https://luma.com/230svixr",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/o133lkbe",
+                "slug": "o133lkbe",
+                "start": "2026-05-28T16:30:00.000-04:00",
+                "end": "2026-05-28T18:30:00.000-04:00",
+                "title": "How To Close Enterprise Deals in Founder-Led Sales",
+                "description": "As startup founders trying to sell into the enterprise, we’ve all heard these remarks before: “Great demo” then crickets, or “this is awesome but we have some other priorities right now, can we regroup in a couple of months?” We’ve also seen pilots or proof-of-concepts (POCs) that don’t lead to closed deals, difficulty getting to the right people involved, or seemingly positive conversations that don’t move the deal forward.\nThe good news:  many of your lost deals were your fault.\nMany of the causes of mid-funnel deals stalling or challenges with closing deals are preventable with some basic tactics for navigating complex buyer environments.  The session will provide some immediately actionable and practical tips for diagnosing problems, keeping deals moving, and maximizing value.\nNote: This session is designed for startup founders. Space is limited, and preference will be given to early-stage founders. Final location details will be shared upon approval.\nSponsored by Davies Ward Phillips & Vineberg.\nBy submitting this form, you agree to receive communications from Mucker and sponsors.\nBy registering for and attending this event, you consent to potentially being photographed or recorded during the session. These materials may be used by Mucker Capital and its partners for marketing and promotional purposes.\nIf you do not consent to being photographed or recorded, please withdraw your RSVP prior to the event.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com.",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/91/6719df5d-6fe2-43d5-a728-bf850f96951e.png",
+                "api_id": "https://luma.com/o133lkbe",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/5vashtr7",
+                "slug": "5vashtr7",
+                "start": "2026-05-27T12:00:00.000-04:00",
+                "end": "2026-05-27T13:00:00.000-04:00",
+                "title": "Devant Present Career Unlocked X Toronto Tech Week",
+                "description": "About this event\nDevant Career Unlocked: A free professional development series designed to help you navigate today’s job market with clarity, confidence, and strategy.\n\nJoin us for our upcoming session:\n\n2️⃣ Building a Strong Job Search Toolkit (during Toronto Tech Week)\n📅 May 27 | 12 PM ET\nTurn your clarity into action with resumes, LinkedIn profiles, and applications that truly reflect your value.\n\n✨ Bonus: By registering for the May 27 session, you’ll be automatically registered for our June event as well:\n\n3️⃣ Interviewing with Confidence & Strategic Execution\n📅 June 24 | 12 PM ET\nLearn how to communicate your value and confidently convert opportunities into offers.\nAbout Toronto Tech Week\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com.\n\nLocation:\nOnline Zoom Registration Link: https://us06web.zoom.us/meeting/register/Da6ylFHmQPa1HT2s9Z-ALg",
+                "address": "Online Event",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/xy/8905c969-74fa-46a1-9b22-a5f47a6adbd5.png",
+                "api_id": "https://luma.com/5vashtr7",
+                "geo_address_info": {},
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/ih8vg9us",
+                "slug": "ih8vg9us",
+                "start": "2026-05-26T10:00:00.000-04:00",
+                "end": "2026-05-26T12:00:00.000-04:00",
+                "title": "Build Your First Web3 App",
+                "description": "Toronto Tech Week is a citywide celebration of the people building what’s next. From May 26–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com\nWho should attend:\nDevelopers, technical founders, product builders, and anyone interested in understanding how blockchain applications are built.\nWhat is the event about:\nHands-on workshop: build and deploy an on-chain app\nCurious about how smart contracts actually work? In this interactive workshop, we’ll go from concept to deployment and build a simple on-chain application together.\nYou’ll learn the fundamentals of smart contracts and Web3 architecture, then write and deploy your own contract using Remix IDE. Participants will connect their wallets with MetaMask, deploy the contract to a test network on Ethereum, and interact with it.\nThis session is designed to be beginner-friendly (to web3) but hands-on — perfect for developers, founders, and anyone curious about building blockchain-powered applications.\nWhat we’ll cover:\n• How smart contracts work\n• The architecture of Web3 applications\n• Writing a simple contract\n• Deploying and interacting with the contract\n• Understanding on-chain transactions\nWhat to bring:\nA laptop and a curious mind.",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/mh/10a522c6-ef49-423d-b421-894bebf8ee56.png",
+                "api_id": "https://luma.com/ih8vg9us",
+                "geo_address_info": {
+                    "mode": "obfuscated"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.4152,
+                    43.6323
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/vhope6fp",
+                "slug": "vhope6fp",
+                "start": "2026-05-28T17:30:00.000-04:00",
+                "end": "2026-05-28T20:00:00.000-04:00",
+                "title": "The Toronto LLM Meetup Group - Toronto Tech Week Edition",
+                "description": "Welcome to the 9th session of the 4th edition of the Toronto LLM Meetup Group. We really appreciate the growing interest in our events and will continue to ensure equitable access for all participants. This time, we're hosting one of our regular events during Toronto Tech Week to celebrate the vibrant AI ecosystem that exists in our beautiful city.\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com\n\n\n📖 Papers & Resources\nIt is not necessary to read them all before the session, but browsing through them might help you more actively participate in the discussion session.\nTBD\n\n⏱️ Timetable\n17:30 - 18:00 Icebreaker & Networking\n18:00 - 18:30 Speaker Session #1\n18:30 - 18:50 Discussion\n18:50 - 19:20 Speaker Session #2\n19:20 - 19:40 Discussion\n19:40 - 20:00 Networking\n\n📣 Speaker Bios\nTBD\n\n👋 About Us\nThe Toronto LLM Meetup group is founded by Suhas Pai, CTO and Co-founder of Hudson Labs, and Lily Ren, Senior PM, B2B AI at Telus. The aim of this group is to facilitate deep dives into LLM research topics, harnessing the skills of Toronto's vibrant AI ecosystem and promoting intellectual rigor. To this end, for each session we assemble a team of top Toronto AI scientists and practitioners to conduct an in-depth study of an emerging topic that is expected to go mainstream 6 months from now. The team presents their findings along with jumping-off points for future research at a meetup session, held at Toronto's top AI companies. Eventually we aim to spawn off community open-source research projects this way.\n\n📧  Mailing List\nThank you so much for your interest. We’re thrilled to see so many of you sign up for this event! We’ll be collecting emails to invite you to future editions of the meetup, but if you’d prefer not to be on the mailing list, just let us know.",
+                "address": null,
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/2q/cdeca96a-2cfb-4d60-a824-efce6f9a3db7.png",
+                "api_id": "https://luma.com/vhope6fp",
+                "geo_address_info": {},
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/z3w97gjd",
+                "slug": "z3w97gjd",
+                "start": "2026-05-28T11:00:00.000-04:00",
+                "end": "2026-05-28T12:30:00.000-04:00",
+                "title": "Antler Startup Validation Workshop",
+                "description": "The first and biggest risk to your startup is that NOBODY CARES. And there are very specific, powerful ways to find out if they do. From there, startups repeat these experiments between each venture round to inform & hit every subsequent milestone. Come join Antler to workshop the efforts that have saved founders years of their lives. Date: Thursday, May 28th, 11am Location: OneEleven\nWho should come: current founders, aspiring founders, startups that are needing to break through for their next round.\n\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com",
+                "address": "OneEleven (4th Floor - 325 Front St W)",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/f7/28677347-6a8c-41be-8c10-749b787431ad.jpg",
+                "api_id": "https://luma.com/z3w97gjd",
+                "geo_address_info": {
+                    "type": "manual",
+                    "address": "OneEleven (4th Floor - 325 Front St W)",
+                    "mode": "shown"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3853,
+                    43.6465
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/xm0n26ve",
+                "slug": "xm0n26ve",
+                "start": "2026-05-27T15:00:00.000-04:00",
+                "end": "2026-05-27T18:00:00.000-04:00",
+                "title": "Vertex Health Presents: The experience of raising early-stage VC fund for a health tech. A real life example and industry mixer.",
+                "description": "Vertex Health presents CAPITAL AND COMMUNITY IN HEALTH TECH, a live showcase and an industry mixer for exploring the perspectives of early-stage entrepreneurs, investors and community builders on early-stage VC funding in Canada.\nHosted in collaboration with the Canada Startup Association, Toronto Tech Week, Toronto Metropolitan University and  Brampton Venture Zone this event brings together first-hand experience of founders, investors & community builders on raising capital for early-stage health tech startups in Canada.\nCanada’s health-technology investment market staged a notable rebound in 2025, but the recovery was narrow with capital flowing into fewer companies, larger financings and later-stage opportunities. This reveals cautious optimism rather than a broad-based resurgence even as total disclosed funding in the industry reached approximately $1.3 billion in 2025, marking a sharp increase from the prior year.\nWith exit markets still constrained and early-stage financing tight, the Canadian health-tech ecosystem remains in a selective growth phase. For market watchers, the message is that opportunity exists, but it increasingly favours companies that can prove clinical relevance, economic value and a realistic path to liquidity. The sector’s next chapter will depend not just on innovation, but on execution.\n\n Toronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com\n\n\nHosted By\nVertex Health Inc. \nDr. Saira Siddique\nCo-Hosted By \nCanada Startup Association \ntehmina@canadastartups.co\nToronto Tech Week \ncontact@torontotechweek.com\nBrampton Venture Zone\nbramptonzone@torontomu.ca",
+                "address": "Vantage Venues, 27th Floor, 150 King St W, Toronto, ON M5H 1J9, Canada",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/9j/6387cfd8-ecb9-4da7-ab2c-a6c0a12044c4.png",
+                "api_id": "https://luma.com/xm0n26ve",
+                "geo_address_info": {
+                    "type": "manual",
+                    "address": "Vantage Venues, 27th Floor, 150 King St W, Toronto, ON M5H 1J9, Canada",
+                    "mode": "shown"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6502
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/3429l8ir",
+                "slug": "3429l8ir",
+                "start": "2026-05-26T18:00:00.000-04:00",
+                "end": "2026-05-26T20:00:00.000-04:00",
+                "title": "The RAG Blueprint: Hands-On Retrieval-Augmented Generation (RAG) Lab",
+                "description": "Most AI tutorials teach you how to call an API.\nThey don’t teach you how to build systems that return reliable answers from your own data.\nThis workshop is different.\nWe’ll go beyond “chat with your docs” demos and build a production-grade Retrieval-Augmented Generation (RAG) system—one you can actually debug, evaluate, and improve.\nThis is a hands-on, high-intensity session for developers and architects who want to understand how these systems really work.\n\n🛠 What You’ll Learn (and Build)\nWe’ll break down RAG into the core components that actually matter:\nEnd-to-End Architecture\nFrom ingestion → chunking → retrieval → generation → evaluation\nSmart Chunking\nWhy naive chunking fails—and how to structure data for better retrieval\nAdvanced Retrieval Strategies\nMove beyond “top-k similarity” to get relevant, grounded answers\nEvaluation That Isn’t Guesswork\nHow to measure answer quality instead of relying on vibes\nObservability & Debugging\nHow to see where your pipeline breaks—and fix it\nHands-On Implementation\nBuild a working RAG pipeline step-by-step\n\n🎯 Who This Is For\nFrustrated Builders\nYour RAG app works… sometimes\nEngineers & Developers\nYou know Python/JS and LLM basics, but want real systems thinking\nSolution Architects\nYou need to evaluate trade-offs across vector DBs, embeddings, and retrieval\nCareer Pivoters\nMove from prompt engineering → building full AI pipelines\n\n📦 What You’ll Walk Away With\nA working RAG boilerplate you can reuse\nA reference architecture you can explain and defend\nA mental model for debugging poor outputs\nA framework for improving answer quality and performance\n\nBring your laptop.\nLet’s stop “chatting” with AI—and start building systems that actually work.\n\n“Toronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com”",
+                "address": "Online Event",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/x0/2e3e528a-06f6-4108-a81d-f3be92c6d708.png",
+                "api_id": "https://luma.com/3429l8ir",
+                "geo_address_info": {},
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "https://luma.com/cn7t72ob",
+                "slug": "cn7t72ob",
+                "start": "2026-05-25T17:00:00.000-04:00",
+                "end": "2026-05-25T21:00:00.000-04:00",
+                "title": "Builder Sprint: Toronto",
+                "description": "Builders, founders, and engineers are invited to join a week-long build sprint leading into Toronto Tech Week. Hosted by Highline Beta and powered by BuilderBase, teams will tackle real challenges from industry partners, build working prototypes, and present their solutions at a live demo and awards event kicking off TTW.\nParticipants will choose from challenge tracks created by industry partners across areas such as AI, fintech, and emerging technologies. Each partner will provide a real-world problem statement, datasets or APIs, and mentorship throughout the sprint.\nThe week will begin with a kickoff session where partners introduce their challenges and teams form. Builders will then spend several days developing solutions with optional mentor support and workshops.\nThe sprint will culminate on the first day of Toronto Tech Week with a live demo and awards event at Highline Hub (372 Bay Street) where finalist teams will present their projects to a panel of judges and the broader ecosystem.\nWhat to expect\n• Real-world challenges from industry partners\n• A week to build, validate, and refine your idea\n• Workshops and mentorship from operators and builders\n• Live demos during Toronto Tech Week\n• Prizes awarded across multiple tracks\n• Networking with founders, investors, and technologists\n• Light refreshments will be provided\nSchedule:\nKickoff May 19 (in person) (6- 8 pm)\nBuild May 19 - May 22\nSubmissions due - May 22 11:59 PM\nJudging May 23&24\nFinalists announced May 24\nDemos and award ceremony May 25th (in person) (5 to 9 pm)\nWhether you're a developer, founder, designer, or product builder, this is an opportunity to collaborate with other ambitious builders and ship something real.\nThank you\nWe would like to thank our sponsors for their support in helping to make this happen.\nBackboard.io is your entire AI stack in one API, built on the world's best memory. We believe memory should be the starting point for any AI project -- because an assistant that forgets everything between conversations is not really an assistant. Persistent memory, multi-model routing, document processing, web search, and tool calls, all through a single platform. Sign up at backboard.io/hackathons and get free access to start shipping.\n\nGoogle cloud as our supporting Partner\n\nToronto Tech Week is a citywide celebration of the people building what’s next. From May 25–29, 2026, founders, investors, and builders come together for hundreds of community-led events across Toronto, connecting tens of thousands of people around Canadian tech. Torontotechweek.com",
+                "address": "Highline Beta, 372 Bay St. Suite 200, Toronto, M5H 2W9",
+                "cover": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/event-covers/oo/676cf41b-a1ba-4b1c-8bac-eb671b3947e1.png",
+                "api_id": "https://luma.com/cn7t72ob",
+                "geo_address_info": {
+                    "type": "manual",
+                    "address": "Highline Beta, 372 Bay St. Suite 200, Toronto, M5H 2W9",
+                    "mode": "shown"
+                },
+                "type": "event"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.3832,
+                    43.6547
+                ]
+            }
+        }
+    ]
+}
