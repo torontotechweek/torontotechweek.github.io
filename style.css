@@ -22,6 +22,10 @@
     box-sizing: border-box;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html,
 body {
     overflow: hidden;
@@ -324,12 +328,12 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 140%;
     letter-spacing: -1%;
     opacity: 70%;
-    margin: 16px 0;
+    margin: 10px 0;
     overflow-wrap: anywhere;
     word-break: break-word;
     min-width: 0;
@@ -340,13 +344,13 @@ body {
     padding: 5px;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid var(--color-emerald);
-    color: var(--color-emerald);
+    background-color: var(--color-mountain);
+    color: var(--color-sand);
     font-size: 13px;
 }
 
 .popup-link:hover {
-    background-color: hsla(0, 0%, 40%, 0.1);
+    background-color: #0A456A;
 }
 
 .popup-map-icon {
