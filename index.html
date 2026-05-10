@@ -175,7 +175,7 @@ map.addLayer({
 				source: 'events',
 				filter: ['!', ['has', 'point_count']],
 				paint: {
-					'circle-radius': 12,
+					'circle-radius': 16,
 					'circle-color': '#04304C',
 					'circle-stroke-width': 0,
 					'circle-stroke-color': '#04304C',
@@ -215,9 +215,9 @@ map.addLayer({
 					'circle-radius': [
 						'step',
 						['get', 'point_count'],
-						16,
-						10, 20,
-						25, 26
+						20,
+						10, 24,
+						25, 28
 					],
 					'circle-stroke-width': 0,
 					'circle-stroke-color': '#04304C',
