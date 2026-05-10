@@ -141,13 +141,12 @@ map.addLayer({
       "interpolate",
       ["linear"],
       ["heatmap-density"],
-
-      0, "rgba(0,0,255,0)",
-      0.1, "royalblue",
-      0.3, "cyan",
-      0.5, "lime",
-      0.7, "yellow",
-      1, "red"
+0, "rgba(0,0,255,0)",
+0.2, "royalblue",
+0.4, "cyan",
+0.6, "lime",
+0.8, "yellow",
+1, "red"
     ],
 
     "heatmap-radius": [
@@ -191,7 +190,7 @@ map.addLayer({
 				filter: ['!', ['has', 'point_count']],
 				paint: {
 					'circle-radius': 6,
-					'circle-color': '#018B76',
+					'circle-color': '#04304C',
 					'circle-stroke-width': 0,
 					'circle-stroke-color': '#04304C',
 					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
@@ -657,7 +656,7 @@ map.addLayer({
 			if (popupContainer) {
 				popupContainer.classList.remove('active');
 
-				map.setPaintProperty('points', 'circle-color', '#018B76');
+				map.setPaintProperty('points', 'circle-color', '#04304C');
 				map.setPaintProperty('clusters', 'circle-color', '#EEEDEA');
 
 				popupOpen = false;
@@ -705,7 +704,7 @@ map.addLayer({
 					'case',
 					['==', ['get', 'api_id'], id],
 					'hsl(45, 92%, 64%)',
-					'#018B76'
+					'#04304C'
 				]);
 
 			} catch (error) {
@@ -740,7 +739,7 @@ map.addLayer({
 				flyToFeature(coordinates);
 
 				// Set all features to default style first
-				map.setPaintProperty('points', 'circle-color', '#018B76');
+				map.setPaintProperty('points', 'circle-color', '#04304C');
 
 				// Active color
 				setTimeout(() => {
