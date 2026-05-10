@@ -107,6 +107,10 @@ body {
     cursor: pointer;
 }
 
+.info-feature:hover h1 {
+    opacity: 80%;
+}
+
 .info-feature h1 {
     font-weight: 500;
     font-size: 24px;
@@ -126,9 +130,9 @@ body {
 #info-box-back,
 #info-box-forward {
     display: inline;
-    width: 30px;
-    height: 30px;
-    background-color: hsla(0, 0%, 0%, 0.1);
+    width: 25px;
+    height: 25px;
+    margin: 5px;
     border-radius: 50%;
     z-index: 9999;
     cursor: pointer;
@@ -141,7 +145,7 @@ body {
 
 #info-box-back:hover,
 #info-box-forward:hover {
-    color: hsl(227, 89%, 80%);
+    color: hsla(0, 0%, 40%, 0.2);
 }
 
 #info-box-back {
@@ -231,7 +235,7 @@ body {
 }
 
 .popup-flex-container:hover {
-    background-color: hsla(230, 10%, 50%, 0.1);
+    background-color: hsla(0, 0%, 40%, 0.1);
 }
 
 .popup-flex-container:last-child {
@@ -330,14 +334,14 @@ body {
     width: 100%;
     padding: 5px;
     text-align: center;
-    background-color: var(--color-emerald);
-    color: hsl(180, 35%, 5%);
     border-radius: 5px;
+    border: 1px solid var(--color-emerald);
+    color: var(--color-emerald);
     font-size: 13px;
 }
 
 .popup-link:hover {
-    background-color: hsl(227, 89%, 80%);
+    background-color: hsla(0, 0%, 40%, 0.1);
 }
 
 .popup-map-icon {
@@ -371,7 +375,7 @@ body {
 }
 
 .popup-filter-button:hover {
-    background-color: hsl(227, 89%, 80%);
+    background-color: hsla(0, 0%, 40%, 0.1);
 }
 
 .maplibregl-ctrl-bottom-right {
