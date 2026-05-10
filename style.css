@@ -52,8 +52,6 @@ body {
     right: 0;
     width: auto;
     height: auto;
-    margin: 10px 10px 10px 0px;
-    border-radius: 5px;
 }
 
 #info-box {
@@ -411,13 +409,11 @@ p {
 @media (max-width: 768px) {
     #map {
         top: 0;
-        bottom: auto;
+        bottom: 50%;
         left: 0;
         right: 0;
         width: auto;
         height: calc(50% - 20px);
-        margin: 10px 10px 0 10px;
-        border-radius: 5px;
     }
 
     #popup {
