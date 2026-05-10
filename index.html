@@ -176,7 +176,7 @@ map.addLayer({
 				filter: ['!', ['has', 'point_count']],
 				paint: {
 					'circle-radius': 16,
-					'circle-color': '#D74417',
+					'circle-color': '#04304C',
 					'circle-stroke-width': 0,
 					'circle-stroke-color': '#04304C',
 					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.1]
@@ -208,9 +208,9 @@ map.addLayer({
 					'circle-color': [
 						'step',
 						['get', 'point_count'],
-						'#D74417',
-						10, '#D74417',
-						25, '#D74417'
+						'#04304C',
+						10, '#04304C',
+						25, '#04304C'
 					],
 					'circle-radius': [
 						'step',

@@ -30,18 +30,6 @@
 		},
 		{
 			"source": "osm",
-			"id": "land-natural",
-			"type": "fill",
-			"source-layer": "land",
-			"filter": [ "in", "kind", "brownfield", "farmland", "farmyard", "greenfield", "greenhouse_horticulture", "orchard", "plant_nursery", "vineyard", "park", "village_green", "recreation_ground", "allotments", "garden", "miniature_golf", "playground", "golf_course", "forest", "grass", "grassland", "meadow", "wet_meadow", "heath", "scrub", "beach", "sand", "bog", "marsh", "string_bog", "swamp" ],
-			"paint": {
-			  "fill-color": "hsl(165, 30%, 36%)",
-			  "fill-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 16, 0, 17, 1 ]
-			},
-			"minzoom": 16
-		},
-		{
-			"source": "osm",
 			"id": "water",
 			"type": "fill",
 			"source-layer": "water_polygons",
