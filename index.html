@@ -33,7 +33,7 @@
 
 		var map = new maplibregl.Map({
 			container: 'map',
-			style: 'torontotechweek.json',
+			style: 'torontotechweek_lightmode.json',
 			center: [-79.38709, 43.64909],
 			zoom: 13,
 			minZoom: 11,
@@ -247,8 +247,9 @@ map.addLayer({
 						10, 14,
 						25, 18
 					],
-					'circle-stroke-width': 0,
+					'circle-stroke-width': 1,
 					'circle-stroke-color': '#04304C',
+					'circle-stroke-opacity': ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1],
 					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
 				},
 				'maxzoom': zoomThreshold + 1
