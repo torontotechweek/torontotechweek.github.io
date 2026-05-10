@@ -15,10 +15,6 @@
 			"type": "vector",
 			"tiles": ["https://torontotechweek.github.io/data/toronto_buildings/{z}/{x}/{y}.pbf"]
 		},
-		"toronto_neighborhoods": {
-			"type": "vector",
-			"tiles": ["https://torontotechweek.github.io/data/toronto_neighborhoods/{z}/{x}/{y}.pbf"]
-		},
 		"toronto_neighborhoods_centroids": {
 			"type": "geojson",
 			"data": "https://torontotechweek.github.io/data/toronto_neighborhoods_centroids.geojson"
@@ -309,8 +305,8 @@
 			"paint": {
 				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ],
 				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ],
-				"icon-color": "#D74417",
-				"text-color": "#D74417",
+				"icon-color": "#018B76",
+				"text-color": "#018B76",
 				"text-halo-color": "hsl(0, 0%, 20%)",
 				"text-halo-width": 0,
 				"text-halo-blur": 0
@@ -340,26 +336,13 @@
 			"paint": {
 				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 13, 0, 14, 1 ],
 				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 13, 0, 14, 1 ],
-				"icon-color": "hsl(310, 100%, 90%)",
-				"text-color": "hsl(310, 100%, 90%)",
+				"icon-color": "#018B76",
+				"text-color": "#018B76",
 				"text-halo-color": "hsl(0, 0%, 20%)",
 				"text-halo-width": 0,
 				"text-halo-blur": 0
 			},
 			"minzoom": 13
-		},
-		{
-			"id": "neighborhoods-outlines",
-			"source": "toronto_neighborhoods",
-			"source-layer": "toronto_neighborhoods",
-			"type": "line",
-			"paint": {
-				"line-color": "#04304C",
-				"line-width": ["interpolate", ["exponential", 1.5], ["zoom"], 11, 1, 18, 20],
-				"line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.1, 14, 0.2, 15, 0]
-			},
-			"minzoom": 11,
-			"maxzoom": 15
 		},
 		{
 			"id": "neighborhoods-labels",

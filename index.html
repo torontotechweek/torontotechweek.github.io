@@ -42,7 +42,7 @@
 			bearing: 0,
 			pitch: 20,
 			pixelRatio: 1,
-			hash: true,
+			hash: false,
 			attributionControl: true
 		});
 
@@ -176,7 +176,7 @@ map.addLayer({
 				filter: ['!', ['has', 'point_count']],
 				paint: {
 					'circle-radius': 16,
-					'circle-color': '#04304C',
+					'circle-color': '#D74417',
 					'circle-stroke-width': 0,
 					'circle-stroke-color': '#04304C',
 					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.1]
@@ -208,9 +208,9 @@ map.addLayer({
 					'circle-color': [
 						'step',
 						['get', 'point_count'],
-						'#04304C',
-						10, '#04304C',
-						25, '#04304C'
+						'#D74417',
+						10, '#D74417',
+						25, '#D74417'
 					],
 					'circle-radius': [
 						'step',
@@ -657,8 +657,8 @@ map.addLayer({
 			if (popupContainer) {
 				popupContainer.classList.remove('active');
 
-				map.setPaintProperty('points', 'circle-color', 'hsl(232, 76%, 84%)');
-				map.setPaintProperty('clusters', 'circle-color', 'hsl(232, 76%, 84%)');
+				map.setPaintProperty('points', 'circle-color', '#04304C');
+				map.setPaintProperty('clusters', 'circle-color', '#EEEDEA');
 
 				popupOpen = false;
 
@@ -698,14 +698,14 @@ map.addLayer({
 				flyToFeature(coordinates);
 
 				// Set all clusters to default style
-				map.setPaintProperty('clusters', 'circle-color', 'hsl(232, 76%, 84%)');
+				map.setPaintProperty('clusters', 'circle-color', '#EEEDEA');
 
 				// Active color for clicked point
 				map.setPaintProperty('points', 'circle-color', [
 					'case',
 					['==', ['get', 'api_id'], id],
 					'hsl(45, 92%, 64%)',
-					'hsl(232, 76%, 84%)'
+					'#04304C'
 				]);
 
 			} catch (error) {
@@ -740,7 +740,7 @@ map.addLayer({
 				flyToFeature(coordinates);
 
 				// Set all features to default style first
-				map.setPaintProperty('points', 'circle-color', 'hsl(232, 76%, 84%)');
+				map.setPaintProperty('points', 'circle-color', '#04304C');
 
 				// Active color
 				setTimeout(() => {
@@ -748,7 +748,7 @@ map.addLayer({
 						'case',
 						['==', ['get', 'cluster_id'], id],
 						'hsl(45, 92%, 64%)',
-						'hsl(232, 76%, 84%)'
+						'#EEEDEA'
 					]);
 				}, 50);
 
