@@ -313,6 +313,9 @@ body {
     color: hsl(238, 100%, 94%);
     opacity: 70%;
     margin: 16px 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    min-width: 0;
 }
 
 .popup-link {
