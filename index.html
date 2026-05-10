@@ -324,7 +324,7 @@ map.addLayer({
 			// Create logo
 			const logo = document.createElement('div');
 			logo.className = 'logo';
-			logo.innerHTML = '<a href="https://www.torontotechweek.com/"><img src="assets/ttw_logo.svg" alt="Toronto Tech Week logo" width="174" height="18"></a>';
+			logo.innerHTML = '<a href="https://www.torontotechweek.com/"><img src="assets/ttw_logo.svg" alt="Toronto Tech Week logo"></a>';
 			infoBox.appendChild(logo);
 
 			// Create the horizontal scroller
@@ -335,7 +335,7 @@ map.addLayer({
 			const resetElement = document.createElement('div');
 			resetElement.className = 'info-feature reset-category';
 			resetElement.dataset.category = 'all';
-			resetElement.innerHTML = '<h1>All</h1>';
+			resetElement.innerHTML = '<h3>All</h3>';
 			innerContainer.appendChild(resetElement);
 
 			// 3. Format and display each date
@@ -348,7 +348,7 @@ map.addLayer({
 				const [_, month, day] = dateString.split('-');
 				const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 				const formatted = `${monthNames[parseInt(month, 10) - 1]} ${parseInt(day, 10)}`;
-				dateElement.innerHTML = `<h1>${formatted}</h1>`;
+				dateElement.innerHTML = `<h3>${formatted}</h3>`;
 
 				// 👇 Add click listener to scroll this element into view (left-aligned)
 				dateElement.addEventListener('click', () => {

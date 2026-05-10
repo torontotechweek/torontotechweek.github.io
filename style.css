@@ -48,7 +48,7 @@ body {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 350px;
+    left: 340px;
     right: 0;
     width: auto;
     height: auto;
@@ -57,14 +57,14 @@ body {
 #info-box {
     position: relative;
     top: 0px;
-    height: 90px;
+    height: 70px;
     width: 100%;
-    border-bottom: 1px solid hsla(227, 89%, 90%, 0.2);
+    border-bottom: 1px solid var(--color-mountain);
 }
 
 .info-box-container {
     position: relative;
-    top: 25px;
+    top: 5px;
     display: flex;
     width: calc(100% - 64px);
     height: 40px;
@@ -79,7 +79,7 @@ body {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    gap: 10px;
+    gap: 0px;
     width: 100%;
     padding-right: calc(100% - 80px);
     scrollbar-width: none;
@@ -105,19 +105,15 @@ body {
     cursor: pointer;
 }
 
-.info-feature:hover h1 {
-    opacity: 80%;
+.info-feature:hover h3 {
+    opacity: 60%;
 }
 
-.info-feature h1 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 120%;
-    letter-spacing: -1%;
+.info-feature h3 {
     opacity: 40%;
 }
 
-.active-category h1 {
+.active-category h3 {
     opacity: 100%;
 }
 
@@ -160,14 +156,19 @@ body {
 
 .logo {
     position: relative;
-    top: 14px;
-    left: 32px;
+    top: 10px;
+    left: 30px;
 }
 
 .logo a {
     all: unset;
     cursor: pointer;
     display: block;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
 }
 
 #popup {
@@ -177,15 +178,15 @@ body {
     left: 0;
     width: 330px;
     height: auto;
-    margin: 10px 0 10px 10px;
+    margin: 5px 0 5px 5px;
     border-radius: 5px;
-    border: 0.5px solid var(--color-mountain);
+    border: 1px solid var(--color-mountain);
     user-select: none;
 }
 
 #popup-container {
     position: absolute;
-    top: 90px;
+    top: 70px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -223,12 +224,12 @@ body {
 .popup-flex-container {
     position: relative;
     display: flex;
-    gap: 48px;
+    gap: 24px;
     flex-direction: column;
     align-items: flex-start;
     transition: background-color 0.2s ease;
     border-bottom: 1px solid var(--color-mountain);
-    padding: 32px;
+    padding: 20px;
     cursor: pointer;
 }
 
@@ -413,7 +414,7 @@ p {
         left: 0;
         right: 0;
         width: auto;
-        height: calc(50% - 20px);
+        height: calc(50% - 10px);
     }
 
     #popup {
@@ -423,8 +424,8 @@ p {
         right: 0;
         height: 50%;
         width: auto;
-        margin: 0 10px 10px 10px;
-        max-width: calc(100% - 20px);
+        margin: 0 5px 5px 5px;
+        max-width: calc(100% - 10px);
         border-radius: 5px;
     }
 }
