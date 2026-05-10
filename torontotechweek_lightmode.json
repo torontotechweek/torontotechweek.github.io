@@ -153,7 +153,7 @@
 			"type": "line",
 			"paint": {
 				"line-color": "#04304C",
-				"line-width": 1,
+				"line-width": 0.5,
 				"line-opacity": ["interpolate", ["linear"], ["zoom"], 16, 0, 18, 1]
 			},
 			"minzoom": 16
@@ -239,7 +239,7 @@
 				"symbol-placement": "point",
 				"icon-optional": true,
 				"icon-image": [ "match", [ "get", "amenity" ], "arts_centre", "icon-art_gallery", "atm", "icon-atm", "bank", "icon-bank", "bar", "icon-bar", "bench", "icon-bench", "bicycle_rental", "icon-bicycle_share", "biergarten", "icon-beergarden", "cafe", "icon-cafe", "car_rental", "icon-car_rental", "car_sharing", "icon-car_rental", "car_wash", "icon-car_wash", "cinema", "icon-cinema", "college", "icon-college", "community_centre", "icon-community", "dentist", "icon-dentist", "doctors", "icon-doctor", "dog_park", "icon-dog_park", "drinking_water", "icon-drinking_water", "embassy", "icon-embassy", "fast_food", "icon-fast_food", "fire_station", "icon-fire_station", "fountain", "icon-fountain", "grave_yard", "icon-cemetery", "hospital", "icon-hospital", "hunting_stand", "icon-huntingstand", "library", "icon-library", "marketplace", "icon-marketplace", "nightclub", "icon-nightclub", "nursing_home", "icon-nursinghome", "pharmacy", "icon-pharmacy", "place_of_worship", "icon-place_of_worship", "playground", "icon-playground", "police", "icon-police", "post_box", "icon-postbox", "post_office", "icon-post", "prison", "icon-prison", "pub", "icon-beer", "recycling", "icon-recycling", "restaurant", "icon-restaurant", "school", "icon-school", "shelter", "icon-shelter", "telephone", "icon-telephone", "theatre", "icon-theatre", "toilets", "icon-toilet", "townhall", "icon-town_hall", "vending_machine", "icon-vendingmachine", "veterinary", "icon-veterinary", "waste_basket", "icon-waste_basket", "unknown" ],
-				"text-font": [ "volksans-regular" ],
+				"text-font": [ "montserrat-semibold" ],
 				"text-size": 10,
 				"text-field": ["get", "name"],
 				"text-max-width": 8,
@@ -252,19 +252,19 @@
 				"text-ignore-placement": false
 			},
 			"paint": {
-				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 0.6 ],
-				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 0.6 ],
+				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 0.8 ],
+				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 0.8 ],
 				"icon-color": [
 					"case",
-					["==", ["get", "amenity"], "bicycle_rental"], "#018B76",
-					"#018B76"
+					["==", ["get", "amenity"], "bicycle_rental"], "#04304C",
+					"#04304C"
 				],
 				"text-color": [
 					"case",
-					["==", ["get", "amenity"], "bicycle_rental"], "#018B76",
-					"#018B76"
+					["==", ["get", "amenity"], "bicycle_rental"], "#04304C",
+					"#04304C"
 				],
-				"text-halo-color": "hsl(0, 0%, 100%)",
+				"text-halo-color": "#EEEDEA",
 				"text-halo-width": 0,
 				"text-halo-blur": 0
 			},
@@ -280,7 +280,7 @@
 				"text-field": "{name}",
 				"icon-size": 0.6,
 				"symbol-placement": "point",
-				"text-font": [ "volksans-regular" ],
+				"text-font": [ "montserrat-semibold" ],
 				"text-size": 10,
 				"icon-anchor": "bottom",
 				"text-anchor": "top",
@@ -291,11 +291,11 @@
 				"text-ignore-placement": false
 			},
 			"paint": {
-				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ],
-				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ],
-				"icon-color": "#018B76",
-				"text-color": "#018B76",
-				"text-halo-color": "hsl(0, 0%, 20%)",
+				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 0.8 ],
+				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 0.8 ],
+				"icon-color": "#D74417",
+				"text-color": "#D74417",
+				"text-halo-color": "#EEEDEA",
 				"text-halo-width": 0,
 				"text-halo-blur": 0
 			},
@@ -311,7 +311,7 @@
 				"text-field": "{name}",
 				"icon-size": 0.6,
 				"symbol-placement": "point",
-				"text-font": [ "volksans-regular" ],
+				"text-font": [ "montserrat-semibold" ],
 				"text-size": 10,
 				"icon-anchor": "bottom",
 				"text-anchor": "top",
@@ -322,11 +322,11 @@
 				"text-ignore-placement": false
 			},
 			"paint": {
-				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 13, 0, 14, 1 ],
-				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 13, 0, 14, 1 ],
-				"icon-color": "#018B76",
-				"text-color": "#018B76",
-				"text-halo-color": "hsl(0, 0%, 20%)",
+				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 13, 0, 14, 0.8 ],
+				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 13, 0, 14, 0.8 ],
+				"icon-color": "#D74417",
+				"text-color": "#D74417",
+				"text-halo-color": "#EEEDEA",
 				"text-halo-width": 0,
 				"text-halo-blur": 0
 			},
