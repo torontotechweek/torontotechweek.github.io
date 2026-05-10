@@ -33,7 +33,7 @@
 
 		var map = new maplibregl.Map({
 			container: 'map',
-			style: 'torontotechweek_lightmode.json',
+			style: 'torontotechweek.json',
 			center: [-79.38709, 43.64909],
 			zoom: 13,
 			minZoom: 11,
@@ -179,7 +179,7 @@ map.addLayer({
 					'circle-color': '#04304C',
 					'circle-stroke-width': 0,
 					'circle-stroke-color': '#04304C',
-					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.1]
 				}
 			});
 
@@ -191,11 +191,39 @@ map.addLayer({
 				filter: ['!', ['has', 'point_count']],
 				paint: {
 					'circle-radius': 6,
-					'circle-color': '#EEEDEA',
-					'circle-stroke-width': 1,
+					'circle-color': '#04304C',
+					'circle-stroke-width': 0,
 					'circle-stroke-color': '#04304C',
 					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
 				}
+			});
+
+			// Add cluster circles
+			map.addLayer({
+				id: 'clusters-halo',
+				type: 'circle',
+				source: 'events',
+				filter: ['has', 'point_count'],
+				paint: {
+					'circle-color': [
+						'step',
+						['get', 'point_count'],
+						'#04304C',
+						10, '#04304C',
+						25, '#04304C'
+					],
+					'circle-radius': [
+						'step',
+						['get', 'point_count'],
+						16,
+						10, 20,
+						25, 26
+					],
+					'circle-stroke-width': 0,
+					'circle-stroke-color': '#04304C',
+					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.1]
+				},
+				'maxzoom': zoomThreshold + 1
 			});
 
 			// Add cluster circles
@@ -219,7 +247,7 @@ map.addLayer({
 						10, 14,
 						25, 18
 					],
-					'circle-stroke-width': 1,
+					'circle-stroke-width': 0,
 					'circle-stroke-color': '#04304C',
 					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
 				},

@@ -204,14 +204,17 @@
 				"text-rotation-alignment": "map",
 				"text-font": [ "volksans-regular" ],
 				"text-letter-spacing": 0.2,
+				"text-allow-overlap": true,
+				"text-ignore-placement": true,
 				"symbol-placement": "line",
 				"symbol-spacing": 250,
 				"text-anchor": "bottom",
-				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 25 ]
+				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 25 ],
+				"symbol-sort-key": 100
 			},
 			"paint": {
-				"text-color": "hsl(0, 0%, 100%)",
-				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 1 ]
+				"text-color": "#04304C",
+				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ]
 			},
 			"minzoom": 15
 		},
@@ -227,14 +230,17 @@
 				"text-rotation-alignment": "map",
 				"text-font": [ "volksans-regular" ],
 				"text-letter-spacing": 0.2,
+				"text-allow-overlap": true,
+				"text-ignore-placement": true,
 				"symbol-placement": "line",
 				"symbol-spacing": 250,
-				"text-anchor": "center",
-				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 30 ]
+				"text-anchor": "bottom",
+				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 30 ],
+				"symbol-sort-key": 100
 			},
 			"paint": {
-				"text-color": "hsl(0, 0%, 100%)",
-				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 1 ]
+				"text-color": "#04304C",
+				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ]
 			},
 			"minzoom": 15
 		},
@@ -266,13 +272,13 @@
 				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 15, 0, 16, 1 ],
 				"icon-color": [
 					"case",
-					["==", ["get", "amenity"], "bicycle_rental"], "hsl(310, 100%, 90%)",
-					"hsl(227, 89%, 90%)"
+					["==", ["get", "amenity"], "bicycle_rental"], "#018B76",
+					"#018B76"
 				],
 				"text-color": [
 					"case",
-					["==", ["get", "amenity"], "bicycle_rental"], "hsl(310, 100%, 90%)",
-					"hsl(227, 89%, 90%)"
+					["==", ["get", "amenity"], "bicycle_rental"], "#018B76",
+					"#018B76"
 				],
 				"text-halo-color": "hsl(0, 0%, 100%)",
 				"text-halo-width": 0,
@@ -303,8 +309,8 @@
 			"paint": {
 				"icon-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ],
 				"text-opacity": [ "interpolate", [ "linear" ], [ "zoom" ], 14, 0, 15, 1 ],
-				"icon-color": "hsl(310, 100%, 90%)",
-				"text-color": "hsl(310, 100%, 90%)",
+				"icon-color": "#D74417",
+				"text-color": "#D74417",
 				"text-halo-color": "hsl(0, 0%, 20%)",
 				"text-halo-width": 0,
 				"text-halo-blur": 0
@@ -348,7 +354,7 @@
 			"source-layer": "toronto_neighborhoods",
 			"type": "line",
 			"paint": {
-				"line-color": "hsl(227, 89%, 90%)",
+				"line-color": "#04304C",
 				"line-width": ["interpolate", ["exponential", 1.5], ["zoom"], 11, 1, 18, 20],
 				"line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.1, 14, 0.2, 15, 0]
 			},
@@ -371,7 +377,7 @@
 				"text-pitch-alignment": "viewport"
 			},
 			"paint": {
-				"text-color": "hsl(227, 89%, 90%)",
+				"text-color": "#04304C",
 				"text-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.8, 14, 0.8, 16, 0]
 			},
 			"minzoom": 11,
