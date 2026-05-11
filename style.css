@@ -421,11 +421,11 @@ body {
     align-items: center;   /* vertical centering */
     justify-content: center; /* optional: horizontal centering */
     position: absolute;
-    top: 80px;
-    right: 20px;
+    top: 90px;
+    right: 15px;
     color: var(--color-emerald);
     font-size: 14px;
-    padding: 4px 6px;
+    padding: 2px 4px;
     border-radius: 5px;
     border: 1px solid var(--color-emerald);
     cursor: pointer;
