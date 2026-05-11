@@ -7,7 +7,7 @@
 	<script src="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.js"></script>
 	<link href="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="darkmode.css">
 	<title>TTW</title>
 </head>
 
@@ -33,7 +33,7 @@
 
 		var map = new maplibregl.Map({
 			container: 'map',
-			style: 'torontotechweek_lightmode.json',
+			style: 'torontotechweek_darkmode.json',
 			center: [-79.38709, 43.64909],
 			zoom: 13,
 			minZoom: 11,
@@ -175,10 +175,10 @@ map.addLayer({
 				filter: ['!', ['has', 'point_count']],
 				paint: {
 					'circle-radius': 16,
-					'circle-color': '#018B76',
+					'circle-color': '#EEEDEA',
 					'circle-stroke-width': 0,
 					'circle-stroke-color': '#018B76',
-					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.1]
+					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.2]
 				}
 			});
 
@@ -190,7 +190,7 @@ map.addLayer({
 				filter: ['!', ['has', 'point_count']],
 				paint: {
 					'circle-radius': 6,
-					'circle-color': '#04304C',
+					'circle-color': '#EEEDEA',
 					'circle-stroke-width': 0,
 					'circle-stroke-color': '#04304C',
 					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
@@ -207,9 +207,9 @@ map.addLayer({
 					'circle-color': [
 						'step',
 						['get', 'point_count'],
-						'#04304C',
-						10, '#04304C',
-						25, '#04304C'
+						'#EEEDEA',
+						10, '#EEEDEA',
+						25, '#EEEDEA'
 					],
 					'circle-radius': [
 						'step',
@@ -220,7 +220,7 @@ map.addLayer({
 					],
 					'circle-stroke-width': 0,
 					'circle-stroke-color': '#04304C',
-					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.1]
+					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.2]
 				},
 				'maxzoom': zoomThreshold + 1
 			});
@@ -746,7 +746,7 @@ infoBox.appendChild(logoContainer);
 			if (popupContainer) {
 				popupContainer.classList.remove('active');
 
-				map.setPaintProperty('points', 'circle-color', '#04304C');
+				map.setPaintProperty('points', 'circle-color', '#EEEDEA');
 				map.setPaintProperty('clusters', 'circle-color', '#EEEDEA');
 
 				popupOpen = false;
@@ -794,7 +794,7 @@ infoBox.appendChild(logoContainer);
 					'case',
 					['==', ['get', 'api_id'], id],
 					'hsl(45, 92%, 64%)',
-					'#04304C'
+					'#EEEDEA'
 				]);
 
 			} catch (error) {
@@ -829,7 +829,7 @@ infoBox.appendChild(logoContainer);
 				flyToFeature(coordinates);
 
 				// Set all features to default style first
-				map.setPaintProperty('points', 'circle-color', '#04304C');
+				map.setPaintProperty('points', 'circle-color', '#EEEDEA');
 
 				// Active color
 				setTimeout(() => {

@@ -162,10 +162,9 @@
 				"text-rotation-alignment": "map",
 				"text-font": [ "volksans-regular" ],
 				"text-letter-spacing": 0.2,
-				"text-allow-overlap": true,
+				"text-allow-overlap": false,
 				"text-ignore-placement": true,
 				"symbol-placement": "line",
-				"symbol-spacing": 250,
 				"text-anchor": "bottom",
 				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 25 ],
 				"symbol-sort-key": 100
@@ -188,10 +187,9 @@
 				"text-rotation-alignment": "map",
 				"text-font": [ "volksans-regular" ],
 				"text-letter-spacing": 0.2,
-				"text-allow-overlap": true,
+				"text-allow-overlap": false,
 				"text-ignore-placement": true,
 				"symbol-placement": "line",
-				"symbol-spacing": 250,
 				"text-anchor": "bottom",
 				"text-size": [ "interpolate", [ "exponential", 1.5 ], [ "zoom" ], 10, 0, 20, 30 ],
 				"symbol-sort-key": 100
