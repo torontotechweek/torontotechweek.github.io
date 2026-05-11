@@ -6,7 +6,6 @@
 	<meta charset="UTF-8" />
 	<script src="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.js"></script>
 	<link href="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link rel="stylesheet" href="style.css">
 	<title>TTW</title>
 </head>
@@ -177,7 +176,7 @@ map.addLayer({
 					'circle-radius': 16,
 					'circle-color': '#018B76',
 					'circle-stroke-width': 0,
-					'circle-stroke-color': '#0070E0',
+					'circle-stroke-color': '#018B76',
 					"circle-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.1]
 				}
 			});
@@ -320,11 +319,44 @@ map.addLayer({
 				)
 			].sort();
 
-			// Create logo
-			const logo = document.createElement('div');
-			logo.className = 'logo';
-			logo.innerHTML = '<a href="https://www.torontotechweek.com/"><img src="assets/ttw_logo.svg" alt="Toronto Tech Week logo"></a>';
-			infoBox.appendChild(logo);
+// Create logo container
+const logoContainer = document.createElement('div');
+logoContainer.className = 'logo-container';
+
+// Top-left logo
+const topLeftLogo = document.createElement('div');
+topLeftLogo.className = 'logo logo-top-left';
+topLeftLogo.innerHTML = `
+	<a href="https://www.torontotechweek.com/">
+		<img src="img/betakit-guide-horizontal-lockup.svg" alt="betakit-guide-horizontal-lockup">
+	</a>
+`;
+
+// Bottom-left logo
+const bottomLeftLogo = document.createElement('div');
+bottomLeftLogo.className = 'logo logo-bottom-left';
+bottomLeftLogo.innerHTML = `
+	<a href="https://www.torontotechweek.com/">
+		<img src="img/ttw_logo.svg" alt="ttw_logo">
+	</a>
+`;
+
+// Bottom-right logo
+const bottomRightLogo = document.createElement('div');
+bottomRightLogo.className = 'logo logo-bottom-right';
+
+bottomRightLogo.innerHTML = `
+	<a href="https://www.torontotechweek.com/" class="presented-wrap">
+		<span class="presented-by">Presented by</span>
+		<img src="img/clio-logo-grey.svg" alt="clio-logo-grey">
+	</a>
+`;
+
+logoContainer.appendChild(topLeftLogo);
+logoContainer.appendChild(bottomLeftLogo);
+logoContainer.appendChild(bottomRightLogo);
+
+infoBox.appendChild(logoContainer);
 
 			// Create the horizontal scroller
 			const innerContainer = document.createElement('div');
@@ -364,11 +396,11 @@ map.addLayer({
             // Add forward/back buttons
             const backButton = document.createElement('div');
             backButton.id = 'info-box-back';
-            backButton.innerHTML = '<i class="fas fa-arrow-left"></i>';
+            backButton.innerHTML = '‹';
 
             const forwardButton = document.createElement('div');
             forwardButton.id = 'info-box-forward';
-            forwardButton.innerHTML = '<i class="fas fa-arrow-right"></i>';
+            forwardButton.innerHTML = '›';
 
             infoBox.appendChild(backButton);
             infoBox.appendChild(forwardButton);
