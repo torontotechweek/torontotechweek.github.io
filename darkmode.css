@@ -35,7 +35,7 @@ body {
 }
 
 body {
-    background-color: var(--color-cobalt);
+    background-color: var(--color-mountain);
     color: var(--color-sand);
     height: 100vh;
     width: 100vw;
@@ -146,7 +146,7 @@ body {
 
 #info-box-back:hover,
 #info-box-forward:hover {
-    color: hsla(0, 0%, 40%, 0.4);
+    color: hsl(0, 0%, 100%);
 }
 
 #info-box-back {
@@ -303,7 +303,7 @@ body {
 }
 
 .popup-flex-container:hover {
-    background-color: hsla(0, 0%, 40%, 0.1);
+    background-color: hsla(0, 0%, 100%, 0.1);
 }
 
 .popup-flex-container:last-child {
@@ -409,7 +409,7 @@ body {
 }
 
 .popup-link:hover {
-    background-color: hsla(0, 0%, 100%, 0.4);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .popup-map-icon {
@@ -443,7 +443,7 @@ body {
 }
 
 .popup-filter-button:hover {
-    background-color: hsla(0, 0%, 40%, 0.4);
+    background-color: hsla(0, 0%, 100%, 0.1);
 }
 
 .maplibregl-ctrl-bottom-right {
