@@ -6,6 +6,7 @@
 	<meta charset="UTF-8" />
 	<script src="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.js"></script>
 	<link href="https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link rel="stylesheet" href="style.css">
 	<title>TTW</title>
 </head>
@@ -396,11 +397,11 @@ infoBox.appendChild(logoContainer);
             // Add forward/back buttons
             const backButton = document.createElement('div');
             backButton.id = 'info-box-back';
-            backButton.innerHTML = '‹';
+            backButton.innerHTML = '<i class="fas fa-arrow-left"></i>';
 
             const forwardButton = document.createElement('div');
             forwardButton.id = 'info-box-forward';
-            forwardButton.innerHTML = '›';
+            forwardButton.innerHTML = '<i class="fas fa-arrow-right"></i>';
 
             infoBox.appendChild(backButton);
             infoBox.appendChild(forwardButton);

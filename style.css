@@ -68,11 +68,12 @@ body {
 
 .info-box-container {
     position: relative;
-    top: 2px;
+    top: 0px;
     display: flex;
     width: calc(100% - 64px);
     height: 50px;
     margin: 0 auto;
+    line-height: 1;
 }
 
 .info-box-inner {
@@ -148,13 +149,13 @@ body {
 
 #info-box-back {
     position: absolute;
-    bottom: 8px;
+    bottom: 7px;
     left: 0;
 }
 
 #info-box-forward {
     position: absolute;
-    bottom: 8px;
+    bottom: 7px;
     right: 0;
 }
 
