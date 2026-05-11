@@ -113,7 +113,7 @@ body {
 }
 
 .info-feature:hover h3 {
-    opacity: 60%;
+    opacity: 100%;
 }
 
 .info-feature h3 {
@@ -272,7 +272,7 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color: var(--color-mountain) transparent;
+    scrollbar-color: var(--color-sand) transparent;
     overscroll-behavior-y: contain;
     -webkit-overflow-scrolling: touch;
 }
@@ -286,7 +286,7 @@ body {
 }
 
 .popup-content::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 100%, 0.4);
+    background-color: var(--color-sand);
     border-radius: 4px;
 }
 
