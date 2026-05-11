@@ -133,7 +133,6 @@ body {
     display: block;
     width: 25px;
     height: 25px;
-    margin: 0 5px;
     border-radius: 50%;
     z-index: 9999;
     cursor: pointer;
@@ -142,6 +141,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    padding: 5px;
 }
 
 #info-box-back:hover,
@@ -151,7 +151,7 @@ body {
 
 #info-box-back {
     position: absolute;
-    bottom: 4px;
+    bottom: 3px;
     left: 0;
 }
 

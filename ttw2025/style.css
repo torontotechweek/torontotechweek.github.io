@@ -117,7 +117,6 @@ body {
     display: inline;
     width: 30px;
     height: 30px;
-    background-color: hsla(0, 0%, 0%, 0.1);
     border-radius: 50%;
     z-index: 9999;
     cursor: pointer;
@@ -126,22 +125,23 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    padding: 5px;
 }
 
 #info-box-back:hover,
 #info-box-forward:hover {
-    color: hsl(227, 89%, 80%);
+    color: hsl(0, 0%, 100%);
 }
 
 #info-box-back {
     position: absolute;
-    bottom: 6px;
+    bottom: 3px;
     left: 0;
 }
 
 #info-box-forward {
     position: absolute;
-    bottom: 6px;
+    bottom: 3px;
     right: 0;
 }
 
