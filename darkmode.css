@@ -320,7 +320,7 @@ body {
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid var(--color-emerald);
+    border-left: 10px solid var(--color-sand);
     z-index: 100;
 }
 
