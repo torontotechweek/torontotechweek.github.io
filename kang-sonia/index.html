@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANG, S. // DISCOVERY-3195</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --border-color: #111111;
+            --surface-base: #f4f3ef;
+            --surface-inverse: #111111;
+            --block-primary: #ea580c;   /* Terracotta Ochre (dark ink) */
+            --block-secondary: #14532d; /* Forest Pine (light ink) */
+            --block-accent: #fde68a;    /* Warm Parchment Yellow (dark ink) */
+            --ink-dark: #111111;
+            --ink-light: #f4f3ef;
+            
+            --font-display: 'Inter', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--surface-base);
+            color: var(--ink-dark);
+            font-family: var(--font-display);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        /* Architectural 1px Shared-Border Grid */
+        .swiss-grid {
+            width: 100%;
+            max-width: 1080px;
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            border-top: 1px solid var(--border-color);
+            border-left: 1px solid var(--border-color);
+            background: var(--surface-base);
+        }
+
+        .cell {
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.35rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            min-width: 0;
+        }
+
+        /* Monospace Index Metadata — Two-Column Grid guarantees right span is ALWAYS flush-right */
+        .idx-bar {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            align-items: start;
+            margin-bottom: 1.25rem;
+            opacity: 0.85;
+            gap: 0.75rem;
+            width: 100%;
+        }
+
+        .idx-bar > span:first-child {
+            text-align: left;
+            justify-self: start;
+        }
+
+        .idx-bar > span:last-child {
+            text-align: right;
+            justify-self: end;
+        }
+
+        /* ROW 1: Top System Ticker (12 Cols) */
+        .cell-ticker {
+            grid-column: span 12;
+            padding: 0.65rem 1.35rem;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--surface-inverse);
+            color: var(--ink-light);
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+        }
+
+        .cell-ticker > span:first-child {
+            text-align: left;
+            justify-self: start;
+        }
+
+        .cell-ticker > span:last-child {
+            text-align: right;
+            justify-self: end;
+        }
+
+        /* ROW 2: Oversized Name Block (8 Cols) + Portrait Block (4 Cols) */
+        .cell-name {
+            grid-column: span 8;
+            padding: 1.5rem;
+            container-type: inline-size;
+        }
+
+        .display-name {
+            font-size: clamp(2.5rem, 12.2cqw, 5.4rem);
+            font-weight: 900;
+            line-height: 0.88;
+            letter-spacing: -0.045em;
+            text-transform: uppercase;
+            margin-top: 0.75rem;
+            overflow-wrap: break-word;
+            word-break: break-word;
+            hyphens: auto;
+        }
+
+        .role-line {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            margin-top: 1.35rem;
+            font-weight: 500;
+            line-height: 1.4;
+            text-transform: uppercase;
+        }
+
+        .cell-portrait {
+            grid-column: span 4;
+            background: var(--block-accent);
+            padding: 1.35rem;
+        }
+
+        .vector-stage {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto 0;
+            overflow: hidden;
+        }
+
+        .vector-stage svg {
+            width: 84%;
+            height: 84%;
+        }
+
+        .vector-stage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ROW 3: Full-Bleed Color-Coded Hook (5 Cols) + Condensed Thesis & Fields (7 Cols) */
+        .cell-event {
+            grid-column: span 5;
+            background: var(--block-primary);
+            color: var(--ink-dark);
+            container-type: inline-size;
+        }
+
+        .event-big {
+            font-size: clamp(1.65rem, 8.5cqw, 2.5rem);
+            font-weight: 900;
+            line-height: 0.96;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            margin: 0.75rem 0 1.25rem 0;
+        }
+
+        .event-meta {
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
+            font-weight: 700;
+            border-top: 1px solid var(--border-color);
+            padding-top: 0.75rem;
+            line-height: 1.4;
+            text-transform: uppercase;
+        }
+
+        .cell-thesis {
+            grid-column: span 7;
+        }
+
+        .thesis-text {
+            font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+            font-weight: 500;
+            line-height: 1.32;
+            letter-spacing: -0.015em;
+            margin-bottom: 1.5rem;
+        }
+
+        .concept-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .c-tag {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            border: 1px solid var(--border-color);
+            padding: 0.25rem 0.6rem;
+            font-weight: 500;
+        }
+
+        /* ROW 4: Map / Coordinates (4 Cols) + Selected Works (5 Cols) + Endpoints (3 Cols) */
+        .cell-map {
+            grid-column: span 4;
+            background: var(--surface-inverse);
+            color: var(--ink-light);
+        }
+
+        .topo-box {
+            height: 115px;
+            border: 1px solid #333;
+            position: relative;
+            margin: 0.25rem 0 1rem 0;
+            background-image: 
+                linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px);
+            background-size: 18px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .crosshair {
+            width: 24px;
+            height: 24px;
+            border: 1px solid var(--block-primary);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .crosshair::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--block-primary);
+        }
+
+        .coords {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: start;
+            line-height: 1.4;
+            gap: 0.75rem;
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        .coords > span:first-child {
+            text-align: left;
+            justify-self: start;
+        }
+
+        .coords > span:last-child {
+            text-align: right;
+            justify-self: end;
+        }
+
+        .cell-pubs {
+            grid-column: span 5;
+        }
+
+        .pub-row {
+            border-top: 1px solid var(--border-color);
+            padding: 0.65rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .pub-row:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .pub-venue {
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            opacity: 0.75;
+        }
+
+        .pub-name {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+
+        .pub-sub {
+            display: block;
+            font-weight: 400;
+            font-size: 0.76rem;
+            opacity: 0.75;
+            margin-top: 2px;
+        }
+
+        .cell-links {
+            grid-column: span 3;
+            background: var(--block-secondary);
+            color: var(--ink-light);
+            padding: 0;
+        }
+
+        .cell-links .idx-bar {
+            padding: 1.35rem 1.35rem 0 1.35rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .link-stack {
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+        }
+
+        .dir-row-link {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            padding: 0.85rem 1.35rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.25);
+            color: var(--ink-light);
+            text-decoration: none;
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            gap: 0.5rem;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+
+        .dir-row-link span:first-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-align: left;
+        }
+
+        .dir-row-link span:last-child {
+            text-align: right;
+            justify-self: end;
+        }
+
+        .dir-row-link:hover {
+            background: var(--ink-light);
+            color: var(--block-secondary);
+        }
+
+        /* Responsive Collapse */
+        @media (max-width: 840px) {
+            .cell-name, .cell-portrait, .cell-event, .cell-thesis, .cell-map, .cell-pubs, .cell-links {
+                grid-column: span 12;
+            }
+            .vector-stage {
+                max-width: 220px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="swiss-grid">
+        
+        <!-- 00: SYSTEM DIRECTORY BAR -->
+        <header class="cell cell-ticker">
+            <span>TTW DIRECTORY</span>
+            <span>EDUCATION</span>
+        </header>
+
+        <!-- 01: OVERSIZED TYPOGRAPHY IDENTITY -->
+        <section class="cell cell-name">
+            <div class="idx-bar">
+                <span>[01] FACULTY RECORD</span>
+                <span>DISCOVERY_ID: 3195</span>
+            </div>
+            <div>
+                <h1 class="display-name">Sonia<br>Kang</h1>
+                <p class="role-line">Professor — University of Toronto Mississauga, Department of Management</p>
+            </div>
+        </section>
+
+        <!-- 02: PORTRAIT / THUMBNAIL CELL -->
+        <section class="cell cell-portrait">
+            <div class="idx-bar">
+                <span>[02] THUMBNAIL</span>
+                <span>KANG S</span>
+            </div>
+            <div class="vector-stage">
+                <img src="-kang-sonia_1.png" alt="Sonia Kang">
+            </div>
+        </section>
+
+        <!-- 03: STRATEGIC INITIATIVES & RESEARCH ACTIVITY -->
+        <section class="cell cell-event">
+            <div class="idx-bar">
+                <span>[03] STRATEGIC INITIATIVES</span>
+                <span>GRANTS: 9</span>
+            </div>
+            <div class="event-big">Data Sciences Institute (DSI)</div>
+            <div class="event-meta">
+                GRANT: Alberta Innovates-Health Solutions (University of Alberta)<br>ACTIVITY: Canada Research Chair in Identity, Diversity, and Inclusion<br>UPDATED: 2026-11-07
+            </div>
+        </section>
+
+        <!-- 04: CONDENSED FACULTY RESEARCH & CONCEPTS -->
+        <section class="cell cell-thesis">
+            <div class="idx-bar">
+                <span>[04] RESEARCH ABSTRACT</span>
+                <span>TAGS: 4</span>
+            </div>
+            <div>
+                <p class="thesis-text">
+                    Sonia Kang is an Associate Professor of Organizational Behaviour and Human Resource Management in the Department of Management at the University of Toronto Mississauga, and holds a cross-appointment to the Organizational Behaviour and HR Management area at Rotman. Her research explores the challenges and opportunities of diversity, including strategies for mitigating the far-reaching effects of stigma and harnessing the power of diversity for society and organizations alike. Sonia’s research has been published in journals including the Journal of Personality and Social Psychology, Psychological Science, Administrative Science Quarterly, and the Journal of Experimental Social Psychology, and has been featured in media outlets such as The Globe and Mail and The Atlantic.Media availability: TV, Radio, Print/Online
+                </p>
+                <div class="concept-tags">
+                    <span class="c-tag">AGING PROCESS</span>
+                    <span class="c-tag">BUSINESS, COMMERCIAL AND CORPORATE LAW</span>
+                    <span class="c-tag">GENDER PSYCHOLOGY</span>
+                    <span class="c-tag">RACE AND ETHNIC RELATIONS</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05: LOCATION NODE -->
+        <section class="cell cell-map">
+            <div class="idx-bar">
+                <span>[05] GEO NODE</span>
+                <span>Toronto, Ontario</span>
+            </div>
+            <div class="topo-box">
+                <div class="crosshair"></div>
+            </div>
+            <div class="coords">
+                <span>3359 Mississauga Road</span>
+                <span>L5L1C6 CA</span>
+            </div>
+        </section>
+
+        <!-- 06: SELECTED PUBLICATIONS -->
+        <section class="cell cell-pubs">
+            <div class="idx-bar">
+                <span>[06] RECENT PUBLICATIONS</span>
+                <span>TOTAL: 34</span>
+            </div>
+            <div>
+                <div class="pub-row">
+                    <span class="pub-venue">American Behavioral Scientist</span>
+                    <div>
+                        <span class="pub-name">One Label Doesn’t Fit All: Self-Labeling Practices Within the Chinese Immigrant Community in Canada</span>
+                        <span class="pub-sub">Yim O, Kang SK — 2026</span>
+                    </div>
+                </div>
+                <div class="pub-row">
+                    <span class="pub-venue">Nature Reviews Psychology</span>
+                    <div>
+                        <span class="pub-name">Bridging individual-level and system-level approaches to advance psychology-based diversity initiatives</span>
+                        <span class="pub-sub">He JC, Keller BB, Kang SK — 2025</span>
+                    </div>
+                </div>
+                <div class="pub-row">
+                    <span class="pub-venue">Proceedings of the National Academy of Sciences of the United States of America</span>
+                    <div>
+                        <span class="pub-name">Debiasing job ads by replacing masculine language increases gender diversity of applicant pools</span>
+                        <span class="pub-sub">He JC, Kang SK — 2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 07: COLOR-CODED DIRECTORY ENDPOINTS -->
+        <section class="cell cell-links">
+            <div class="idx-bar">
+                <span>[07] ENDPOINTS</span>
+                <span>→</span>
+            </div>
+            <div class="link-stack">
+                <a href="https://www.sonia-kang.com/" target="_blank" rel="noopener noreferrer" class="dir-row-link">
+                    <span>Dr. Sonia Kang&#x27;s Blog</span>
+                    <span>↗</span>
+                </a>
+                <a href="https://twitter.com/Sonia_Kang" target="_blank" rel="noopener noreferrer" class="dir-row-link">
+                    <span>Dr. Sonia Kang&#x27;s Twitter</span>
+                    <span>↗</span>
+                </a>
+                <a href="https://www.linkedin.com/in/sonia-kang-bba669159/" target="_blank" rel="noopener noreferrer" class="dir-row-link">
+                    <span>Dr. Sonia Kang&#x27;s LinkeIn</span>
+                    <span>↗</span>
+                </a>
+                <a href="https://apps.rotman.utoronto.ca/rDrive/?CVkangsoni" target="_blank" rel="noopener noreferrer" class="dir-row-link">
+                    <span>View CV</span>
+                    <span>↗</span>
+                </a>
+                <a href="mailto:sonia.kang@rotman.utoronto.ca" class="dir-row-link">
+                    <span>sonia.kang@rotman.utoronto.ca</span>
+                    <span>↗</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

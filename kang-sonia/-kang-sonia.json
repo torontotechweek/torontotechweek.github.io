@@ -1,0 +1,5600 @@
+{
+  "lastName": "Kang",
+  "addresses": [
+    {
+      "countryCode": "CA",
+      "singleLineFormat": "University of Toronto, Department of Management, 3359 Mississauga Road, Toronto, Ontario, L5L1C6, Canada",
+      "organisation": "University of Toronto",
+      "subOrganisation": "Department of Management",
+      "streetAddress": "3359 Mississauga Road",
+      "city": "Toronto",
+      "state": "Ontario",
+      "zipCode": "L5L1C6",
+      "country": "Canada"
+    }
+  ],
+  "personalWebsites": [
+    {
+      "typeDisplayName": "Blog",
+      "label": "Dr. Sonia Kang's Blog",
+      "url": "https://www.sonia-kang.com/"
+    },
+    {
+      "typeDisplayName": "X (Twitter)",
+      "label": "Dr. Sonia Kang's Twitter",
+      "url": "https://twitter.com/Sonia_Kang"
+    },
+    {
+      "typeDisplayName": "LinkedIn",
+      "label": "Dr. Sonia Kang's LinkeIn",
+      "url": "https://www.linkedin.com/in/sonia-kang-bba669159/"
+    },
+    {
+      "typeDisplayName": "Other",
+      "label": "View CV",
+      "url": "https://apps.rotman.utoronto.ca/rDrive/?CVkangsoni"
+    }
+  ],
+  "tabSummaryAbout": {
+    "value": "Sonia Kang is an Associate Professor of Organizational Behaviour and Human Resource Management in the Department of Management at the University of Toronto Mississauga, and holds a cross-appointment to the Organizational Behaviour and HR Management area at Rotman. Her research explores the challenges and opportunities of diversity, including strategies for mitigating the far-reaching effects of stigma and harnessing the power of diversity for society and organizations alike. Sonia’s research has been published in journals including the Journal of Personality and Social Psychology, Psychological Science, Administrative Science Quarterly, and the Journal of Experimental Social Psychology, and has been featured in media outlets such as The Globe and Mail and The Atlantic.<br /><br />Media availability: TV, Radio, Print/Online",
+    "htmlStripped": "Sonia Kang is an Associate Professor of Organizational Behaviour and Human Resource Management in the Department of Management at the University of Toronto Mississauga, and holds a cross-appointment to the Organizational Behaviour and HR Management area at Rotman. Her research explores the challenges and opportunities of diversity, including strategies for mitigating the far-reaching effects of stigma and harnessing the power of diversity for society and organizations alike. Sonia’s research has been published in journals including the Journal of Personality and Social Psychology, Psychological Science, Administrative Science Quarterly, and the Journal of Experimental Social Psychology, and has been featured in media outlets such as The Globe and Mail and The Atlantic.Media availability: TV, Radio, Print/Online"
+  },
+  "customFilterThree": [
+    "Media enquiries"
+  ],
+  "degrees": [
+    {
+      "endDate": {
+        "year": 2004,
+        "dateTime": "2004-01-01T00:00:00-06:00"
+      },
+      "startDate": {
+        "year": 2000,
+        "dateTime": "2000-01-01T00:00:00-06:00"
+      },
+      "institution": {
+        "countryCode": "CA",
+        "singleLineFormat": "University of Alberta, Canada",
+        "organisation": "University of Alberta",
+        "country": "Canada"
+      },
+      "name": "B.Sc"
+    },
+    {
+      "endDate": {
+        "year": 2006,
+        "dateTime": "2006-01-01T00:00:00-06:00"
+      },
+      "startDate": {
+        "year": 2005,
+        "dateTime": "2005-01-01T00:00:00-06:00"
+      },
+      "institution": {
+        "countryCode": "CA",
+        "singleLineFormat": "University of Toronto, Toronto, Canada",
+        "organisation": "University of Toronto",
+        "city": "Toronto",
+        "country": "Canada"
+      },
+      "name": "M.A"
+    }
+  ],
+  "phoneNumbers": [
+    {
+      "typeDisplayName": "Work",
+      "number": "905-569-4712"
+    }
+  ],
+  "academicAppointments": [
+    {
+      "institution": {
+        "countryCode": "CA",
+        "singleLineFormat": "Institute of gender and economy, Canada",
+        "organisation": "Institute of gender and economy",
+        "country": "Canada"
+      },
+      "position": "Faculty Research Fellow",
+      "startDate": {
+        "year": 2016,
+        "dateTime": "2016-01-01T00:00:00-06:00"
+      }
+    },
+    {
+      "institution": {
+        "countryCode": "CA",
+        "singleLineFormat": "BEAR - Behavioural Economics in Action at Rotman, Canada",
+        "organisation": "BEAR - Behavioural Economics in Action at Rotman",
+        "country": "Canada"
+      },
+      "position": "Chief Scientist",
+      "startDate": {
+        "year": 2016,
+        "dateTime": "2016-01-01T00:00:00-06:00"
+      }
+    },
+    {
+      "institution": {
+        "countryCode": "CA",
+        "singleLineFormat": "University of Toronto, Toronto, Canada",
+        "organisation": "University of Toronto",
+        "city": "Toronto",
+        "country": "Canada"
+      },
+      "position": "Assistant Professor",
+      "startDate": {
+        "year": 2011,
+        "dateTime": "2011-01-01T00:00:00-06:00"
+      }
+    }
+  ],
+  "discoveryId": "3195",
+  "emailAddress": {
+    "address": "sonia.kang@rotman.utoronto.ca"
+  },
+  "explicitGroupMemberships": [
+    133,
+    138,
+    573
+  ],
+  "firstNameLastName": "Sonia Kang",
+  "equipmentLinkTypes": [],
+  "objectId": 3195,
+  "updatedWhen": "2026-11-07T09:49:31.6815577-06:00",
+  "customFilterFour": [
+    "Data Sciences Institute (DSI)"
+  ],
+  "tabSummaryGrants": {
+    "value": "* Identity<br />* Diversity<br />* Inclusion<br />* Organizational Behavior<br />* Social Psychology<br /><br />Sonia’s research explores the challenges and opportunities of identity, diversity, and inclusion. She takes a novel approach by harnessing the power of behavioral insights and organizational design to disrupt systems, processes, and structures that block the path toward diversity and inclusion for individuals, organizations, and society.<br /><br />Some recent themes investigated in her research include diversity and inclusion in STEM and medicine; using choice architecture to eliminate the gender gap in competition; disclosure of designated group status under the Canadian Employment Equity Act; the effects of high and low power on performance; the interpretation of equality rights under the Canadian Constitution; the effectiveness of pro-diversity statements; and the decision to reveal or conceal race and gender cues when navigating the labour market. Sonia’s research on “resume whitening” won two best paper awards and was recently ranked #3 on Financial Times’ global top 100 list of “business school research with social impact” (!).<br /><br />Sonia’s research has been published widely in top-tier academic journals including Proceedings of the National Academy of Sciences, Administrative Science Quarterly, Academy of Management Journal, The Lancet, the Journal of Personality and Social Psychology, Psychological Science, and Annual Review of Psychology, and is frequently featured in media outlets such as The Harvard Business Review, The Financial Times, Forbes, The Globe and Mail, The Guardian, The Atlantic, and on CBC Radio. As well, Sonia is the host of the popular podcast, For the Love of Work, in which she explores important organizational issues through the lens of the employee experience. Sonia was recently named as one of 50 “Changemakers” in Canada by Report on Business Magazine.",
+    "htmlStripped": "* Identity* Diversity* Inclusion* Organizational Behavior* Social PsychologySonia’s research explores the challenges and opportunities of identity, diversity, and inclusion. She takes a novel approach by harnessing the power of behavioral insights and organizational design to disrupt systems, processes, and structures that block the path toward diversity and inclusion for individuals, organizations, and society.Some recent themes investigated in her research include diversity and inclusion in STEM and medicine; using choice architecture to eliminate the gender gap in competition; disclosure of designated group status under the Canadian Employment Equity Act; the effects of high and low power on performance; the interpretation of equality rights under the Canadian Constitution; the effectiveness of pro-diversity statements; and the decision to reveal or conceal race and gender cues when navigating the labour market. Sonia’s research on “resume whitening” won two best paper awards and was recently ranked #3 on Financial Times’ global top 100 list of “business school research with social impact” (!).Sonia’s research has been published widely in top-tier academic journals including Proceedings of the National Academy of Sciences, Administrative Science Quarterly, Academy of Management Journal, The Lancet, the Journal of Personality and Social Psychology, Psychological Science, and Annual Review of Psychology, and is frequently featured in media outlets such as The Harvard Business Review, The Financial Times, Forbes, The Globe and Mail, The Guardian, The Atlantic, and on CBC Radio. As well, Sonia is the host of the popular podcast, For the Love of Work, in which she explores important organizational issues through the lens of the employee experience. Sonia was recently named as one of 50 “Changemakers” in Canada by Report on Business Magazine."
+  },
+  "elementsUserProfileUrl": "https://utoronto.elements.symplectic.org/userprofile.html?uid=3195",
+  "hasThumbnail": true,
+  "discoveryUrlId": "3195-sonia-kang",
+  "initials": "S",
+  "customFilterTwo": [
+    "Aging process",
+    "Business, commercial and corporate law",
+    "Gender psychology",
+    "Race and ethnic relations"
+  ],
+  "positions": [
+    {
+      "position": "Professor",
+      "department": "University of Toronto Mississauga, Department of Management",
+      "fromInstitutionalAppointment": false
+    }
+  ],
+  "groupLinkTypes": [],
+  "otherEmailAddresses": [
+    {
+      "address": "sonia.kang@utoronto.ca",
+      "typeDisplayName": "Work"
+    }
+  ],
+  "categoriesWithLinkedFavourites": {
+    "grants": false,
+    "professionalActivities": false,
+    "publications": false,
+    "teachingActivities": false,
+    "impact": false,
+    "projects": false,
+    "groups": false
+  },
+  "tags": {
+    "explicit": [
+      {
+        "value": "Aging process"
+      },
+      {
+        "value": "Business, commercial and corporate law"
+      },
+      {
+        "value": "Gender psychology"
+      },
+      {
+        "value": "Race and ethnic relations"
+      }
+    ],
+    "implicit": [
+      "Aging process",
+      "Business, commercial and corporate law",
+      "Gender psychology",
+      "Race and ethnic relations"
+    ]
+  },
+  "labels": [
+    {
+      "schemeDisplayName": "Availability",
+      "value": "Media enquiries"
+    },
+    {
+      "schemeDisplayName": "Canadian Research and Development Classification (CRDC)",
+      "value": "Aging process"
+    },
+    {
+      "schemeDisplayName": "Canadian Research and Development Classification (CRDC)",
+      "value": "Business, commercial and corporate law"
+    },
+    {
+      "schemeDisplayName": "Canadian Research and Development Classification (CRDC)",
+      "value": "Gender psychology"
+    },
+    {
+      "schemeDisplayName": "Canadian Research and Development Classification (CRDC)",
+      "value": "Race and ethnic relations"
+    },
+    {
+      "schemeDisplayName": "Institutional Strategic Initiatives",
+      "value": "Data Sciences Institute (DSI)"
+    }
+  ],
+  "firstName": "Sonia",
+  "postgraduateTraining": [
+    {
+      "endDate": {
+        "year": 2010,
+        "dateTime": "2010-01-01T00:00:00-06:00"
+      },
+      "institution": {
+        "countryCode": "CA",
+        "singleLineFormat": "University of Toronto, Toronto, Canada",
+        "organisation": "University of Toronto",
+        "city": "Toronto",
+        "country": "Canada"
+      },
+      "startDate": {
+        "year": 2006,
+        "dateTime": "2006-01-01T00:00:00-06:00"
+      },
+      "title": "PhD"
+    }
+  ],
+  "tabSummaryTeachingActivities": {
+    "value": "Dr. Sonia Kang holds the Canada Research Chair in Identity, Diversity, and Inclusion, and is an Associate Professor of Organizational Behavior and Human Resource Management at the University of Toronto, where she is also a Faculty Research Fellow at the Rotman School of Management’s Institute for Gender and the Economy (GATE) and Chief Scientist, Organizations in the Behavioural Economics in Action Research Centre at Rotman (BEAR). Sonia is also Special Advisor on Anti-Racism &amp; Equity at the University of Toronto Mississauga.",
+    "htmlStripped": "Dr. Sonia Kang holds the Canada Research Chair in Identity, Diversity, and Inclusion, and is an Associate Professor of Organizational Behavior and Human Resource Management at the University of Toronto, where she is also a Faculty Research Fellow at the Rotman School of Management’s Institute for Gender and the Economy (GATE) and Chief Scientist, Organizations in the Behavioural Economics in Action Research Centre at Rotman (BEAR). Sonia is also Special Advisor on Anti-Racism &amp; Equity at the University of Toronto Mississauga."
+  },
+  "groupMemberships": [
+    133,
+    560,
+    138,
+    573
+  ],
+  "showAISummarisationButton": true,
+  "embeddableMediaList": [
+    {
+      "accessibleDescription": "Rotman Management magazine explores themes of interest to leaders, innovators and entrepreneurs. Each issue features thought-provoking insights and problem-solving tools from leading global researchers and management practitioners. The magazine reflects Rotman’s role as a catalyst for transformative thinking that creates value for business and society.",
+      "embedLink": "https://www.youtube-nocookie.com/embed/Okavsp9tY_I",
+      "embedLinkAutoplay": "https://www.youtube-nocookie.com/embed/Okavsp9tY_I?autoplay=1",
+      "label": "Rotman Management Magazine Speaker Series | Fall 2017 | Discrimination in Hiring",
+      "thumbnailLink": "https://img.youtube.com/vi/Okavsp9tY_I/default.jpg"
+    },
+    {
+      "accessibleDescription": "Sonia Kang, Associate Professor of Organizational Behaviour, Department of Management, University of Toronto Mississauga; Chief Scientist, Behavioural Economics in Action at Rotman (BEAR); and Research Fellow, Institute for Gender and the Economy, Rotman School of Management",
+      "embedLink": "https://www.youtube-nocookie.com/embed/YFe2DW7VfdE",
+      "embedLinkAutoplay": "https://www.youtube-nocookie.com/embed/YFe2DW7VfdE?autoplay=1",
+      "label": "Rotman Management Magazine Speaker Series - Sonia Kang: Deconstructing Occupational Stereotypes",
+      "thumbnailLink": "https://img.youtube.com/vi/YFe2DW7VfdE/default.jpg"
+    }
+  ],
+  "hasCollaborationData": true,
+  "_rotmanSlug": "-kang-sonia",
+  "_rotmanUrl": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/-kang-sonia/",
+  "thumbnailPath": "data/uoft/rotman/-kang-sonia/-kang-sonia.png",
+  "collaborators": [
+    "Sonia Kang",
+    "Soo Min Toh",
+    "Katherine DeCelles",
+    "Jason Plaks",
+    "Sarah Kaplan",
+    "András Tilcsik",
+    "Jacob Hirsh",
+    "Robert Macgregor",
+    "Alison Chasteen",
+    "Michael Inzlicht"
+  ],
+  "publications": [
+    {
+      "abstract": "Ethnic minority populations, such as the Chinese and other racial minority communities, have traditionally been the targets of physical and social harassment. The onset of the Coronavirus (COVID-19) pandemic has reignited the racism, violence, and xenophobia faced by individuals of Chinese descent across North America. As a result, there is now a spotlight on the Chinese immigrant experience and the capacity for these individuals to authentically communicate and present their identities, specifically through the use of self-labels. In a mixed-methods investigation, we assessed the preferred self-labels among a sample of the Chinese population in Canada and sought to uncover the meanings imbued in the labels they use to describe themselves across different contexts. In addition, the relationships between label preferences and measures of ethnic identity and language were examined. Although bicultural labels (e.g., Chinese Canadian, Canadian Chinese, Hong Kong Canadian, etc.) were the most preferred, there was a variety of labels used, suggesting a more complex meaning in the choice of self-labels. Implications for identity and self-categorization are discussed.",
+      "authors": [
+        {
+          "nameShortFormat": "Yim O",
+          "firstNameLastName": "O Yim",
+          "fullName": "O Yim"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.1177/00027642241234130",
+      "issn": "0002-7642",
+      "issue": "4",
+      "journal": "American Behavioral Scientist",
+      "pagination": "382-410",
+      "publicationDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 1,
+        "dateTime": "2026-04-01T00:00:00-05:00"
+      },
+      "volume": "70",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2026,
+        "month": 4,
+        "day": 1,
+        "dateTime": "2026-04-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 1067275,
+      "discoveryId": "1067275",
+      "discoveryUrlId": "1067275",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biological psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Clinical and health psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Cognitive and computational psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Coronaviruses"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Social Determinants of Health"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Infectious Diseases"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Emerging Infectious Diseases"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "General Arts, Humanities & Social Sciences"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-11T00:55:16.9360305-06:00",
+      "title": "One Label Doesn’t Fit All: Self-Labeling Practices Within the Chinese Immigrant Community in Canada"
+    },
+    {
+      "abstract": "For decades, researchers, leaders and policymakers have worked to develop and implement interventions to increase the organizational representation of historically under-represented and marginalized groups, such as women in STEM and Black students attending prestigious universities. Despite substantial investments of time and resources, progress has stalled — and, worryingly, these efforts are facing growing backlash. In this Review, we examine diversity initiatives and policies grounded in psychological theory, particularly social cognition and person perception. We begin by outlining common organizational diversity strategies, identifying their psychological foundations and assessing their effectiveness. Although these approaches address an essential dimension of under-representation, they have limited effectiveness when applied alone because they primarily target individuals and intrapersonal processes (for example, stereotypes, prejudice and discrimination) while leaving systems that perpetuate inequality intact. We then consider adjacent literatures of choice architecture and judgement and decision-making, which offer complementary tools for advancing diversity by addressing both the systems in which people operate and the processes that shape individual behaviour. When combined with psychologically informed initiatives, these approaches offer a promising and sustainable path towards meaningful progress in organizational diversity.",
+      "authors": [
+        {
+          "nameShortFormat": "He JC",
+          "firstNameLastName": "J He",
+          "fullName": "J C He"
+        },
+        {
+          "nameShortFormat": "Keller BB",
+          "firstNameLastName": "B Keller",
+          "fullName": "B B Keller"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.1038/s44159-025-00493-3",
+      "issue": "11",
+      "journal": "Nature Reviews Psychology",
+      "pagination": "702-717",
+      "publicationDate": {
+        "year": 2025,
+        "month": 11,
+        "day": 1,
+        "dateTime": "2025-11-01T00:00:00-05:00"
+      },
+      "volume": "4",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2025,
+        "month": 11,
+        "day": 1,
+        "dateTime": "2025-11-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 2109074,
+      "discoveryId": "2109074",
+      "discoveryUrlId": "2109074",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and Personality Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Health Disparities"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Social Determinants of Health"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Minority Health"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Health Disparities and Racial or Ethnic Minority Health Research"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "10 Reduced Inequalities"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:44:17.9648359-06:00",
+      "title": "Bridging individual-level and system-level approaches to advance psychology-based diversity initiatives"
+    },
+    {
+      "abstract": "Job advertisements for jobs in male-dominated fields tend to contain more masculine language, and a commonly proposed intervention to increase gender diversity in applicant pools is to remove this language. In our research, we offer predictions about the broader impact of such interventions on individuals who may not \"fit\" with traditional masculine identity. Across four multimethod studies (<i>N</i> = 37,920) spanning both field and lab settings, we demonstrate that a gender debiasing intervention that replaces masculine language in job postings with synonymous gender-neutral language increases application rates among women and men whose self-identities are less aligned with masculinity. Our research highlights that conceptualizing identity incongruence along a continuum can help explain when and why gender diversity initiatives foster the inclusion of a broader group of individuals than initially anticipated.",
+      "authors": [
+        {
+          "nameShortFormat": "He JC",
+          "firstNameLastName": "J He",
+          "fullName": "J C He"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.1073/pnas.2409854122",
+      "issn": "0027-8424",
+      "issue": "7",
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "publicationDate": {
+        "year": 2025,
+        "month": 2,
+        "day": 19,
+        "dateTime": "2025-02-19T00:00:00-06:00"
+      },
+      "volume": "122",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2025,
+        "month": 2,
+        "day": 19,
+        "dateTime": "2025-02-19T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 1573271,
+      "discoveryId": "1573271",
+      "discoveryUrlId": "1573271",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Gender Studies"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Human Society"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "5 Gender Equality"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Male"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Female"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Language"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Masculinity"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Gender Identity"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adult"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Advertising"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Job Application"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Sexism"
+        },
+        {
+          "value": "belonging"
+        },
+        {
+          "value": "gender diversity"
+        },
+        {
+          "value": "gender identification"
+        },
+        {
+          "value": "intervention"
+        },
+        {
+          "value": "masculinity"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-11T13:14:39.9762009-06:00",
+      "title": "Debiasing job ads by replacing masculine language increases gender diversity of applicant pools"
+    },
+    {
+      "abstract": "Meaningful and long-lasting progress in equity, diversity, and inclusion (EDI) continue to elude academics, practitioners, and policymakers. Extending Chater & Loewenstein's arguments to the EDI space, we argue that, despite conventional focus on individual-level solutions (i-frame), increasing EDI also requires a systemic focus (s-frame). We thus call for the design, testing, and implementation of multipronged s-frame interventions.",
+      "authors": [
+        {
+          "nameShortFormat": "He JC",
+          "firstNameLastName": "J He",
+          "fullName": "J C He"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.1017/S0140525X23001115",
+      "issn": "0140-525X",
+      "journal": "Behavioral and Brain Sciences",
+      "publicationDate": {
+        "year": 2023,
+        "month": 8,
+        "day": 30,
+        "dateTime": "2023-08-30T00:00:00-05:00"
+      },
+      "volume": "46",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2023,
+        "month": 8,
+        "day": 30,
+        "dateTime": "2023-08-30T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 995076,
+      "discoveryId": "995076",
+      "discoveryUrlId": "995076",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biomedical and Clinical Sciences"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biological psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Cognitive and computational psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Neurosciences"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "10 Reduced Inequalities"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Diversity, Equity, Inclusion"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Policy"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Dissent and Disputes"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Artificial Intelligence and Image Processing"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Neurosciences"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Experimental Psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:29:04.8457889-06:00",
+      "title": "Moving from i-frame to s-frame focus in equity, diversity, and inclusion research, practice, and policy"
+    },
+    {
+      "abstract": "Leadership traits and behaviors are observed early in human development, and although an improved understanding of youth leadership would usefully inform many real-world contexts (e.g., education, parenting, policy), most empirical work on leadership has been limited to adult populations. The purpose of the current article is to add a developmental perspective to leadership research that has so far been absent. Here, we (a) highlight adolescence as a critical developmental period for leadership emergence and development, (b) argue that leadership among youths is poorly understood and critically understudied, (c) provide exemplars of synergy between research on leadership and adolescent development that are ripe for focused inquiry, and (d) underscore some of the positive consequences of accelerating empirical research on leadership in adolescence, including implications for a deeper understanding of leadership in adult working populations.",
+      "authors": [
+        {
+          "nameShortFormat": "Tackett JL",
+          "firstNameLastName": "J Tackett",
+          "fullName": "J L Tackett"
+        },
+        {
+          "nameShortFormat": "Reardon KW",
+          "firstNameLastName": "K Reardon",
+          "fullName": "K W Reardon"
+        },
+        {
+          "nameShortFormat": "Fast NJ",
+          "firstNameLastName": "N Fast",
+          "fullName": "N J Fast"
+        },
+        {
+          "nameShortFormat": "Johnson L",
+          "firstNameLastName": "L Johnson",
+          "fullName": "L Johnson"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Lang JWB",
+          "firstNameLastName": "J Lang",
+          "fullName": "J W B Lang"
+        },
+        {
+          "nameShortFormat": "Oswald FL",
+          "firstNameLastName": "F Oswald",
+          "fullName": "F L Oswald"
+        }
+      ],
+      "doi": "10.1177/17456916221118536",
+      "issn": "1745-6916",
+      "issue": "4",
+      "journal": "Perspectives on Psychological Science",
+      "pagination": "829-842",
+      "publicationDate": {
+        "year": 2023,
+        "month": 7,
+        "day": 1,
+        "dateTime": "2023-07-01T00:00:00-05:00"
+      },
+      "volume": "18",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2023,
+        "month": 7,
+        "day": 1,
+        "dateTime": "2023-07-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 789875,
+      "discoveryId": "789875",
+      "discoveryUrlId": "789875",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Clinical Research"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Pediatric Research Initiative"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Basic Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "4 Quality Education"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adult"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adolescent"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Leadership"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Educational Status"
+        },
+        {
+          "value": "adolescence"
+        },
+        {
+          "value": "leadership development"
+        },
+        {
+          "value": "leadership intervention"
+        },
+        {
+          "value": "personality development"
+        },
+        {
+          "value": "youth leadership"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-10T00:42:10.9257340-06:00",
+      "title": "Understanding the Leaders of Tomorrow: The Need to Study Leadership in Adolescence"
+    },
+    {
+      "abstract": "We report polymeric DNA-supported gold clusters that achieve interparticle plasmon-coupling, generate immunotherapeutic effects at the tumor tissue, but decluster in the bloodstream. As immunostimulating DNA, we used polyCpG DNA, which could act as a supporting matrix for metal clusters, enabling the clusters to decluster in the bloodstream. We constructed polyCpG-supported gold nanoclusters (AuPCN). For comparison with AuPCN, monomer CpG-bound gold nanoparticles (AuMC) were used. Unlike AuMC, AuPCN showed an interparticle plasmon-coupling effect and a higher light-to heat conversion efficiency. In the serum, AuPCN declustered to subunits. The CT26 tumor rechallenge of mice pretreated with AuPCN(+NIR) was followed by 0% tumor recurrence and 100% survival for up to 80 days. Compared with other groups, AuPCN(+NIR)-treated mice revealed greater cytotoxic T cell-infiltration in distant tumors and higher memory T cells in the lymph nodes. Until 7 days post-dose, the urinary excretion of Au was observed in the AuPCN-treated group, but not in the Au nanoparticle-treated mice. Although we used gold clusters and concatemeric immunostimulatory CpG as components of AuPCN, the concept of declustering in the bloodstream can be applied to design other functional DNA scaffold-based metal clusters with reduced concerns for long-term retention in the body.",
+      "authors": [
+        {
+          "nameShortFormat": "Lee J",
+          "firstNameLastName": "J Lee",
+          "fullName": "J Lee"
+        },
+        {
+          "nameShortFormat": "Le QV",
+          "firstNameLastName": "Q Le",
+          "fullName": "Q V Le"
+        },
+        {
+          "nameShortFormat": "Ko S",
+          "firstNameLastName": "S Ko",
+          "fullName": "S Ko"
+        },
+        {
+          "nameShortFormat": "Kang S",
+          "firstNameLastName": "S Kang",
+          "fullName": "S Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Macgregor RB",
+          "firstNameLastName": "R Macgregor",
+          "fullName": "R B Macgregor",
+          "resolvedUser": {
+            "objectId": 18715,
+            "discoveryId": "18715",
+            "discoveryUrlId": "18715-robert-macgregor"
+          }
+        },
+        {
+          "nameShortFormat": "Shim G",
+          "firstNameLastName": "G Shim",
+          "fullName": "G Shim"
+        },
+        {
+          "nameShortFormat": "Oh YK",
+          "firstNameLastName": "Y Oh",
+          "fullName": "Y K Oh"
+        }
+      ],
+      "doi": "10.1016/j.biomaterials.2022.121754",
+      "issn": "0142-9612",
+      "journal": "Biomaterials",
+      "publicationDate": {
+        "year": 2022,
+        "month": 10,
+        "day": 1,
+        "dateTime": "2022-10-01T00:00:00-05:00"
+      },
+      "volume": "289",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2022,
+        "month": 10,
+        "day": 1,
+        "dateTime": "2022-10-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 756993,
+      "discoveryId": "756993",
+      "discoveryUrlId": "756993",
+      "linkedObjectIds": {
+        "users": [
+          18715,
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biomedical and Clinical Sciences"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Engineering"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Nanotechnology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Nanotechnology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Bioengineering"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Cancer"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Animals"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "DNA"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Gold"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Metal Nanoparticles"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Mice"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Neoplasms"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Polymers"
+        },
+        {
+          "value": "Science & Technology"
+        },
+        {
+          "value": "Technology"
+        },
+        {
+          "value": "Engineering, Biomedical"
+        },
+        {
+          "value": "Materials Science, Biomaterials"
+        },
+        {
+          "value": "Engineering"
+        },
+        {
+          "value": "Materials Science"
+        },
+        {
+          "value": "Metal clusters"
+        },
+        {
+          "value": "Blood-declustering"
+        },
+        {
+          "value": "Excretable"
+        },
+        {
+          "value": "Kidney distribution"
+        },
+        {
+          "value": "Interparticle plasmon coupling effect"
+        },
+        {
+          "value": "GOLD NANOPARTICLES"
+        },
+        {
+          "value": "DENDRITIC CELLS"
+        },
+        {
+          "value": "OXIDE"
+        },
+        {
+          "value": "EFFICACY"
+        },
+        {
+          "value": "ANTIGEN"
+        },
+        {
+          "value": "SIZE"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Biomedical Engineering"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:18:53.8188404-06:00",
+      "title": "Blood-declustering excretable metal clusters assembled in DNA matrix"
+    },
+    {
+      "authors": [
+        {
+          "nameShortFormat": "Fang D",
+          "firstNameLastName": "D Fang",
+          "fullName": "D Fang"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Kaplan S",
+          "firstNameLastName": "S Kaplan",
+          "fullName": "S Kaplan",
+          "resolvedUser": {
+            "objectId": 14724,
+            "discoveryId": "14724",
+            "discoveryUrlId": "14724-sarah-kaplan"
+          }
+        }
+      ],
+      "doi": "10.1016/S0140-6736(22)01211-9",
+      "issn": "0140-6736",
+      "issue": "10355",
+      "journal": "Lancet",
+      "pagination": "795-797",
+      "publicationDate": {
+        "year": 2022,
+        "month": 9,
+        "day": 10,
+        "dateTime": "2022-09-10T00:00:00-05:00"
+      },
+      "volume": "400",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2022,
+        "month": 9,
+        "day": 10,
+        "dateTime": "2022-09-10T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 736832,
+      "discoveryId": "736832",
+      "discoveryUrlId": "736832",
+      "linkedObjectIds": {
+        "users": [
+          14724,
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biomedical and clinical sciences"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Health sciences"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Employment"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Telecommunications"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Teleworking"
+        },
+        {
+          "value": "Science & Technology"
+        },
+        {
+          "value": "Life Sciences & Biomedicine"
+        },
+        {
+          "value": "Medicine, General & Internal"
+        },
+        {
+          "value": "General & Internal Medicine"
+        },
+        {
+          "value": "WORKING"
+        },
+        {
+          "value": "HEALTH"
+        },
+        {
+          "value": "HOME"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Medical and Health Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "General & Internal Medicine"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:16:42.9435853-06:00",
+      "title": "We need to make sure telecommuting does not exacerbate gender disparity"
+    },
+    {
+      "abstract": "Research shows that women are less likely to enter competitions than men. This disparity may translate into a gender imbalance in holding leadership positions or ascending in organizations. We provide both laboratory and field experimental evidence that this difference can be attenuated with a default nudge-changing the choice to enter a competitive task from a default in which applicants must actively choose to compete to a default in which applicants are automatically enrolled in competition but can choose to opt out. Changing the default affects the perception of prevailing social norms about gender and competition as well as perceptions of the performance or ability threshold at which to apply. We do not find associated negative effects for performance or wellbeing. These results suggest that organizations could make use of opt-out promotion schemes to reduce the gender gap in competition and support the ascension of women to leadership positions.",
+      "authors": [
+        {
+          "nameShortFormat": "He JC",
+          "firstNameLastName": "J He",
+          "fullName": "J C He"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Lacetera N",
+          "firstNameLastName": "N Lacetera",
+          "fullName": "N Lacetera"
+        }
+      ],
+      "doi": "10.1073/pnas.2108337118",
+      "issn": "0027-8424",
+      "issue": "42",
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "publicationDate": {
+        "year": 2021,
+        "month": 10,
+        "day": 19,
+        "dateTime": "2021-10-19T00:00:00-05:00"
+      },
+      "volume": "118",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2021,
+        "month": 10,
+        "day": 19,
+        "dateTime": "2021-10-19T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 556025,
+      "discoveryId": "556025",
+      "discoveryUrlId": "556025",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Applied Economics"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Commerce, Management, Tourism and Services"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Economic Theory"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Economics"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Strategy, Management and Organisational Behaviour"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "5 Gender Equality"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Decision Making, Organizational"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Female"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Laboratories"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Male"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Sex Factors"
+        },
+        {
+          "value": "Science & Technology"
+        },
+        {
+          "value": "Multidisciplinary Sciences"
+        },
+        {
+          "value": "Science & Technology - Other Topics"
+        },
+        {
+          "value": "gender"
+        },
+        {
+          "value": "competition"
+        },
+        {
+          "value": "behavioral economics"
+        },
+        {
+          "value": "organizational behavior"
+        },
+        {
+          "value": "architecture"
+        },
+        {
+          "value": "SELF-PROMOTION"
+        },
+        {
+          "value": "DEFAULTS"
+        },
+        {
+          "value": "BACKLASH"
+        },
+        {
+          "value": "NUDGE"
+        },
+        {
+          "value": "WOMEN"
+        },
+        {
+          "value": "choice architecture"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-09T05:48:07.6945003-06:00",
+      "title": "Opt-out choice framing attenuates gender differences in the decision to compete in the laboratory and in the field"
+    },
+    {
+      "authors": [
+        {
+          "nameShortFormat": "Joyce CHE",
+          "firstNameLastName": "C Joyce",
+          "fullName": "C H E Joyce"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.5465/AMJ.2018.1280",
+      "issn": "0001-4273",
+      "issue": "4",
+      "journal": "Academy of Management Journal",
+      "publicationDate": {
+        "year": 2021,
+        "month": 9,
+        "day": 1,
+        "dateTime": "2021-09-01T00:00:00-05:00"
+      },
+      "volume": "64",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2021,
+        "month": 9,
+        "day": 1,
+        "dateTime": "2021-09-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 438634,
+      "discoveryId": "438634",
+      "discoveryUrlId": "438634",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Human resources and industrial relations"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Commerce, Management, Tourism and Services"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Strategy, management and organisational behaviour"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Business"
+        },
+        {
+          "value": "Management"
+        },
+        {
+          "value": "Business & Economics"
+        },
+        {
+          "value": "PSYCHOLOGICAL BARRIERS"
+        },
+        {
+          "value": "FUNDAMENTAL DIMENSIONS"
+        },
+        {
+          "value": "IMPRESSION MANAGEMENT"
+        },
+        {
+          "value": "SEXUAL ORIENTATION"
+        },
+        {
+          "value": "STATUS INCONGRUITY"
+        },
+        {
+          "value": "WOMEN"
+        },
+        {
+          "value": "STEREOTYPES"
+        },
+        {
+          "value": "BACKLASH"
+        },
+        {
+          "value": "MEN"
+        },
+        {
+          "value": "SEARCH"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Business and Management"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Marketing"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Business & Management"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-09T09:26:24.0869734-06:00",
+      "title": "Covering in cover letters: Gender and self-presentation in job applications"
+    },
+    {
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.1108/978-1-64802-246-320251014",
+      "pagination": "155-168",
+      "parentTitle": "Perspectives on Gender and Work",
+      "publicationDate": {
+        "year": 2020,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2020-01-01T00:00:00-06:00"
+      },
+      "objectTypeDisplayName": "Chapter",
+      "objectTypeSortIndex": 4,
+      "date1": {
+        "year": 2020,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2020-01-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 2149227,
+      "discoveryId": "2149227",
+      "discoveryUrlId": "2149227",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:46:57.6501249-06:00",
+      "title": "IDENTITY, DIVERSITY, AND INCLUSION: My Personal and Academic Path"
+    },
+    {
+      "abstract": "The current research set out to understand the stereotypes individuals hold about occupations, and to examine how occupational segregation is related to incongruences between demographic and occupational stereotypes. In Study 1, we applied the Stereotype Content Model (SCM) to develop a novel classification of occupational stereotypes based on the dimensions of warmth and competence. We found evidence that occupations are reliably stereotyped along the dimensions of warmth and competence, and that raters agreed more on certain occupational stereotypes than others. In Study 2, we mapped the occupational stereotype classification onto demographic stereotypes from the SCM to predict occupational segregation in the United States. Supporting an occupational stereotype incongruence hypothesis, women were more represented in occupations characterized by high warmth and low competence; Asian people were more represented in occupations characterized by high competence; and Black and Hispanic workers were more represented in occupations characterized by low competence. This work contributes to the understanding of how individuals perceive occupations in society, provides researchers with a means for systematically comparing occupational stereotypes and demographic stereotypes by applying the same descriptive dimensions, and highlights the importance of occupational stereotypes for understanding and potentially alleviating occupational segregation.",
+      "authors": [
+        {
+          "nameShortFormat": "He JC",
+          "firstNameLastName": "J He",
+          "fullName": "J C He"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Tse K",
+          "firstNameLastName": "K Tse",
+          "fullName": "K Tse"
+        },
+        {
+          "nameShortFormat": "Toh SM",
+          "firstNameLastName": "S Toh",
+          "fullName": "S M Toh",
+          "resolvedUser": {
+            "objectId": 8685,
+            "discoveryId": "8685",
+            "discoveryUrlId": "8685-soo-min-toh"
+          }
+        }
+      ],
+      "doi": "10.1016/j.jvb.2019.103318",
+      "issn": "0001-8791",
+      "journal": "Journal of Vocational Behavior",
+      "publicationDate": {
+        "year": 2019,
+        "month": 12,
+        "day": 1,
+        "dateTime": "2019-12-01T00:00:00-06:00"
+      },
+      "volume": "115",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2019,
+        "month": 12,
+        "day": 1,
+        "dateTime": "2019-12-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66203,
+      "discoveryId": "66203",
+      "discoveryUrlId": "66203",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          8685
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Human resources and industrial relations"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Commerce, Management, Tourism and Services"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "5 Gender Equality"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Applied"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "Stereotypes"
+        },
+        {
+          "value": "Occupations"
+        },
+        {
+          "value": "Occupational segregation"
+        },
+        {
+          "value": "Gender"
+        },
+        {
+          "value": "Race"
+        },
+        {
+          "value": "SEX SEGREGATION"
+        },
+        {
+          "value": "UNIVERSAL DIMENSIONS"
+        },
+        {
+          "value": "SOCIAL COGNITION"
+        },
+        {
+          "value": "UNITED-STATES"
+        },
+        {
+          "value": "PRESTIGE"
+        },
+        {
+          "value": "TRENDS"
+        },
+        {
+          "value": "PREJUDICE"
+        },
+        {
+          "value": "WARMTH"
+        },
+        {
+          "value": "WOMEN"
+        },
+        {
+          "value": "JOBS"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Specialist Studies in Education"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Business and Management"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Business & Management"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Strategy, management and organisational behaviour"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Applied and developmental psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5221798-06:00",
+      "title": "Stereotypes at work: Occupational stereotypes predict race and gender segregation in the workforce"
+    },
+    {
+      "abstract": "Women's representation in science and medicine has slowly increased over the past few decades. However, this rise in numbers of women, or gender diversity, has not been matched by a rise in gender inclusion. Despite increasing representation, women still encounter bias and discrimination when compared with men in these fields across a variety of outcomes, including treatment at school and work, hiring, compensation, evaluation, and promotion. Individual and systemic biases create unwelcome environments for women, particularly for those who additionally identify with other traditionally devalued groups (eg, women of colour). This Review draws on several decades of research in the field of management and its cognate disciplines to identify five myths that continue to perpetuate gender bias and five strategies for improving not only the number of women in medicine, but also their lived experiences, capacity to aspire, and opportunity to succeed. We argue for a move away from a singular focus on interventions aimed at targeting individual attitudes and behaviour to more comprehensive interventions that address structural and systemic changes.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Kaplan S",
+          "firstNameLastName": "S Kaplan",
+          "fullName": "S Kaplan",
+          "resolvedUser": {
+            "objectId": 14724,
+            "discoveryId": "14724",
+            "discoveryUrlId": "14724-sarah-kaplan"
+          }
+        }
+      ],
+      "doi": "10.1016/S0140-6736(18)33138-6",
+      "issn": "0140-6736",
+      "issue": "10171",
+      "journal": "Lancet",
+      "pagination": "579-586",
+      "publicationDate": {
+        "year": 2019,
+        "month": 2,
+        "day": 9,
+        "dateTime": "2019-02-09T00:00:00-06:00"
+      },
+      "volume": "393",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2019,
+        "month": 2,
+        "day": 9,
+        "dateTime": "2019-02-09T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66204,
+      "discoveryId": "66204",
+      "discoveryUrlId": "66204",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          14724
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biomedical and clinical sciences"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Health sciences"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Health Disparities"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Health Disparities and Racial or Ethnic Minority Health Research"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "5 Gender Equality"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "10 Reduced Inequalities"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Career Choice"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Career Mobility"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Female"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Male"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Physicians, Women"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Sexism"
+        },
+        {
+          "value": "Science & Technology"
+        },
+        {
+          "value": "Life Sciences & Biomedicine"
+        },
+        {
+          "value": "Medicine, General & Internal"
+        },
+        {
+          "value": "General & Internal Medicine"
+        },
+        {
+          "value": "SOCIAL COGNITION"
+        },
+        {
+          "value": "IMPLEMENTATION INTENTIONS"
+        },
+        {
+          "value": "RACIAL-DISCRIMINATION"
+        },
+        {
+          "value": "SEXUAL-HARASSMENT"
+        },
+        {
+          "value": "DOUBLE JEOPARDY"
+        },
+        {
+          "value": "WOMEN"
+        },
+        {
+          "value": "STEREOTYPES"
+        },
+        {
+          "value": "SCIENCE"
+        },
+        {
+          "value": "COLOR"
+        },
+        {
+          "value": "BACKLASH"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Medical and Health Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "General & Internal Medicine"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5221798-06:00",
+      "title": "Working toward gender diversity and inclusion in medicine: myths and solutions"
+    },
+    {
+      "authors": [
+        {
+          "nameShortFormat": "He JC",
+          "firstNameLastName": "J He",
+          "fullName": "J C He"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.5465/AMBPP.2019.275",
+      "issn": "0065-0668",
+      "journal": "Academy of Management Annual Meeting Proceedings",
+      "publicationDate": {
+        "year": 2019,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2019-01-01T00:00:00-06:00"
+      },
+      "objectTypeDisplayName": "Conference",
+      "objectTypeSortIndex": 8,
+      "date1": {
+        "year": 2019,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2019-01-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 479260,
+      "discoveryId": "479260",
+      "discoveryUrlId": "479260",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-11T13:11:36.0812869-06:00",
+      "title": "Covering in cover letters: Gender and self-presentation in job applications"
+    },
+    {
+      "abstract": "Colorblindness and multiculturalism offer divergent prescriptions for reducing racial tensions. Colorblindness encourages looking beyond racial differences, whereas multiculturalism encourages recognizing them. We introduce a new construct, perceived intentionality of racial discrimination (PIRD)—individuals' beliefs about how intentional discrimination is—to help explain when and why colorblindness versus multiculturalism will be preferred, and potentially more effective, for improving race relations. We first establish the distinctiveness of the PIRD construct and assess its stability over time and across intergroup contexts (Studies 1–2). We then observe that greater PIRD predicts beliefs that colorblindness versus multiculturalism will improve race relations (Studies 2–5), in part because unintentional (versus intentional) discrimination is perceived to stem from ignorance and misunderstanding versus knowingly treating racial groups unequally (Studies 4, 5b). Evidence also suggests that PIRD may shape the actual merits of colorblindness and multiculturalism for improving race relations via encouraging donations (Study 6), positive interracial interaction intentions (Study 7), and comfort with discussing race following the widely-publicized shooting of a Black teen (Study 8). Taken together, our empirical findings demonstrate the usefulness of PIRD for understanding, predicting, and influencing individuals' preferences for colorblindness versus multiculturalism.",
+      "authors": [
+        {
+          "nameShortFormat": "Apfelbaum EP",
+          "firstNameLastName": "E Apfelbaum",
+          "fullName": "E P Apfelbaum"
+        },
+        {
+          "nameShortFormat": "Grunberg R",
+          "firstNameLastName": "R Grunberg",
+          "fullName": "R Grunberg"
+        },
+        {
+          "nameShortFormat": "Halevy N",
+          "firstNameLastName": "N Halevy",
+          "fullName": "N Halevy"
+        },
+        {
+          "nameShortFormat": "Kang S",
+          "firstNameLastName": "S Kang",
+          "fullName": "S Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.1016/j.jesp.2016.08.002",
+      "issn": "0022-1031",
+      "journal": "Journal of Experimental Social Psychology",
+      "pagination": "86-101",
+      "publicationDate": {
+        "year": 2017,
+        "month": 3,
+        "day": 1,
+        "dateTime": "2017-03-01T00:00:00-06:00"
+      },
+      "volume": "69",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2017,
+        "month": 3,
+        "day": 1,
+        "dateTime": "2017-03-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66205,
+      "discoveryId": "66205",
+      "discoveryUrlId": "66205",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Health Disparities and Racial or Ethnic Minority Health Research"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Minority Health"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "10 Reduced Inequalities"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Social"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "Race"
+        },
+        {
+          "value": "Intentionality"
+        },
+        {
+          "value": "Discrimination"
+        },
+        {
+          "value": "Colorblindness"
+        },
+        {
+          "value": "Multiculturalism"
+        },
+        {
+          "value": "PREJUDICE"
+        },
+        {
+          "value": "AMERICANS"
+        },
+        {
+          "value": "ATTITUDES"
+        },
+        {
+          "value": "CONSTRUCTION"
+        },
+        {
+          "value": "PERSPECTIVES"
+        },
+        {
+          "value": "IDEOLOGY"
+        },
+        {
+          "value": "IMPLICIT"
+        },
+        {
+          "value": "BEHAVIOR"
+        },
+        {
+          "value": "IMPACT"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5221798-06:00",
+      "title": "From ignorance to intolerance: Perceived intentionality of racial discrimination shapes preferences for colorblindness versus multiculturalism"
+    },
+    {
+      "abstract": "Using interviews, a laboratory experiment, and a résumé audit study, we examine racial minorities’ attempts to avoid anticipated discrimination in labor markets by concealing or downplaying racial cues in job applications, a practice known as “résumé whitening.” Interviews with racial minority university students reveal that while some minority job seekers reject this practice, others view it as essential and use a variety of whitening techniques. Building on the qualitative findings, we conduct a lab study to examine how racial minority job seekers change their résumés in response to different job postings. Results show that when targeting an employer that presents itself as valuing diversity, minority job applicants engage in relatively little résumé whitening and thus submit more racially transparent résumés. Yet our audit study of how employers respond to whitened and unwhitened résumés shows that organizational diversity statements are not actually associated with reduced discrimination against unwhitened résumés. Taken together, these findings suggest a paradox: minorities may be particularly likely to experience disadvantage when they apply to ostensibly pro-diversity employers. These findings illuminate the role of racial concealment and transparency in modern labor markets and point to an important interplay between the self-presentation of employers and the self-presentation of job seekers in shaping economic inequality.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "DeCelles KA",
+          "firstNameLastName": "K DeCelles",
+          "fullName": "K A DeCelles",
+          "resolvedUser": {
+            "objectId": 14077,
+            "discoveryId": "14077",
+            "discoveryUrlId": "14077-katherine-decelles"
+          }
+        },
+        {
+          "nameShortFormat": "Tilcsik A",
+          "firstNameLastName": "A Tilcsik",
+          "fullName": "A Tilcsik",
+          "resolvedUser": {
+            "objectId": 15150,
+            "discoveryId": "15150",
+            "discoveryUrlId": "15150-andrás-tilcsik"
+          }
+        },
+        {
+          "nameShortFormat": "Jun S",
+          "firstNameLastName": "S Jun",
+          "fullName": "S Jun"
+        }
+      ],
+      "doi": "10.1177/0001839216639577",
+      "issn": "0001-8392",
+      "issue": "3",
+      "journal": "Administrative Science Quarterly",
+      "pagination": "469-502",
+      "publicationDate": {
+        "year": 2016,
+        "month": 9,
+        "day": 1,
+        "dateTime": "2016-09-01T00:00:00-05:00"
+      },
+      "publicUrl": "http://asq.sagepub.com/content/early/2016/03/09/0001839216639577",
+      "volume": "61",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2016,
+        "month": 9,
+        "day": 1,
+        "dateTime": "2016-09-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66206,
+      "discoveryId": "66206",
+      "discoveryUrlId": "66206",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          14077,
+          15150
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Commerce, Management, Tourism and Services"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Strategy, management and organisational behaviour"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Health Disparities and Racial or Ethnic Minority Health Research"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Minority Health"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "10 Reduced Inequalities"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "8 Decent Work and Economic Growth"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Business"
+        },
+        {
+          "value": "Management"
+        },
+        {
+          "value": "Business & Economics"
+        },
+        {
+          "value": "resume whitening"
+        },
+        {
+          "value": "self-presentation"
+        },
+        {
+          "value": "racial discrimination"
+        },
+        {
+          "value": "racial minorities"
+        },
+        {
+          "value": "diversity statements"
+        },
+        {
+          "value": "labor market inequality"
+        },
+        {
+          "value": "stigma"
+        },
+        {
+          "value": "EMPLOYMENT DISCRIMINATION"
+        },
+        {
+          "value": "STEREOTYPE CONTENT"
+        },
+        {
+          "value": "FIELD EXPERIMENT"
+        },
+        {
+          "value": "JOB"
+        },
+        {
+          "value": "STIGMATIZATION"
+        },
+        {
+          "value": "PREJUDICE"
+        },
+        {
+          "value": "AMERICANS"
+        },
+        {
+          "value": "MODEL"
+        },
+        {
+          "value": "MEN"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Business and Management"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Marketing"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Business & Management"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Human resources and industrial relations"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5221798-06:00",
+      "title": "Whitened Résumés: Race and Self-Presentation in the Labor Market"
+    },
+    {
+      "abstract": "Social identities are associated with normative standards for thought and action, profoundly influencing the behavioral choices of individual group members. These social norms provide frameworks for identifying the most appropriate actions in any situation. Given the increasing complexity of the social world, however, individuals are more and more likely to identify strongly with multiple social groups simultaneously. When these groups provide divergent behavioral norms, individuals can experience social identity conflict. The current manuscript examines the nature and consequences of this socially conflicted state, drawing upon advances in our understanding of the neuropsychology of conflict and uncertainty. Identity conflicts are proposed to involve activity in the Behavioral Inhibition System, which in turn produces high levels of anxiety and stress. Building upon this framework, four strategies for resolving identity conflict are reviewed.",
+      "authors": [
+        {
+          "nameShortFormat": "Hirsh JB",
+          "firstNameLastName": "J Hirsh",
+          "fullName": "J B Hirsh",
+          "resolvedUser": {
+            "objectId": 17786,
+            "discoveryId": "17786",
+            "discoveryUrlId": "17786-jacob-hirsh"
+          }
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.1177/1088868315589475",
+      "issn": "1088-8683",
+      "issue": "3",
+      "journal": "Personality and Social Psychology Review",
+      "pagination": "223-244",
+      "publicationDate": {
+        "year": 2016,
+        "month": 8,
+        "day": 1,
+        "dateTime": "2016-08-01T00:00:00-05:00"
+      },
+      "volume": "20",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2016,
+        "month": 8,
+        "day": 1,
+        "dateTime": "2016-08-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66207,
+      "discoveryId": "66207",
+      "discoveryUrlId": "66207",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          17786
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Basic Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Mental Health"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "16 Peace, Justice and Strong Institutions"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Anxiety"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Anxiety Disorders"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Inhibition, Psychological"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Social Identification"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Uncertainty"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Social"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "social identity"
+        },
+        {
+          "value": "groups"
+        },
+        {
+          "value": "norms"
+        },
+        {
+          "value": "conflict"
+        },
+        {
+          "value": "identity conflict"
+        },
+        {
+          "value": "uncertainty"
+        },
+        {
+          "value": "behavioral inhibition system"
+        },
+        {
+          "value": "WORK-FAMILY CONFLICT"
+        },
+        {
+          "value": "ACTION-BASED MODEL"
+        },
+        {
+          "value": "BICULTURAL IDENTITY"
+        },
+        {
+          "value": "MULTIPLE IDENTITIES"
+        },
+        {
+          "value": "STEREOTYPE THREAT"
+        },
+        {
+          "value": "ASIAN-AMERICANS"
+        },
+        {
+          "value": "ANXIOUS UNCERTAINTY"
+        },
+        {
+          "value": "NORMATIVE CONDUCT"
+        },
+        {
+          "value": "POWER MOTIVATION"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5221798-06:00",
+      "title": "Mechanisms of Identity Conflict: Uncertainty, Anxiety, and the Behavioral Inhibition System"
+    },
+    {
+      "abstract": "The current research examines how power affects performance in pressure-filled contexts. We present low-power-threat and high-power-lift effects, whereby performance in high-stakes situations suffers or is enhanced depending on one's power; that is, the power inherent to a situational role can produce effects similar to stereotype threat and lift. Three negotiations experiments demonstrate that role-based power affects outcomes but only when the negotiation is diagnostic of ability and, therefore, pressure-filled. We link these outcomes conceptually to threat and lift effects by showing that (a) role power affects performance more strongly when the negotiation is diagnostic of ability and (b) underperformance disappears when the low-power negotiator has an opportunity to self-affirm. These results suggest that stereotype threat and lift effects may represent a more general phenomenon: When the stakes are raised high, relative power can act as either a toxic brew (stereotype/low-power threat) or a beneficial elixir (stereotype/high-power lift) for performance.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Galinsky AD",
+          "firstNameLastName": "A Galinsky",
+          "fullName": "A D Galinsky"
+        },
+        {
+          "nameShortFormat": "Kray LJ",
+          "firstNameLastName": "L Kray",
+          "fullName": "L J Kray"
+        },
+        {
+          "nameShortFormat": "Shirako A",
+          "firstNameLastName": "A Shirako",
+          "fullName": "A Shirako"
+        }
+      ],
+      "doi": "10.1177/0146167215577365",
+      "issn": "0146-1672",
+      "issue": "5",
+      "journal": "Personality and Social Psychology Bulletin",
+      "pagination": "726-735",
+      "publicationDate": {
+        "year": 2015,
+        "month": 5,
+        "day": 9,
+        "dateTime": "2015-05-09T00:00:00-05:00"
+      },
+      "volume": "41",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2015,
+        "month": 5,
+        "day": 9,
+        "dateTime": "2015-05-09T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66209,
+      "discoveryId": "66209",
+      "discoveryUrlId": "66209",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Female"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Male"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Negotiating"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Power, Psychological"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Stereotyping"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Task Performance and Analysis"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Social"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "power"
+        },
+        {
+          "value": "stereotype threat"
+        },
+        {
+          "value": "stereotype lift"
+        },
+        {
+          "value": "expectations"
+        },
+        {
+          "value": "performance pressure"
+        },
+        {
+          "value": "SELF-AFFIRMATION"
+        },
+        {
+          "value": "INTELLECTUAL-PERFORMANCE"
+        },
+        {
+          "value": "NEGOTIATOR FOCUS"
+        },
+        {
+          "value": "ACHIEVEMENT GAP"
+        },
+        {
+          "value": "CHOKING"
+        },
+        {
+          "value": "SUCCESS"
+        },
+        {
+          "value": "GENDER"
+        },
+        {
+          "value": "MATH"
+        },
+        {
+          "value": "INHIBITION"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5221798-06:00",
+      "title": "Power Affects Performance When the Pressure Is On: Evidence for Low-Power Threat and High-Power Lift"
+    },
+    {
+      "abstract": "People give widely varying estimates for the amount of genetic overlap that exists between humans. While some laypeople believe that humans are highly genetically similar to one another, others believe that humans share very little genetic overlap. These studies examine how beliefs about genetic overlap affect neural and evaluative reactions to racially-ambiguous and biracial targets. In Study 1, we found that lower genetic overlap estimates predicted a stronger neural avoidance response to biracial compared to monoracial targets. In Study 2, we found that lower genetic overlap estimates predicted longer response times to classify biracial (vs. monoracial) faces into racial categories. In Study 3, we manipulated genetic overlap beliefs and found that participants in the low overlap condition explicitly rated biracial targets more negatively than those in the high overlap condition. Taken together, these data suggest that genetic overlap beliefs influence perceivers' processing fluency and evaluation of biracial and racially-ambiguous individuals.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Plaks JE",
+          "firstNameLastName": "J Plaks",
+          "fullName": "J E Plaks",
+          "resolvedUser": {
+            "objectId": 14520,
+            "discoveryId": "14520",
+            "discoveryUrlId": "14520-jason-plaks"
+          }
+        },
+        {
+          "nameShortFormat": "Remedios JD",
+          "firstNameLastName": "J Remedios",
+          "fullName": "J D Remedios"
+        }
+      ],
+      "doi": "10.3389/fpsyg.2015.00357",
+      "issue": "APR",
+      "journal": "Frontiers in Psychology",
+      "publicationDate": {
+        "year": 2015,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2015-01-01T00:00:00-06:00"
+      },
+      "volume": "6",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2015,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2015-01-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66210,
+      "discoveryId": "66210",
+      "discoveryUrlId": "66210",
+      "linkedObjectIds": {
+        "users": [
+          14520,
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biological Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Genetics"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Clinical Research"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Multidisciplinary"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "automatic/implicit processes"
+        },
+        {
+          "value": "categorization"
+        },
+        {
+          "value": "lay theories"
+        },
+        {
+          "value": "person perception"
+        },
+        {
+          "value": "social neuroscience"
+        },
+        {
+          "value": "FRONTAL EEG ASYMMETRY"
+        },
+        {
+          "value": "RACIAL CATEGORIZATION"
+        },
+        {
+          "value": "PSYCHOLOGICAL ESSENTIALISM"
+        },
+        {
+          "value": "BEHAVIORAL ACTIVATION"
+        },
+        {
+          "value": "GREATER PREJUDICE"
+        },
+        {
+          "value": "SOCIAL COGNITION"
+        },
+        {
+          "value": "RACE"
+        },
+        {
+          "value": "PERSPECTIVE"
+        },
+        {
+          "value": "PERFORMANCE"
+        },
+        {
+          "value": "PERCEPTION"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biomedical and clinical sciences"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5221798-06:00",
+      "title": "Folk beliefs about genetic variation predict avoidance of biracial individuals"
+    },
+    {
+      "abstract": "Categorization plays a fundamental role in organizing daily interactions with the social world. However, there is increasing recognition that social categorization is often complex, both because category membership can be ambiguous (e.g., multiracial or transgender identities) and because different categorical identities (e.g., race and gender) may interact to determine the meaning of category membership. These complex identities simultaneously impact social perceivers' impressions and social targets' own experiences of identity, thereby shaping perceptions, experiences, and interactions in fundamental ways. This review examines recent research on the perception and experience of the complex, multifaceted identities that both complicate and enrich our lives. Although research has historically tended to focus more on difficulties and challenges associated with multiple identities, increasing attention is being paid to opportunities that emerge from the possession of identities that include multiple distinct or overlapping groups. We consider how these opportunities might benefit both perceivers and targets.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Bodenhausen GV",
+          "firstNameLastName": "G Bodenhausen",
+          "fullName": "G V Bodenhausen"
+        }
+      ],
+      "doi": "10.1146/annurev-psych-010814-015025",
+      "issn": "0066-4308",
+      "journal": "Annual Review of Psychology",
+      "pagination": "547-574",
+      "publicationDate": {
+        "year": 2015,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2015-01-01T00:00:00-06:00"
+      },
+      "volume": "66",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2015,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2015-01-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66208,
+      "discoveryId": "66208",
+      "discoveryUrlId": "66208",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Social Identification"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Social Perception"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Stereotyping"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "Psychology, Multidisciplinary"
+        },
+        {
+          "value": "crossed categorization"
+        },
+        {
+          "value": "social identity"
+        },
+        {
+          "value": "social cognition"
+        },
+        {
+          "value": "person perception"
+        },
+        {
+          "value": "diversity"
+        },
+        {
+          "value": "discrimination"
+        },
+        {
+          "value": "MULTIRACIAL IDENTITY"
+        },
+        {
+          "value": "INTERSECTIONALITY THEORY"
+        },
+        {
+          "value": "INTERGROUP EVALUATIONS"
+        },
+        {
+          "value": "IMPRESSION-FORMATION"
+        },
+        {
+          "value": "BICULTURAL IDENTITY"
+        },
+        {
+          "value": "IMPLICIT PREJUDICE"
+        },
+        {
+          "value": "SEXUAL ORIENTATION"
+        },
+        {
+          "value": "STEREOTYPE THREAT"
+        },
+        {
+          "value": "ASIAN-AMERICANS"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Marketing"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5221798-06:00",
+      "title": "Multiple identities in social perception and interaction: Challenges and opportunities"
+    },
+    {
+      "abstract": "Individuals can be simultaneously categorized into multiple social groups (e.g., racial, gender, age), and stereotypes about one social group may conflict with another. Two such conflicting stereotype sets are those associated with older adults (e.g., frail, kind) and with Black people (e.g., violent, hostile). Recent research shows that young adult perceivers evaluate elderly Black men more positively than young Black men, suggesting that components of the elderly stereotype moderate the influence of conflicting Black stereotypes (Kang & Chasteen, 2009). The current research begins to examine whether this pattern of perceiving multiply-categorizable individuals is maintained among older adults or altered, perhaps due to aging-related cognitive and motivational changes. In three studies using different targets and evaluative tasks, both young and older participants showed evidence of an interplay between Black and elderly stereotypes, such that they perceived elderly Black targets more positively than young Black targets. A similar pattern was observed when assessing emotion change (Study 1), making ratings of warmth and power in the past, present, and future (Study 2), and when directly comparing young and old Black and White targets on traits related to warmth and power (Study 3). The absence of age differences suggests that evaluation of multiply-categorizable targets follows comparable underlying patterns of stereotype activation and inhibition in younger and older adults.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Chasteen AL",
+          "firstNameLastName": "A Chasteen",
+          "fullName": "A L Chasteen",
+          "resolvedUser": {
+            "objectId": 20243,
+            "discoveryId": "20243",
+            "discoveryUrlId": "20243-alison-chasteen"
+          }
+        },
+        {
+          "nameShortFormat": "Cadieux J",
+          "firstNameLastName": "J Cadieux",
+          "fullName": "J Cadieux"
+        },
+        {
+          "nameShortFormat": "Cary LA",
+          "firstNameLastName": "L Cary",
+          "fullName": "L A Cary"
+        },
+        {
+          "nameShortFormat": "Syeda M",
+          "firstNameLastName": "M Syeda",
+          "fullName": "M Syeda"
+        }
+      ],
+      "doi": "10.1037/a0037551",
+      "issn": "0882-7974",
+      "issue": "3",
+      "journal": "Psychology and Aging",
+      "pagination": "469-481",
+      "publicationDate": {
+        "year": 2014,
+        "month": 9,
+        "day": 1,
+        "dateTime": "2014-09-01T00:00:00-05:00"
+      },
+      "volume": "29",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2014,
+        "month": 9,
+        "day": 1,
+        "dateTime": "2014-09-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66213,
+      "discoveryId": "66213",
+      "discoveryUrlId": "66213",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          20243
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biological psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and Personality Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Applied and developmental psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Aging"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Clinical Research"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Basic Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "UK Health Research Classification System Health Category",
+          "value": "Mental health"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adolescent"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Black or African American"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Age Factors"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Aged"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Aged, 80 and over"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Aging"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Conflict, Psychological"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Female"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Male"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Middle Aged"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Social Perception"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Stereotyping"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Young Adult"
+        },
+        {
+          "value": "Science & Technology"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Life Sciences & Biomedicine"
+        },
+        {
+          "value": "Gerontology"
+        },
+        {
+          "value": "Psychology, Developmental"
+        },
+        {
+          "value": "Geriatrics & Gerontology"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "stereotyping"
+        },
+        {
+          "value": "perception"
+        },
+        {
+          "value": "older adults"
+        },
+        {
+          "value": "aging"
+        },
+        {
+          "value": "social cognition"
+        },
+        {
+          "value": "SOCIAL CATEGORIZATION"
+        },
+        {
+          "value": "DOUBLE JEOPARDY"
+        },
+        {
+          "value": "FACIAL STIMULI"
+        },
+        {
+          "value": "AGE"
+        },
+        {
+          "value": "RACE"
+        },
+        {
+          "value": "PREJUDICE"
+        },
+        {
+          "value": "BLACK"
+        },
+        {
+          "value": "INVISIBILITY"
+        },
+        {
+          "value": "RECOGNITION"
+        },
+        {
+          "value": "SUPPRESSION"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Experimental Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Cognitive and computational psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5221798-06:00",
+      "title": "Comparing young and older adults' perceptions of conflicting stereotypes and multiply-categorizable individuals"
+    },
+    {
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Inzlicht M",
+          "firstNameLastName": "M Inzlicht",
+          "fullName": "M Inzlicht",
+          "resolvedUser": {
+            "objectId": 24707,
+            "discoveryId": "24707",
+            "discoveryUrlId": "24707-michael-inzlicht"
+          }
+        }
+      ],
+      "doi": "10.1111/iops.12179",
+      "issn": "1754-9426",
+      "issue": "3",
+      "journal": "Industrial and Organizational Psychology",
+      "pagination": "452-456",
+      "publicationDate": {
+        "year": 2014,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2014-01-01T00:00:00-06:00"
+      },
+      "volume": "7",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2014,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2014-01-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66212,
+      "discoveryId": "66212",
+      "discoveryUrlId": "66212",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          24707
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Commerce, Management, Tourism and Services"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Applied and developmental psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Human resources and industrial relations"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Strategy, management and organisational behaviour"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Applied"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "PERFORMANCE"
+        },
+        {
+          "value": "ANXIETY"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Business and Management"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5221798-06:00",
+      "title": "Stereotype threat spillover: Why stereotype threat is more useful for organizations than it seems"
+    },
+    {
+      "abstract": "Gaining an understanding of intergroup relations and outgroup rejection is an important childhood development. Children learn about rejection by outgroups via their own experiences and external instruction. A comparison of the impact of experience and instruction on first-, third-, and fifth-grade children's evaluations of rejection by outgroups in a minimal-groups paradigm suggests that the relative impact of experience and instruction differs as children age. In Study 1, younger children were more influenced by instruction, and older children were more influenced by what they experienced for themselves. In Study 2, younger children were more influenced by instruction, even when that instruction conflicted with what they experienced; older children were more influenced by their own experiences, even when those experiences contradicted what they were told to expect. These findings suggest that children begin learning about outgroup rejection through instruction but start to rely more on their own experiences as they age.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Inzlicht M",
+          "firstNameLastName": "M Inzlicht",
+          "fullName": "M Inzlicht",
+          "resolvedUser": {
+            "objectId": 24707,
+            "discoveryId": "24707",
+            "discoveryUrlId": "24707-michael-inzlicht"
+          }
+        }
+      ],
+      "doi": "10.1177/0146167211426729",
+      "issn": "0146-1672",
+      "issue": "3",
+      "journal": "Personality and Social Psychology Bulletin",
+      "pagination": "357-369",
+      "publicationDate": {
+        "year": 2012,
+        "month": 3,
+        "day": 1,
+        "dateTime": "2012-03-01T00:00:00-06:00"
+      },
+      "volume": "38",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2012,
+        "month": 3,
+        "day": 1,
+        "dateTime": "2012-03-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66216,
+      "discoveryId": "66216",
+      "discoveryUrlId": "66216",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          24707
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Clinical Research"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Pediatric Research Initiative"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Child"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Child Development"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Female"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Group Processes"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Learning"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Male"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Models, Educational"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Prejudice"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Problem-Based Learning"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Psychological Distance"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Rejection, Psychology"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Social Identification"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Social Stigma"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Stereotyping"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Social"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "intergroup processes"
+        },
+        {
+          "value": "social exclusion/rejection"
+        },
+        {
+          "value": "development"
+        },
+        {
+          "value": "stigma"
+        },
+        {
+          "value": "education"
+        },
+        {
+          "value": "DEVELOPMENTAL INTERGROUP THEORY"
+        },
+        {
+          "value": "DEDUCTIVE INFERENCES"
+        },
+        {
+          "value": "INDUCTIVE INFERENCES"
+        },
+        {
+          "value": "ADULTS EVALUATION"
+        },
+        {
+          "value": "YOUNG-CHILDREN"
+        },
+        {
+          "value": "RACE"
+        },
+        {
+          "value": "CONSCIOUSNESS"
+        },
+        {
+          "value": "SENSITIVITY"
+        },
+        {
+          "value": "ATTITUDES"
+        },
+        {
+          "value": "GENDER"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5378002-06:00",
+      "title": "Stigma Building Blocks: How Instruction and Experience Teach Children About Rejection by Outgroups"
+    },
+    {
+      "authors": [
+        {
+          "nameShortFormat": "Chasteen AL",
+          "firstNameLastName": "A Chasteen",
+          "fullName": "A L Chasteen",
+          "resolvedUser": {
+            "objectId": 20243,
+            "discoveryId": "20243",
+            "discoveryUrlId": "20243-alison-chasteen"
+          }
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Remedios JD",
+          "firstNameLastName": "J Remedios",
+          "fullName": "J D Remedios"
+        }
+      ],
+      "doi": "10.1093/acprof:oso/9780199732449.003.0013",
+      "parentTitle": "Stereotype Threat Theory Process and Application",
+      "publicationDate": {
+        "year": 2012,
+        "month": 1,
+        "day": 19,
+        "dateTime": "2012-01-19T00:00:00-06:00"
+      },
+      "objectTypeDisplayName": "Chapter",
+      "objectTypeSortIndex": 4,
+      "date1": {
+        "year": 2012,
+        "month": 1,
+        "day": 19,
+        "dateTime": "2012-01-19T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66211,
+      "discoveryId": "66211",
+      "discoveryUrlId": "66211",
+      "linkedObjectIds": {
+        "users": [
+          20243,
+          3195
+        ]
+      },
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5221798-06:00",
+      "title": "Aging and Stereotype Threat: Development, Process, and Interventions"
+    },
+    {
+      "abstract": "Persuasive messages are more effective when they are custom-tailored to reflect the interests and concerns of the intended audience. Much of the message-framing literature has focused on the advantages of using either gain or loss frames, depending on the motivational orientation of the target group. In the current study, we extended this research to examine whether a persuasive appeal's effectiveness can be increased by aligning the message framing with the recipient's personality profile. For a single product, we constructed five advertisements, each designed to target one of the five major trait domains of human personality. In a sample of 324 survey respondents, advertisements were evaluated more positively the more they cohered with participants' dispositional motives. These results suggest that adapting persuasive messages to the personality traits of the target audience can be an effective way of increasing the messages' impact, and highlight the potential value of personality-based communication strategies.",
+      "authors": [
+        {
+          "nameShortFormat": "Hirsh JB",
+          "firstNameLastName": "J Hirsh",
+          "fullName": "J B Hirsh",
+          "resolvedUser": {
+            "objectId": 17786,
+            "discoveryId": "17786",
+            "discoveryUrlId": "17786-jacob-hirsh"
+          }
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Bodenhausen GV",
+          "firstNameLastName": "G Bodenhausen",
+          "fullName": "G V Bodenhausen"
+        }
+      ],
+      "doi": "10.1177/0956797611436349",
+      "issn": "0956-7976",
+      "issue": "6",
+      "journal": "Psychological Science",
+      "pagination": "578-581",
+      "publicationDate": {
+        "year": 2012,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2012-01-01T00:00:00-06:00"
+      },
+      "volume": "23",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2012,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2012-01-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66215,
+      "discoveryId": "66215",
+      "discoveryUrlId": "66215",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          17786
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and Personality Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adult"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Advertising"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Female"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Individuality"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Male"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Personality"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Personality Assessment"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Persuasive Communication"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Multidisciplinary"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "attitudes"
+        },
+        {
+          "value": "individual differences"
+        },
+        {
+          "value": "personality"
+        },
+        {
+          "value": "preferences"
+        },
+        {
+          "value": "REGULATORY FIT"
+        },
+        {
+          "value": "FLUENCY"
+        },
+        {
+          "value": "FOCUS"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Experimental Psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5378002-06:00",
+      "title": "Personalized Persuasion: Tailoring Persuasive Appeals to Recipients' Personality Traits"
+    },
+    {
+      "authors": [
+        {
+          "nameShortFormat": "Bodenhausen GV",
+          "firstNameLastName": "G Bodenhausen",
+          "fullName": "G V Bodenhausen"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Peery D",
+          "firstNameLastName": "D Peery",
+          "fullName": "D Peery"
+        }
+      ],
+      "doi": "10.4135/9781446247631.n16",
+      "pagination": "311-329",
+      "parentTitle": "Sage Handbook of Social Cognition",
+      "publicationDate": {
+        "year": 2012,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2012-01-01T00:00:00-06:00"
+      },
+      "objectTypeDisplayName": "Chapter",
+      "objectTypeSortIndex": 4,
+      "date1": {
+        "year": 2012,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2012-01-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66214,
+      "discoveryId": "66214",
+      "discoveryUrlId": "66214",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5378002-06:00",
+      "title": "Social categorization and the perception of social groups"
+    },
+    {
+      "abstract": "Starting with the first realization that negative stereotypes can cause people to underperform in the stereotyped domain, an impressive body of work has documented the robust and wide‐ranging nature of stereotype and social identity threat. In this article, we look beyond the stereotyped ability domain and present evidence that coping with stereotypes and prejudice can linger, affecting a broad range of behaviors even in areas unrelated to the stigmatized ability. This stereotype threat spillover occurs because coping with negative stereotypes and prejudice leaves self‐control resources depleted for challenges that arise later, even in unrelated situations. We suggest a number of different ways that individuals can empower and hopefully inoculate themselves against spillover including shifting appraisals and adopting positive coping strategies. We also discuss societal changes, encouraging governments and other organizations to enact policy that will reduce the prevalence of stereotyping and cultivate feelings of intrinsic motivation to reduce prejudice.",
+      "authors": [
+        {
+          "nameShortFormat": "Inzlicht M",
+          "firstNameLastName": "M Inzlicht",
+          "fullName": "M Inzlicht",
+          "resolvedUser": {
+            "objectId": 24707,
+            "discoveryId": "24707",
+            "discoveryUrlId": "24707-michael-inzlicht"
+          }
+        },
+        {
+          "nameShortFormat": "Tullett AM",
+          "firstNameLastName": "A Tullett",
+          "fullName": "A M Tullett"
+        },
+        {
+          "nameShortFormat": "Legault L",
+          "firstNameLastName": "L Legault",
+          "fullName": "L Legault"
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.1111/j.1751-2409.2011.01031.x",
+      "issn": "1751-2395",
+      "issue": "1",
+      "journal": "Social Issues and Policy Review",
+      "pagination": "227-256",
+      "publicationDate": {
+        "year": 2011,
+        "month": 12,
+        "day": 1,
+        "dateTime": "2011-12-01T00:00:00-06:00"
+      },
+      "volume": "5",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2011,
+        "month": 12,
+        "day": 1,
+        "dateTime": "2011-12-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66217,
+      "discoveryId": "66217",
+      "discoveryUrlId": "66217",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          24707
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Social Issues"
+        },
+        {
+          "value": "Psychology, Social"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "SELF-DETERMINATION THEORY"
+        },
+        {
+          "value": "EMOTION REGULATION"
+        },
+        {
+          "value": "EGO DEPLETION"
+        },
+        {
+          "value": "TEST-PERFORMANCE"
+        },
+        {
+          "value": "INTELLECTUAL-PERFORMANCE"
+        },
+        {
+          "value": "AFRICAN-AMERICANS"
+        },
+        {
+          "value": "SOCIAL-PSYCHOLOGY"
+        },
+        {
+          "value": "WORKING-MEMORY"
+        },
+        {
+          "value": "MINDFULNESS"
+        },
+        {
+          "value": "PREJUDICE"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Policy and Administration"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Sociology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Policy and administration"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Political science"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5378002-06:00",
+      "title": "Lingering Effects: Stereotype Threat Hurts More than You Think"
+    },
+    {
+      "abstract": "We hypothesized that prospective changes in social identity that involve transitioning out of a currently valued group would be associated with negative expectations regarding future states, but that this effect would be mitigated among individuals who expect to belong to a future in-group of similar importance. Consistent with predictions, strongly identified young adults in two studies projected significantly lower self-esteem/psychological well-being in old age than weakly identified young adults. Critically, however, this effect was fully attenuated if they expected to identify with their future aged in-group when they were old. Study 2 showed that the capacity for projected identification to buffer projected well-being among strongly identified young adults was contingent on their membership in the future in-group being highly salient. Analyses of participants' written descriptions of old age (Study 1) and a valence manipulation (Study 2) indicated that these effects were not attributable to the anticipated valence of future selves/states, but rather to the value placed on current and future group memberships.",
+      "authors": [
+        {
+          "nameShortFormat": "Packer DJ",
+          "firstNameLastName": "D Packer",
+          "fullName": "D J Packer"
+        },
+        {
+          "nameShortFormat": "Chasteen AL",
+          "firstNameLastName": "A Chasteen",
+          "fullName": "A L Chasteen",
+          "resolvedUser": {
+            "objectId": 20243,
+            "discoveryId": "20243",
+            "discoveryUrlId": "20243-alison-chasteen"
+          }
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.1348/014466610X519683",
+      "issn": "0144-6665",
+      "issue": "3",
+      "journal": "British Journal of Social Psychology",
+      "pagination": "414-430",
+      "publicationDate": {
+        "year": 2011,
+        "month": 9,
+        "day": 1,
+        "dateTime": "2011-09-01T00:00:00-05:00"
+      },
+      "volume": "50",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2011,
+        "month": 9,
+        "day": 1,
+        "dateTime": "2011-09-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66224,
+      "discoveryId": "66224",
+      "discoveryUrlId": "66224",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          20243
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adolescent"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adult"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Female"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Male"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Personal Satisfaction"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Self Concept"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Social Identification"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Surveys and Questionnaires"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Young Adult"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Social"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "ORGANIZATIONAL MERGER"
+        },
+        {
+          "value": "EMPLOYEE ADJUSTMENT"
+        },
+        {
+          "value": "THREAT"
+        },
+        {
+          "value": "SATISFACTION"
+        },
+        {
+          "value": "RESPONSES"
+        },
+        {
+          "value": "ADULTS"
+        },
+        {
+          "value": "IMPACT"
+        },
+        {
+          "value": "DESIRE"
+        },
+        {
+          "value": "YOUNG"
+        },
+        {
+          "value": "ANGST"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Public Health and Health Services"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Applied and developmental psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Clinical and health psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:01.4901488-06:00",
+      "title": "Facing social identity change: Interactive effects of current and projected collective identification on expectations regarding future self-esteem and psychological well-being"
+    },
+    {
+      "abstract": "Social neuroscience is an exciting new field with much to offer to the study of stigma and intergroup relations. In this article, we consider the potential impact that social neuroscience will have for social and public policy pertaining to these important topics. Taking a Hegelian approach, we discuss why social neuroscience should and should not be used by intergroup researchers and policy makers to inform public policy. We then critique these arguments and provide suggestions for best practices. Overall, our assessment of the potential for social neuroscience to inform public policy is positive, but we encourage researchers and policy makers alike to use this new methodology with social responsibility and frugality in mind.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Inzlicht M",
+          "firstNameLastName": "M Inzlicht",
+          "fullName": "M Inzlicht",
+          "resolvedUser": {
+            "objectId": 24707,
+            "discoveryId": "24707",
+            "discoveryUrlId": "24707-michael-inzlicht"
+          }
+        },
+        {
+          "nameShortFormat": "Derks B",
+          "firstNameLastName": "B Derks",
+          "fullName": "B Derks"
+        }
+      ],
+      "doi": "10.1111/j.1540-4560.2010.01664.x",
+      "issn": "0022-4537",
+      "issue": "3",
+      "journal": "Journal of Social Issues",
+      "pagination": "585-601",
+      "publicationDate": {
+        "year": 2010,
+        "month": 9,
+        "day": 1,
+        "dateTime": "2010-09-01T00:00:00-05:00"
+      },
+      "volume": "66",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2010,
+        "month": 9,
+        "day": 1,
+        "dateTime": "2010-09-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66220,
+      "discoveryId": "66220",
+      "discoveryUrlId": "66220",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          24707
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Human Society"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Policy and Administration"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Neurosciences"
+        },
+        {
+          "schemeDisplayName": "UK Health Research Classification System Research Activity Code",
+          "value": "8.3 Policy, ethics, and research governance"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Social Issues"
+        },
+        {
+          "value": "Psychology, Social"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "STEREOTYPE THREAT"
+        },
+        {
+          "value": "INDIVIDUAL-DIFFERENCES"
+        },
+        {
+          "value": "NEURAL SIGNALS"
+        },
+        {
+          "value": "BRAIN"
+        },
+        {
+          "value": "RACE"
+        },
+        {
+          "value": "PERCEPTION"
+        },
+        {
+          "value": "IMPACT"
+        },
+        {
+          "value": "STIGMA"
+        },
+        {
+          "value": "BIAS"
+        },
+        {
+          "value": "CONSEQUENCES"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Criminology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Sociology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Sociology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:01.4745283-06:00",
+      "title": "Social Neuroscience and Public Policy on Intergroup Relations: A Hegelian Analysis"
+    },
+    {
+      "abstract": "Stereotype threat spillover is a situational predicament in which coping with the stress of stereotype confirmation leaves one in a depleted volitional state and thus less likely to engage in effortful self-control in a variety of domains. We examined this phenomenon in 4 studies in which we had participants cope with stereotype and social identity threat and then measured their performance in domains in which stereotypes were not \"in the air.\" In Study 1 we examined whether taking a threatening math test could lead women to respond aggressively. In Study 2 we investigated whether coping with a threatening math test could lead women to indulge themselves with unhealthy food later on and examined the moderation of this effect by personal characteristics that contribute to identity-threat appraisals. In Study 3 we investigated whether vividly remembering an experience of social identity threat results in risky decision making. Finally, in Study 4 we asked whether coping with threat could directly influence attentional control and whether the effect was implemented by inefficient performance monitoring, as assessed by electroencephalography. Our results indicate that stereotype threat can spill over and impact self-control in a diverse array of nonstereotyped domains. These results reveal the potency of stereotype threat and that its negative consequences might extend further than was previously thought.",
+      "authors": [
+        {
+          "nameShortFormat": "Inzlicht M",
+          "firstNameLastName": "M Inzlicht",
+          "fullName": "M Inzlicht",
+          "resolvedUser": {
+            "objectId": 24707,
+            "discoveryId": "24707",
+            "discoveryUrlId": "24707-michael-inzlicht"
+          }
+        },
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.1037/a0018951",
+      "issue": "3",
+      "journal": "Journal of Personality and Social Psychology",
+      "pagination": "467-481",
+      "publicationDate": {
+        "year": 2010,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2010-01-01T00:00:00-06:00"
+      },
+      "volume": "99",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2010,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2010-01-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66223,
+      "discoveryId": "66223",
+      "discoveryUrlId": "66223",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          24707
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Basic Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Clinical Research"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adaptation, Psychological"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adolescent"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adult"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Affect"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Aggression"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Attention"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Canada"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Decision Making"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Electroencephalography"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Feeding Behavior"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Female"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Internal-External Control"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Judgment"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Male"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Mathematics"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Self Concept"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Social Identification"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Stereotyping"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Stress, Psychological"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Task Performance and Analysis"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Young Adult"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Social"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "stereotype threat"
+        },
+        {
+          "value": "self-control"
+        },
+        {
+          "value": "stress and coping"
+        },
+        {
+          "value": "neuroscience"
+        },
+        {
+          "value": "ego depletion"
+        },
+        {
+          "value": "BLACK-AND-WHITE"
+        },
+        {
+          "value": "SELF-REGULATION"
+        },
+        {
+          "value": "AFRICAN-AMERICANS"
+        },
+        {
+          "value": "TEST-PERFORMANCE"
+        },
+        {
+          "value": "NEGATIVE AFFECT"
+        },
+        {
+          "value": "STIGMA"
+        },
+        {
+          "value": "PERSPECTIVE"
+        },
+        {
+          "value": "MATH"
+        },
+        {
+          "value": "VALIDATION"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Marketing"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Cognitive and computational psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:01.4901488-06:00",
+      "title": "Stereotype threat spillover: how coping with threats to social identity affects aggression, eating, decision making, and attention."
+    },
+    {
+      "abstract": "This study examined whether the degree to which one perceives overlap between the self and another person predicts the magnitude of the neural response of the anterior cingulate cortex (ACC) following the observation of that person’s errors. Specifically, we measured the magnitude of the observational feedback-related negativity (oFRN), an event-related potential associated with observing someone else make an error, while participants watched strangers or friends complete a Stroop task. Results show stronger activation of the ACC, as indexed by the oFRN, for those who observed friends compared to those who observed strangers. This effect was mediated by the degree to which participants included the other in their conception of the self. This study contributes a unique examination of real-life close pairs to a growing body of research showing that social factors can greatly impact neural processing.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Hirsh JB",
+          "firstNameLastName": "J Hirsh",
+          "fullName": "J B Hirsh",
+          "resolvedUser": {
+            "objectId": 17786,
+            "discoveryId": "17786",
+            "discoveryUrlId": "17786-jacob-hirsh"
+          }
+        },
+        {
+          "nameShortFormat": "Chasteen AL",
+          "firstNameLastName": "A Chasteen",
+          "fullName": "A L Chasteen",
+          "resolvedUser": {
+            "objectId": 20243,
+            "discoveryId": "20243",
+            "discoveryUrlId": "20243-alison-chasteen"
+          }
+        }
+      ],
+      "doi": "10.1016/j.jesp.2009.09.012",
+      "issn": "0022-1031",
+      "issue": "1",
+      "journal": "Journal of Experimental Social Psychology",
+      "pagination": "229-232",
+      "publicationDate": {
+        "year": 2010,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2010-01-01T00:00:00-06:00"
+      },
+      "volume": "46",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2010,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2010-01-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66222,
+      "discoveryId": "66222",
+      "discoveryUrlId": "66222",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          20243,
+          17786
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biological Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Neurosciences"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Clinical Research"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Social"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "Self-other overlap"
+        },
+        {
+          "value": "Electrophysiology"
+        },
+        {
+          "value": "FEEDBACK-RELATED NEGATIVITY"
+        },
+        {
+          "value": "ANTERIOR CINGULATE CORTEX"
+        },
+        {
+          "value": "COGNITIVE CONTROL"
+        },
+        {
+          "value": "PERSPECTIVE-TAKING"
+        },
+        {
+          "value": "ANOTHERS MISTAKES"
+        },
+        {
+          "value": "OUTCOMES"
+        },
+        {
+          "value": "EMPATHY"
+        },
+        {
+          "value": "PERFORMANCE"
+        },
+        {
+          "value": "TASK"
+        },
+        {
+          "value": "PAIN"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:01.4901488-06:00",
+      "title": "Your mistakes are mine: Self-other overlap predicts neural response to observed errors"
+    },
+    {
+      "abstract": "Prior research has shown that race influences perceptions of facial expressions, with hostility detected earlier on young male Black than White faces. This study examined whether the interplay of race and age would moderate perceptions of hostility by having participants evaluate facial expressions of multiply-categorizable targets. Using a facial emotion change-detection task, we assessed evaluations of onset/offset of anger and happiness on faces of young and old Black and White men. Significant age by race interactions were observed: while participants perceived anger as lasting longer and appearing sooner on old compared to young White faces, this relationship was reversed for Black faces, with participants perceiving anger lasting longer and appearing sooner on young compared to old Black faces. Similar results were found for perceived happiness. These results suggest that perception during cross-categorization may be more complex than the simple additive function proposed by the double-jeopardy hypothesis, such that co-activation of other stereotypes may sometimes confer a protective benefit against bias.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Chasteen AL",
+          "firstNameLastName": "A Chasteen",
+          "fullName": "A L Chasteen",
+          "resolvedUser": {
+            "objectId": 20243,
+            "discoveryId": "20243",
+            "discoveryUrlId": "20243-alison-chasteen"
+          }
+        }
+      ],
+      "doi": "10.1016/j.jesp.2009.07.002",
+      "issn": "0022-1031",
+      "issue": "6",
+      "journal": "Journal of Experimental Social Psychology",
+      "pagination": "1281-1285",
+      "publicationDate": {
+        "year": 2009,
+        "month": 11,
+        "day": 1,
+        "dateTime": "2009-11-01T00:00:00-05:00"
+      },
+      "volume": "45",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2009,
+        "month": 11,
+        "day": 1,
+        "dateTime": "2009-11-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66219,
+      "discoveryId": "66219",
+      "discoveryUrlId": "66219",
+      "linkedObjectIds": {
+        "users": [
+          20243,
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biological Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Clinical Research"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Social"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "Stereotyping"
+        },
+        {
+          "value": "Prejudice"
+        },
+        {
+          "value": "Person perception"
+        },
+        {
+          "value": "Emotions"
+        },
+        {
+          "value": "Cross-categorization"
+        },
+        {
+          "value": "PERCEPTION"
+        },
+        {
+          "value": "STEREOTYPES"
+        },
+        {
+          "value": "BLACK"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5378002-06:00",
+      "title": "Beyond the double-jeopardy hypothesis: Assessing emotion on the faces of multiply-categorizable targets of prejudice"
+    },
+    {
+      "abstract": "PURPOSE: There is much evidence suggesting that older adults are often negatively affected by aging stereotypes; however, no method to identify individual differences in vulnerability to these effects has yet been developed. The purpose of this study was to develop a reliable and valid questionnaire to measure individual differences in the tendency to anxiously expect, readily perceive, and intensely react to age-based rejection among older adults: the Age-Based Rejection Sensitivity Questionnaire (RSQ-Age).\nDESIGN AND METHODS: A pilot sample of older adults was asked to identify situations in which negative outcomes related to being an older adult might occur. From these responses, 58 scenarios representing 8 domains and themes were identified. Thirty initial items were created from this pool of scenarios, and this 30-item RSQ-Age underwent intensive testing and refinement to create the final 15-item RSQ-Age. The 15-item RSQ-Age was assessed for internal and test-retest reliability, as well as construct validity.\nRESULTS: Results revealed that the RSQ-Age has good internal (alpha = .91) and test-retest, r(72) = .74, p < .01, reliability and is a valid measure of age-based rejection sensitivity (RS). Construct validity was supported by correlations with personal RS, age-based stigma consciousness, self-consciousness, awareness of ageism, and self-esteem.\nIMPLICATIONS: The RSQ-Age is a useful measure for researchers and health care workers interested in the relationships between expectancy, perceptions, and reactions to age-based stigma and subsequent cognitive, behavioral, and health-related consequences.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang SK",
+          "firstNameLastName": "S Kang",
+          "fullName": "S K Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Chasteen AL",
+          "firstNameLastName": "A Chasteen",
+          "fullName": "A L Chasteen",
+          "resolvedUser": {
+            "objectId": 20243,
+            "discoveryId": "20243",
+            "discoveryUrlId": "20243-alison-chasteen"
+          }
+        }
+      ],
+      "doi": "10.1093/geront/gnp035",
+      "issn": "0016-9013",
+      "issue": "3",
+      "journal": "Gerontologist",
+      "pagination": "303-316",
+      "publicationDate": {
+        "year": 2009,
+        "month": 6,
+        "day": 1,
+        "dateTime": "2009-06-01T00:00:00-05:00"
+      },
+      "volume": "49",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2009,
+        "month": 6,
+        "day": 1,
+        "dateTime": "2009-06-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66218,
+      "discoveryId": "66218",
+      "discoveryUrlId": "66218",
+      "linkedObjectIds": {
+        "users": [
+          20243,
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Allied Health and Rehabilitation Science"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Health Sciences"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Clinical Research"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Basic Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Aging"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "UK Health Research Classification System Research Activity Code",
+          "value": "1.2 Psychological and socioeconomic processes"
+        },
+        {
+          "schemeDisplayName": "UN Sustainable Development Goals",
+          "value": "3 Good Health and Well Being"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adolescent"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Adult"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Aged"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Aged, 80 and over"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Aging"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Female"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Male"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Middle Aged"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Psychometrics"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Rejection, Psychology"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Stereotyping"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Surveys and Questionnaires"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Young Adult"
+        },
+        {
+          "value": "Science & Technology"
+        },
+        {
+          "value": "Life Sciences & Biomedicine"
+        },
+        {
+          "value": "Gerontology"
+        },
+        {
+          "value": "Geriatrics & Gerontology"
+        },
+        {
+          "value": "Measurement"
+        },
+        {
+          "value": "Psychometrics"
+        },
+        {
+          "value": "Scale development"
+        },
+        {
+          "value": "Ageism"
+        },
+        {
+          "value": "Stigma"
+        },
+        {
+          "value": "STEREOTYPE THREAT"
+        },
+        {
+          "value": "STIGMA CONSCIOUSNESS"
+        },
+        {
+          "value": "OLD-AGE"
+        },
+        {
+          "value": "CHARACTERS"
+        },
+        {
+          "value": "DYNAMICS"
+        },
+        {
+          "value": "MEMORY"
+        },
+        {
+          "value": "POWER"
+        },
+        {
+          "value": "MIND"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Clinical Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Gerontology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:00.5378002-06:00",
+      "title": "The development and validation of the age-based rejection sensitivity questionnaire"
+    },
+    {
+      "abstract": "Although research has shown that older adults are negatively affected by aging stereotypes, relatively few studies have attempted to identify those older adults who may be especially susceptible to these effects. The current research takes steps toward identifying older adults most susceptible to the effects of stereotype threat and investigates the consequence of stereotype threat on the well-being of older adults. Older adults were tested on their recall of a prose passage under normal or stereotype threatening conditions. Memory decrements for those in the threat condition were moderated by perceived stereotype threat such that greater decrements were seen for those who reported greater perceived threat. A similar pattern was observed for negative emotion, such that those in the threat condition who reported higher perceptions of threat experienced a greater decrease in positive emotions. Age group identification also proved to be an important factor, with the strongly identified performing worse than the weakly identified. As well, high age-group identification buffered some of the negative affective consequences associated with stereotype threat, which is consistent with some models of coping with stigma.",
+      "authors": [
+        {
+          "nameShortFormat": "Kang S",
+          "firstNameLastName": "S Kang",
+          "fullName": "S Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        },
+        {
+          "nameShortFormat": "Chasteen A",
+          "firstNameLastName": "A Chasteen",
+          "fullName": "A Chasteen",
+          "resolvedUser": {
+            "objectId": 20243,
+            "discoveryId": "20243",
+            "discoveryUrlId": "20243-alison-chasteen"
+          }
+        }
+      ],
+      "doi": "10.2190/AG.69.3.c",
+      "issn": "0091-4150",
+      "issue": "3",
+      "journal": "International Journal of Aging and Human Development",
+      "pagination": "201-220",
+      "publicationDate": {
+        "year": 2009,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2009-01-01T00:00:00-06:00"
+      },
+      "volume": "69",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2009,
+        "month": 1,
+        "day": 1,
+        "dateTime": "2009-01-01T00:00:00-06:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66221,
+      "discoveryId": "66221",
+      "discoveryUrlId": "66221",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          20243
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Aging"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Clinical Research"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Affect"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Affective Symptoms"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Aged"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Aged, 80 and over"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Aging"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Female"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Humans"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Memory"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Memory Disorders"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Middle Aged"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Prejudice"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Self Concept"
+        },
+        {
+          "schemeDisplayName": "MeSH",
+          "value": "Stereotyping"
+        },
+        {
+          "value": "Science & Technology"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Life Sciences & Biomedicine"
+        },
+        {
+          "value": "Gerontology"
+        },
+        {
+          "value": "Psychology, Developmental"
+        },
+        {
+          "value": "Geriatrics & Gerontology"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "NEGATIVE AFFECT"
+        },
+        {
+          "value": "MEMORY"
+        },
+        {
+          "value": "EMOTION"
+        },
+        {
+          "value": "PERFORMANCE"
+        },
+        {
+          "value": "ATTITUDES"
+        },
+        {
+          "value": "SALIENCE"
+        },
+        {
+          "value": "YOUNGER"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Applied Mathematics"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Public Health and Health Services"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Gerontology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Applied and developmental psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Clinical and health psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:01.4901488-06:00",
+      "title": "The moderating role of age-group identification and perceived threat on stereotype threat among older adults"
+    },
+    {
+      "abstract": "This article reviews social neuroscience research on the experience of stigma from the target's perspective. More specifically, we discuss several research programs that employ electroencephalography, event-related potentials, or functional magnetic resonance imaging methods to examine neural correlates of stereotype and social identity threat. We present neuroimaging studies that show brain activation related to the experience of being stereotyped and ERP studies that shed light on the cognitive processes underlying social identity processes. Among these are two projects from our own lab. The first project reveals the important role of the neurocognitive conflict-detection system in stereotype threat effects, especially as it pertains to stereotype threat `spillover'. The second project examines the role of automatic ingroup evaluations as a neural mediator between social identity threats and compensatory ingroup bias. We conclude with a discussion of the benefits, limitations, and unique contributions of social neuroscience to our understanding of stigma and social identity threat.",
+      "authors": [
+        {
+          "nameShortFormat": "Derks B",
+          "firstNameLastName": "B Derks",
+          "fullName": "B Derks"
+        },
+        {
+          "nameShortFormat": "Inzlicht M",
+          "firstNameLastName": "M Inzlicht",
+          "fullName": "M Inzlicht",
+          "resolvedUser": {
+            "objectId": 24707,
+            "discoveryId": "24707",
+            "discoveryUrlId": "24707-michael-inzlicht"
+          }
+        },
+        {
+          "nameShortFormat": "Kang S",
+          "firstNameLastName": "S Kang",
+          "fullName": "S Kang",
+          "resolvedUser": {
+            "objectId": 3195,
+            "discoveryId": "3195",
+            "discoveryUrlId": "3195-sonia-kang"
+          }
+        }
+      ],
+      "doi": "10.1177/1368430207088036",
+      "issn": "1368-4302",
+      "issue": "2",
+      "journal": "Group Processes and Intergroup Relations",
+      "pagination": "163-181",
+      "publicationDate": {
+        "year": 2008,
+        "month": 4,
+        "day": 1,
+        "dateTime": "2008-04-01T00:00:00-05:00"
+      },
+      "volume": "11",
+      "objectTypeDisplayName": "Journal article",
+      "objectTypeSortIndex": 15,
+      "date1": {
+        "year": 2008,
+        "month": 4,
+        "day": 1,
+        "dateTime": "2008-04-01T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 66225,
+      "discoveryId": "66225",
+      "discoveryUrlId": "66225",
+      "linkedObjectIds": {
+        "users": [
+          3195,
+          24707
+        ]
+      },
+      "labels": [
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Biological Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Neurosciences"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Social Determinants of Health"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Basic Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "Research, Condition and Disease Categorization",
+          "value": "Behavioral and Social Science"
+        },
+        {
+          "schemeDisplayName": "UK Health Research Classification System Health Category",
+          "value": "Neurological"
+        },
+        {
+          "schemeDisplayName": "UK Health Research Classification System Health Category",
+          "value": "Mental health"
+        },
+        {
+          "value": "Social Sciences"
+        },
+        {
+          "value": "Psychology, Social"
+        },
+        {
+          "value": "Psychology"
+        },
+        {
+          "value": "EEG"
+        },
+        {
+          "value": "ERP"
+        },
+        {
+          "value": "social identity"
+        },
+        {
+          "value": "social neuroscience"
+        },
+        {
+          "value": "stereotype threat"
+        },
+        {
+          "value": "IN-GROUP BIAS"
+        },
+        {
+          "value": "TEST-PERFORMANCE"
+        },
+        {
+          "value": "SELF-REGULATION"
+        },
+        {
+          "value": "WORKING-MEMORY"
+        },
+        {
+          "value": "INDIVIDUAL-DIFFERENCES"
+        },
+        {
+          "value": "ERROR-DETECTION"
+        },
+        {
+          "value": "GROUP MEMBERS"
+        },
+        {
+          "value": "NEURAL BASIS"
+        },
+        {
+          "value": "MATH"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Business and Management"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2008)",
+          "value": "Cognitive Sciences"
+        },
+        {
+          "schemeDisplayName": "Science-Metrix",
+          "value": "Social Psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Strategy, management and organisational behaviour"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Applied and developmental psychology"
+        },
+        {
+          "schemeDisplayName": "Fields of Research (2020)",
+          "value": "Social and personality psychology"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T02:03:01.4901488-06:00",
+      "title": "The neuroscience of stigma and stereotype threat"
+    }
+  ],
+  "grants": [
+    {
+      "funderName": "Alberta Innovates-Health Solutions (University of Alberta)",
+      "objectTypeDisplayName": "Sponsored Research Agreement",
+      "objectTypeSortIndex": 1,
+      "date1": {
+        "year": 2024,
+        "month": 10,
+        "day": 1,
+        "dateTime": "2024-10-01T00:00:00-05:00"
+      },
+      "date2": {
+        "year": 2026,
+        "month": 3,
+        "day": 31,
+        "dateTime": "2026-03-31T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 1703275,
+      "discoveryId": "1703275",
+      "discoveryUrlId": "1703275",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "value": "2SLGBTQIA+"
+        },
+        {
+          "value": "entrepreneurship"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T04:02:11.6126283-06:00",
+      "title": "2SLGBTQI+ Entrepreneurship Knowledge Hub"
+    },
+    {
+      "funderName": "MITACS(Mathematics of Info Tech &",
+      "objectTypeDisplayName": "Sponsored Research Agreement",
+      "objectTypeSortIndex": 1,
+      "date1": {
+        "year": 2022,
+        "month": 2,
+        "day": 28,
+        "dateTime": "2022-02-28T00:00:00-06:00"
+      },
+      "date2": {
+        "year": 2024,
+        "month": 4,
+        "day": 27,
+        "dateTime": "2024-04-27T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 727638,
+      "discoveryId": "727638",
+      "discoveryUrlId": "727638",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "value": "equity, diversity, inclusion"
+        },
+        {
+          "value": "meaning-making"
+        },
+        {
+          "value": "organizational behaviour"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T04:00:28.6304038-06:00",
+      "title": "Dialogic Pedagogy in Equity, Diversity, and Inclusion (EDI) Learning"
+    },
+    {
+      "funderName": "CRC - SSHRC",
+      "objectTypeDisplayName": "Sponsored Research Agreement",
+      "objectTypeSortIndex": 1,
+      "date1": {
+        "year": 2019,
+        "month": 10,
+        "day": 1,
+        "dateTime": "2019-10-01T00:00:00-05:00"
+      },
+      "date2": {
+        "year": 2024,
+        "month": 9,
+        "day": 30,
+        "dateTime": "2024-09-30T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 717362,
+      "discoveryId": "717362",
+      "discoveryUrlId": "717362",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "value": "DIVERSITY"
+        },
+        {
+          "value": "IDENTITY"
+        },
+        {
+          "value": "INCLUSION"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:59:32.0045975-06:00",
+      "title": "Identify, Diversity and Inclusion"
+    },
+    {
+      "funderName": "Social Sciences & Humanities (SSHRC)",
+      "objectTypeDisplayName": "Sponsored Research Agreement",
+      "objectTypeSortIndex": 1,
+      "date1": {
+        "year": 2019,
+        "month": 4,
+        "day": 1,
+        "dateTime": "2019-04-01T00:00:00-05:00"
+      },
+      "date2": {
+        "year": 2023,
+        "month": 3,
+        "day": 31,
+        "dateTime": "2023-03-31T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 712952,
+      "discoveryId": "712952",
+      "discoveryUrlId": "712952",
+      "linkedObjectIds": {
+        "users": [
+          8685,
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "value": "communication"
+        },
+        {
+          "value": "diversity"
+        },
+        {
+          "value": "identity"
+        },
+        {
+          "value": "immigration"
+        },
+        {
+          "value": "inclusion"
+        },
+        {
+          "value": "intergroup relations"
+        },
+        {
+          "value": "multiculturalism"
+        },
+        {
+          "value": "organizational behaviour"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:59:12.1382878-06:00",
+      "title": "“Whitening” Names in Academic, Personal, and Professional Life: Motivations, Consequences, and a Fluency-Based Intervention"
+    },
+    {
+      "funderName": "SSHRC (University of British Columbia)",
+      "objectTypeDisplayName": "Sponsored Research Agreement",
+      "objectTypeSortIndex": 1,
+      "date1": {
+        "year": 2017,
+        "month": 3,
+        "day": 15,
+        "dateTime": "2017-03-15T00:00:00-05:00"
+      },
+      "date2": {
+        "year": 2025,
+        "month": 3,
+        "day": 31,
+        "dateTime": "2025-03-31T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 702452,
+      "discoveryId": "702452",
+      "discoveryUrlId": "702452",
+      "linkedObjectIds": {
+        "users": [
+          14065,
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "value": "Engineering"
+        },
+        {
+          "value": "Gender Bias"
+        },
+        {
+          "value": "Implicit Bias"
+        },
+        {
+          "value": "Intergroup Contact"
+        },
+        {
+          "value": "STEM"
+        },
+        {
+          "value": "Social Identity Threat"
+        },
+        {
+          "value": "Women"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:58:11.8339902-06:00",
+      "title": "Engendering Success in STEM: A Research Consortium for Gender Equality in Science and Technology"
+    },
+    {
+      "funderName": "Connaught Fund",
+      "objectTypeDisplayName": "Sponsored Research Agreement",
+      "objectTypeSortIndex": 1,
+      "date1": {
+        "year": 2015,
+        "month": 4,
+        "day": 1,
+        "dateTime": "2015-04-01T00:00:00-05:00"
+      },
+      "date2": {
+        "year": 2018,
+        "month": 3,
+        "day": 31,
+        "dateTime": "2018-03-31T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 696215,
+      "discoveryId": "696215",
+      "discoveryUrlId": "696215",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "value": "business"
+        },
+        {
+          "value": "depression"
+        },
+        {
+          "value": "discrimination"
+        },
+        {
+          "value": "hiring"
+        },
+        {
+          "value": "management"
+        },
+        {
+          "value": "mental health"
+        },
+        {
+          "value": "stigma"
+        },
+        {
+          "value": "workplace"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:57:29.4123895-06:00",
+      "title": "Mental Health Stigma in the Workplace"
+    },
+    {
+      "funderName": "Social Sciences & Humanities (SSHRC)",
+      "objectTypeDisplayName": "Sponsored Research Agreement",
+      "objectTypeSortIndex": 1,
+      "date1": {
+        "year": 2014,
+        "month": 4,
+        "day": 1,
+        "dateTime": "2014-04-01T00:00:00-05:00"
+      },
+      "date2": {
+        "year": 2015,
+        "month": 3,
+        "day": 31,
+        "dateTime": "2015-03-31T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 696569,
+      "discoveryId": "696569",
+      "discoveryUrlId": "696569",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:57:32.5519040-06:00",
+      "title": "Mental Health Stigma in the Workplace"
+    },
+    {
+      "funderName": "Social Sciences & Humanities (SSHRC)",
+      "objectTypeDisplayName": "Sponsored Research Agreement",
+      "objectTypeSortIndex": 1,
+      "date1": {
+        "year": 2013,
+        "month": 6,
+        "day": 1,
+        "dateTime": "2013-06-01T00:00:00-05:00"
+      },
+      "date2": {
+        "year": 2015,
+        "month": 5,
+        "day": 31,
+        "dateTime": "2015-05-31T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 688422,
+      "discoveryId": "688422",
+      "discoveryUrlId": "688422",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "labels": [
+        {
+          "value": "CAREER ASPIRATIONS"
+        },
+        {
+          "value": "CAREER CHOICES"
+        },
+        {
+          "value": "DIVERSITY"
+        },
+        {
+          "value": "MENTORING"
+        },
+        {
+          "value": "PROFESSIONAL IDENTITIES"
+        },
+        {
+          "value": "SOCIAL SCIENCES"
+        },
+        {
+          "value": "STEREOTYPES"
+        },
+        {
+          "value": "STIGMA"
+        }
+      ],
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:56:47.6155786-06:00",
+      "title": "Eliminating barriers to universal prosperity in the Canadian workforce: Strenthening professional identities of women, visible minorities and Aboriginals"
+    },
+    {
+      "funderName": "Social Sciences & Humanities (SSHRC)",
+      "objectTypeDisplayName": "Sponsored Research Agreement",
+      "objectTypeSortIndex": 1,
+      "date1": {
+        "year": 2012,
+        "month": 4,
+        "day": 1,
+        "dateTime": "2012-04-01T00:00:00-05:00"
+      },
+      "date2": {
+        "year": 2014,
+        "month": 3,
+        "day": 31,
+        "dateTime": "2014-03-31T00:00:00-05:00"
+      },
+      "favouritedByUserIds": [],
+      "objectId": 688166,
+      "discoveryId": "688166",
+      "discoveryUrlId": "688166",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T03:56:45.3196512-06:00",
+      "title": "Comparing young and older adults’ perceptions of multiply-categorizable individuals"
+    }
+  ],
+  "professionalActivities": [
+    {
+      "objectTypeDisplayName": "Honour / Award / Distinction",
+      "objectTypeSortIndex": 9,
+      "date1": {
+        "year": 2019,
+        "month": 10,
+        "day": 1,
+        "dateTime": "2019-10-01T00:00:00-05:00"
+      },
+      "date2": {
+        "year": 2024,
+        "month": 9,
+        "day": 30,
+        "dateTime": "2024-09-30T00:00:00-05:00"
+      },
+      "additionalInformation": "Canada Research Chairs",
+      "keyUrl": "https://www.chairs-chaires.gc.ca/home-accueil-eng.aspx",
+      "favouritedByUserIds": [],
+      "objectId": 1043550,
+      "discoveryId": "1043550",
+      "discoveryUrlId": "1043550",
+      "linkedObjectIds": {
+        "users": [
+          3195
+        ]
+      },
+      "hasThumbnail": false,
+      "updatedWhen": "2026-11-07T04:06:19.8514644-06:00",
+      "title": "Canada Research Chair in Identity, Diversity, and Inclusion"
+    }
+  ]
+}
