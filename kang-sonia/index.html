@@ -12,7 +12,7 @@
             --border-color: #111111;
             --surface-base: #f4f3ef;
             --surface-inverse: #111111;
-            --block-primary: #ea580c;   /* Terracotta Ochre (dark ink) */
+            --block-primary: #ffffff;
             --block-secondary: #14532d; /* Forest Pine (light ink) */
             --block-accent: #fde68a;    /* Warm Parchment Yellow (dark ink) */
             --ink-dark: #111111;
@@ -74,6 +74,7 @@
             opacity: 0.85;
             gap: 0.75rem;
             width: 100%;
+            z-index: 1; /* Keep above fade layer */
         }
 
         .idx-bar > span:first-child {
@@ -172,6 +173,23 @@
             background: var(--block-primary);
             color: var(--ink-dark);
             container-type: inline-size;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cell-event::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: var(--bg-image);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.6;
+            z-index: 0;
+            pointer-events: none;
         }
 
         .event-big {
@@ -181,6 +199,7 @@
             letter-spacing: -0.03em;
             text-transform: uppercase;
             margin: 0.75rem 0 1.25rem 0;
+            z-index: 1;
         }
 
         .event-meta {
@@ -191,6 +210,7 @@
             padding-top: 0.75rem;
             line-height: 1.4;
             text-transform: uppercase;
+            z-index: 1;
         }
 
         .cell-thesis {
@@ -224,11 +244,28 @@
             grid-column: span 4;
             background: var(--surface-inverse);
             color: var(--ink-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cell-map::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: var(--bg-image);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.6;
+            z-index: 0;
+            pointer-events: none;
         }
 
         .topo-box {
             height: 115px;
-            border: 1px solid #333;
+            border: 1px solid var(--ink-light);;
             position: relative;
             margin: 0.25rem 0 1rem 0;
             background-image: 
@@ -238,6 +275,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 1;
         }
 
         .crosshair {
@@ -267,6 +305,8 @@
             gap: 0.75rem;
             text-transform: uppercase;
             width: 100%;
+            position: relative;
+            z-index: 1;
         }
 
         .coords > span:first-child {
@@ -416,7 +456,7 @@
         </section>
 
         <!-- 03: STRATEGIC INITIATIVES & RESEARCH ACTIVITY -->
-        <section class="cell cell-event">
+        <section class="cell cell-event" style="--bg-image: url('data_sciences_institute_(dsi).jpeg');">
             <div class="idx-bar">
                 <span>[03] STRATEGIC INITIATIVES</span>
                 <span>GRANTS: 9</span>
@@ -447,7 +487,7 @@
         </section>
 
         <!-- 05: LOCATION NODE -->
-        <section class="cell cell-map">
+        <section class="cell cell-map" style="--bg-image: url('3359_mississauga_road.jpeg');">
             <div class="idx-bar">
                 <span>[05] GEO NODE</span>
                 <span>Toronto, Ontario</span>
