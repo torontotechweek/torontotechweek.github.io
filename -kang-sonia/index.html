@@ -17,7 +17,7 @@
             --block-accent: #fde68a;    /* Warm Parchment Yellow (dark ink) */
             --ink-dark: #111111;
             --ink-light: #f4f3ef;
-            
+
             --font-display: 'Inter', sans-serif;
             --font-mono: 'JetBrains Mono', monospace;
         }
@@ -74,7 +74,7 @@
             opacity: 0.85;
             gap: 0.75rem;
             width: 100%;
-            z-index: 1; /* Keep above fade layer */
+            z-index: 1;
         }
 
         .idx-bar > span:first-child {
@@ -87,8 +87,9 @@
             justify-self: end;
         }
 
-        /* ROW 1: Top System Ticker (12 Cols) */
-        .cell-ticker {
+        /* ROW 1 & ROW 5: Top System Ticker & Bottom Footer (12 Cols) */
+        .cell-ticker,
+        .cell-footer {
             grid-column: span 12;
             padding: 0.65rem 1.35rem;
             display: grid;
@@ -100,16 +101,30 @@
             font-family: var(--font-mono);
             font-size: 0.72rem;
             letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
 
-        .cell-ticker > span:first-child {
+        .cell-ticker > span:first-child,
+        .cell-footer > span:first-child {
             text-align: left;
             justify-self: start;
         }
 
-        .cell-ticker > span:last-child {
+        .cell-ticker > span:last-child,
+        .cell-footer a {
             text-align: right;
             justify-self: end;
+        }
+
+        .cell-footer a {
+            color: var(--ink-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s ease;
+        }
+
+        .cell-footer a:hover {
+            border-bottom-color: var(--ink-light);
         }
 
         /* ROW 2: Oversized Name Block (8 Cols) + Portrait Block (4 Cols) */
@@ -167,9 +182,9 @@
             object-fit: cover;
         }
 
-        /* ROW 3: Full-Bleed Color-Coded Hook (5 Cols) + Condensed Thesis & Fields (7 Cols) */
+        /* ROW 3 LEFT STACK: Strategic Initiatives (top) + Activities (bottom) */
         .cell-event {
-            grid-column: span 5;
+            grid-column: 1 / span 5;
             background: var(--surface-inverse);
             color: var(--ink-light);
             container-type: inline-size;
@@ -198,23 +213,56 @@
             line-height: 0.96;
             letter-spacing: -0.03em;
             text-transform: uppercase;
-            margin: 0.75rem 0 1.25rem 0;
+            margin-top: auto;
             z-index: 1;
         }
 
-        .event-meta {
-            font-family: var(--font-mono);
-            font-size: 0.74rem;
-            font-weight: 700;
+        .cell-activities {
+            grid-column: 1 / span 5;
+        }
+
+        .activity-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 0.95rem;
+            margin-top: auto;
+        }
+
+        .activity-sub {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .activity-sub + .activity-sub {
             border-top: 1px solid var(--border-color);
-            padding-top: 0.75rem;
-            line-height: 1.4;
-            text-transform: uppercase;
-            z-index: 1;
+            padding-top: 0.85rem;
         }
 
+        .activity-sub-label {
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            opacity: 0.75;
+        }
+
+        .activity-org {
+            font-weight: 400;
+            opacity: 0.75;
+        }
+
+        .activity-list {
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+
+        /* ROW 3 RIGHT: Research Abstract spans both left-stack rows */
         .cell-thesis {
-            grid-column: span 7;
+            grid-column: 6 / span 7;
+            grid-row: 3 / span 2;
         }
 
         .thesis-text {
@@ -223,6 +271,14 @@
             line-height: 1.32;
             letter-spacing: -0.015em;
             margin-bottom: 1.5rem;
+        }
+
+        .thesis-text p {
+            margin-bottom: 0.75rem;
+        }
+
+        .thesis-text p:last-child {
+            margin-bottom: 0;
         }
 
         .concept-tags {
@@ -265,7 +321,7 @@
 
         .topo-box {
             height: 115px;
-            border: 1px solid var(--ink-light);;
+            border: 1px solid var(--ink-light);
             position: relative;
             margin: 0.25rem 0 1rem 0;
             background-image: 
@@ -412,8 +468,9 @@
 
         /* Responsive Collapse */
         @media (max-width: 840px) {
-            .cell-name, .cell-portrait, .cell-event, .cell-thesis, .cell-map, .cell-pubs, .cell-links {
+            .cell-name, .cell-portrait, .cell-event, .cell-activities, .cell-thesis, .cell-map, .cell-pubs, .cell-links {
                 grid-column: span 12;
+                grid-row: auto;
             }
             .vector-stage {
                 max-width: 220px;
@@ -429,7 +486,7 @@
         <!-- 00: SYSTEM DIRECTORY BAR -->
         <header class="cell cell-ticker">
             <span>TTW DIRECTORY</span>
-            <span>EDUCATION</span>
+            <span>ACADEMIC</span>
         </header>
 
         <!-- 01: OVERSIZED TYPOGRAPHY IDENTITY -->
@@ -455,15 +512,30 @@
             </div>
         </section>
 
-        <!-- 03: STRATEGIC INITIATIVES & RESEARCH ACTIVITY -->
+        <!-- 03: STRATEGIC INITIATIVES -->
         <section class="cell cell-event" style="--bg-image: url('data_sciences_institute_(dsi).jpeg');">
             <div class="idx-bar">
                 <span>[03] STRATEGIC INITIATIVES</span>
-                <span>GRANTS: 9</span>
+                <span>1</span>
             </div>
             <div class="event-big">Data Sciences Institute (DSI)</div>
-            <div class="event-meta">
-                GRANT: Alberta Innovates-Health Solutions (University of Alberta)<br>ACTIVITY: Canada Research Chair in Identity, Diversity, and Inclusion<br>UPDATED: 2026-11-07
+        </section>
+
+        <!-- 03B: ACADEMIC, PROFESSIONAL & TEACHING ACTIVITIES -->
+        <section class="cell cell-activities">
+            <div class="idx-bar">
+                <span>[03B] ACTIVITIES</span>
+                <span>TOTAL: 4</span>
+            </div>
+            <div class="activity-stack">
+                <div class="activity-sub">
+                    <span class="activity-sub-label">ACADEMIC APPOINTMENTS</span>
+                    <div class="activity-list">Faculty Research Fellow <span class="activity-org">— Institute of gender and economy</span><br>Chief Scientist <span class="activity-org">— BEAR - Behavioural Economics in Action at Rotman</span><br>Assistant Professor <span class="activity-org">— University of Toronto</span></div>
+                </div>
+                <div class="activity-sub">
+                    <span class="activity-sub-label">PROFESSIONAL ACTIVITIES</span>
+                    <div class="activity-list">Canada Research Chair in Identity, Diversity, and Inclusion</div>
+                </div>
             </div>
         </section>
 
@@ -474,9 +546,9 @@
                 <span>TAGS: 4</span>
             </div>
             <div>
-                <p class="thesis-text">
-                    Sonia Kang is an Associate Professor of Organizational Behaviour and Human Resource Management in the Department of Management at the University of Toronto Mississauga, and holds a cross-appointment to the Organizational Behaviour and HR Management area at Rotman. Her research explores the challenges and opportunities of diversity, including strategies for mitigating the far-reaching effects of stigma and harnessing the power of diversity for society and organizations alike. Sonia’s research has been published in journals including the Journal of Personality and Social Psychology, Psychological Science, Administrative Science Quarterly, and the Journal of Experimental Social Psychology, and has been featured in media outlets such as The Globe and Mail and The Atlantic.Media availability: TV, Radio, Print/Online
-                </p>
+                <div class="thesis-text">
+                    Sonia Kang is an Associate Professor of Organizational Behaviour and Human Resource Management in the Department of Management at the University of Toronto Mississauga, and holds a cross-appointment to the Organizational Behaviour and HR Management area at Rotman. Her research explores the challenges and opportunities of diversity, including strategies for mitigating the far-reaching effects of stigma and harnessing the power of diversity for society and organizations alike. Sonia’s research has been published in journals including the Journal of Personality and Social Psychology, Psychological Science, Administrative Science Quarterly, and the Journal of Experimental Social Psychology, and has been featured in media outlets such as The Globe and Mail and The Atlantic.<br /><br />Media availability: TV, Radio, Print/Online
+                </div>
                 <div class="concept-tags">
                     <span class="c-tag">AGING PROCESS</span>
                     <span class="c-tag">BUSINESS, COMMERCIAL AND CORPORATE LAW</span>
@@ -489,15 +561,15 @@
         <!-- 05: LOCATION NODE -->
         <section class="cell cell-map" style="--bg-image: url('3359_mississauga_road.jpeg');">
             <div class="idx-bar">
-                <span>[05] GEO NODE</span>
-                <span>Toronto, Ontario</span>
+                <span>[05] ADDRESS</span>
+                <span>3359 Mississauga Road</span>
             </div>
             <div class="topo-box">
                 <div class="crosshair"></div>
             </div>
             <div class="coords">
-                <span>3359 Mississauga Road</span>
-                <span>L5L1C6 CA</span>
+                <span>Toronto, Ontario</span>
+                <span>L5L1C6</span>
             </div>
         </section>
 
@@ -561,6 +633,12 @@
                 </a>
             </div>
         </section>
+
+        <!-- 08: AUTHOR / CONTACT FOOTER -->
+        <footer class="cell cell-footer">
+            <span>TTW</span>
+            <a href="mailto:emailstevekim@gmail.com">EMAILSTEVEKIM@GMAIL.COM ↗</a>
+        </footer>
 
     </main>
 
