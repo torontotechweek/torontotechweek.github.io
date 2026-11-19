@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,600;0,6..72,700;1,6..72,500&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Borderless Tonal Color-Blocking sampled from the gouache-vector art */
             --surface-backdrop: #E5E1D8;
             --plane-header: #EAE4D7;
             --plane-sandstone: #F4F1EA;
@@ -39,10 +38,9 @@
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            padding: 1rem;
+            padding: 2.5rem 1.5rem;
         }
 
-        /* Single Card: Borderless Tonal Editorial Profile Card */
         .library-card {
             width: 100%;
             max-width: 400px;
@@ -200,7 +198,7 @@
             color: var(--canopy-pine);
         }
 
-        .cell-map {
+        .cell-initiative {
             grid-column: span 2;
             background: var(--ink-river);
             color: var(--plane-sandstone);
@@ -210,7 +208,7 @@
             min-height: 146px;
         }
 
-        .cell-map .map-bg {
+        .cell-initiative .initiative-bg {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -221,7 +219,7 @@
             display: block;
         }
 
-        .map-address-overlay {
+        .initiative-overlay {
             position: relative;
             margin-top: auto;
             width: 100%;
@@ -311,9 +309,9 @@
             </div>
         </section>
 
-        <section class="cell cell-map">
-            <img class="map-bg" src="3359_mississauga_road.jpeg" alt="3359 Mississauga Road, Toronto, Ontario">
-            <div class="map-address-overlay">3359 Mississauga Road, Toronto, Ontario</div>
+        <section class="cell cell-initiative">
+            <img class="initiative-bg" src="data_sciences_institute_(dsi).jpeg" alt="Data Sciences Institute (DSI)">
+            <div class="initiative-overlay">Data Sciences Institute (DSI)</div>
         </section>
 
         <footer class="cell card-ledger">
