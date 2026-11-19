@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KANG, S. // DISCOVERY-3195</title>
+    <title>KANG, S. // 3195</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,600;0,6..72,700;1,6..72,500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --border-color: #111111;
-            --surface-base: #f4f3ef;
-            --surface-inverse: #111111;
-            --block-primary: #ffffff;
-            --block-secondary: #14532d; /* Forest Pine (light ink) */
-            --block-accent: #fde68a;    /* Warm Parchment Yellow (dark ink) */
-            --ink-dark: #111111;
-            --ink-light: #f4f3ef;
+            /* Borderless Tonal Color-Blocking sampled from the gouache-vector art */
+            --surface-backdrop: #E5E1D8;
+            --plane-header: #EAE4D7;
+            --plane-sandstone: #F4F1EA;
+            --plane-slate: #DCE4EA;
+            --plane-sage: #E6ECE4;
+            --ink-river: #1E2D38;
+            --ink-muted: #52636E;
+            --canopy-pine: #2D5341;
+            --accent-ochre: #C97A3D;
 
-            --font-display: 'Inter', sans-serif;
+            --font-editorial: 'Newsreader', Georgia, serif;
+            --font-sans: 'Inter', sans-serif;
             --font-mono: 'JetBrains Mono', monospace;
         }
 
@@ -29,9 +32,9 @@
         }
 
         body {
-            background-color: var(--surface-base);
-            color: var(--ink-dark);
-            font-family: var(--font-display);
+            background-color: var(--surface-backdrop);
+            color: var(--ink-river);
+            font-family: var(--font-sans);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -39,608 +42,286 @@
             padding: 1.5rem;
         }
 
-        /* Architectural 1px Shared-Border Grid */
-        .swiss-grid {
+        /* Single Card: Borderless Tonal Editorial Profile Card */
+        .library-card {
             width: 100%;
-            max-width: 1080px;
+            max-width: 400px;
             display: grid;
-            grid-template-columns: repeat(12, minmax(0, 1fr));
-            border-top: 1px solid var(--border-color);
-            border-left: 1px solid var(--border-color);
-            background: var(--surface-base);
+            grid-template-columns: 1fr 164px;
+            background: var(--plane-sandstone);
+            box-shadow:
+                0 1px 2px rgba(30, 45, 56, 0.06),
+                0 14px 32px -8px rgba(30, 45, 56, 0.14);
         }
 
         .cell {
-            border-right: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
-            padding: 1.35rem;
+            padding: 1rem 1.15rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            position: relative;
             min-width: 0;
         }
 
-        /* Monospace Index Metadata — Two-Column Grid guarantees right span is ALWAYS flush-right */
-        .idx-bar {
-            font-family: var(--font-mono);
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-            align-items: start;
-            margin-bottom: 1.25rem;
-            opacity: 0.85;
-            gap: 0.75rem;
-            width: 100%;
-            z-index: 1;
-        }
-
-        .idx-bar > span:first-child {
-            text-align: left;
-            justify-self: start;
-        }
-
-        .idx-bar > span:last-child {
-            text-align: right;
-            justify-self: end;
-        }
-
-        /* ROW 1 & ROW 5: Top System Ticker & Bottom Footer (12 Cols) */
-        .cell-ticker,
-        .cell-footer {
-            grid-column: span 12;
-            padding: 0.65rem 1.35rem;
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) auto;
+        .card-header {
+            grid-column: span 2;
+            padding: 0.6rem 1.15rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-            gap: 0.75rem;
-            background: var(--surface-inverse);
-            color: var(--ink-light);
+            gap: 0.5rem;
+            background: var(--plane-header);
+            color: var(--ink-muted);
             font-family: var(--font-mono);
-            font-size: 0.72rem;
-            letter-spacing: 0.08em;
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.09em;
             text-transform: uppercase;
+            white-space: nowrap;
         }
 
-        .cell-ticker > span:first-child,
-        .cell-footer > span:first-child {
-            text-align: left;
-            justify-self: start;
+        .header-institution {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            color: var(--ink-river);
+            font-weight: 700;
         }
 
-        .cell-ticker > span:last-child,
-        .cell-footer a {
-            text-align: right;
-            justify-self: end;
+        .header-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent-ochre);
+            display: inline-block;
         }
 
-        .cell-footer a {
-            color: var(--ink-light);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.15s ease;
-        }
-
-        .cell-footer a:hover {
-            border-bottom-color: var(--ink-light);
-        }
-
-        /* ROW 2: Oversized Name Block (8 Cols) + Portrait Block (4 Cols) */
-        .cell-name {
-            grid-column: span 8;
-            padding: 1.5rem;
-            container-type: inline-size;
+        .card-identity {
+            grid-column: 1 / 2;
+            padding: 0.85rem 1rem 1.15rem 1.15rem;
+            background: var(--plane-sandstone);
+            gap: 0.9rem;
         }
 
         .display-name {
-            font-size: clamp(2.5rem, 12.2cqw, 5.4rem);
-            font-weight: 900;
-            line-height: 0.88;
-            letter-spacing: -0.045em;
-            text-transform: uppercase;
-            margin-top: 0.75rem;
+            font-family: var(--font-editorial);
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: 0.95;
+            letter-spacing: -0.025em;
+            color: var(--ink-river);
             overflow-wrap: break-word;
             word-break: break-word;
-            hyphens: auto;
         }
 
-        .role-line {
-            font-family: var(--font-mono);
-            font-size: 0.8rem;
-            margin-top: 1.35rem;
-            font-weight: 500;
-            line-height: 1.4;
-            text-transform: uppercase;
+        .role-block {
+            font-family: var(--font-sans);
+            font-size: 0.74rem;
+            line-height: 1.38;
         }
 
-        .cell-portrait {
-            grid-column: span 4;
-            background: var(--block-accent);
-            padding: 1.35rem;
+        .role-title {
+            font-weight: 700;
+            color: var(--ink-river);
+            display: block;
         }
 
-        .vector-stage {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: auto 0;
-            overflow: hidden;
+        .role-dept {
+            font-weight: 400;
+            color: var(--ink-muted);
+            display: block;
+            margin-top: 2px;
         }
 
-        .vector-stage svg {
-            width: 84%;
-            height: 84%;
-        }
-
-        .vector-stage img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* ROW 3 LEFT STACK: Strategic Initiatives (top) + Activities (bottom) */
-        .cell-event {
-            grid-column: 1 / span 5;
-            background: var(--surface-inverse);
-            color: var(--ink-light);
-            container-type: inline-size;
+        .card-portrait {
+            grid-column: 2 / 3;
+            padding: 0;
+            background: var(--plane-slate);
+            min-height: 192px;
             position: relative;
             overflow: hidden;
         }
 
-        .cell-event::before {
-            content: "";
+        .card-portrait img {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             height: 100%;
-            background-image: var(--bg-image);
-            background-size: cover;
-            background-position: center;
-            opacity: 0.6;
-            z-index: 0;
-            pointer-events: none;
+            width: auto;
+            display: block;
         }
 
-        .event-big {
-            font-size: clamp(1.65rem, 8.5cqw, 2.5rem);
-            font-weight: 900;
-            line-height: 0.96;
-            letter-spacing: -0.03em;
-            text-transform: uppercase;
-            margin-top: auto;
-            z-index: 1;
+        .card-portrait svg {
+            width: 82%;
+            height: 82%;
+            margin: auto;
         }
 
-        .cell-activities {
-            grid-column: 1 / span 5;
-        }
-
-        .activity-stack {
-            display: flex;
-            flex-direction: column;
-            gap: 0.95rem;
-            margin-top: auto;
-        }
-
-        .activity-sub {
-            display: flex;
-            flex-direction: column;
-            gap: 0.35rem;
-        }
-
-        .activity-sub + .activity-sub {
-            border-top: 1px solid var(--border-color);
-            padding-top: 0.85rem;
-        }
-
-        .activity-sub-label {
-            font-family: var(--font-mono);
-            font-size: 0.68rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            opacity: 0.75;
-        }
-
-        .activity-org {
-            font-weight: 400;
-            opacity: 0.75;
-        }
-
-        .activity-list {
-            font-family: var(--font-display);
-            font-size: 0.85rem;
-            font-weight: 700;
-            line-height: 1.35;
-        }
-
-        /* ROW 3 RIGHT: Research Abstract spans both left-stack rows */
-        .cell-thesis {
-            grid-column: 6 / span 7;
-            grid-row: 3 / span 2;
-        }
-
-        .thesis-text {
-            font-size: clamp(1.05rem, 1.8vw, 1.3rem);
-            font-weight: 500;
-            line-height: 1.32;
-            letter-spacing: -0.015em;
-            margin-bottom: 1.5rem;
-        }
-
-        .thesis-text p {
-            margin-bottom: 0.75rem;
-        }
-
-        .thesis-text p:last-child {
-            margin-bottom: 0;
+        .card-subjects {
+            grid-column: span 2;
+            background: var(--plane-sage);
+            padding: 1rem 1.15rem;
         }
 
         .concept-tags {
             display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
+            flex-direction: column;
+            gap: 0.38rem;
         }
 
         .c-tag {
-            font-family: var(--font-mono);
-            font-size: 0.7rem;
-            border: 1px solid var(--border-color);
-            padding: 0.25rem 0.6rem;
-            font-weight: 500;
+            display: grid;
+            grid-template-columns: 2.2ch 1fr;
+            column-gap: 0.7rem;
+            align-items: baseline;
+            font-size: 0.73rem;
+            line-height: 1.35;
         }
 
-        /* ROW 4: Map / Coordinates (4 Cols) + Selected Works (5 Cols) + Endpoints (3 Cols) */
+        .tag-idx {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--accent-ochre);
+        }
+
+        .tag-text {
+            font-family: var(--font-sans);
+            font-weight: 500;
+            color: var(--ink-river);
+            min-width: 0;
+        }
+
+        .c-tag-more .tag-text {
+            font-family: var(--font-sans);
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--canopy-pine);
+        }
+
         .cell-map {
-            grid-column: span 4;
-            background: var(--surface-inverse);
-            color: var(--ink-light);
+            grid-column: span 2;
+            background: var(--ink-river);
+            color: var(--plane-sandstone);
             position: relative;
             overflow: hidden;
-        }
-
-        .cell-map::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: var(--bg-image);
-            background-size: cover;
-            background-position: center;
-            opacity: 0.6;
-            z-index: 0;
-            pointer-events: none;
-        }
-
-        .topo-box {
-            height: 115px;
-            border: 1px solid var(--ink-light);
-            position: relative;
-            margin: 0.25rem 0 1rem 0;
-            background-image: 
-                linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px);
-            background-size: 18px 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1;
-        }
-
-        .crosshair {
-            width: 24px;
-            height: 24px;
-            border: 1px solid var(--block-primary);
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .crosshair::after {
-            content: '';
-            width: 6px;
-            height: 6px;
-            background: var(--block-primary);
-        }
-
-        .coords {
-            font-family: var(--font-mono);
-            font-size: 0.72rem;
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) auto;
-            align-items: start;
-            line-height: 1.4;
-            gap: 0.75rem;
-            text-transform: uppercase;
-            width: 100%;
-            position: relative;
-            z-index: 1;
-        }
-
-        .coords > span:first-child {
-            text-align: left;
-            justify-self: start;
-        }
-
-        .coords > span:last-child {
-            text-align: right;
-            justify-self: end;
-        }
-
-        .cell-pubs {
-            grid-column: span 5;
-        }
-
-        .pub-row {
-            border-top: 1px solid var(--border-color);
-            padding: 0.65rem 0;
-            display: flex;
-            flex-direction: column;
-            gap: 0.25rem;
-        }
-
-        .pub-row:first-of-type {
-            border-top: none;
-            padding-top: 0;
-        }
-
-        .pub-venue {
-            font-family: var(--font-mono);
-            font-size: 0.68rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            opacity: 0.75;
-        }
-
-        .pub-name {
-            display: block;
-            font-size: 0.85rem;
-            font-weight: 700;
-            line-height: 1.25;
-        }
-
-        .pub-sub {
-            display: block;
-            font-weight: 400;
-            font-size: 0.76rem;
-            opacity: 0.75;
-            margin-top: 2px;
-        }
-
-        .cell-links {
-            grid-column: span 3;
-            background: var(--block-secondary);
-            color: var(--ink-light);
             padding: 0;
+            min-height: 146px;
         }
 
-        .cell-links .idx-bar {
-            padding: 1.35rem 1.35rem 0 1.35rem;
-            margin-bottom: 0.75rem;
+        .cell-map .map-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+            pointer-events: none;
+            display: block;
         }
 
-        .link-stack {
-            display: flex;
-            flex-direction: column;
+        .map-address-overlay {
+            position: relative;
             margin-top: auto;
+            width: 100%;
+            padding: 1.35rem 1.15rem 0.65rem;
+            background: linear-gradient(
+                to top,
+                rgba(30, 45, 56, 0.9) 0%,
+                rgba(30, 45, 56, 0.55) 55%,
+                rgba(30, 45, 56, 0) 100%
+            );
+            font-family: var(--font-sans);
+            font-size: 0.72rem;
+            font-weight: 500;
+            line-height: 1.35;
+            color: var(--plane-sandstone);
+            z-index: 1;
         }
 
-        .dir-row-link {
+        .card-ledger {
+            grid-column: span 2;
+            padding: 0;
             display: grid;
-            grid-template-columns: minmax(0, 1fr) auto;
-            align-items: center;
-            padding: 0.85rem 1.35rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.25);
-            color: var(--ink-light);
-            text-decoration: none;
+            grid-template-columns: 1fr auto;
+            background: var(--canopy-pine);
+            color: var(--plane-sandstone);
             font-family: var(--font-mono);
-            font-size: 0.72rem;
-            font-weight: 700;
+            font-size: 0.65rem;
+            letter-spacing: 0.06em;
             text-transform: uppercase;
-            gap: 0.5rem;
+        }
+
+        .ledger-link,
+        .card-action {
+            padding: 0.7rem 1.15rem;
+            color: var(--plane-sandstone);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
             transition: background 0.15s ease, color 0.15s ease;
         }
 
-        .dir-row-link span:first-child {
+        .ledger-link {
+            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
-            text-align: left;
         }
 
-        .dir-row-link span:last-child {
-            text-align: right;
-            justify-self: end;
+        .card-action {
+            background: rgba(30, 45, 56, 0.22);
         }
 
-        .dir-row-link:hover {
-            background: var(--ink-light);
-            color: var(--block-secondary);
-        }
-
-        /* Responsive Collapse */
-        @media (max-width: 840px) {
-            .cell-name, .cell-portrait, .cell-event, .cell-activities, .cell-thesis, .cell-map, .cell-pubs, .cell-links {
-                grid-column: span 12;
-                grid-row: auto;
-            }
-            .vector-stage {
-                max-width: 220px;
-                margin: 0 auto;
-            }
+        .ledger-link:hover,
+        .card-action:hover {
+            background: var(--accent-ochre);
+            color: var(--ink-river);
         }
     </style>
 </head>
 <body>
 
-    <main class="swiss-grid">
-        
-        <!-- 00: SYSTEM DIRECTORY BAR -->
-        <header class="cell cell-ticker">
-            <span>TTW DIRECTORY</span>
-            <span>ACADEMIC</span>
+    <article class="library-card">
+
+        <header class="cell card-header">
+            <span class="header-institution"><span class="header-dot"></span>U of T</span>
+            <span>3195</span>
         </header>
 
-        <!-- 01: OVERSIZED TYPOGRAPHY IDENTITY -->
-        <section class="cell cell-name">
-            <div class="idx-bar">
-                <span>[01] FACULTY RECORD</span>
-                <span>DISCOVERY_ID: 3195</span>
-            </div>
-            <div>
-                <h1 class="display-name">Sonia<br>Kang</h1>
-                <p class="role-line">Professor — University of Toronto Mississauga, Department of Management</p>
+        <section class="cell card-identity">
+            <h1 class="display-name">Sonia<br>Kang</h1>
+            <div class="role-block">
+                <span class="role-title">Professor</span>
+                <span class="role-dept">University of Toronto Mississauga, Department of Management</span>
             </div>
         </section>
 
-        <!-- 02: PORTRAIT / THUMBNAIL CELL -->
-        <section class="cell cell-portrait">
-            <div class="idx-bar">
-                <span>[02] THUMBNAIL</span>
-                <span>KANG S</span>
-            </div>
-            <div class="vector-stage">
-                <img src="-kang-sonia_1.png" alt="Sonia Kang">
+        <section class="cell card-portrait">
+            <img src="-kang-sonia_1.png" alt="Sonia Kang">
+        </section>
+
+        <section class="cell card-subjects">
+            <div class="concept-tags">
+                <div class="c-tag"><span class="tag-idx">01</span><span class="tag-text">Aging process</span></div>
+                <div class="c-tag"><span class="tag-idx">02</span><span class="tag-text">Business, commercial and corporate law</span></div>
+                <div class="c-tag"><span class="tag-idx">03</span><span class="tag-text">Gender psychology</span></div>
+                <div class="c-tag"><span class="tag-idx">04</span><span class="tag-text">Race and ethnic relations</span></div>
             </div>
         </section>
 
-        <!-- 03: STRATEGIC INITIATIVES -->
-        <section class="cell cell-event" style="--bg-image: url('data_sciences_institute_(dsi).jpeg');">
-            <div class="idx-bar">
-                <span>[03] STRATEGIC INITIATIVES</span>
-                <span>1</span>
-            </div>
-            <div class="event-big">Data Sciences Institute (DSI)</div>
+        <section class="cell cell-map">
+            <img class="map-bg" src="3359_mississauga_road.jpeg" alt="3359 Mississauga Road, Toronto, Ontario">
+            <div class="map-address-overlay">3359 Mississauga Road, Toronto, Ontario</div>
         </section>
 
-        <!-- 03B: ACADEMIC, PROFESSIONAL & TEACHING ACTIVITIES -->
-        <section class="cell cell-activities">
-            <div class="idx-bar">
-                <span>[03B] ACTIVITIES</span>
-                <span>TOTAL: 4</span>
-            </div>
-            <div class="activity-stack">
-                <div class="activity-sub">
-                    <span class="activity-sub-label">ACADEMIC APPOINTMENTS</span>
-                    <div class="activity-list">Faculty Research Fellow <span class="activity-org">— Institute of gender and economy</span><br>Chief Scientist <span class="activity-org">— BEAR - Behavioural Economics in Action at Rotman</span><br>Assistant Professor <span class="activity-org">— University of Toronto</span></div>
-                </div>
-                <div class="activity-sub">
-                    <span class="activity-sub-label">PROFESSIONAL ACTIVITIES</span>
-                    <div class="activity-list">Canada Research Chair in Identity, Diversity, and Inclusion</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 04: CONDENSED FACULTY RESEARCH & CONCEPTS -->
-        <section class="cell cell-thesis">
-            <div class="idx-bar">
-                <span>[04] RESEARCH ABSTRACT</span>
-                <span>TAGS: 4</span>
-            </div>
-            <div>
-                <div class="thesis-text">
-                    Sonia Kang is an Associate Professor of Organizational Behaviour and Human Resource Management in the Department of Management at the University of Toronto Mississauga, and holds a cross-appointment to the Organizational Behaviour and HR Management area at Rotman. Her research explores the challenges and opportunities of diversity, including strategies for mitigating the far-reaching effects of stigma and harnessing the power of diversity for society and organizations alike. Sonia’s research has been published in journals including the Journal of Personality and Social Psychology, Psychological Science, Administrative Science Quarterly, and the Journal of Experimental Social Psychology, and has been featured in media outlets such as The Globe and Mail and The Atlantic.<br /><br />Media availability: TV, Radio, Print/Online
-                </div>
-                <div class="concept-tags">
-                    <span class="c-tag">AGING PROCESS</span>
-                    <span class="c-tag">BUSINESS, COMMERCIAL AND CORPORATE LAW</span>
-                    <span class="c-tag">GENDER PSYCHOLOGY</span>
-                    <span class="c-tag">RACE AND ETHNIC RELATIONS</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- 05: LOCATION NODE -->
-        <section class="cell cell-map" style="--bg-image: url('3359_mississauga_road.jpeg');">
-            <div class="idx-bar">
-                <span>[05] ADDRESS</span>
-                <span>3359 Mississauga Road</span>
-            </div>
-            <div class="topo-box">
-                <div class="crosshair"></div>
-            </div>
-            <div class="coords">
-                <span>Toronto, Ontario</span>
-                <span>L5L1C6</span>
-            </div>
-        </section>
-
-        <!-- 06: SELECTED PUBLICATIONS -->
-        <section class="cell cell-pubs">
-            <div class="idx-bar">
-                <span>[06] RECENT PUBLICATIONS</span>
-                <span>TOTAL: 34</span>
-            </div>
-            <div>
-                <div class="pub-row">
-                    <span class="pub-venue">American Behavioral Scientist</span>
-                    <div>
-                        <span class="pub-name">One Label Doesn’t Fit All: Self-Labeling Practices Within the Chinese Immigrant Community in Canada</span>
-                        <span class="pub-sub">Yim O, Kang SK — 2026</span>
-                    </div>
-                </div>
-                <div class="pub-row">
-                    <span class="pub-venue">Nature Reviews Psychology</span>
-                    <div>
-                        <span class="pub-name">Bridging individual-level and system-level approaches to advance psychology-based diversity initiatives</span>
-                        <span class="pub-sub">He JC, Keller BB, Kang SK — 2025</span>
-                    </div>
-                </div>
-                <div class="pub-row">
-                    <span class="pub-venue">Proceedings of the National Academy of Sciences of the United States of America</span>
-                    <div>
-                        <span class="pub-name">Debiasing job ads by replacing masculine language increases gender diversity of applicant pools</span>
-                        <span class="pub-sub">He JC, Kang SK — 2025</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 07: COLOR-CODED DIRECTORY ENDPOINTS -->
-        <section class="cell cell-links">
-            <div class="idx-bar">
-                <span>[07] ENDPOINTS</span>
-                <span>→</span>
-            </div>
-            <div class="link-stack">
-                <a href="https://www.sonia-kang.com/" target="_blank" rel="noopener noreferrer" class="dir-row-link">
-                    <span>Dr. Sonia Kang&#x27;s Blog</span>
-                    <span>↗</span>
-                </a>
-                <a href="https://twitter.com/Sonia_Kang" target="_blank" rel="noopener noreferrer" class="dir-row-link">
-                    <span>Dr. Sonia Kang&#x27;s Twitter</span>
-                    <span>↗</span>
-                </a>
-                <a href="https://www.linkedin.com/in/sonia-kang-bba669159/" target="_blank" rel="noopener noreferrer" class="dir-row-link">
-                    <span>Dr. Sonia Kang&#x27;s LinkeIn</span>
-                    <span>↗</span>
-                </a>
-                <a href="https://apps.rotman.utoronto.ca/rDrive/?CVkangsoni" target="_blank" rel="noopener noreferrer" class="dir-row-link">
-                    <span>View CV</span>
-                    <span>↗</span>
-                </a>
-                <a href="mailto:sonia.kang@rotman.utoronto.ca" class="dir-row-link">
-                    <span>sonia.kang@rotman.utoronto.ca</span>
-                    <span>↗</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- 08: AUTHOR / CONTACT FOOTER -->
-        <footer class="cell cell-footer">
-            <span>TTW</span>
-            <a href="mailto:emailstevekim@gmail.com">EMAILSTEVEKIM@GMAIL.COM ↗</a>
+        <footer class="cell card-ledger">
+            <a href="https://discover.research.utoronto.ca/3195-kang-sonia" target="_blank" rel="noopener noreferrer" class="ledger-link" title="https://discover.research.utoronto.ca/3195-kang-sonia">DISCOVERY PROFILE ↗</a>
+            <a href="mailto:sonia.kang@rotman.utoronto.ca" class="card-action" title="sonia.kang@rotman.utoronto.ca">CONTACT ↗</a>
         </footer>
 
-    </main>
+    </article>
 
 </body>
 </html>
